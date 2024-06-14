@@ -1,0 +1,3 @@
+[submodule "library-charts"]
+	path = library-charts
+	url = https://github.com/truecharts/library-charts.git
