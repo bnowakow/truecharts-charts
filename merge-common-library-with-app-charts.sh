@@ -14,6 +14,7 @@ for dir in \
         charts/stable/jackett \
         charts/stable/prowlarr \
         charts/stable/plex \
+        charts/stable/homer \
     ; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
