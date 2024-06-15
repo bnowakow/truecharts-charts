@@ -15,6 +15,11 @@ for dir in \
         charts/stable/prowlarr \
         charts/stable/plex \
         charts/stable/homer \
+        charts/stable/bazarr \
+        charts/stable/flaresolverr \
+        charts/stable/scrutiny \
+        charts/stable/adguard-home \
+        charts/stable/jellystat \
     ; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
