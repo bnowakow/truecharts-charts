@@ -7,7 +7,9 @@ library_common_dir=library-charts/library/common
 for dir in \
         charts/stable/sonarr \
         charts/stable/radarr \
-        ./charts/stable/bazarr \
+        charts/stable/bazarr \
+        charts/stable/overseerr \
+        charts/stable/jellyfin \
     ; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
