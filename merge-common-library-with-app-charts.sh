@@ -10,6 +10,8 @@ for dir in \
         charts/stable/bazarr \
         charts/stable/overseerr \
         charts/stable/jellyfin \
+        charts/stable/jackett \
+        ./charts/stable/prowlarr \
     ; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
