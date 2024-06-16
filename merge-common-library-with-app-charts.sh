@@ -20,6 +20,16 @@ for dir in \
         charts/stable/scrutiny \
         charts/stable/adguard-home \
         charts/stable/jellystat \
+        charts/stable/duckdns \
+        charts/stable/filebot \
+        charts/stable/lazylibrarian \
+        charts/stable/maintainerr \
+        charts/stable/plextraktsync \
+        charts/stable/proxmox-backup-server \
+        charts/stable/scrutiny \
+        charts/stable/smokeping \
+        charts/stable/tautulli \
+        charts/stable/youtubedl-material \
     ; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
