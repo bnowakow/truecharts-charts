@@ -1,6 +1,6 @@
 image:
   repository: ronivay/xen-orchestra
-  tag: 5.144.2@sha256:01bde0ceaa0453c622ab255aa021636c5cc3b5785d52b5c6a68fb16ad95ac1f1
+  tag: 5.145.0@sha256:a799d32d0d8481916d0680b0db156086e3dbdc2220ffdfd58a367219d1048621
   pullPolicy: IfNotPresent
 service:
   main:

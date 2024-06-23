@@ -1,7 +1,7 @@
 image:
   repository: esphome/esphome
   pullPolicy: IfNotPresent
-  tag: 2024.5.5@sha256:4f8a9218ab21224b7c744bc2943af28c1157671319d3246ae65d9ea568f930b9
+  tag: 2024.6.1@sha256:0c1e1adc51df8752d1ef88bba7e5b76b518884867342397336f5430a21083c45
 securityContext:
   container:
     runAsNonRoot: false

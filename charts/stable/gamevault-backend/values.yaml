@@ -1,7 +1,7 @@
 image:
   repository: phalcode/gamevault-backend
   pullPolicy: IfNotPresent
-  tag: 12.1.1@sha256:68b20e878dca1397cca19a67669df3a5b41445f9e6cdf169febac48fab322d47
+  tag: 12.2.0@sha256:c84ecfe8707f040829a54e4860d23e2a222fecda8d89ddbe2939c6888f52c831
 securityContext:
   container:
     runAsNonRoot: false

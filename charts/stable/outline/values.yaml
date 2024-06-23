@@ -1,7 +1,7 @@
 image:
   repository: outlinewiki/outline
   pullPolicy: IfNotPresent
-  tag: 0.77.0@sha256:e697bcc347fb37a16c4e19bf165487e4072db4fdcf9e92016f24a00c11cf273d
+  tag: 0.77.2@sha256:c079fdadceae33b1d44fc87ecebd07f13dafab64129d14d70a62018769cca119
 service:
   main:
     ports:

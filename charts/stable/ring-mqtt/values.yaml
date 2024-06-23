@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: tsightler/ring-mqtt
-  tag: 5.6.5@sha256:787b2575fb18d599f7f6cdbc62f92c8e381721210289817df7d07e96d95bbd71
+  tag: 5.6.7@sha256:d71c28193d4dbc6ae90a2eefd035ac0ad6b49e7fac9ad6f2cf13d2f5687afd36
 securityContext:
   container:
     readOnlyRootFilesystem: false
