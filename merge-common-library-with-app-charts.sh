@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# TODO updage common library git submodule
-library_common_dir=library-charts/library/common
+library_dir=library-charts
+library_common_dir=$library_dir/library/common
+cd $library_dir
+git pull
+cd ../
 
 
 for dir in \
