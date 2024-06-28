@@ -7,7 +7,7 @@ git pull
 cd ../
 
 cloudnativepg_dir=CloudNativePG-charts
-cloudnativepg_chart_dir=$cloudnativepg_dir/charts/cluster
+cloudnativepg_chart_dir=$cloudnativepg_dir/charts/*
 cd $cloudnativepg_dir
 git pull
 cd ../
