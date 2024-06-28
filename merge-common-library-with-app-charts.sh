@@ -1,16 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
 
-library_dir=library-charts
-library_common_dir=$library_dir/library/common
-cd $library_dir
-git pull
-cd ../
-
-cloudnativepg_dir=CloudNativePG-charts
-cloudnativepg_chart_dir=$cloudnativepg_dir/charts/*
-cd $cloudnativepg_dir
-git pull
-cd ../
+main_dir=$(pwd)
 
 for dir in \
         charts/stable/sonarr \
@@ -39,23 +29,14 @@ for dir in \
         charts/stable/tautulli \
         charts/stable/youtubedl-material \
         charts/system/cloudnative-pg \
-    ; do
+        charts/system/prometheus-operator; do
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
     mkdir -p $app_common_dir
-    cp -r $library_common_dir $app_common_dir
+    cd $dir
+    helm dependency build
+    cd $main_dir
     git add $app_common_dir
 done
 
-# TODO create function to use repeating logic from above
-for dir in \
-        charts/stable/jellystat \
-        charts/system/cloudnative-pg \
-    ; do
-    app_common_dir=$dir/charts
-    cp -r $cloudnativepg_chart_dir $app_common_dir
-    git add $app_common_dir
-done
-
-git status
 
