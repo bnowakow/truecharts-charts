@@ -6,20 +6,13 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: system
 apiVersion: v2
-appVersion: latest
+appVersion: 1.2.2
 dependencies:
   - name: common
     version: 24.0.0
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
-    tags: []
-    import-values: []
-  - name: kubelet-csr-approver
-    version: 1.2.2
-    repository: https://postfinance.github.io/kubelet-csr-approver
-    condition: ""
-    alias: kubelet-csr-approver
     tags: []
     import-values: []
 deprecated: false
@@ -36,9 +29,8 @@ maintainers:
     url: https://truecharts.org
 name: kubelet-csr-approver
 sources:
+  - https://ghcr.io/postfinance/kubelet-csr-approver
   - https://github.com/kubelet-csr-approver/kubelet-csr-approver
   - https://github.com/truecharts/charts/tree/master/charts/system/kubelet-csr-approver
-  - https://github.com/truecharts/containers/tree/master/apps/alpine
-  - https://kubelet-csr-approver.universe.tf
 type: application
-version: 0.0.1
+version: 1.0.0
