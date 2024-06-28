@@ -1,5 +1,7 @@
 #!/bin/bash -x
 
+helm repo add cloudnative-pg https://cloudnative-pg.github.io/charts
+
 main_dir=$(pwd)
 
 for dir in \
