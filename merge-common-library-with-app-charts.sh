@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 helm repo add cloudnative-pg https://cloudnative-pg.github.io/charts
 
@@ -32,6 +32,7 @@ for dir in \
         charts/stable/youtubedl-material \
         charts/system/cloudnative-pg \
         charts/system/prometheus-operator; do
+    echo $dir
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
     mkdir -p $app_common_dir
@@ -39,6 +40,7 @@ for dir in \
     helm dependency build
     cd $main_dir
     git add $app_common_dir
+    echo
 done
 
 
