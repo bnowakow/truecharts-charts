@@ -31,7 +31,9 @@ for dir in \
         charts/stable/tautulli \
         charts/stable/youtubedl-material \
         charts/system/cloudnative-pg \
-        charts/system/prometheus-operator; do
+        charts/system/prometheus-operator \
+        charts/stable/nginx-proxy-manager \
+    ; do
     echo $dir
     app_common_dir=$dir/charts
     rm -rf $app_common_dir
