@@ -39,6 +39,7 @@ for dir in \
     rm -rf $app_common_dir
     mkdir -p $app_common_dir
     cd $dir
+    rm Chart.lock
     helm dependency build
     cd $main_dir
     git add $app_common_dir
