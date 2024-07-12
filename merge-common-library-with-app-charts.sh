@@ -36,6 +36,7 @@ for dir in \
         charts/system/cloudnative-pg \
         charts/system/prometheus-operator \
         charts/stable/nginx-proxy-manager \
+        charts/premium/authelia \
     ; do
     echo $dir
     app_common_dir=$dir/charts
