@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# there's a same named chart in rancher repo with different versioning
+rm -rf ./charts/system/cert-manager
+
 helm repo add cloudnative-pg https://cloudnative-pg.github.io/charts
 
 main_dir=$(pwd)
