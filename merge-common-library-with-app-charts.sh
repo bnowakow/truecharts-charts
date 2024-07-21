@@ -38,6 +38,7 @@ for dir in \
         charts/stable/nginx-proxy-manager \
         charts/premium/authelia \
         charts/stable/pgadmin \
+        charts/stable/scrypted \
     ; do
     echo $dir
     app_common_dir=$dir/charts
