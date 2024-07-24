@@ -1,7 +1,7 @@
 image:
   repository: tccr.io/tccr/lvm-disk-watcher
   pullPolicy: IfNotPresent
-  tag: v3.18.4
+  tag: v3.20.2
 
 service:
   main:
@@ -42,6 +42,21 @@ persistence:
     objectName: disk-config
     defaultMode: "0777"
     mountPath: /config/disk-config
+
+  disk-config:
+    enabled: true
+    type: configmap
+    objectName: disk-config
+    defaultMode: "0777"
+    items:
+      - key: disk-config
+        path: disk-config
+    targetSelector:
+      main:
+        main:
+          subPath: disk-config
+          mountPath: /config/disk-config
+          readOnly: true
 
   dev:
     enabled: true
