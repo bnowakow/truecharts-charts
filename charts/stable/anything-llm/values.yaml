@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/mintplex-labs/anything-llm
   pullPolicy: IfNotPresent
-  tag: latest@sha256:0098edd407b003d2004e1065559258854361b605c8b189eaa3f46f330e374a3b
+  tag: latest@sha256:9de4e8048ed562489c9c7c9546e43f56610fca6c20a080276ca947ac5ebc64ee
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -28,7 +28,8 @@ workload:
             STORAGE_DIR: "{{.Values.persistence.storage.mountPath }}"
             # forces users to use ingress if https is needed.
             # keep false.
-            ENABLE_HTTPS: false
+            # remove it as they only check for existence not value
+            # ENABLE_HTTPS: true
             JWT_SECRET:
               secretKeyRef:
                 name: anythinglmm-secrets
