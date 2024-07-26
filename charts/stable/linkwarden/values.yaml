@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linkwarden/linkwarden
   pullPolicy: IfNotPresent
-  tag: v2.6.0@sha256:d5bc76e817ba84f8b47d84a49125d8efafcf7115907c11e0fbfa8ae6ce4f90a6
+  tag: v2.6.2@sha256:19689090e8f025c210cbe764f1a4856d093374c73b636fd6567ff53b3dcab8ec
 
 config:
   nextauth_url: "http://example.com"
