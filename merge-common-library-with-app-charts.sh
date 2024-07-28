@@ -39,6 +39,7 @@ for dir in \
         charts/premium/authelia \
         charts/stable/pgadmin \
         charts/stable/scrypted \
+        charts/stable/recyclarr \
     ; do
     echo $dir
     app_common_dir=$dir/charts
