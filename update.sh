@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /mnt/MargokPool/home/sup/code/bash_configs/repos/truecharts
+
 git checkout master \
     && git pull \
     && git checkout bnowakow \
