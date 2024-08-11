@@ -43,7 +43,7 @@ for dir in \
     ; do
     echo $dir
     app_common_dir=$dir/charts
-    rm -rf $app_common_dir
+    #rm -rf $app_common_dir
     mkdir -p $app_common_dir
     cd $dir
     rm Chart.lock
