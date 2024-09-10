@@ -40,6 +40,7 @@ for dir in \
         charts/stable/pgadmin \
         charts/stable/scrypted \
         charts/stable/recyclarr \
+        charts/system/kubeapps \
     ; do
     echo $dir
     app_common_dir=$dir/charts
