@@ -1,6 +1,6 @@
 image:
   repository: mbentley/omada-controller
-  tag: 5.14@sha256:f9c7343df82d07e61f30a26afe092d722c4fad4f742ba95704dacb40f62f7880
+  tag: 5.14@sha256:0aca02cabd70081bef9618bc914b8ab5d8a80adfc052d0b749f5ffc687336e8b
   pullPolicy: IfNotPresent
 service:
   main:
