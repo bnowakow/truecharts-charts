@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 cd /mnt/MargokPool/home/sup/code/bash_configs/repos/truecharts
 
