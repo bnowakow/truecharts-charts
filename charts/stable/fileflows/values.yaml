@@ -1,6 +1,6 @@
 image:
   repository: revenz/fileflows
-  tag: 24.09@sha256:dc27d019f55823ad2d72729246ff28a06304a0ebd1a9be999efb3e5d75297548
+  tag: 24.10@sha256:2c0cd09a76382700a6b6b7b3de6d9d014c32838d06db15076c9efb8a7b64b16e
   pullPolicy: IfNotPresent
 securityContext:
   container:
