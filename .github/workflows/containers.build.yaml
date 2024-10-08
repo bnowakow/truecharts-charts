@@ -43,7 +43,7 @@ jobs:
       - run: echo '${{ toJson(steps.filter.outputs) }}' > changes.json
       - id: reduce
         run: |
-          CONTAINERS=$(jq --raw-output '.changed_files | fromjson | .[] |= sub("(?<filepath>/containers/(?<first_directory>[^/]+/)(?<second_directory>[^/]+)(?<extra_paths>.*))"; "\(.second_directory)") | unique' changes.json)
+          CONTAINERS=$(jq --raw-output '.changed_files | fromjson | .[] |= sub("(?<filepath>/?containers/(?<first_directory>(?<root1>[/]?)[^/]+/)(?<second_directory>(?<root2>[/]?)[^/]+)(?<extra_paths>/[^/]+)*)"; "\(.second_directory)") | unique' changes.json)
           echo ::set-output name=containers::${CONTAINERS}
 
   hadolint:
@@ -85,7 +85,7 @@ jobs:
         run: |
           # Make sure we have the latest version in the version file
           # To avoid publishing a new container version with an old tag
-          bash ./.github/update-version-file.sh "${{ matrix.container }}"
+          bash ./.github/scripts/update-version-file.sh "${{ matrix.container }}"
           if test -f "./apps/${{ matrix.container }}/VERSION"; then
             CATEGORY="apps"
             VERSION=$(cat ./containers/${CATEGORY}/${{ matrix.container }}/VERSION)
@@ -228,7 +228,7 @@ jobs:
             CONTAINER_NAME=${{ matrix.container }}
             CONTAINER_VER=${{ steps.prep.outputs.version }}
           context: .
-          file: ./${{ steps.prep.outputs.category }}/${{ matrix.container }}/Dockerfile
+          file: ./containers/${{ steps.prep.outputs.category }}/${{ matrix.container }}/Dockerfile
           load: true
           tags: |
             tccr.io/tccr/${{ matrix.container }}:test
@@ -239,7 +239,7 @@ jobs:
       - name: Run GOSS tests
         if: ${{ steps.prep.outputs.goss == 'true' }}
         env:
-          GOSS_FILE: ./${{ steps.prep.outputs.category }}/${{ matrix.container }}/goss.yaml
+          GOSS_FILE: ./containers/${{ steps.prep.outputs.category }}/${{ matrix.container }}/goss.yaml
         run: |
           for i in $(seq 1 ${{ env.GOSS_ITERATIONS }}); do
             echo "Running GOSS test iteration $i of ${{ env.GOSS_ITERATIONS }}..."
@@ -257,7 +257,7 @@ jobs:
             CONTAINER_VER=${{ steps.prep.outputs.version }}
           context: .
           platforms: ${{ steps.prep.outputs.platform }}
-          file: ./${{ steps.prep.outputs.category }}/${{ matrix.container }}/Dockerfile
+          file: ./containers/${{ steps.prep.outputs.category }}/${{ matrix.container }}/Dockerfile
           push: ${{ steps.prep.outputs.push }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: ${{ steps.prep.outputs.cache_from }}
@@ -280,7 +280,7 @@ jobs:
       - name: Verify the pushed tags
         if: github.event_name != 'pull_request'
         run: |
-          cosign verify quay.io/tccr/${{ matrix.container }}@${{ steps.push.outputs.digest }} --certificate-oidc-issuer=https://token.actions.githubusercontent.com --certificate-identity=https://github.com/truecharts/containers/.github/workflows/containers.build.yaml@refs/heads/master
+          cosign verify quay.io/tccr/${{ matrix.container }}@${{ steps.push.outputs.digest }} --certificate-oidc-issuer=https://token.actions.githubusercontent.com --certificate-identity=https://github.com/truecharts/public/.github/workflows/containers.build.yaml@refs/heads/master
 
       - name: Generate SBOM
         if: github.event_name != 'pull_request'
