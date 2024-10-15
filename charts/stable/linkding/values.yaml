@@ -1,6 +1,6 @@
 image:
   repository: sissbruecker/linkding
-  tag: 1.32.0@sha256:65b21d9dfe5289ea415b85a9bd9a983a6ea0a8fd50cf6857cad6c997783e3ed7
+  tag: 1.36.0@sha256:6e2cfd1c32dae78ff6d0fd3000562556f123502d4b79f4e3e53b4b0592022edd
   pullPolicy: IfNotPresent
 service:
   main:

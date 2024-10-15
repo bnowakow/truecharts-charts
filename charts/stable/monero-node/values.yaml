@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/sethforprivacy/simple-monerod
-  tag: v0.18.3.4@sha256:795e5431f2625630a8a66ea1d2cf7fe36e3a897f595f81e93f03358f84be258f
+  tag: v0.18.3.4@sha256:00699eba9e1ee8647de23957fc74bb29807dd8e872e5910dcccba750160cae4a
 
 monero:
   rpcbindip: "0.0.0.0"

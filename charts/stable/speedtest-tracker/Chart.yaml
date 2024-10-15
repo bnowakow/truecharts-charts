@@ -6,17 +6,17 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.21.2
+appVersion: 0.21.4
 dependencies:
   - name: common
-    version: 24.1.15
+    version: 25.0.0
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 15.2.5
+    version: 15.3.1
     repository: oci://tccr.io/truecharts
     condition: redis.enabled
     alias: ""
@@ -41,4 +41,4 @@ sources:
   - https://github.com/linuxserver/docker-speedtest-tracker
   - https://github.com/truecharts/charts/tree/master/charts/stable/speedtest-tracker
 type: application
-version: 5.4.4
+version: 5.6.3
