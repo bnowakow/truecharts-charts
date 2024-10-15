@@ -86,7 +86,7 @@ jobs:
           # Make sure we have the latest version in the version file
           # To avoid publishing a new container version with an old tag
           bash ./.github/scripts/update-version-file.sh "${{ matrix.container }}"
-          if test -f "./apps/${{ matrix.container }}/VERSION"; then
+          if test -f "./containers/apps/${{ matrix.container }}/VERSION"; then
             CATEGORY="apps"
             VERSION=$(cat ./containers/${CATEGORY}/${{ matrix.container }}/VERSION)
           elif test -f "./containers/apps/${{ matrix.container }}/Dockerfile"; then
@@ -176,7 +176,7 @@ jobs:
       - uses: sigstore/cosign-installer@main
 
       - name: Install Syft
-        uses: anchore/sbom-action/download-syft@61119d458adab75f756bc0b9e4bde25725f86a7a # v0.17.2
+        uses: anchore/sbom-action/download-syft@f5e124a5e5e1d497a692818ae907d3c45829d033 # v0.17.3
 
       - name: Login to Quay
         uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3
