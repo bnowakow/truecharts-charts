@@ -50,7 +50,8 @@ for dir in \
     cd $dir
     rm Chart.lock
     helm dependency build
-    helm package .
+    cd charts
+    helm package ../
     cd $main_dir
     git add $app_common_dir
     echo
