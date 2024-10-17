@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-cd /mnt/MargokPool/home/sup/code/bash_configs/repos/truecharts
+#cd /mnt/MargokPool/home/sup/code/bash_configs/repos/truecharts
 
 git checkout master \
     && git pull \
