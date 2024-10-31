@@ -56,6 +56,7 @@ jobs:
           ref: ${{ inputs.checkoutCommit }}
 
       - name: Install go-yq
+        if: inputs.chartChangesDetected == 'true'
         run: |
           mkdir -p $HOME/.local/bin
           wget https://github.com/mikefarah/yq/releases/download/v4.26.1/yq_linux_amd64 -O $HOME/.local/bin/go-yq && \
@@ -67,6 +68,24 @@ jobs:
         if: inputs.chartChangesDetected == 'true'
         shell: bash
         run: |
+          # Get the PR title
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          # Check if the PR title contains "chart common"
+          if [[ "$PR_TITLE" == *"chart common"* ]]; then
+                echo "charts1=[]" >> $GITHUB_OUTPUT
+                echo "charts2=[]" >> $GITHUB_OUTPUT
+                echo "charts3=[]" >> $GITHUB_OUTPUT
+                echo "charts4=[]" >> $GITHUB_OUTPUT
+                echo "charts5=[]" >> $GITHUB_OUTPUT
+                echo "charts6=[]" >> $GITHUB_OUTPUT
+                echo "detected1=false" >> $GITHUB_OUTPUT
+                echo "detected2=false" >> $GITHUB_OUTPUT
+                echo "detected3=false" >> $GITHUB_OUTPUT
+                echo "detected4=false" >> $GITHUB_OUTPUT
+                echo "detected5=false" >> $GITHUB_OUTPUT
+                echo "detected6=false" >> $GITHUB_OUTPUT
+                exit 0  # Exit the script
+          fi
           CHARTS="${{ inputs.modifiedCharts }}"
           echo "Modified Charts: ${CHARTS}"
           EXCLUDED_JSON=$(go-yq eval -o=json '.excluded-charts // []' .github/ct-install.yaml)
@@ -125,12 +144,25 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
@@ -184,12 +216,25 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
@@ -243,12 +288,25 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
@@ -302,12 +360,25 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
@@ -361,12 +432,26 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/certs.d/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1
@@ -420,12 +505,25 @@ jobs:
         with:
           version: v3.14.0
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.11"
 
       - name: Set up chart-testing
         uses: helm/chart-testing-action@e6669bcd63d7cb57cb4380c33043eebe5d111992 # v2.6.1
+
+      - name: Update containerd config
+        if: contains(matrix.chart, 'Spegel')
+        run: |
+          sudo mkdir -p /var/lib/rancher/k3s/agent/etc/containerd/
+          sudo tee /var/lib/rancher/k3s/agent/etc/containerd/config.toml.tmpl > /dev/null <<EOL
+          [plugins."io.containerd.grpc.v1.cri".registry]
+             config_path = "/var/lib/rancher/k3s/agent/etc/containerd/certs.d"
+          [plugins."io.containerd.grpc.v1.cri".containerd]
+            snapshotter = "overlayfs"
+            disable_snapshot_annotations = true
+            discard_unpacked_layers = false
+          EOL
 
       - name: Create k3d cluster
         uses: nolar/setup-k3d-k3s@v1

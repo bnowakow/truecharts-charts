@@ -1,42 +1,89 @@
-name: "Charts: Release"
+name: "Charts/Website: Build-and-Release"
 
-concurrency: helm-release
+concurrency:
+  group: ${{ github.head_ref }}-charts-website-release
 
 on:
+  workflow_call:
   workflow_dispatch:
+  #pull_request:
+  #  paths:
+  #    - "charts/**"
+  #    - "website/**"
   push:
     branches:
       - master
     paths:
       - "charts/**"
+      - "website/**"
+      - ".github/workflows/charts-release.yaml"
+
+# Use `bash --noprofile --norc -exo pipefail` by default for all `run` steps in this workflow:
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#defaultsrun
+defaults:
+  run:
+    shell: bash
 
 jobs:
+  check_changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.filter.outputs.changed }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+
+      - name: Filter paths
+        id: filter
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3
+        with:
+          list-files: json
+          filters: |
+            changed:
+            - 'website/**'
+            - '**/docs/**'
+            - '**/Chart.yaml'
+
+
   release-helm:
-    runs-on: actions-runner-large
+    permissions:
+      pull-requests: write
+    name: "${{ github.ref == 'refs/heads/master' && '(Production)' || '(Preview)' }}"
+    runs-on: actions-runners
+    needs: check_changes
     steps:
       - name: Checkout
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
         with:
-          token: ${{ secrets.BOT_TOKEN }}
           fetch-depth: 0
 
       - name: Get Changelog Format Version
         shell: bash
+        if: github.event_name == 'push'
         run: |
           ver=$(./charttool genchangelog format-version)
-          key="changelog-json-format-$ver"
+          rev="1"
+          key="changelog-format-$ver-rev-$rev"
           echo "Cache Key is: $key"
           echo "CHANGELOG_CACHE_KEY=$key" >> $GITHUB_ENV
 
       - name: Cache Changelog
         id: cache-changelog
-        uses: actions/cache@3624ceb22c1c5a301c8db4169662070a689d9ea8 # v4
+        if: github.event_name == 'push'
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
         with:
+          key: ${{ env.CHANGELOG_CACHE_KEY }}-${{ hashFiles('**/Chart.yaml') }}
           path: changelog.json.gz
-          key: ${{ env.CHANGELOG_CACHE_KEY }}
+          restore-keys: |
+            ${{ env.CHANGELOG_CACHE_KEY }}-${{ hashFiles('**/Chart.yaml') }}
+            ${{ env.CHANGELOG_CACHE_KEY }}-
+
+
 
       - name: Generate Changelog
         shell: bash
+        if: github.event_name == 'push'
         run: |
           export REPO_PATH="./"
           export TEMPLATE_PATH="./templates/CHANGELOG.md.tmpl"
@@ -52,14 +99,6 @@ jobs:
           ./charttool genchangelog "$REPO_PATH" "$TEMPLATE_PATH" "$OUTPUT_DIR"
           gzip "$JSON_FILE" --best
 
-      - name: Checkout Helm-Staging
-        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
-        with:
-          fetch-depth: 1
-          repository: truecharts/helm-staging
-          token: ${{ secrets.BOT_TOKEN }}
-          path: helm
-
       - name: Fix Pre-Commit issues
         shell: bash
         run: |
@@ -68,33 +107,51 @@ jobs:
           # Fix sh files to always be executable
           find . -name '*.sh' | xargs chmod +x
 
-      - name: Commit Helm Changes
-        run: |
-          rm -rf helm/charts
-          mkdir helm/charts
-          cp -rf charts helm
-          echo "Copying changelogs to helm"
-          cp -r ./changelogs/** ./helm/charts/
-
-      - name: Commit Helm Changes
-        run: |
-          cd helm
-          git config user.name "TrueCharts-Bot"
-          git config user.email "bot@truecharts.org"
-          git add --all
-          git commit -sm "Commit released Helm Charts for TrueCharts" || exit 0
-          git push
-          cd -
-
-      - name: Checkout
-        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
+      - name: Install Helm
+        uses: azure/setup-helm@5119fcb9089d432beecbf79bb2c7915207344b78 # tag=v3
         with:
-          fetch-depth: 1
-          repository: truecharts/website
-          token: ${{ secrets.BOT_TOKEN }}
-          path: website
+          version: v3.14.0
+
+      # Optional step if GPG signing is used
+      - name: Prepare GPG key
+        if: github.event_name == 'push'
+        run: |
+          gpg_dir=.cr-gpg
+          mkdir "$gpg_dir"
+          keyring="$gpg_dir/secring.gpg"
+          base64 -d <<< "$GPG_KEYRING_BASE64" > "$keyring"
+          passphrase_file="$gpg_dir/passphrase"
+          echo "$GPG_PASSPHRASE" > "$passphrase_file"
+          echo "CR_PASSPHRASE_FILE=$passphrase_file" >> "$GITHUB_ENV"
+          echo "CR_KEYRING=$keyring" >> "$GITHUB_ENV"
+        env:
+          GPG_KEYRING_BASE64: "${{ secrets.GPG_KEYRING_BASE64 }}"
+          GPG_PASSPHRASE: "${{ secrets.GPG_PASSPHRASE }}"
+
+      - name: Helm | Login
+        if: github.event_name == 'push'
+        shell: bash
+        run: echo ${{ secrets.QUAY_SECRET }} | helm registry login -u ${{ secrets.QUAY_USER }} --password-stdin quay.io
+
+      - name: Release Charts
+        shell: bash
+        if: github.event_name == 'push'
+        env:
+          CR_SKIP_EXISTING: "true"
+        run: |
+          owner=$(cut -d '/' -f 1 <<< "$GITHUB_REPOSITORY")
+          repo=$(cut -d '/' -f 2 <<< "$GITHUB_REPOSITORY")
+          install="$RUNNER_TOOL_CACHE/cr/${{ inputs.version }}/$(uname -m)"
+          echo "$install" >> "$GITHUB_PATH"
+          ./.github/scripts/cr.sh  --quay-token "${{ secrets.QUAY_TOKEN }}" --instal-dir $install
+
+      - name: Helm | Logout
+        shell: bash
+        if: github.event_name == 'push'
+        run: helm registry logout quay.io
 
       - name: Copy docs to website
+        if: needs.check_changes.outputs.changes_detected == 'true'
         shell: bash
         run: |
           #!/bin/bash
@@ -107,7 +164,15 @@ jobs:
           mv charts.json website/src/assets/charts.json
 
           echo "Copying changelogs to docs"
-          cp -r ./changelogs/** ./website/src/content/docs/charts/
+          mkdir -p ./website/src/content/docs/charts/
+          mkdir -p ./changelogs
+
+          # Check if there are any directories in changelogs
+          if [ -n "$(find ./changelogs -mindepth 1 -type d)" ]; then
+              cp -r ./changelogs/** ./website/src/content/docs/charts/
+          else
+              echo "No directories in ./changelogs. Skipping copy."
+          fi
 
           export DEBUG=false
           export STRICT=true
@@ -119,11 +184,126 @@ jobs:
             ./.github/scripts/chart-docs.sh "${chart_parts[1]}/${chart_parts[2]}"
           done
 
-      - name: Commit Website Changes
+      - name: Comment deploy start
+        if: github.event_name != 'push' && needs.check_changes.outputs.changes_detected == 'true'
+        continue-on-error: true
+        uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2
+        with:
+          message-id: cloudflare-deploy
+          message: |
+            ### 🚧 Deploy Preview building...
+
+            |  Name               | Link                                                                          |
+            |---------------------|-------------------------------------------------------------------------------|
+            |🔨 Latest commit     | ${{ github.sha }}                                                             |
+            |🔍 Latest deploy log | https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} |
+            ---
+
+
+      - name: Prefetch contributor icons
+        shell: bash
+        if: needs.check_changes.outputs.changes_detected == 'true'
         run: |
-          cd website
-          git config user.name "TrueCharts-Bot"
-          git config user.email "bot@truecharts.org"
-          git add --all
-          git commit -sm "Commit released docs for TrueCharts" || exit 0
-          git push
+          #!/bin/bash
+
+          ## Loop through each contributor
+          ## TODO: reenable later
+          #while read -r contributor; do
+          #    avatar_url=$(echo "$contributor" | grep -oP '"avatar_url": "\K[^"]+')
+          #
+          #    # Download the image
+          #    wget -q "$avatar_url" -O temp_avatar
+          #
+          #    # Generate new filename with original extension
+          #    new_filename="public/assets/contributors/$(basename "$avatar_url" | cut -d '?' -f 1)"
+          #
+          #    echo "converting file: $avatar_url"
+          #    EXT=${FILE##*.} # file extension
+          #    QUALITY=75 # quality for the image
+          #    # convert the image using cwebp and output a file with the extension replaced as .webp
+          #    cwebp -mt -m 6 -q $QUALITY -resize 32 32 "temp_avatar" -o "${new_filename}.webp" &>/dev/null
+          #    rm temp_avatar
+          #
+          #done < src/assets/contributors.json
+
+      - name: Setup astro Cache
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+        with:
+          # Cache for build and optimized images.
+          key: astro-${{ hashFiles('website/package-lock.json') }}
+          path: ./website/.astro
+          restore-keys: astro-
+
+      - name: Setup npm Cache
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+        with:
+          # Cache for npm
+          path: ~/website/.npm
+          key: npm-${{ hashFiles('website/package-lock.json') }}
+          restore-keys: npm-
+
+      - name: Setup node_modules Cache
+        id: modulescache
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
+        with:
+          # Cache for npm and optimized images.
+          path: ./website/node_modules
+          key: modules-${{ hashFiles('website/package-lock.json') }}
+
+      - name: Setup Node
+        if: needs.check_changes.outputs.changes_detected == 'true' && needs.check_changes.outputs.changes_detected == 'true'
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
+        with:
+          node-version-file: ./website/.nvmrc
+
+      - name: Install Packages
+        if: steps.modulescache.outputs.cache-hit != 'true' && needs.check_changes.outputs.changes_detected == 'true'
+        run: cd website && npm ci
+
+      - name: Check
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        run: cd website && npm run check
+
+      - name: Build
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        run: cd website && npm run build
+
+      - name: Publish to Cloudflare Pages
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        id: cloudflare
+        continue-on-error: true
+        uses: cloudflare/pages-action@f0a1cd58cd66095dee69bfa18fa5efd1dde93bca # v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # By default Cloudflare marks `main` as the "production" branch.
+          # So when this workflow is pushed to refs/heads/main, we set the branch to `main`/"production".
+          branch: ${{ github.ref == 'refs/heads/master' && 'main' || github.head_ref }}
+          # The project name in Cloudflare
+          projectName: website
+          directory: ./website/build
+          wranglerVersion: "3"
+
+      - name: Comment deploy url
+        if: github.event_name != 'push' && needs.check_changes.outputs.changes_detected == 'true'
+        continue-on-error: true
+        uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2
+        with:
+          message-id: cloudflare-deploy
+          message: |
+            ### ✅ Deploy Preview ready!
+
+            |  Name                | Link                                                                          |
+            |----------------------|-------------------------------------------------------------------------------|
+            |🔨 Latest commit      | ${{ github.sha }}                                                             |
+            |🔍 Latest deploy log  | https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} |
+            |😎 Deploy Preview Url | [${{ steps.cloudflare.outputs.url }}](${{ steps.cloudflare.outputs.url }})    |
+            |🌳 Environment        | ${{ steps.cloudflare.outputs.environment }}                                   |
+            ---
+
+      - name: Release-and-Website Completed
+        if: needs.check_changes.outputs.changes_detected == 'true'
+        run: echo "DONE"

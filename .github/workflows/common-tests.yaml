@@ -3,24 +3,47 @@ name: Common Library Tests
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 on:
+  workflow_call:
   push:
     branches:
-      - main
+      - master
     paths:
-      - "charts/charts/library/common/**"
+      - "charts/library/common/**"
+      - "charts/library/common-test/**"
       - ".github/workflows/common-tests.yaml"
-  pull_request:
-    branches:
-      - main
-    paths:
-      - "charts/charts/library/common/**"
-      - ".github/workflows/common-tests.yaml"
+  #pull_request:
+  #  branches:
+  #    - main
+  #  paths:
+  #    - "charts/charts/library/common/**"
+  #    - ".github/workflows/common-tests.yaml"
   workflow_dispatch:
 
 jobs:
+
+  check_changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.filter.outputs.changed }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+
+      - name: Filter paths
+        id: filter
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3
+        with:
+          list-files: json
+          filters: |
+            changed:
+            - 'charts/library/common/**'
+
   lint:
     name: Lint Common
     runs-on: ubuntu-24.04
+    needs: check_changes
+    if: needs.check_changes.outputs.changes_detected == 'true'
     strategy:
       fail-fast: false
       matrix:
@@ -37,7 +60,7 @@ jobs:
         with:
           version: ${{ matrix.helm-version }}
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.10"
 
@@ -76,7 +99,7 @@ jobs:
           version: ${{ matrix.helm-version }}
 
       - name: Cache helm plugins
-        uses: actions/cache@3624ceb22c1c5a301c8db4169662070a689d9ea8 # v4
+        uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
         with:
           path: |
             /home/runner/.local/share/helm/plugins/helm-unittest
@@ -149,7 +172,7 @@ jobs:
         with:
           version: ${{ matrix.helm-version }}
 
-      - uses: actions/setup-python@f677139bbe7f9c59b41e40162b753c062f5d49a3 # v5
+      - uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5
         with:
           python-version: "3.10"
 
@@ -243,3 +266,21 @@ jobs:
           echo -e "\n\n--===PODLOGS===--\n\n"
           cat  /tmp/output.log
           rm -f /tmp/output.log
+
+  # Summarize matrix https://github.community/t/status-check-for-a-matrix-jobs/127354/7
+  common-tests-complete:
+    needs: [lint, unittest, install]
+    if: ${{ always() }}
+    name: Common Tets Completed
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Results
+        run: |
+          if [[ "${{ needs.check_changes.outputs.changes_detected }}" == 'true' && ( "${{ needs.lint.result }}" != "success" || \
+                "${{ needs.unittest.result }}" != "success" || \
+                "${{ needs.install.result }}" != "success") ]]; then
+            echo "One or more jobs failed!"
+            exit 1
+          else
+            echo "Common Lint, Tests and unittests Completed Successfully"
+          fi

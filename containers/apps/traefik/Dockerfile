@@ -1,4 +1,4 @@
-FROM traefik:v3.1.5@sha256:7b927f0ab22c85a636cde667aa6a3c90f1967bb5079899ce960ec51454fc96e9
+FROM traefik:v3.2.0@sha256:66e37237b371f2b25ce5f247cc371976929dcb18c041e05685f1de1df6422b72
 # Above line used by CI to find tags etc
 
 FROM alpine:3.20.3@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d as plugins
@@ -32,10 +32,10 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 # hadolint ignore=DL3018
 RUN apk add --no-cache --update git
 
-COPY --chmod=777 ./apps/traefik/clone-plugins.sh /clone-plugins.sh
+COPY --chmod=777 ./containers/apps/traefik/clone-plugins.sh /clone-plugins.sh
 RUN /clone-plugins.sh
 
-FROM traefik:v3.1.5@sha256:7b927f0ab22c85a636cde667aa6a3c90f1967bb5079899ce960ec51454fc96e9
+FROM traefik:v3.2.0@sha256:66e37237b371f2b25ce5f247cc371976929dcb18c041e05685f1de1df6422b72
 # Copy the plugins from the previous stage
 COPY --from=plugins /plugins-local /plugins-local
 

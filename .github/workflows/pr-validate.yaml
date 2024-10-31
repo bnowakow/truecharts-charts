@@ -23,6 +23,15 @@ jobs:
         id: collect-changes
         uses: ./.github/actions/collect-changes
 
+  containers-build:
+    uses: ./.github/workflows/containers.build.yaml
+
+  common-tests:
+    uses: ./.github/workflows/common-tests.yaml
+
+  clustertool-tests:
+    uses: ./.github/workflows/clustertool.tests.yaml
+
   charts-lint:
     uses: ./.github/workflows/charts-lint.yaml
     needs:
@@ -32,6 +41,7 @@ jobs:
       chartChangesDetected: ${{ needs.pr-changes.outputs.addedOrModified }}
       modifiedFiles: ${{ needs.pr-changes.outputs.addedOrModifiedFiles }}
       modifiedCharts: ${{ needs.pr-changes.outputs.addedOrModifiedCharts }}
+
   charts-test:
     uses: ./.github/workflows/charts-test.yaml
     needs:
@@ -42,11 +52,15 @@ jobs:
       chartChangesDetected: ${{ needs.pr-changes.outputs.addedOrModified }}
       modifiedCharts: ${{ needs.pr-changes.outputs.addedOrModifiedCharts }}
 
+  website-and-docs:
+    uses: ./.github/workflows/charts-release.yaml
+
   print_head_msg:
-    name: print commit message
+    name: Print commit message
     runs-on: ubuntu-latest
     outputs:
       head-commit-message: ${{ steps.get_head_commit_message.outputs.headCommitMsg }}
+      pr-title: ${{ github.event.pull_request.title }}
     steps:
       - name: Get repo
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
@@ -57,25 +71,36 @@ jobs:
       - name: Print head git commit message
         id: get_head_commit_message
         run: echo "::set-output name=headCommitMsg::$(git show -s --format=%s)"
+      - name: Print PR title
+        run: |
+          echo "PR title: ${{ github.event.pull_request.title }}"
 
-  automerge-and-approve:
+  finished:
+    name: Finished PR Tests
+    runs-on: ubuntu-latest
+    if: always()
     needs:
       - pr-changes
-      - charts-test
+      - containers-build
       - charts-lint
+      - charts-test
+      - clustertool-tests
+      - website-and-docs
       - print_head_msg
-    if: ${{ contains( needs.print_head_msg.outputs.head-commit-message, 'By Renovate' ) || contains( needs.print_head_msg.outputs.head-commit-message, '.all-contributorsrc' ) }}
-    name: Automerge and Approve build
-    runs-on: ubuntu-latest
-    continue-on-error: true
+      - common-tests
     steps:
-      - uses: hmarr/auto-approve-action@v3
-        with:
-          github-token: "${{ secrets.OR_PAT }}"
-      - name: automerge
-        uses: pascalgn/automerge-action@7961b8b5eec56cc088c140b56d864285eabd3f67 # v0.16.4
-        env:
-          GITHUB_TOKEN: "${{ secrets.BOT_TOKEN }}"
-          UPDATE_RETRIES: 12
-          UPDATE_RETRY_SLEEP: 60000
-          MERGE_METHOD: squash
+      - name: Check Results
+        run: |
+          if [[ "${{ needs.pr-changes.result }}" != "success" || \
+                "${{ needs.containers-build.result }}" != "success" || \
+                "${{ needs.charts-lint.result }}" != "success" || \
+                "${{ needs.clustertool-tests.result }}" != "success" || \
+                "${{ needs.charts-test.result }}" != "success" || \
+                "${{ needs.website-and-docs.result }}" != "success" || \
+                "${{ needs.common-tests.result }}" != "success" || \
+                "${{ needs.print_head_msg.result }}" != "success" ]]; then
+            echo "One or more jobs failed!"
+            exit 1
+          else
+            echo "All jobs succeeded!"
+          fi

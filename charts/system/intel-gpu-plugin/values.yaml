@@ -1,7 +1,7 @@
 image:
-  repository: intel/intel-gpu-plugin
+  repository: docker.io/intel/intel-gpu-plugin
   pullPolicy: IfNotPresent
-  tag: 0.30.0@sha256:e96c9955e5aced52f215f7eff77f679c4c400a16a42b1f2c0e8ed9ba76cae3c4
+  tag: 0.31.1@sha256:31f4543e44fca9c6b3fb116293318bdd50158d1bbc00ffb8c9c24b40a6893c35
 
 service:
   main:
