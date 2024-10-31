@@ -53,7 +53,7 @@ if [[ "$curr_chart" == "charts/premium/clusterissuer" ]]; then
 fi
 
 
-if [[ "$curr_chart" != "charts/system/cloudnative-pg" ]]; then
+if grep -q "cnpg:" "$curr_chart/values.yaml"; then
     echo "Installing cloudnative-pg chart"
     helm install cloudnative-pg oci://tccr.io/truecharts/cloudnative-pg --namespace cloudnative-pg --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -61,22 +61,22 @@ if [[ "$curr_chart" != "charts/system/cloudnative-pg" ]]; then
         exit 1
     fi
     echo "Done installing cloudnative-pg chart"
+else
+    echo "cnpg: not found in $curr_chart/values.yaml, skipping installation."
 fi
 
-if [[ "$curr_chart" != "charts/premium/traefik" ]]; then
-   echo "Installing traefik chart"
-   helm install traefik oci://tccr.io/truecharts/traefik --namespace traefik --create-namespace --wait \
-     --set "service.main.type=ClusterIP" --set "service.tcp.type=ClusterIP"
+if [[ "$curr_chart" == "charts/premium/traefik" ]]; then
+   echo "Installing traefik-crds chart"
+   helm install traefik oci://tccr.io/truecharts/traefik-crds --wait
    if [[ "$?" != "0" ]]; then
-       echo "Failed to install traefik chart"
-       exit 1
+       echo "Failed to install traefik-crds chart"
    fi
-   echo "Done installing traefik chart"
+   echo "Done installing traefik-crds chart"
 fi
 
 if [[ "$curr_chart" == "charts/system/intel-device-plugins-operator" ]]; then
    echo "Installing cert-manager chart"
-   helm install traefik oci://tccr.io/truecharts/cert-manager --namespace cert-manager --create-namespace --wait
+   helm install cert-manager oci://tccr.io/truecharts/cert-manager --namespace cert-manager --create-namespace --wait
    if [[ "$?" != "0" ]]; then
        echo "Failed to install cert-manager chart"
        exit 1
@@ -86,7 +86,7 @@ fi
 
 if [[ "$curr_chart" == "charts/premium/kubernetes-dashboard" ]]; then
    echo "Installing metrics-server chart"
-   helm install traefik oci://tccr.io/truecharts/metrics-server --namespace cert-manager --create-namespace --wait
+   helm install metrics-server oci://tccr.io/truecharts/metrics-server --namespace metrics-server --create-namespace --wait
    if [[ "$?" != "0" ]]; then
        echo "Failed to install metrics-server chart"
        exit 1

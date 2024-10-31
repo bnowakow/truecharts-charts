@@ -7,6 +7,7 @@ __pycache__
 *.xml
 *.pyc
 .cache
+dist
 .pytest_cache
 config.py
 auto_config.py
@@ -50,7 +51,6 @@ catalog/
 dh_catalog/
 chartsrepo/
 .cr-index/
-website/
 pub/
 tgz_cache/
 index_cache/

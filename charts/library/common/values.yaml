@@ -93,7 +93,7 @@ includeCommon: true
 namespace: ""
 
 image:
-  repository: traefik/whoami
+  repository: docker.io/traefik/whoami
   pullPolicy: IfNotPresent
   tag: v1.10.3@sha256:43a68d10b9dfcfc3ffbfe4dd42100dc9aeaf29b3a5636c856337a5940f1b4f1c
 
@@ -160,7 +160,6 @@ podOptions:
   # If this key exists, takes precedence over the automated calculation
   # hostUsers: false
   shareProcessNamespace: false
-  restartPolicy: Always
   dnsPolicy: ClusterFirst
   dnsConfig:
     options:
@@ -471,7 +470,7 @@ netshootImage:
 
 tailscaleImage:
   repository: tccr.io/tccr/tailscale
-  tag: v1.74.1@sha256:86c61b69ad79d717bf6d8b9f381b36742110bfa7d3e927ad3bfc29ac230e7536
+  tag: v1.76.1@sha256:a722931132a225244fe0387f3f4bec535b2d98b3af4f628f1dc4529b0136fca7
   pullPolicy: IfNotPresent
 
 codeserverImage:
@@ -481,7 +480,7 @@ codeserverImage:
 
 alpineImage:
   repository: tccr.io/tccr/alpine
-  tag: v3.20.3@sha256:b2b2350a8a843b7f8a0afef968e525900b5c2ae410a8ef0c6461005a06b64ffe
+  tag: v3.20.3@sha256:0f0162635afb50d4794d7fd92b74c635ae3422cc426284da88e5e8754d1cfdcd
   pullPolicy: IfNotPresent
 
 scratchImage:
@@ -501,27 +500,27 @@ wgetImage:
 
 yqImage:
   pullPolicy: IfNotPresent
-  repository: mikefarah/yq
+  repository: docker.io/mikefarah/yq
   tag: 4.44.3@sha256:5b3d851bf28b04ef902fee86305f4dd7e063919c1cafedab2042adb16221c025
 
 postgresClientImage:
   repository: tccr.io/tccr/db-wait-postgres
-  tag: v1.1.0@sha256:4e4e5b9f37a5d0c8d90d744de23d1857079095fbb55d2944ec91d83241f60376
+  tag: v1.1.0@sha256:eb330c9d63de46eac5c0acf58fd1fd79190d92505f8957b66ba150b24244774e
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: tccr.io/tccr/db-wait-mariadb
-  tag: v1.1.0@sha256:62858b8191b662716d84840f8d9b3c86654f175686159c5267a1c860d75f398d
+  tag: v1.1.0@sha256:e5022ada570152f7d4a051fe61745cf39f68cc4faf195d9d3654aeccbd60ce41
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: tccr.io/tccr/db-wait-redis
-  tag: v1.1.0@sha256:e9412891c9b6c96f11143cd88f5d19df352bf7b5570f1825f67b5e1a2ddec176
+  tag: v1.1.0@sha256:8fe7439963ea5fece9bac13c18eb196ca70434a1d87630f5e04360ffa21e2851
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: tccr.io/tccr/db-wait-mongodb
-  tag: v1.1.0@sha256:9268e23927c4abd9bd031ef62a8a36c58e15361cf3f617906029fa4b6f25c71c
+  tag: v1.1.0@sha256:ee44fbd32673ba711aa72c95e604d51f845038366916559cec52ecfb8148073c
   pullPolicy: IfNotPresent
 
 postgres15Image:
@@ -695,22 +694,16 @@ route:
     labels: {}
     # -- Configure the resource the route attaches to.
     parentRefs:
-      - # Group of the referent resource.
-        group: gateway.networking.k8s.io
-        # Kind of the referent resource.
+      - group: gateway.networking.k8s.io
         kind: Gateway
-        # Name of the referent resource
         name:
-        # Namespace of the referent resource
         namespace:
-        # Name of the section within the target resource.
         sectionName:
     # -- Host addresses
     hostnames: []
     # -- Configure rules for routing. Defaults to the primary service.
     rules:
-      - # -- Configure backends where matching requests should be sent.
-        backendRefs:
+      - backendRefs:
           - group: ""
             kind: Service
             name:
@@ -790,7 +783,7 @@ metrics:
       #     additionalrules: []
       # List to support adding groups using the SCALE GUI
       additionalgroups:
-        #-  name: "somegroup"
+        # - name: "somegroup"
         #   # list of rules
         #   rules: []
         #   # list to support adding rules via the SCALE GUI without overwrithing the rules
@@ -1075,7 +1068,8 @@ cnpg:
 
       ## Point in time recovery target. Specify one of the following:
       pitrTarget:
-        time: "" # Time in RFC3339 format
+        # Time in RFC3339 format
+        time: ""
 
       # Name of the backup to recover from. Required if method is `backup`.
       backupName: ""
@@ -1091,7 +1085,8 @@ cnpg:
 
     # Database cluster backup configuration
     backups:
-      enabled: false # You need to configure backups manually, so backups are disabled by default.
+      # You need to configure backups manually, so backups are disabled by default.
+      enabled: false
 
       encryption:
         enabled: false
@@ -1114,8 +1109,8 @@ cnpg:
       credentials: ""
 
       scheduledBackups:
-        - name: daily-backup # Daily at midnight
-          schedule: "0 0 0 * * *" # Daily at midnight
+        - name: daily-backup
+          schedule: "0 0 0 * * *"
           backupOwnerReference: self
           immediate: true
           suspend: false

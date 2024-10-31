@@ -1,7 +1,7 @@
 image:
-  repository: stonith404/pingvin-share
+  repository: docker.io/stonith404/pingvin-share
   pullPolicy: IfNotPresent
-  tag: v1.1.3@sha256:0be053abf13084fe3ed36307a3dbabd3cc1f546bb113abc3c3a9c8acab7df08d
+  tag: v1.2.4@sha256:57fee8944729f170b0a912943d3cd23ccb3ad731e9acecd44ab1ec5135896842
 
 securityContext:
   container:

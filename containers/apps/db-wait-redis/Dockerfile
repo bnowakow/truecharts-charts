@@ -1,40 +1,33 @@
 # hadolint ignore=DL3007
-FROM ghcr.io/truecharts/ubuntu:latest@sha256:cbe66cbca1ddd2a82093675067c363af8bbc6713b645bc77cb1706578a01facd
+FROM tccr.io/tccr/alpine:latest@sha256:0f0162635afb50d4794d7fd92b74c635ae3422cc426284da88e5e8754d1cfdcd
 
 ARG TARGETPLATFORM
 ARG VERSION
 
 USER root
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # hadolint ignore=DL3008,DL3015,SC2086,SC2155
 RUN \
-  apt-get -qq update \
-  && \
-  apt-get -qq install -y \
-    redis-server \
-  && \
+apk update && \
+  apk update && \
+  apk add --no-cache \
+    redis \
+    bash && \
   case "${TARGETPLATFORM}" in \
     'linux/amd64') export ARCH='linux-x64' ;; \
-  esac \
-  && apt-get remove -y \
-    jq \
-  && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
-  && apt-get autoremove -y \
-  && apt-get clean \
-  && \
-  rm -rf \
-    /tmp/* \
-    /var/lib/apt/lists/* \
-    /var/tmp/ \
-  && chmod -R u=rwX,go=rX /app \
-  && printf "umask %d" "${UMASK}" >> /etc/bash.bashrc \
-  && update-ca-certificates
+  esac && \
+  apk del \
+    jq && \
+  rm -rf /var/cache/apk/* && \
+  chmod -R u=rwX,go=rX /app && \
+  printf "umask %d" "${UMASK}" >> /etc/profile && \
+  update-ca-certificates
 
 USER apps
 
-COPY ./apps/db-wait-redis/entrypoint.sh /entrypoint.sh
+COPY ./containers/apps/db-wait-redis/entrypoint.sh /entrypoint.sh
 CMD ["/entrypoint.sh"]
 
 LABEL "maintainer"="TrueCharts <info@truecharts.org>"

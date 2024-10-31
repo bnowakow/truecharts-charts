@@ -7,23 +7,27 @@
     },
     {
       "matchUpdateTypes": ["minor"],
-      "labels": ["type/minor"]
+      "labels": ["type/minor", "automerge"]
     },
     {
       "matchUpdateTypes": ["patch"],
-      "labels": ["type/patch"]
+      "labels": ["type/patch", "automerge"]
     },
     {
-      "matchUpdateTypes": ["digest"],
-      "labels": ["type/digest"]
+      "matchUpdateTypes": ["digest", "pin"],
+      "labels": ["type/digest", "automerge"]
     },
     {
-      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["pin"],
+      "labels": ["type/pin", "automerge"]
+    },
+    {
+      "matchUpdateTypes": ["lockfile"],
+      "labels": ["type/lockfile", "automerge"]
+    },
+    {
+      "matchManager": ["docker", "helm-values"],
       "addLabels": ["renovate/container"]
-    },
-    {
-      "matchDatasources": ["helm"],
-      "addLabels": ["renovate/helm"]
     },
     {
       "matchDatasources": ["github-releases", "github-tags"],
@@ -32,6 +36,10 @@
     {
       "matchManagers": ["github-actions"],
       "addLabels": ["renovate/github-action"]
+    },
+    {
+      "matchManagers": ["helmv3"],
+      "addLabels": ["renovate/helm"]
     }
   ]
 }

@@ -6,7 +6,4 @@
       automerge: true
     }
   ],
-  "ignore": [
-    // Add any paths or patterns to ignore specific digest updates, if necessary
-  ]
 }

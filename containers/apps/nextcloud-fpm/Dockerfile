@@ -1,4 +1,4 @@
-FROM docker.io/nextcloud:30.0.0-fpm@sha256:38149fa4fefab1e56a976d37db0bb22a049c4e6faf4e1d755fdc536ff5e7f69a
+FROM docker.io/nextcloud:30.0.1-fpm@sha256:57387ca28bbbbc1fb2e7305a4750c28354f5f6ecf7201fef2af50c144f75f6f3
 # hadolint ignore=DL3008,DL3015,SC2086,SC2155,DL4006
 RUN set -ex; \
     \
@@ -53,16 +53,16 @@ RUN set -ex; \
     rm -rf /var/lib/apt/lists/*
 
 # Copy occ script to /usr/bin/occ
-COPY --chmod=755 ./apps/nextcloud-fpm/scripts/occ /usr/bin/occ
+COPY --chmod=755 ./containers/apps/nextcloud-fpm/scripts/occ /usr/bin/occ
 
 # Copy post-install script to a temp location so we can append it to the entrypoint.sh
-COPY --chmod=755 ./apps/nextcloud-fpm/scripts/post-install.sh /tmp/post-install.sh
+COPY --chmod=755 ./containers/apps/nextcloud-fpm/scripts/post-install.sh /tmp/post-install.sh
 
 # Copy the healthcheck
-COPY --chmod=755 ./apps/nextcloud-fpm/scripts/healthcheck.sh /healthcheck.sh
+COPY --chmod=755 ./containers/apps/nextcloud-fpm/scripts/healthcheck.sh /healthcheck.sh
 
 # Copy the configure-scripts that will be sourced by the post-install
-COPY --chmod=755 ./apps/nextcloud-fpm/configure-scripts /configure-scripts
+COPY --chmod=755 ./containers/apps/nextcloud-fpm/configure-scripts /configure-scripts
 
 RUN set -ex; \
     sed -i 's/exec "$@"//g' /entrypoint.sh; \

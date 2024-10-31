@@ -1,6 +1,6 @@
 image:
-  repository: advplyr/audiobookshelf
-  tag: 2.15.0@sha256:91564c31204f09b2a9be63e4d3a4d553087df775ece6c99dcd931b3c4a0ff951
+  repository: docker.io/advplyr/audiobookshelf
+  tag: 2.16.2@sha256:acfda2baa0dce0c7a31e1703b8cd694e59cd3f3de9cfabe5b7e9dd2029896169
   pullPolicy: IfNotPresent
 securityContext:
   container:
