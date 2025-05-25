@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: teamspeak
-  tag: 3.13.7@sha256:f23e251a1327cc2d766ee8f4c485670be7a3864390faaec447309c8a946cd53f
+  tag: 3.13.7@sha256:6756c50d1a0a7e48db95cf4b38d4c6d59ac0b560bc3b9e986ed069d2c16206f5
 persistence:
   data:
     enabled: true
@@ -9,9 +9,7 @@ persistence:
   config:
     enabled: true
     mountPath: /var/run/ts3server
-portal:
-  open:
-    enabled: false
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

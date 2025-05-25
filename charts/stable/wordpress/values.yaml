@@ -1,7 +1,7 @@
 image:
-  repository: docker.io/bitnami/wordpress
+  repository: public.ecr.aws/bitnami/wordpress
   pullPolicy: IfNotPresent
-  tag: 6.6.2@sha256:66222d71928bcbb6114651093a064f56a104b9cf1281810d2206319df645feab
+  tag: 6.8.1@sha256:e41473d3f8413bf290e6526a46ff824cdba2cb780951201e1ffa828d846b4323
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -67,6 +67,3 @@ mariadb:
   includeCommon: true
   mariadbUsername: wordpress
   mariadbDatabase: wordpress
-portal:
-  open:
-    enabled: true

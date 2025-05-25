@@ -1,7 +1,7 @@
 image:
   repository: docker.io/shlinkio/shlink
   pullPolicy: IfNotPresent
-  tag: 4.2.4@sha256:9f2f42db8cd756584b3f781ffbc895c270db4ffff3dfd9e4846c939a5b0c595e
+  tag: 4.4.6@sha256:1a697baca56ab8821783e0ce53eb4fb22e51bb66749ec50581adc0cb6d031d7a
 service:
   main:
     ports:
@@ -16,9 +16,7 @@ redis:
   enabled: true
   includeCommon: true
   redisUsername: "default"
-portal:
-  open:
-    enabled: false
+
 securityContext:
   container:
     runAsNonRoot: false

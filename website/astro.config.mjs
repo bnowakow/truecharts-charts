@@ -38,8 +38,6 @@ export default defineConfig({
     output: "directory",
   },
   experimental: {
-    directRenderScript: false,
-    clientPrerender: false
   },
   integrations: [
     starlight({
@@ -91,6 +89,7 @@ export default defineConfig({
       components: {
         Header: "./src/components/CustomHeader.astro",
         Hero: "./src/components/CustomHero.astro",
+        MarkdownContent: "./src/components/CustomMarkdownContent.astro",
       },
       plugins: [
         starlightBlog({
@@ -100,11 +99,11 @@ export default defineConfig({
           recentPostCount: 10,
           authors: authors,
         }),
-        // Do not put that before starlightBlog
         starlightImageZoom(),
         starlightLinksValidator({
           errorOnRelativeLinks: false,
           errorOnFallbackPages: false,
+          errorOnLocalLinks: false,
           exclude: [
             "/s/charts",
             "/s/discord",
@@ -161,13 +160,6 @@ export default defineConfig({
           collapsed: true,
           autogenerate: {
             directory: "development",
-          },
-        },
-        {
-          label: "Deprecated",
-          collapsed: true,
-          autogenerate: {
-            directory: "deprecated",
           },
         },
       ],

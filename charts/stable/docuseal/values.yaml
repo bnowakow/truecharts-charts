@@ -1,0 +1,49 @@
+image:
+  repository: docker.io/docuseal/docuseal
+  tag: 1.9.10@sha256:cc167ae66df991dac670fedea71ec60692a43052f28ee36fbae70bf55aa7adcd
+  pullPolicy: IfNotPresent
+securityContext:
+  container:
+    readOnlyRootFilesystem: false
+    runAsNonRoot: false
+    runAsUser: 0
+    runAsGroup: 0
+service:
+  main:
+    ports:
+      main:
+        port: 10310
+        protocol: http
+        targetPort: 3000
+
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          env:
+            DATABASE_URL:
+              secretKeyRef:
+                name: cnpg-main-urls
+                key: std
+          probes:
+            liveness:
+              type: http
+              path: /
+            readiness:
+              type: http
+              path: /
+            startup:
+              type: http
+              path: /
+
+persistence:
+  data:
+    enabled: true
+    mountPath: /data
+
+cnpg:
+  main:
+    enabled: true
+    user: docuseal
+    database: docuseal

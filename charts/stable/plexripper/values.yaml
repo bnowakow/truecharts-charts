@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/plexripper/plexripper
-  tag: v0.23.2@sha256:6dd623d658becd8271d421ed86ea70344d363c136e798f8864eed60e17cfe363
+  tag: 0.31.1@sha256:28eb2c5151092601b6c1e61cb0dce92b7dc3264490ffe3db8b858ce169ebb2cc
 service:
   main:
     ports:
@@ -31,6 +31,9 @@ persistence:
   downloads:
     enabled: true
     mountPath: /Downloads
-portal:
-  open:
-    enabled: true
+
+securityContext:
+  container:
+    readOnlyRootFilesystem: false
+    runAsGroup: 0
+    runAsUser: 0

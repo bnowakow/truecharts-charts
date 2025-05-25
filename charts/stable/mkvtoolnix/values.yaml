@@ -1,6 +1,6 @@
 image:
   repository: docker.io/jlesage/mkvtoolnix
-  tag: v24.10.1@sha256:368bfac4a2f043762bda90e9111af78e38d9d9304ea41fcd4b4528e9c524b54c
+  tag: v25.05.1@sha256:068e8b4fc8ba9f6fbcced15dbb561ed32c0ae25361b347d186349249cbf239f8
   pullPolicy: IfNotPresent
 service:
   main:
@@ -42,9 +42,7 @@ persistence:
   storage:
     enabled: true
     mountPath: "/storage"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

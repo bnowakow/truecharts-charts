@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/webgrabplus
   pullPolicy: IfNotPresent
-  tag: 5.3.0@sha256:042b8e3aea9c98aab13894eec516d312e592d8287feb9dfd17fae6d43bdbfd0f
+  tag: 5.3.1@sha256:8ae4360ee0701867b6a0373e5e4284f763beece21e47d710bbce5226bfce674d
 service:
   main:
     enabled: false
@@ -17,9 +17,7 @@ persistence:
   data:
     enabled: true
     mountPath: "/data"
-portal:
-  open:
-    enabled: false
+
 securityContext:
   container:
     runAsNonRoot: false

@@ -1,6 +1,6 @@
 image:
   repository: docker.io/ronivay/xen-orchestra
-  tag: 5.157.1@sha256:932ef77e53c66dc6cad7b066b03d403c23f3748e51db095401edab4d82c63bb7
+  tag: 5.177.0@sha256:2b5600a9bfd620f455b697197903c29fb95bec149be05c94e8e5e88752577e93
   pullPolicy: IfNotPresent
 service:
   main:
@@ -15,9 +15,7 @@ persistence:
   redis-data:
     enabled: true
     mountPath: "/var/lib/redis"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

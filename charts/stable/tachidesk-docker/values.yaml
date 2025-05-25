@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/suwayomi/tachidesk
-  tag: preview@sha256:40ab85e5c913682df65d1ff05a4e7f3924a99c92db58e2633dc99e15a790a5f0
+  tag: preview@sha256:5bee7ca22b6a0a16d44354a2683a7e9ae248a2c9ee5ca8679b6f769b3010d3ae
 
 securityContext:
   container:
@@ -62,7 +62,3 @@ persistence:
   local-library:
     enabled: true
     mountPath: /home/suwayomi/.local/share/Tachidesk/local
-
-portal:
-  open:
-    enabled: true

@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: lscr.io/linuxserver/pyload-ng
-  tag: latest@sha256:c8a2d4d264c3e31e727c77ee65100e238af6b846da5aa2779a4efd682d9f9222
+  tag: latest@sha256:0d41d7f53b77696abaf5420b9b9fc51a2bde6459aaa041414f3e1b96ffeead7d
 persistence:
   config:
     enabled: true
@@ -9,9 +9,7 @@ persistence:
   pathdownloads:
     enabled: true
     mountPath: /downloads
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

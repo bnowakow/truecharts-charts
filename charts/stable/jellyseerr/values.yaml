@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/fallenbagel/jellyseerr
-  tag: 2.0.1@sha256:8ff28894f9fd28bf36626fb98ddd0ee79d778de22a5dc75d69a845281e19115b
+  repository: ghcr.io/fallenbagel/jellyseerr
+  tag: 2.5.2@sha256:2a611369ad1d0d501c2d051fc89b6246ff081fb4a30879fdc75642cf6a37b1a6
   pullPolicy: IfNotPresent
 service:
   main:
@@ -11,9 +11,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/app/config"
-portal:
-  open:
-    enabled: true
+
 workload:
   main:
     podSpec:

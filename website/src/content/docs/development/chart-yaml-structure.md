@@ -3,7 +3,7 @@ title: Chart.yaml layout
 ---
 
 At TrueCharts we try to keep some files standardized, this enables us to make changes to these charts in bulk with less risk of mistakes. Chart.yaml is one of these files.
-In this documentation we will explain the standardized layout options. For an example layout, please see our standard Chart.yaml [template](https://github.com/truecharts/charts/blob/master/templates/chart/Chart.yaml)
+In this documentation we will explain the standardized layout options. For an example layout, please see our standard Chart.yaml [template](https://github.com/truecharts/public/blob/master/charts/premium/app-template/Chart.yaml)
 
 ## Layout Explained
 
@@ -12,13 +12,12 @@ apiVersion: The chart API version (required)
 kubeVersion: A SemVer range of compatible Kubernetes versions (optional)
 name: The name of the chart (required)
 version: A SemVer 2 version (required)
-upstream_version: A SemVer 2 version, as used by an upstream Helm Chart source (optional)
 appVersion: The version of the app that this contains (optional). Needn't be SemVer. Quotes recommended.
 description: A single-sentence description of this project (optional)
 type: The type of the chart (optional)
 deprecated: Whether this chart is deprecated (optional, boolean)
 home: The URL of this projects home page (optional)
-icon: A URL to an SVG or PNG image to be used as an icon (optional).
+icon: A URL to an SVG or PNG image to be used as an icon.
 keywords:
   - A list of keywords about this project (optional)
 sources:
@@ -45,7 +44,7 @@ annotations:
 
 In the above description there are a lot of values that are not actually used. Some of those, like `deprecated`, we just set to false. While others, like `annotations` get commented out.
 
-Please refer to our standard Chart.yaml [template](https://github.com/truecharts/charts/blob/master/templates/chart/Chart.yaml) to see which unused values needs which treatment.
+Please refer to our standard Chart.yaml [template](https://github.com/truecharts/public/blob/master/charts/premium/app-template/Chart.yaml) to see which unused values needs which treatment.
 
 ### Dependencies
 
@@ -56,4 +55,4 @@ All other dependencies are expected to be listed in alphabetical order.
 ### Maintainers
 
 The only maintainer should always be TrueCharts, as the TrueCharts core team is expected to step in if the other maintainers fail to maintain their work.
-An example of how to list TrueCharts as a maintainer is available in our standard Chart.yaml [template](https://github.com/truecharts/charts/blob/master/templates/chart/Chart.yaml).
+An example of how to list TrueCharts as a maintainer is available in our standard Chart.yaml [template](https://github.com/truecharts/public/blob/master/charts/premium/app-template/Chart.yaml).

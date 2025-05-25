@@ -17,7 +17,7 @@ If you have already installed the metallb, prometheus-operator, and cloudnative-
 
 ## Prerequisites
 
-Add the operator train to TrueCharts [as outlined here](/deprecated/scale#adding-truecharts)
+Add the operator train to TrueCharts [as outlined here](/
 
 ## MetalLB
 
@@ -32,12 +32,12 @@ The MetalLB operator is only required for users of MetalLB, anyone who does not 
 The Prometheus operator is required for the use of app metrics. Its installation is recommended.
 
 1. Run this in the system shell as **root**: `k3s kubectl delete  --grace-period 30 --v=4 -k https://github.com/truecharts/manifests/delete3`
-2. Install [prometheus-operator](/charts/system/prometheus-operator/) from the operators train.
+2. Install prometheus-operator from the operators train. (Deprecated 2025)
 
 ## CNPG
 
 The cloudnative-pg operator is required for any applications that utilize postgres. Its installation is recommended.
 
-1. Follow the [CNPG Operator Migration Guide](/deprecated/scale/guides/cnpg-migration-guide) to migrate to the new CNPG operator. Ensure you follow the guide carefully as data loss can occur with this migration if proper steps are not followed.
+1. Follow the [CNPG Operator Migration Guide](/ to migrate to the new CNPG operator. Ensure you follow the guide carefully as data loss can occur with this migration if proper steps are not followed.
 
 _If you run into additional issues, please file a ticket with our dedicated support staff via the **#support** channel of our [discord](/s/discord) as normal._

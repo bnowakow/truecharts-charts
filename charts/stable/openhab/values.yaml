@@ -1,7 +1,7 @@
 image:
   repository: docker.io/openhab/openhab
   pullPolicy: IfNotPresent
-  tag: 4.2.2@sha256:8ddbadca555dbc49ff9166d4ccca1e0f146bd2a1bcb8c3fac43df40b2df78568
+  tag: 4.3.5@sha256:a191106c329b1fe63afa24f1275f3f8d66be13cd3ac3b0c40140b30060cdbbe0
 service:
   main:
     ports:
@@ -38,9 +38,7 @@ persistence:
     subPath: enable-console-logging.sh
     type: configmap
     objectName: init
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

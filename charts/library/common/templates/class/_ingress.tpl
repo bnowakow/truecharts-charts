@@ -26,14 +26,30 @@ objectData: The object data to be used to render the Ingress.
     {{- $ingressClassName = (tpl $objectData.ingressClassName $rootCtx) -}}
   {{- end -}}
 
-  {{/* When Stop All is set, force ingressClass "stopped"
-  to yeet ingress from the ingresscontroller */}}
+  {{- range $h := $objectData.hosts -}}
+    {{- $_ := set $h "host" (tpl $h.host $rootCtx) -}}
+
+    {{- if not $h.paths -}} {{/* If no paths given, default to "/" */}}
+      {{- $_ := set $h "paths" (list (dict "path" "/")) -}}
+    {{- end -}}
+
+    {{- range $p := $h.paths -}}
+      {{- $_ := set $p "path" (tpl ($p.path | default "/") $rootCtx) -}}
+      {{- $_ := set $p "pathType" (tpl ($p.pathType | default "Prefix") $rootCtx) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{/*
+    When Stop All is set, force ingressClass "stopped"
+    to yeet ingress from the ingressController
+  */}}
   {{- if (include "tc.v1.common.lib.util.stopAll" $rootCtx) -}}
     {{- $ingressClassName = "tc-stopped" -}}
   {{- end -}}
 
   {{- include "tc.v1.common.lib.ingress.integration.certManager" (dict "rootCtx" $rootCtx "objectData" $objectData) -}}
   {{- include "tc.v1.common.lib.ingress.integration.traefik" (dict "rootCtx" $rootCtx "objectData" $objectData) -}}
+  {{- include "tc.v1.common.lib.ingress.integration.nginx" (dict "rootCtx" $rootCtx "objectData" $objectData) -}}
   {{- if ne $ingressClassName "tc-stopped" -}}{{/* If is stopped, dont render homepage annotations */}}
     {{- include "tc.v1.common.lib.ingress.integration.homepage" (dict "rootCtx" $rootCtx "objectData" $objectData) -}}
   {{- end }}
@@ -59,18 +75,15 @@ spec:
   ingressClassName: {{ $ingressClassName | default nil }}
   rules:
     {{- range $h := $objectData.hosts }}
-    - host: {{ (tpl $h.host $rootCtx) | quote }}
+    - host: {{ $h.host | quote }}
       http:
         paths:
-          {{- if not $h.paths -}} {{/* If no paths given, default to "/" */}}
-            {{- $_ := set $h "paths" (list (dict "path" "/")) -}}
-          {{- end -}}
           {{- range $p := $h.paths -}}
             {{- $newSvcData := (include "tc.v1.common.lib.ingress.backend.data" (dict
                 "rootCtx" $rootCtx "svcData" $svcData "override" $p.overrideService)) | fromYaml
             }}
-          - path: {{ tpl ($p.path | default "/") $rootCtx }}
-            pathType: {{ tpl ($p.pathType | default "Prefix") $rootCtx }}
+          - path: {{ $p.path }}
+            pathType: {{ $p.pathType }}
             backend:
               service:
                 name: {{ $newSvcData.name }}

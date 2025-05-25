@@ -1,6 +1,6 @@
 image:
   repository: hello-world
-  tag: latest@sha256:d211f485f2dd1dee407a80973c8f129f00d54604d2c90732e8e320e5038a0348
+  tag: latest@sha256:dd01f97f252193ae3210da231b1dca0cffab4aadb3566692d6730bf93f123a48
   pullPolicy: IfNotPresent
 manifestManager:
   enabled: true
@@ -25,9 +25,7 @@ service:
       main:
         enabled: false
         port: 9999
-portal:
-  open:
-    enabled: false
+
 operator:
   cert-manager:
     namespace: cert-manager
@@ -53,7 +51,7 @@ clusterIssuer:
 #     # Used primarily for the SCALE GUI
 #     customServer: 'https://acme-staging-v02.api.letsencrypt.org/directory'
 #     email: ""
-#     # Options: HTTP01, cloudflare, route53, akamai, digitalocean, rfc2136, acmedns
+#     # Options: HTTP01, cloudflare, route53, akamai, digitalocean, rfc2136, acmedns, webhook
 #     type: ""
 #     # for cloudflare
 #     cfapikey: ""
@@ -88,6 +86,13 @@ clusterIssuer:
 #         fulldomain: ""
 #         subdomain: ""
 #         allowFrom: []
+#     # for webhook
+#     groupName: ""
+#     solverName: ""
+#     # config is optional
+#     config:
+#       key1: value1
+#       key2: value2
 
 clusterCertificates:
   # Namespaces in which the certificates must be available

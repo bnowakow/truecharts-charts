@@ -1,11 +1,11 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/mriedmann/humhub-phponly
-  tag: 1.16.1@sha256:5477077f08aa9d2ec61e20a4350defd405ef1d7d128b4df9e51824c425ec00f2
+  tag: 1.17.1@sha256:2a2640e7275a7963d0f0059d331bca8936c66d9ed143f50201b8fc4b20098c45
 nginxImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/mriedmann/humhub-nginx
-  tag: 1.16.1@sha256:4e0451fec6b30dc946d44c6c77c69ab42150b6b37744fb7d619ee38aa2caba8c
+  tag: 1.17.1@sha256:334f067e290db7b61396d75a2f7a6c6fb5557668b2c0fe539d5dcbe0415d2aaa
 
 securityContext:
   container:
@@ -200,7 +200,3 @@ mariadb:
 redis:
   enabled: true
   includeCommon: true
-
-portal:
-  open:
-    enabled: true

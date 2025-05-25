@@ -1,7 +1,7 @@
 image:
   repository: docker.io/dpage/pgadmin4
   pullPolicy: IfNotPresent
-  tag: 8.12@sha256:585350593e8b0483941fa9a2d5ebb04b88a66e83a7b5603c169f9446b271312f
+  tag: 9.3@sha256:bd71932cb1ef94719e783f0eed42c227bc67877a7c7e076c7092738711e5f4d4
 service:
   main:
     ports:
@@ -12,9 +12,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/var/lib/pgadmin"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: true

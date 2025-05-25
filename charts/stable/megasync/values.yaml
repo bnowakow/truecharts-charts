@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/ich777/megasync
-  tag: latest@sha256:6b36ca4c9abaaa9f6b4f53f41d5bbd70a95d4b736b233a3088e98b719e43321c
+  repository: ghcr.io/ich777/megasync
+  tag: latest@sha256:3ae54a8d5895f93932237f2fdc37dd0b1456d3d98ba6b3b45aa26f187e34fb7b
   pullPolicy: IfNotPresent
 
 securityContext:
@@ -36,7 +36,3 @@ persistence:
     enabled: true
     mountPath: /mnt/host
     readOnly: true
-
-portal:
-  open:
-    enabled: true

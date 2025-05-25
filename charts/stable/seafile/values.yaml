@@ -1,6 +1,6 @@
 image:
   repository: docker.io/seafileltd/seafile-mc
-  tag: 11.0.12@sha256:d0c66e4621bd418b13dd545090ddb1eb82009db3cfb854f87f78c0b0ed6e5a73
+  tag: 12.0.11@sha256:4ab87f4b7fd9a712f614386c3362049d1701161e07e0f88681fdddcc3e543680
   pullPolicy: IfNotPresent
 service:
   main:
@@ -21,26 +21,64 @@ workload:
       containers:
         main:
           env:
+            CACHE_PROVIDER: memcached
             DB_HOST:
               secretKeyRef:
                 expandObjectName: false
                 name: '{{ printf "%s-%s" .Release.Name "mariadbcreds" }}'
                 key: plainhost
             DB_ROOT_PASSWD: "{{ .Values.mariadb.rootPassword }}"
+            DB_PASSWORD: "{{ .Values.mariadb.password }}"
             SEAFILE_SERVER_LETSENCRYPT: false
             SEAFILE_SERVER_HOSTNAME: ""
-            SEAFILE_ADMIN_EMAIL: me@example.com
-            SEAFILE_ADMIN_PASSWORD: a_very_secret_password
+            INIT_SEAFILE_ADMIN_EMAIL: me@example.com
+            INIT_SEAFILE_ADMIN_PASSWORD: a_very_secret_password
             FORCE_HTTPS_IN_CONF: false
+            JWT_PRIVATE_KEY: a_very_very_very_very_secret_key
+            CLUSTER_SERVER: "true"
+            CLUSTER_INIT_MODE: "true"
+            CLUSTER_INIT_MEMCACHED_HOST: '{{ printf "%v-%v" .Release.Name "memcached" }}'
+configmap:
+  env:
+    enabled: true
+    data:
+      env: |
+        CACHE_PROVIDER= memcached
+        TIME_ZONE={{ .Values.TZ }}
+        JWT_PRIVATE_KEY={{ .Values.workload.main.podSpec.containers.main.env.JWT_PRIVATE_KEY }}
+        SEAFILE_SERVER_PROTOCOL=http
+        SEAFILE_SERVER_HOSTNAME={{ .Values.workload.main.podSpec.containers.main.env.SEAFILE_SERVER_HOSTNAME }}
+        SEAFILE_MYSQL_DB_HOST={{ printf "%v-%v" .Release.Name "mariadb" }}
+        SEAFILE_MYSQL_DB_PORT=3306
+        SEAFILE_MYSQL_DB_USER={{ .Values.mariadb.mariadbUsername }}
+        SEAFILE_MYSQL_DB_PASSWORD={{ .Values.mariadb.password }}
+        SEAFILE_MYSQL_DB_CCNET_DB_NAME=ccnet
+        SEAFILE_MYSQL_DB_SEAFILE_DB_NAME=seafile
+        SEAFILE_MYSQL_DB_SEAHUB_DB_NAME=seahub
 persistence:
   storage:
     enabled: true
     mountPath: "/shared/seafile"
+  env:
+    enabled: true
+    type: configmap
+    objectName: env
+    expandObjectName: true
+    optional: false
+    defaultMode: "0777"
+    items:
+      - key: env
+        path: env
+    targetSelector:
+      main:
+        main:
+          mountPath: /shared/seafile/conf/.env
+          subPath: env
 mariadb:
   enabled: true
   includeCommon: true
   mariadbUsername: seafile
   mariadbDatabase: seafile
-portal:
-  open:
-    enabled: true
+
+memcached:
+  enabled: true

@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/autobrr/autobrr
   pullPolicy: IfNotPresent
-  tag: v1.48.0@sha256:0ae19e3beedf491396e450b024c23e9e24df4d692286c0442a81fa699493def0
+  tag: v1.62.0@sha256:e9bf07f15c36555f4c7d28df44f137d420d6188bab0a53eb7dfbdcb62238caa4
 
 service:
   main:
@@ -38,7 +38,3 @@ persistence:
     mountPath: /config/config.toml
     subPath: config.toml
     readOnly: true
-
-portal:
-  open:
-    enabled: true

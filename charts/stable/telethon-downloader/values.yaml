@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/jsavargas/telethon_downloader
-  tag: latest@sha256:6cbf8cd13bfa65c9620fb7d5b47a98e8a08c188e5e7cd40414bce1a44a4efb90
+  tag: latest@sha256:e6937fcfe3d1c9013fb619da5cc4a12d031725b7020d66a301855de9a35f124f
 persistence:
   config:
     enabled: true
@@ -12,9 +12,7 @@ persistence:
   pathwatch:
     enabled: true
     mountPath: /watch
-portal:
-  open:
-    enabled: false
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

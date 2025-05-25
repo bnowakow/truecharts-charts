@@ -1,6 +1,6 @@
 image:
   repository: docker.io/adguard/adguardhome
-  tag: v0.107.53@sha256:d9c512051141e6a617d773f16cdf6782c178464c6e766acf9fe63482a171f95c
+  tag: v0.107.61@sha256:a2085b04bbfc4759e68fa1d13d4e1558aede67c783c55820e036a95a36dd3ebf
   pullPolicy: IfNotPresent
 securityContext:
   container:
@@ -119,6 +119,3 @@ persistence:
   data:
     enabled: true
     mountPath: /opt/adguardhome/work
-portal:
-  open:
-    enabled: true

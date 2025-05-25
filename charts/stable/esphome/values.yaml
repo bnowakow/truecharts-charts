@@ -1,7 +1,7 @@
 image:
   repository: docker.io/esphome/esphome
   pullPolicy: IfNotPresent
-  tag: 2024.10.2@sha256:e01bc223b5a669e559318792a9cfde6c5f69781a53a6e4c819b6499313ee5028
+  tag: 2025.4.2@sha256:870d2eb1f2c524ba888444440312df79c905f57b9768e7bd3eb0e75bfbbd8d61
 securityContext:
   container:
     runAsNonRoot: false
@@ -43,9 +43,11 @@ persistence:
   config:
     enabled: true
     mountPath: /config
-  platformio:
+  # caches platformio packages to prevent excess downloads
+  cache:
     enabled: true
-    mountPath: /.platformio
-portal:
-  open:
+    mountPath: /cache
+  # caches compiled code to not require rebuilds
+  build:
     enabled: true
+    mountPath: /build

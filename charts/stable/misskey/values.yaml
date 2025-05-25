@@ -1,7 +1,7 @@
 image:
   repository: docker.io/misskey/misskey
   pullPolicy: IfNotPresent
-  tag: 2024.10.1@sha256:68274bd20952701a4fbc8d6488b260bae45a4db6187e4fb2a1e6c8480e067190
+  tag: 2025.5.0@sha256:5c90a0cf3ddf010580d30c21b43a345a636313eae96a97f7e56aed0544039480
 
 securityContext:
   pod:
@@ -73,7 +73,3 @@ redis:
   enabled: true
   includeCommon: true
   username: default
-
-portal:
-  open:
-    enabled: true

@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/jlesage/makemkv
-  tag: v24.07.1@sha256:87fce9d497cc71878fc02dbca4369144f8e9639c99d0a9431f779d5b3bc9be0d
+  repository: ghcr.io/jlesage/makemkv
+  tag: v25.04.1@sha256:ae840c402381a83f511a91d2b2a70291b912a0a5810fdb46b545d2e7c93f7e04
   pullPolicy: IfNotPresent
 makemkv:
   # General Settings
@@ -63,9 +63,7 @@ persistence:
   output:
     enabled: true
     mountPath: "/output"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -1,14 +1,12 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/accetto/ubuntu-vnc-xfce-inkscape-g3
-  tag: latest@sha256:a20a9a0d4d05fce0d65cac58c50e84dd47e51db897015bd471d956f50135e07d
+  tag: latest@sha256:a2af1494a701af9f7ed75a727323f25f00fdadcabae38dd49ce3d4d06b0204b1
 persistence:
   internalshare:
     enabled: true
     mountPath: /UNRAID_SHARE
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/kanboard/kanboard
-  tag: v1.2.41@sha256:b136fc7936a3825124527cc610c55cbde05328bac47a1f06c4854f594090bde5
+  repository: quay.io/kanboard/kanboard
+  tag: v1.2.45@sha256:6711163886e747b5947a771426908c66bca64e4b690b6251137c54f9765a6467
   pullPolicy: IfNotPresent
 service:
   main:
@@ -20,9 +20,7 @@ cnpg:
     enabled: true
     user: kanboard
     database: kanboard
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

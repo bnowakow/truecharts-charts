@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/goofball222/unifi
-  tag: 8.5.6@sha256:6464b48f6179586efcab423833f79b4995b1ad12e90150ec475abb8ad328bd12
+  tag: 9.1.120@sha256:bc00501e3c4c731ee5970c8bda0c0242d6276a898518513140f2978d92a39026
   pullPolicy: IfNotPresent
 service:
   main:
@@ -68,9 +68,7 @@ persistence:
   certs:
     enabled: true
     mountPath: "/usr/lib/unifi/cert"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

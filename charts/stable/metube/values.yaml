@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/alexta69/metube
-  tag: 2024-10-08@sha256:5d92ae08e18cbc683ec82a01d98a25966a78aeb1209e77f3c84c83534da1264d
+  repository: ghcr.io/alexta69/metube
+  tag: 2025-05-01@sha256:47611e7196e2da6619b3a387dd4f0aabfa3ceda3a7c736a5d28211c59b32f6d3
   pullPolicy: IfNotPresent
 service:
   main:
@@ -15,9 +15,7 @@ persistence:
   downloads:
     enabled: true
     mountPath: /downloads
-portal:
-  open:
-    enabled: true
+
 workload:
   main:
     podSpec:

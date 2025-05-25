@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/redislabs/redisinsight
-  tag: 2.60.0@sha256:ef29a4cae9ce79b659734f9e3e77db3a5f89876601c89b1ee8fdf18d2f92bb9d
+  tag: 2.68.0@sha256:019fcf7746316312474c2f347a9ee21797a8cb48ebaacb50f3000b4be08a468e
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -32,6 +32,3 @@ persistence:
   logs:
     enabled: true
     mountPath: /logs
-portal:
-  open:
-    enabled: true

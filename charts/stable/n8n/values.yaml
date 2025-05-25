@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/n8nio/n8n
-  tag: 1.66.0@sha256:35379582637e089e56cc0f88aed8b18f7d1698176387a5e870ece5fc605c1891
+  repository: ghcr.io/n8n-io/n8n
+  tag: 1.94.0@sha256:82ef2eab8eae7a796cca7ce1f6f5443dbf96f9606e7714773aaccf0e920ce803
   pullPolicy: IfNotPresent
 timezoneandlocale: {}
 # N8N_DEFAULT_LOCALE: "en"
@@ -103,9 +103,7 @@ cnpg:
     enabled: true
     user: n8n
     database: n8n
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

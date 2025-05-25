@@ -1,122 +1,179 @@
 ---
-title: Helm Quick-Start
+title: Quick-Start
 sidebar:
   order: 1
 ---
 
-:::caution[Charts]
-
-We only support our own helm-charts. If you run anything outside the scope of our helm-charts, we cannot guarantee interoperability and you might run into issues we're unable to support with resolving
-
-:::
-
-## Installing a Chart
-
-If you want to install a chart using helm, lookup the name of the chart in our [Chart list](/charts/description-list). Then, run this command to install it directly from our OCI repository:
-
-```shell title="Install Chart"
-   helm install mychart oci://tccr.io/truecharts/CHARTNAME
-   ```
-
-_Where `CHARTNAME` is the name of the chart you want to add and `mychart` is the name you want it to have on your system._
-
-We highly suggest your write your customisations and user specific options in your own `values.yaml` file. After which, you can install the chart with your user-specific settings applied using:
-
-```shell title="Install Chart With Settings"
-   helm install mychart oci://tccr.io/truecharts/CHARTNAME -f values.yaml
-   ```
-
-_`values.yaml` can be replaced with a path of your choice._
-
-We also advise users to specify separate namespaces for deployed charts using:
-
-```shell title="Chart Namespaces"
-   helm install mychart oci://tccr.io/truecharts/CHARTNAME -f values.yaml -n NAMESPACE
-   ```
-
-_Where `NAMESPACE` is the namespace you want to deploy to._
-
-For more information, please see the [Helm install docs](https://helm.sh/docs/helm/helm_install/)
-
-## Upgrading Charts
-
-To upgrade either the chart version and/or the user-defined settings for an already-installed Helm chart you can use "helm upgrade".
-While this does not actually update the chart version, it does update the user settings supplied via the `values.yaml` file specified above.
-
-```shell title="Chart Upgrades"
-   helm upgrade oci://tccr.io/truecharts/CHARTNAME -f values.yaml -n NAMESPACE
-   ```
-
-For more information, please see the [Helm upgrade docs](https://helm.sh/docs/helm/helm_upgrade/)
-
-## Using KubeApps
-
-[KubeApps](https://kubeapps.dev/) offers an easy-to-use GUI to simply pick a chart from the list and enter/adapt the YAML, check it out!
-
----
-
 :::note[Clustertool]
 
-Clusters created using Clustertool come pre-packed with MetalLB and MetalLB config
+Clusters created using Clustertool come pre-packed with most of these charts pre-installed.
 
 :::
 
-## Minimal Getting Started Setup
+## Prerequisites
 
-Install the following charts with **default** values.yaml if not already installed:
+- Running Kubernetes Cluster
+- Container Storage Interface (CSI)
+- LoadBalancer like Metallb
 
-- Install `cloudnative-pg` -> [Cloudnative-PG Installation](#prometheus-and-cnpg-system-app-installations)
-- Install `prometheus-operator` -> [Prometheus-Operator Installation](#prometheus-and-cnpg-system-app-installations)
-- Install `cert-manager` -> [Certificate Management with Cert-Manager](#cert-manager-operator-and-clusterissuer-installation-for-certificate-management)
-- Install `volsync` which is used to configure Backups-> [PVC Backup Guide](/guides/volsync-backup-restore)
-- `metallb` or another loadBalancer is required if you do not have a loadBalancer yet
+## Required Charts for most Truecharts Charts
 
-To configure MetalLB, you will need to also add `metallb-config` and adapt it to your own needs.
+Install the following charts if not already installed:
 
-## Getting started using Charts with your own Domain
-
-- Steps Above -> [Minimal Getting Started](#minimal-getting-started-setup)
-- Install the `traefik-crds` chart
-- Install `traefik` -> [Traefik How-To](/charts/premium/traefik/how-to)
-- Use CloudFlare for DNS and create an API token -> [Guide](/charts/premium/clusterissuer/how-to#configure-acme-issuer)
-- Install `Clusterissuer` and configure it for your needs -> [Clusterissuer How-to](/charts/premium/clusterissuer/how-to)
-- Add `Blocky` and configure it with k8s-gateway enabled -> [Blocky Setup Guide](/charts/premium/blocky/setup-guide)
-- Setup ingress on each Chart you want to expose -> [Configure Ingress using Clusterissuer certs](/charts/premium/clusterissuer/how-to/#configure-ingress-using-clusterissuer)
+- [Cert-Manager](#cert-manager)
+- [Cloudnative-PG](#cloudnative-pg)
+- [Prometheus](#prometheus)
 
 ---
 
-## Important Charts
+## Recommended Charts
 
-### MetalLB installation
+- [Blocky](https://truecharts.org/charts/premium/blocky/): Local DNS Resolving with k8s-gateway
+- [Clusterissuer](https://truecharts.org/charts/premium/clusterissuer/): Configuring Cert-Manager
+- [Kubernetes-Reflector](https://truecharts.org/charts/system/kubernetes-reflector/): Reflect Resources across Namespaces
+- [Metallb](https://metallb.io/) with [Metallb-Config](https://truecharts.org/charts/premium/metallb-config/) as LoadBalancer
+- [Node Feature Discovery](https://github.com/kubernetes-sigs/node-feature-discovery): For Node Discovery
+- [Nginx-Ingress](https://kubernetes.github.io/ingress-nginx/): For Ingress and Reverse Proxying
+- [Snapshot-Controller](https://truecharts.org/charts/system/snapshot-controller/): Required for Volsync
+- [Volsync](https://truecharts.org/charts/system/volsync/): For Backup and Restore of PVCs
 
-![MetalLB](./img/icons/metallb.png)
+## Upstream Operators
 
-This step is mandatory if you don't intend to use another LoadBalancer. We have a full guide explaining the setup on the [MetalLB-Config Setup Guide](/charts/premium/metallb-config/setup-guide) page on how to setup MetalLB. Please refer to that page for more info before continuing.
+Truecharts relies on multiple Charts for functionality like Postgres Databases and Metrics.
+Therefore we require certain Charts to be installed. Below you will find example configurations for most of them:
 
-### Prometheus and CNPG system app installations
+### Cert-Manager
 
-![Prometheus](./img/icons/prometheus-operator.png) ![CNPG](./img/icons/cnpg.png)
+Cert-Manager is used  together with our clusterissuer to create SSL certificates for ingress.
+The chart installation can be found [here](https://cert-manager.io/docs/installation/helm/).
 
-Many of the popular TrueCharts charts rely on `Prometheus Operator` and `Cloudnative-PG Operator` to be installed **PRIOR** to installing another chart that may rely on functionality these operators provide. If you're unsure if you're using any TrueCharts charts that require Prometheus or CNPG functionality, we advise you install these charts first anyway before attempting to then install any other charts.
+Example configuration:
 
-[Here](/general/faq#how-do-i-know-if-an-app-uses-cnpg) is a list of charts that rely on CNPG functionality. If you intend to deploy any of these charts, you **must** install the `Cloudnative-PG Operator` chart first as above.
+```yaml
 
-### Traefik installation for Ingress / Reverse-Proxy support with TrueCharts Charts
+crds:
+  enabled: true
+dns01RecursiveNameservers: "1.1.1.1:53,1.0.0.1:53"
+dns01RecursiveNameserversOnly: false
+enableCertificateOwnerRef: true
 
-![Traefik](./img/icons/traefik.png)
+```
 
-`Traefik` is our "ingress" or "reverse-proxy" solution of choice and is integrated into all our charts in order to make it as easy as possible to secure your charts. To support this, we supply a separate Traefik "ingress" app, which has been pre-configured to provide secure and fast connections. Please check the `Traefik` [How-To](/charts/premium/traefik/how-to) for basic instructions and a video as well.
+### Cloudnative-PG
 
-An optional but extra function enabled by Traefik and supported by many Truecharts Charts like `Nextcloud`, is the ability to use a `middleware` to use your charts remotely. You can setup a basicAuth middleware using our guide [Add Traefik Basic Auth to Charts](/charts/premium/traefik/traefik-basicauth-middleware/).
+Cloudnative-PG is used for Postgres databases in many of our charts.
+The chart can be found [here](https://github.com/cloudnative-pg/charts).
 
-### Cert-Manager (operator) and Clusterissuer installation for certificate management
+Example configuration:
 
-![Cert-Manager](./img/icons/cert-manager.png)
+```yaml
 
-TrueCharts only supports the usage of `Cert-Manager` (both the operator portion and the main `clusterissuer`) for certificate management inside charts. We highly recommend setting up `clusterissuer` using our [clusterissuer setup-guide](/charts/premium/clusterissuer/how-to) before adding `Ingress` to your applications.
+crds:
+  create: true
 
-### Blocky DNS provider for split-DNS installation and guide
+```
 
-![Blocky](./img/icons/blocky.png)
+### Prometheus
 
-Blocky is the optional, but preferred DNS solution for TrueCharts. It's a DNS proxy, DNS enhancer and ad-blocker which supports "split-DNS" through `K8S-Gateway` and is highly-available. The [Blocky Setup-Guide](/charts/premium/blocky/setup-guide) will cover basic setup options which will get you up and running and is not all inclusive.
+Kube-promotheus-stack is used for metrics.
+The chart can be found [here](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack).
+
+As we provide our own grafana with included dashboard. We recommend to disable grafana and add a few tweaks in the kube-prometheus-stack:
+
+```yaml
+grafana:
+  enabled: false
+  forceDeployDashboards: true
+  defaultDashboardsEnabled: true
+  forceDeployDatasources: true
+crds:
+  enabled: true
+  upgradeJob:
+    enabled: true
+    forceConflicts: true
+cleanPrometheusOperatorObjectNames: true
+alertmanager:
+  enabled: false
+kubeProxy:
+  enabled: false
+kubeEtcd:
+  service:
+    selector:
+      component: kube-apiserver # etcd runs on control plane nodes
+prometheus:
+  prometheusSpec:
+    podMonitorSelectorNilUsesHelmValues: false
+    probeSelectorNilUsesHelmValues: false
+    ruleSelectorNilUsesHelmValues: false
+    scrapeConfigSelectorNilUsesHelmValues: false
+    serviceMonitorSelectorNilUsesHelmValues: false
+    enableAdminAPI: true
+    walCompression: true
+    enableFeatures:
+      - memory-snapshot-on-shutdown
+    retention: 14d
+    retentionSize: 50GB
+    resources:
+      requests:
+        cpu: 100m
+        memory: 500Mi
+      limits:
+        memory: 2000Mi
+```
+
+We generally advice to run the full kube-prometheus-stack but as it is quite resource intensive you can run the minimum requirement which only requires to add the CRDs. This can be done like this:
+
+```yaml
+crds:
+  enabled: true
+  upgradeJob:
+    enabled: true
+    forceConflicts: true
+prometheusOperator:
+  enabled: false
+## Everything down here, explicitly disables everything except CRDs and grafana dashboards
+global:
+  rbac:
+    create: false
+defaultRules:
+  create: false
+windowsMonitoring:
+  enabled: false
+prometheus-windows-exporter:
+  prometheus:
+    monitor:
+      enabled: false
+alertmanager:
+  enabled: false
+grafana:
+  enabled: false
+  forceDeployDashboards: true
+  defaultDashboardsEnabled: true
+  forceDeployDatasources: true
+kubernetesServiceMonitors:
+  enabled: true
+kubeApiServer:
+  enabled: false
+kubelet:
+  enabled: false
+kubeControllerManager:
+  enabled: false
+coreDns:
+  enabled: false
+kubeDns:
+  enabled: false
+kubeEtcd:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeProxy:
+  enabled: false
+kubeStateMetrics:
+  enabled: false
+nodeExporter:
+  enabled: false
+prometheus:
+  enabled: false
+thanosRuler:
+  enabled: false
+```

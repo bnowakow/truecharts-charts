@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/tvheadend
   pullPolicy: IfNotPresent
-  tag: latest@sha256:e7761fa74abe764a77805ffd0ccf9bae10101ef42090bde993f612d2d32d7909
+  tag: latest@sha256:697866ad8ee355f892e746999b26565343bbe4cca7055f63cfabaa0d901512ff
 service:
   main:
     ports:
@@ -21,9 +21,7 @@ persistence:
     mountPath: "/config"
   varrun:
     enabled: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: false

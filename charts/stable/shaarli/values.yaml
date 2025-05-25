@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/shaarli/shaarli
-  tag: v0.13.0
+  tag: v0.14.0
 persistence:
   cache:
     enabled: true
@@ -9,9 +9,7 @@ persistence:
   data:
     enabled: true
     mountPath: /var/www/shaarli/data
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

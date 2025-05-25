@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/drakkan/sftpgo
-  tag: v2.6.2-plugins@sha256:f1426b79fb243a43fd3dcc739cf2c9560f9f56bbe280a75a44968ce41aceb1ea
+  tag: v2.6.6-plugins@sha256:722c6cfe140d9334115e049da8cb199df346d80afe2786fea64372800f826eb4
 securityContext:
   container:
     runAsNonRoot: false
@@ -107,6 +107,3 @@ persistence:
   shareaccess:
     enabled: true
     mountPath: /shareaccess
-portal:
-  open:
-    enabled: true

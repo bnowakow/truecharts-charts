@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/openvscode-server
   pullPolicy: IfNotPresent
-  tag: 1.94.2@sha256:2cb38dd4551f234e8f91098a03953c152e2a9d0b43c5442f5c9358d7036d577e
+  tag: 1.99.3@sha256:d55edc4ea44fa16b44aed199d398db520116c843f9250f78484d64f519d3300b
 # secretEnv:
 #   CONNECTION_TOKEN: "somerandomstring"
 #   CONNECTION_SECRET: ""
@@ -18,9 +18,7 @@ persistence:
     mountPath: "/config"
   varrun:
     enabled: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: false

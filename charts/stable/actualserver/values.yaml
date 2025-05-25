@@ -1,7 +1,7 @@
 image:
-  repository: ghcr.io/actualbudget/actual-server
+  repository: ghcr.io/actualbudget/actual
   pullPolicy: IfNotPresent
-  tag: 24.10.1@sha256:83fc0d37cd31a71124763570ce66ca358a5064afbd94b2d1b3f9988b7c639b5c
+  tag: 25.5.0@sha256:3b486fbc0db02839917f65ed277aa509980f710b6e96dde966f5219983978179
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -32,12 +32,6 @@ service:
         protocol: http
         targetPort: 5006
 persistence:
-  server-files:
+  data:
     enabled: true
-    mountPath: /data/server-files
-  user-files:
-    enabled: true
-    mountPath: /data/user-files
-portal:
-  open:
-    enabled: true
+    mountPath: /data

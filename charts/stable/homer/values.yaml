@@ -1,6 +1,6 @@
 image:
   repository: docker.io/b4bz/homer
-  tag: v24.10.2@sha256:25557cfe4883159a9ce051c46b6e10c0a5b0bbf21bfdd09b1ad7adc0c7611269
+  tag: v25.05.2@sha256:8270c5631f7494f01bb6d9d459de37ab65f13998aa64dfd980ce5236b7be525e
   pullPolicy: IfNotPresent
 service:
   main:
@@ -12,9 +12,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/www/assets"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsUser: 1000

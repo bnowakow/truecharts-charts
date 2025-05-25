@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/mysql-workbench
   pullPolicy: IfNotPresent
-  tag: 8.0.40@sha256:0bcb2810bea6420f053d74b209f230142999fade4cc71d4577cb4ea7ec62d232
+  tag: 8.0.42@sha256:720a6505a8bd9c21e7fd314e59748479d680e46b75e2a8ce0b874b7e7d31cb08
 service:
   main:
     ports:
@@ -15,9 +15,7 @@ persistence:
     mountPath: "/config"
   varrun:
     enabled: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: false

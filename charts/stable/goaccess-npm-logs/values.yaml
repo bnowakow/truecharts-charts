@@ -1,15 +1,13 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/xavierh/goaccess-for-nginxproxymanager
-  tag: latest@sha256:ced21d530071a5fac9542571afd30fdb502df3084e42abaf93078ade210c2042
+  tag: latest@sha256:a2212982300354f64223684faf4869d977849e5d18a8f14cff02bd3594390d21
 persistence:
   hostpath1:
     enabled: true
     mountPath: /opt/log
     readOnly: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

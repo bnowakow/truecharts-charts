@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/wabayang/jelu
-  tag: latest@sha256:2e72032c44581127a01d04a4721a64a9cc4f59cb56ca13ad5c35261f2ba6027d
+  tag: latest@sha256:441160f2773fcf6b3028c01caba98dd422de4c148cef2ca23d5089a6e2652a6d
 persistence:
   config:
     enabled: true
@@ -15,9 +15,7 @@ persistence:
   importspath:
     enabled: true
     mountPath: /files/imports
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -1,7 +1,7 @@
 image:
   repository: docker.io/outlinewiki/outline
   pullPolicy: IfNotPresent
-  tag: 0.80.2@sha256:fde16562c9b8c67bc7855c71d8a1203125d63fcefc7ebb4e649de35a9281e6df
+  tag: 0.84.0@sha256:57717fcb7b697c4397578a30afe183d698c968c47279fe45dc26625343b236a6
 service:
   main:
     ports:
@@ -17,9 +17,7 @@ cnpg:
     enabled: true
     user: outline
     database: outline
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

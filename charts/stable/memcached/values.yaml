@@ -1,7 +1,7 @@
 image:
-  repository: docker.io/bitnami/memcached
+  repository: public.ecr.aws/bitnami/memcached
   pullPolicy: IfNotPresent
-  tag: 1.6.32@sha256:34db8c367920cc606b5cc28da65676b79cf88967c59583b6c0bb59d4baaceb2b
+  tag: 1.6.38@sha256:8728a68e3dd620d46710af5295c7006a4af8d46e32bfbbefc92bb42b19ae68b6
 
 includeCommon: true
 service:
@@ -11,10 +11,6 @@ service:
         port: 11211
         protocol: tcp
         targetPort: 11211
-portal:
-  open:
-    enabled: false
-
 configmap:
   dashboard:
     enabled: true

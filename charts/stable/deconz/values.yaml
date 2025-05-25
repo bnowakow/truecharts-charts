@@ -1,6 +1,6 @@
 image:
   repository: docker.io/deconzcommunity/deconz
-  tag: 2.29.0@sha256:d9b13f9769e2a66973601fd4e898cf95a9e8808713def2a1dccc542b06ea5d7f
+  tag: 2.30.2@sha256:0a700ad8245ea9e80c31231057581a9468f22319050a468a94b39d5caa56bb0b
   pullPolicy: IfNotPresent
 securityContext:
   container:
@@ -52,6 +52,3 @@ persistence:
   config:
     enabled: true
     mountPath: "/opt/deCONZ"
-portal:
-  open:
-    enabled: true

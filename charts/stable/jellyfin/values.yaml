@@ -1,11 +1,11 @@
 image:
   repository: ghcr.io/jellyfin/jellyfin
   pullPolicy: IfNotPresent
-  tag: 10.10.0@sha256:b15266bad088e3d793401be5845f2453233edd826c02cd7155910055133fb581
+  tag: 10.10.7@sha256:e4d1dc5374344446a3a78e43dd211247f22afba84ea2e5a13cbe1a94e1ff2141
 broadcastProxyImage:
   repository: docker.io/alpine/socat
   pullPolicy: IfNotPresent
-  tag: 1.8.0.0@sha256:a6be4c0262b339c53ddad723cdd178a1a13271e1137c65e27f90a08c16de02b8
+  tag: 1.8.0.3@sha256:f8ac2c1d22c11754203e158a48783de8e62b9581de601b76b8641631a5acf9d2
 service:
   main:
     ports:
@@ -32,9 +32,7 @@ persistence:
     enabled: true
     mountPath: "/config/transcodes"
     type: "emptyDir"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

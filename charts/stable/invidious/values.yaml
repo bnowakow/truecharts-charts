@@ -1,7 +1,7 @@
 image:
   repository: quay.io/invidious/invidious
   pullPolicy: IfNotPresent
-  tag: latest@sha256:8ea514c132b6a805328891f99b7aeef201523ff7ba28e38fd3c01ec4e14498da
+  tag: latest@sha256:9004335bf0c32ccd6262506a61ad37494410fb1fc5530e0dee6dc0657369200e
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -37,6 +37,7 @@ workload:
           command: ["sh", "-c"]
           args:
             - |
+              apk add git
               echo "Starting DB Seed..."
               mkdir -p invidious && cd invidious
 
@@ -158,6 +159,3 @@ cnpg:
     # DB User cannot be changed
     # hardcoded from upstream
     user: kemal
-portal:
-  open:
-    enabled: true

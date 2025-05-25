@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/linuxserver/mylar3
-  tag: version-v0.8.0@sha256:dda666da7e76d3acaf74a6ea500baf2ce247ece94dd8f80bdb95d89aa805fa84
+  repository: lscr.io/linuxserver/mylar3
+  tag: version-v0.8.2@sha256:6688b2beb3a48999bb7b6f63391a62d1e2620b2ddca9c6a371c18c42f826d51a
   pullPolicy: IfNotPresent
 service:
   main:
@@ -14,9 +14,7 @@ persistence:
     mountPath: "/config"
   varrun:
     enabled: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: false

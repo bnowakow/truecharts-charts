@@ -1,6 +1,6 @@
 image:
   repository: docker.io/jlesage/putty
-  tag: v24.09.1@sha256:557265726081cde1c5f6322bea7a43b3424154f696526ee3deaf0a1972f40c56
+  tag: v25.02.1@sha256:5e1b6363275df31314e2911704d248033ab7f7bb87f37e1aa783a9a7be348dd1
   pullPolicy: IfNotPresent
 service:
   main:
@@ -36,9 +36,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/config"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -3,7 +3,8 @@
 # by any default values.
 
 global:
-  createTCNamespace: false
+  traefik:
+    commonMiddlewares: []
 
 workload:
   main:

@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/hotio/whisparr
   pullPolicy: IfNotPresent
-  tag: v3-3.0.0.621@sha256:2df057144b647a61d47741c8b0ac0e0d86624eea601ee32ed353feb222122b49
+  tag: v3-3.0.0.1038@sha256:0f9d32a7a3afe73f3b071e328caffb4032b9f481b761f0145470b9a46d23045d
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -18,9 +18,7 @@ persistence:
   config:
     enabled: true
     mountPath: /config
-portal:
-  open:
-    enabled: true
+
 workload:
   main:
     podSpec:

@@ -24,6 +24,7 @@
   {{- $logLevel := "info" -}}
   {{- $accessModes := $rootCtx.Values.global.fallbackDefaults.vctAccessModes -}}
   {{- $walAccessModes := $rootCtx.Values.global.fallbackDefaults.vctAccessModes -}}
+  {{- $skipEmptyWalArchiveCheck := $rootCtx.Values.global.fallbackDefaults.cnpg.skipEmptyWalArchiveCheck -}}
 
   {{/* Make sure keys exist before try to access any sub keys */}}
   {{- if not (hasKey $objectData "cluster") -}}
@@ -140,6 +141,10 @@
     {{- $walAccessModes = . -}}
   {{- end -}}
 
+  {{- with $objectData.cluster.skipEmptyWalArchiveCheck -}}
+    {{- $skipEmptyWalArchiveCheck = . -}}
+  {{- end -}}
+
   {{- $imageName := $objectData.cluster.imageName -}}
   {{- if not $imageName -}}
     {{/* Ensure version and container tracking */}}
@@ -171,12 +176,16 @@ metadata:
   annotations:
     cnpg.io/hibernation: {{ $hibernation | quote }}
     checksum/secrets: {{ toJson $rootCtx.Values.secret | sha256sum }}
+    cnpg.io/skipEmptyWalArchiveCheck: $skipEmptyWalArchiveCheck
   {{- $annotations := (mustMerge $clusterAnnotations (include "tc.v1.common.lib.metadata.allAnnotations" $rootCtx | fromYaml)) -}}
   {{- with (include "tc.v1.common.lib.metadata.render" (dict "rootCtx" $rootCtx "annotations" $annotations) | trim) }}
     {{- . | nindent 4 }}
   {{- end }}
 spec:
   imageName: {{ $imageName }}
+  {{/* This ignores `0` on purpose. */}}
+  postgresUID: {{ $objectData.cluster.postgresUID | default 26 }}
+  postgresGID: {{ $objectData.cluster.postgresGID | default 26 }}
   enableSuperuserAccess: {{ $enableSuperUser }}
   primaryUpdateStrategy: {{ $primaryUpdateStrategy }}
   primaryUpdateMethod: {{ $primaryUpdateMethod }}

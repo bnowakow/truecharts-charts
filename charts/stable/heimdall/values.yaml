@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/linuxserver/heimdall
-  tag: 2.6.1@sha256:c680f706e0cfe29055bd5de243ea7540c12f53c419bf32eabe1e24cdcc78fd0d
+  repository: lscr.io/linuxserver/heimdall
+  tag: 2.6.3@sha256:cd44a6d1a3b5ed271ea0c3d5da657343072cfd95610addaab1f7e27298be7406
   pullPolicy: IfNotPresent
 service:
   main:
@@ -12,9 +12,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/config"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

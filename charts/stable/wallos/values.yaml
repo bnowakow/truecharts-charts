@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/bellamy/wallos
-  tag: latest@sha256:0b1de5fd7aa4804b7eac9604a5423bda5617c45ed267efa65822d0b2f940d7c3
+  repository: ghcr.io/ellite/wallos
+  tag: 3.1.1@sha256:2098a836d4e7c7903decd0a5cb9f8c0d7bb9d1932052b068837c91515d84a913
   pullPolicy: IfNotPresent
 
 securityContext:
@@ -25,7 +25,3 @@ persistence:
   logos:
     enabled: true
     mountPath: "/var/www/html/images/uploads/logos"
-
-portal:
-  open:
-    enabled: true

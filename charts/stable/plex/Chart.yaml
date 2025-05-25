@@ -1,15 +1,18 @@
 annotations:
+  artifacthub.io/links: |-
+    - name: support
+    url: https://discord.com/invite/tVsPTHWTtr
   max_scale_version: 24.04.1
   min_scale_version: 24.04.0
   truecharts.org/category: media
-  truecharts.org/max_helm_version: "3.15"
-  truecharts.org/min_helm_version: "3.11"
+  truecharts.org/max_helm_version: "3.17"
+  truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 1.41.1.9057
+appVersion: 1.41.7.9799
 dependencies:
   - name: common
-    version: 25.1.5
+    version: 25.4.10
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
@@ -29,8 +32,9 @@ maintainers:
     url: https://truecharts.org
 name: plex
 sources:
-  - https://ghcr.io/onedr0p/plex
+  - https://ghcr.io/home-operations/plex
   - https://github.com/k8s-at-home/container-images/pkgs/container/plex
   - https://github.com/truecharts/charts/tree/master/charts/stable/plex
 type: application
-version: 19.3.3
+version: 19.6.12
+

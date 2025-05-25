@@ -1,6 +1,6 @@
 image:
   repository: docker.io/gabekangas/owncast
-  tag: 0.1.3@sha256:dcad03787236e0414162e6ed4113484415f023b154fcb628ea19ae91f8efebb7
+  tag: 0.2.3@sha256:1b8e20e67cf90750a77b3056da8124db50709114d1cc56b2d012d018e17b158d
   pullPolicy: IfNotPresent
 service:
   main:
@@ -20,9 +20,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/app/data"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

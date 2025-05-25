@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
-  repository: docker.io/ich777/steamcmd
-  tag: latest@sha256:1d3268da8cde4b9b2aebdbb99accd7eec63a3723672418797d64c34497ded1d5
+  repository: ghcr.io/ich777/steamcmd
+  tag: latest@sha256:5763fe62a7f9a5f81a46729aa1182f8a18e97877ac962772abbf4c49cfc18ec8
 persistence:
   serverfiles:
     enabled: true
@@ -9,9 +9,7 @@ persistence:
   steamcmd:
     enabled: true
     mountPath: /serverdata/steamcmd
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

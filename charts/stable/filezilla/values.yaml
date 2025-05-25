@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/linuxserver/filezilla
-  tag: 3.67.0@sha256:6952d0717c79f79a2c06a7e250e84b8cc8ec73b0c08975a1b0822df7c60578b9
+  tag: 3.68.1@sha256:2decd85fc2afe8cb09f597a2378c8cfffdc7b5360a5ac8b652d69229e5470a33
   pullPolicy: IfNotPresent
 
 securityContext:
@@ -30,7 +30,3 @@ persistence:
     mountPath: "/config"
   varrun:
     enabled: false
-
-portal:
-  open:
-    enabled: true

@@ -1,6 +1,6 @@
 image:
   repository: docker.io/benzino77/tasmocompiler
-  tag: latest@sha256:18fce0ab4631a71169be97659df41fece3dcc98dc672dbee2abe90c4899e0106
+  tag: latest@sha256:680c30fa4e86b5ed06d0bdfbe90120584b4fb3f706f490ba74a51c621b158df4
   pullPolicy: IfNotPresent
 
 securityContext:
@@ -17,7 +17,3 @@ service:
         port: 14003
         protocol: http
         targetPort: 3000
-
-portal:
-  open:
-    enabled: true

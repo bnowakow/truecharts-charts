@@ -1,11 +1,11 @@
 image:
   repository: docker.io/onerahmet/openai-whisper-asr-webservice
   pullPolicy: IfNotPresent
-  tag: "v1.6.0"
+  tag: "v1.8.2"
 gpuImage:
   repository: docker.io/onerahmet/openai-whisper-asr-webservice
   pullPolicy: IfNotPresent
-  tag: "v1.6.0-gpu"
+  tag: "v1.8.2-gpu"
 
 securityContext:
   container:
@@ -46,7 +46,5 @@ persistence:
   whisper:
     enabled: true
     mountPath: "/root/.cache/whisper"
-portal:
-  open:
-    enabled: true
+
 updated: true

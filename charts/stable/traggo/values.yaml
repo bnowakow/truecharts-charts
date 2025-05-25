@@ -1,7 +1,7 @@
 image:
   repository: docker.io/traggo/server
   pullPolicy: IfNotPresent
-  tag: 0.5.1@sha256:494c6be66ac02cbb0d1200e92e3adc47f15649c445f0813aeb05e0c35c254bee
+  tag: 0.7.1@sha256:f471db20b8062a9fcb649aaa54e30f2cc4c4a0d93a6022dae7d1a9ab7d870125
 traggo:
   username: admin
   password: admin
@@ -17,9 +17,7 @@ persistence:
   config:
     enabled: true
     mountPath: /opt/traggo/data
-portal:
-  open:
-    enabled: true
+
 workload:
   main:
     podSpec:

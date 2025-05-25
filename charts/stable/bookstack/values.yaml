@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/bookstack
   pullPolicy: IfNotPresent
-  tag: 24.10.20241028@sha256:3733e2b9a99f15b7d343e7b59d7baeffddbb564890b7f2179b65044c1c8f0769
+  tag: 25.02.20250309@sha256:41917d12ea5ea06d4f389725ff4ed1adbfbace0a6ab650394ff5783ee1ff0a17
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -43,6 +43,3 @@ mariadb:
   includeCommon: true
   mariadbUsername: bookstack
   mariadbDatabase: bookstack
-portal:
-  open:
-    enabled: true

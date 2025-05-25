@@ -1,7 +1,7 @@
 image:
   repository: docker.io/lancachenet/lancache-dns
   pullPolicy: IfNotPresent
-  tag: latest@sha256:710d3ebc3f1a754b9587168056d1213f8a75cb1b84d65262260b671d92eba86b
+  tag: latest@sha256:89717d8c940bc9a57c3a0407affa8d7d82c28135cf58b89fdda695244cd7bf63
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -45,6 +45,3 @@ service:
         protocol: udp
         port: 53
         targetPort: 53
-portal:
-  open:
-    enabled: false

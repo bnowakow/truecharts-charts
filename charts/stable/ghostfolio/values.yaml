@@ -1,7 +1,7 @@
 image:
   repository: docker.io/ghostfolio/ghostfolio
   pullPolicy: IfNotPresent
-  tag: 2.120.0@sha256:b0d32371e712d26ab1218b7c4819857aab7b844079722736c938c17d30172a2b
+  tag: 2.161.0@sha256:f4be7488fdaefd8270a48e3d8069510184f385044e20b5941d1226d9d96bdefe
 securityContext:
   container:
     runAsNonRoot: false
@@ -57,6 +57,3 @@ cnpg:
 redis:
   enabled: true
   includeCommon: true
-portal:
-  open:
-    enabled: true

@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/sethforprivacy/simple-monerod
-  tag: v0.18.3.4@sha256:17aca19dcbedd92d3e4e6dc95c6034e06f691a82e11bf45f687ca2b5b3fbc89e
+  tag: v0.18.4.0@sha256:eb143b50b427348f74b94d9342aaa6c9a1b4e74310cf1bfb1aa8623361ec20a1
 
 monero:
   rpcbindip: "0.0.0.0"
@@ -37,7 +37,3 @@ persistence:
   blockchainstorage:
     enabled: true
     mountPath: /home/monero/.bitmonero
-
-portal:
-  open:
-    enabled: true

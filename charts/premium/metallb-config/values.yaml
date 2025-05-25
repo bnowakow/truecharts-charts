@@ -1,6 +1,6 @@
 image:
   repository: hello-world
-  tag: latest@sha256:d211f485f2dd1dee407a80973c8f129f00d54604d2c90732e8e320e5038a0348
+  tag: latest
   pullPolicy: IfNotPresent
 manifestManager:
   enabled: false
@@ -28,9 +28,7 @@ service:
 operator:
   metallb:
     namespace: metallb
-portal:
-  open:
-    enabled: false
+
 ipAddressPools: []
 #   - name: example
 #     autoAssign: true

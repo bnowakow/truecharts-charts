@@ -1,6 +1,6 @@
 image:
   repository: docker.io/joplin/server
-  tag: 3.0.1-beta@sha256:52af57880c0e04a179107807e13ffb8868b31ea2cc86a2b04da42220facb7589
+  tag: 3.3.13@sha256:e5bc41a4f30cedaf08dfb324dfac84d3ceb4ab221383903cc80fd7bbd05909db
   pullPolicy: IfNotPresent
 securityContext:
   container:
@@ -64,6 +64,3 @@ cnpg:
     enabled: true
     user: joplin
     database: joplin
-portal:
-  open:
-    enabled: true

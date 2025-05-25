@@ -1,7 +1,7 @@
 image:
   repository: docker.io/syncthing/syncthing
   pullPolicy: IfNotPresent
-  tag: 1.28.0@sha256:30b6a53436527edf31d791361d14b1f5119cc6882dbcf07822b618ee7a74e115
+  tag: 1.29.6@sha256:82e1abb0307008263b8287813a4367efee9db4f877759f8d41f0485ce2658e90
 workload:
   main:
     podSpec:
@@ -47,6 +47,3 @@ persistence:
   config:
     enabled: true
     mountPath: "/var/syncthing"
-portal:
-  open:
-    enabled: true

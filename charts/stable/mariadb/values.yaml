@@ -1,7 +1,7 @@
 image:
-  repository: docker.io/bitnami/mariadb
+  repository: public.ecr.aws/bitnami/mariadb
   pullPolicy: IfNotPresent
-  tag: 11.5.2@sha256:bfcf892fda619f5cad08b7f901f22862f2bb376e87fb204f312964d2c4ebc501
+  tag: 11.7.2@sha256:9c22d9d32e5bd6dad703e46ac67ecded33bdca2f73fc1ad2fddf845f1d213a2d
 
 includeCommon: true
 workload:
@@ -78,6 +78,3 @@ mariadbDatabase: "test"
 ## DEVNOTE: These password defaults always need to match common
 rootPassword: "PLACEHOLDERROOTPASSWORD"
 password: "PLACEHOLDERPASSWORD"
-portal:
-  open:
-    enabled: false

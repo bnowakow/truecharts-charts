@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
-  repository: docker.io/rocker/rstudio
-  tag: 4.4.1@sha256:051c070473e7e29508673daf64d10d78f44506fd0c84e83e9471a1900c885c4b
+  repository: ghcr.io/rocker-org/rstudio
+  tag: 4.5.0@sha256:26967f7619fd56b22fcfd472193b92f5958271d77df1704b0ce4cd50ecac0fa2
 persistence:
   config:
     enabled: true
@@ -9,9 +9,7 @@ persistence:
   workspace:
     enabled: true
     mountPath: /home/rstudio/workspace
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

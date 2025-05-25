@@ -1,7 +1,7 @@
 image:
   repository: docker.io/homeassistant/home-assistant
   pullPolicy: IfNotPresent
-  tag: 2024.10.4@sha256:408a5a63e3e9a89ceb6ecd98345e54c86073314b4d94e217cd54f7208307406d
+  tag: 2025.5.2@sha256:aa0d85544d00f135e6db6ab81f3ba3775e02715526fb524f0c8c67eaba31002b
 service:
   main:
     ports:
@@ -134,9 +134,7 @@ cnpg:
     enabled: true
     user: home-assistant
     database: home-assistant
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -1,7 +1,7 @@
 image:
   repository: docker.io/tailscale/tailscale
   pullPolicy: IfNotPresent
-  tag: v1.76.1@sha256:51d9f5f8543670ecd6b15363977876a876ac591ea45cc6adfc0bb2d07e487810
+  tag: v1.82.5@sha256:9a1f2640beecac3ad42ed8ef03d75adcb7165600f5131b17f9a2a3da68505928
 serviceAccount:
   main:
     enabled: true
@@ -38,7 +38,7 @@ tailscale:
   outbound_http_proxy_listen: ""
   extra_args: ""
   daemon_extra_args: ""
-  hostname: ""
+  hostname: "truecharts-tailscale"
   advertise_as_exit_node: false
 hostNetwork: true
 service:
@@ -57,9 +57,7 @@ persistence:
     mountPath: /dev/net/tun
     hostPathType: ""
     readOnly: false
-portal:
-  open:
-    enabled: false
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

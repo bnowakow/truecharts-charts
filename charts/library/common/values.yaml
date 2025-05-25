@@ -56,49 +56,32 @@ global:
     # -- Define a postgresql version for CNPG
     # will be used for all CNPG objects
     # Can be overruled per CNPG objects
-    pgVersion: 16
-  metallb:
-    # -- Adds metalLB annotations to services
-    addServiceAnnotations: true
+
+    # -- Define a topologyKey for default topologySpreadConstraints
+    # Will be used when defaultSpread: true
+    topologyKey: kubernetes.io/hostname
+    cnpg:
+      pgVersion: 16
+      skipEmptyWalArchiveCheck: true
   traefik:
-    # -- Adds traefik annotations to services (when needed)
-    addServiceAnnotations: true
-    # Enables or disables the fixed middlewares on all ingresses
-    # Can be overruled per ingress
-    enableFixedMiddlewares: true
-    # Applies middleware to all ingresses
-    # Can be overruled per ingress
-    fixedMiddlewares:
-      - name: chain-basic
-        # Optional, by default will try to
-        # "lookup" the namespace based on the name
-        namespace: ""
-    # The middlewares to apply if allowCors toggle is enabled
-    allowCorsMiddlewares:
-      - name: tc-opencors-chain
-        # Optional, by default will try to
-        # "lookup" the namespace based on the name
-        namespace: ""
+    commonMiddlewares:
+      - name: tc-basic-secure-headers
   # -- Minimum nodePort value
   minNodePort: 9000
   # -- Enable to stop most pods and containers including cnpg
   # does not include stand-alone pods
   stopAll: false
 
-# -- Hook to disable having a common-dependency enabled.
-# Primarily used to ensure we don't include common multiple times with nested dependencies
-includeCommon: true
-
 # -- Explicitly set a namespace for this chart only
 namespace: ""
 
 image:
-  repository: docker.io/traefik/whoami
+  repository: ghcr.io/traefik/whoami
   pullPolicy: IfNotPresent
-  tag: v1.10.3@sha256:43a68d10b9dfcfc3ffbfe4dd42100dc9aeaf29b3a5636c856337a5940f1b4f1c
+  tag: v1.11.0@sha256:200689790a0a0ea48ca45992e0450bc26ccab5307375b41c84dfc4f2475937ab
 
 chartContext:
-  APPURL: ""
+  appUrl: ""
   podCIDR: ""
   svcCIDR: ""
 
@@ -140,11 +123,11 @@ securityContext:
 # Can be overruled per container
 resources:
   limits:
-    cpu: 4000m
-    memory: 8Gi
+    cpu: 1000m
+    memory: 1500Mi
   requests:
-    cpu: 10m
-    memory: 50Mi
+    cpu: 100m
+    memory: 250Mi
 
 containerOptions:
   NVIDIA_CAPS:
@@ -212,9 +195,41 @@ TZ: UTC
 diagnosticMode:
   enabled: false
 
+# -- Vertical pod autoscaler
+vpa:
+  main:
+    enabled: false
+    targetSelector: []
+    # updatePolicy:
+    #   updateMode: auto
+    resourcePolicy:
+      containerPolicies:
+      - containerName: '*'
+        minAllowed:
+          cpu: 50m
+          memory: 50Mi
+        maxAllowed:
+          cpu: 8000m
+          memory: 20Gi
+        controlledResources: ["cpu", "memory"]
+
 # -- (docs/service/README.md)
 service:
   main:
+    ##  Integration stuff
+    # integration:
+    #   metallb:
+    #     enabled: false
+    ## Optional to set shared key manually, otherwise set to namespace
+    #     sharedKey: ""
+    #
+    #   cilium:
+    #     enabled: false
+    ## Optional to set shared key manually, otherwise ignored (namespace sharing)
+    #     sharedKey: ""
+    #
+    #   traefik:
+    #     enabled: false
     enabled: true
     primary: true
     ports:
@@ -234,6 +249,40 @@ credentials:
   #   secretKey: ""
   #   ## Is used in cases where things are encrypted by a backup utility
   #   encrKey: ""
+
+ingressMiddlewares:
+  traefik:
+    tc-basic-secure-headers:
+      enabled: false
+      type: headers
+      data:
+        accessControlAllowMethods:
+          - GET
+          - OPTIONS
+          - HEAD
+          - PUT
+        accessControlMaxAge: 100
+        stsSeconds: 63072000
+        forceSTSHeader: true
+        contentTypeNosniff: true
+        browserXssFilter: true
+        referrerPolicy: same-origin
+        customRequestHeaders:
+          X-Forwarded-Proto: "https"
+#    basic-auth:
+#      enabled: true
+#      type: basicAuth
+#      data:
+#        # middleware specific data ie
+#        users:
+#          - username: user1
+#            password: password1
+#    some-other-middleware:
+#      enabled: true
+#      type: someOtherMiddleware
+#      data:
+#        # middleware specific data ie
+#        someOtherMiddlewareData: someOtherMiddlewareData
 
 # -- (docs/persistence/README.md)
 persistence:
@@ -404,14 +453,29 @@ notes:
     # Thank you for installing {{ .Chart.Name }} by TrueCharts.
   # custom: "{{ toYaml $.Values }}"
   custom: |
-    {{- if .Values.portal }}
+    {{- if .Values.chartContext.appUrl }}
     ## Connecting externally
-    You can use this Chart by opening one of the following links in your browser:
-      {{- range $p := $.Values.portal }}
-      {{- if and $p.enabled $p.rendered }}
-    - {{ toYaml $p.rendered.url }}
-      {{- end }}
-      {{- end -}}
+    You can use this Chart by opening the following links in your browser:
+    - {{ toYaml .Values.chartContext.appUrl }}
+    {{- end }}
+
+    {{ if .Chart.Dependencies }}
+    ## Dependencies for {{ .Chart.Name }}
+
+    {{- range .Chart.Dependencies }}
+    - Chart: {{ .Repository }}/{{ .Name }}
+      Version: {{ .Version }}
+    {{- end }}
+    {{- end }}
+
+
+    {{- if .Values.chartContext.internalUrls }}
+    ## Connecting Internally
+
+    You can reach this chart inside your cluster, using the following service URLS:
+    {{- range $url := .Values.chartContext.internalUrls -}}
+    - {{ $url }}
+    {{- end }}
     {{- end }}
 
     ## Sources for {{ .Chart.Name }}
@@ -441,26 +505,9 @@ notes:
 ##
 ####
 
-# -- Defines the portals for which config needs to be generated
-portal:
-  open:
-    enabled: false
-    override:
-      protocol:
-      host:
-      port:
-    path: ""
-    targetSelector:
-      ingress: ""
-      service: ""
-      port: ""
-
-# -- Set by "open" portal, used for some applications internally.
-APPURL: ""
-
 gluetunImage:
   repository: tccr.io/tccr/gluetun
-  tag: v3.39.0@sha256:043522d3c797668666cffe6c53aa1a4bb8532ca08e71a9a862c414893a28c1cb
+  tag: v3.40.0@sha256:f5d434869d03fe3c91f832915ecabf7cb65c330732c5ba39ac03feb5e917f552
   pullPolicy: IfNotPresent
 
 netshootImage:
@@ -470,17 +517,17 @@ netshootImage:
 
 tailscaleImage:
   repository: tccr.io/tccr/tailscale
-  tag: v1.76.1@sha256:a722931132a225244fe0387f3f4bec535b2d98b3af4f628f1dc4529b0136fca7
+  tag: v1.82.5@sha256:1c2e055452e42e31662ebf48644ef63f5689ba5a132b1889f2f9567525e01599
   pullPolicy: IfNotPresent
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.93.1@sha256:0f6d7b4617569b4c2a2af19a8daa35374adcde46532d9d31eff7e0853b9fd603
+  tag: v4.100.2@sha256:11fd44a70f9ef44604af58fe485db1f8c01c54e4e4ef7352678d09b55abd95e8
   pullPolicy: IfNotPresent
 
 alpineImage:
   repository: tccr.io/tccr/alpine
-  tag: v3.20.3@sha256:0f0162635afb50d4794d7fd92b74c635ae3422cc426284da88e5e8754d1cfdcd
+  tag: v3.21.3
   pullPolicy: IfNotPresent
 
 scratchImage:
@@ -501,36 +548,36 @@ wgetImage:
 yqImage:
   pullPolicy: IfNotPresent
   repository: docker.io/mikefarah/yq
-  tag: 4.44.3@sha256:5b3d851bf28b04ef902fee86305f4dd7e063919c1cafedab2042adb16221c025
+  tag: 4.45.4@sha256:7cf28e5d67782f4b274a93a7bc54a840b553447a0807efd843d069f46bff718c
 
 postgresClientImage:
   repository: tccr.io/tccr/db-wait-postgres
-  tag: v1.1.0@sha256:eb330c9d63de46eac5c0acf58fd1fd79190d92505f8957b66ba150b24244774e
+  tag: v1.1.0@sha256:e6a9566733a37899db799f38df79c1ebd28ed0062073ba5f43e7065a7725841a
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: tccr.io/tccr/db-wait-mariadb
-  tag: v1.1.0@sha256:e5022ada570152f7d4a051fe61745cf39f68cc4faf195d9d3654aeccbd60ce41
+  tag: v1.1.0@sha256:513e3d11ea19317f2d6b146329eaa05f76e24322734d81effb98a5fccea6ed0c
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: tccr.io/tccr/db-wait-redis
-  tag: v1.1.0@sha256:8fe7439963ea5fece9bac13c18eb196ca70434a1d87630f5e04360ffa21e2851
+  tag: v1.1.0@sha256:819717e8ef3aab4093ec8818e094a41e581d8dc7e237230a8be2254c1686df5b
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: tccr.io/tccr/db-wait-mongodb
-  tag: v1.1.0@sha256:ee44fbd32673ba711aa72c95e604d51f845038366916559cec52ecfb8148073c
+  tag: v1.2.0@sha256:9a69802b7c48b4d390247b15c9798730a741054175b3e6534bda7d177b2ed454
   pullPolicy: IfNotPresent
 
 postgres15Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "15.8"
+  tag: "15.13"
   pullPolicy: IfNotPresent
 
 postgres16Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "16.4"
+  tag: "16.9"
   pullPolicy: IfNotPresent
 
 postgresPostgis15Image:
@@ -559,7 +606,7 @@ openvpnImage:
   # -- Specify the openvpn client image
   repository: tccr.io/tccr/openvpn-client
   # -- Specify the openvpn client image tag
-  tag: latest@sha256:2816991021542042f34ca2448b8a8bde93e8e75ae52f53922b1ab70491788ee5
+  tag: latest@sha256:9bfdf50791d6e51056e31c03f73c9db329b2b72e7746155cfdc63e0c8b49b55a
   # -- Specify the openvpn client image pull policy
   pullPolicy: IfNotPresent
 
@@ -625,24 +672,32 @@ ingress:
         enabled: false
         certificateIssuer: ""
       traefik:
-        enabled: true
+        enabled: false
         # Default to websecure
         entrypoints:
           - websecure
         # Ensures tls annotation is set
         forceTLS: true
-        # Drops both global and local fixedMiddlewares when enabled
-        allowCors: false
-        # fixedMiddlewares:
-        #   - name: chain-basic
-        #     # Optional, by default will try to
-        #     # "lookup" the namespace based on the name
-        #     namespace: ""
         middlewares: []
         #   - name: my-middleware
         #     # Optional, by default will try to
         #     # "lookup" the namespace based on the name
         #     namespace: ""
+      nginx:
+        enabled: false
+        themepark:
+          enabled: false
+          css: ""
+        ipWhitelist: []
+        auth:
+          # empty to disable, options: "authentik" or "authelia"
+          type: ""
+          # Internal Domain name + port to reach the auth provider, excluding http(s)
+          internalHost: ""
+          # External (ingress) Domain name to reach the auth provider, excluding http(s)
+          externalHost: ""
+          # Optional: override default response headers
+          responseHeaders: []
       homepage:
         enabled: false
         # Default: chart name
@@ -792,114 +847,158 @@ metrics:
 # -- The common chart supports several add-ons. These can be configured under this key.
 # @default -- See below
 addons:
-  # -- The common chart supports adding a VPN add-on. It can be configured under this key.
-  # @default -- See values.yaml
-  vpn:
-    # -- Specify the VPN type. Valid options are disabled, gluetun, openvpn, wireguard or tailscale
-    # OpenVPN and Wireguard are considered deprecated
-    type: disabled
-
-    # -- Tailscale specific configuration
-    # @default -- See below
-    # See more info for the configuration
-    # https://github.com/tailscale/tailscale/blob/main/docs/k8s/run.sh
-    tailscale:
-      # -- Auth key to connect to the VPN Service
-      authkey: ""
-      # As a sidecar, it should only need to run in userspace
-      userspace: true
-      auth_once: true
-      accept_dns: false
-      routes: ""
-      dest_ip: ""
-      sock5_server: ""
-      extra_args: ""
-      daemon_extra_args: ""
-      outbound_http_proxy_listen: ""
-      # -- Annotations for tailscale sidecar
-      annotations: {}
-
-    # -- OpenVPN specific configuration
-    # @default -- See below
-    openvpn:
-      # -- Credentials to connect to the VPN Service (used with -a)
-      # Only using password is enough
-      username: ""
-      password: ""
-
-    # -- All variables specified here will be added to the vpn sidecar container
-    # See the documentation of the VPN image for all config values
-    env: {}
-    #  TZ: UTC
-
-    # -- All variables specified here will be added to the vpn sidecar container
-    # See the documentation of the VPN image for all config values
-    envList: []
-    #  - name: someenv
-    #   value: somevalue
-
-    # -- you can directly specify the config file here
-    config: ""
-
-    scripts:
-      # -- you can directly specify the upscript here
-      up: ""
-      # some script
-
-      # -- you can directly specify the downscript here
-      down: ""
-      # some script
-
-    # -- Provide a customized vpn configuration file location to be used by the VPN.
-    configFile: ""
-
-    # -- Provide a customized vpn configuration folder location to be added to the VPN container
-    # The config file needs to be mounted seperately
-    # the upscript and downscript need to be named: upscript.sh and downscript.sh respectively
-    configFolder: ""
-
-    # -- Provide an existing secret for vpn config storage
-    existingSecret: ""
-
-    # -- select pods to bind vpn addon to
-    # Add "codeserver" to also add the codeserver pod to VPN
+  gluetun:
+    enabled: false
     targetSelector:
       - main
+    secret:
+      # vpn-conf:
+      #   basePath: /gluetun/wireguard
+      #   data:
+      #     # Effective path /gluetun/wireguard/wg0.conf
+      #     wg0.conf: |
+      #       some conf
+      #     wg1.conf: |
+      #       some conf
+      # scripts:
+      #   basePath: /gluetun/scripts
+      #   defaultMode: "0777"
+      #   data:
+      #     # Effective path /gluetun/scripts/up.sh
+      #     up.sh: |
+      #       some conf
+    container:
+      enabled: true
+      imageSelector: gluetunImage
+      probes:
+        liveness:
+          enabled: false
+        readiness:
+          enabled: false
+        startup:
+          enabled: false
+      resources:
+        excludeExtra: true
+      securityContext:
+        runAsUser: 0
+        runAsNonRoot: false
+        readOnlyRootFilesystem: false
+        runAsGroup: 568
+        capabilities:
+          add:
+            - NET_ADMIN
+            - NET_RAW
+            - MKNOD
+        env:
+          DOT: "off"
+          DNS_KEEP_NAMESERVER: "on"
+          FIREWALL: "off"
+          FIREWALL_OUTBOUND_SUBNETS: ""
+          FIREWALL_INPUT_PORTS: ""
 
-    ## Only for Wireguard and OpenVPN
-    killSwitch: true
-    excludedNetworks_IPv4: []
-    excludedNetworks_IPv6: []
+  # -- Tailscale specific configuration
+  # @default -- See below
+  # See more info for the configuration
+  # https://github.com/tailscale/tailscale/blob/main/docs/k8s/run.sh
+  tailscale:
+    enabled: false
+    targetSelector:
+      - main
+    # -- you can directly specify the config file here
+    config: ""
+    container:
+      enabled: true
+      imageSelector: "tailscaleImage"
+      probes:
+        liveness:
+          enabled: false
+        readiness:
+          enabled: false
+        startup:
+          enabled: false
+      command:
+        - /usr/local/bin/containerboot
+      resources:
+        excludeExtra: true
+      env:
+        # Set KUBE_SECRET to empty string to force tailscale
+        # to use the filesystem for state tracking.
+        # With secret for state tracking you can't always
+        # know if the app that uses this sidecard will
+        # use a custom ServiceAccount and will lead to falure.
+        TS_KUBE_SECRET: ""
+        TS_SOCKET: /var/run/tailscale/tailscaled.sock
+        TS_STATE_DIR: /var/lib/tailscale/state
+        TS_USERSPACE: true
+        TS_AUTH_ONCE: true
+        TS_ACCEPT_DNS: false
+        TS_AUTH_KEY: ""
+        TS_TAILSCALED_EXTRA_ARGS: ""
+        TS_EXTRA_ARGS: ""
+        TS_SOCKS5_SERVER: ""
+        TS_DEST_IP: ""
+        TS_ROUTES: ""
+        TS_OUTBOUND_HTTP_PROXY_LISTEN: ""
+      securityContext:
+        capabilities:
+          add:
+            - NET_ADMIN
+            - NET_RAW
 
-    ## For Gluetun to enable kubernetes network communication
-    inputPorts: []
+    # -- Auth key to connect to the VPN Service
+    authkey: ""
+    # As a sidecar, it should only need to run in userspace
+    userspace: true
+    auth_once: true
+    accept_dns: false
+    routes: ""
+    dest_ip: ""
+    sock5_server: ""
+    extra_args: ""
+    daemon_extra_args: ""
+    outbound_http_proxy_listen: ""
+    # -- Annotations for tailscale sidecar
+    annotations: {}
 
   # -- The common library supports adding a code-server add-on to access files. It can be configured under this key.
   # @default -- See values.yaml
   codeserver:
-    # -- Enable running a code-server container in the pod
     enabled: false
-
-    # -- Set any environment variables for code-server here
-    env: {}
-
-    # -- All variables specified here will be added to the codeserver sidecar container
-    # See the documentation of the codeserver image for all config values
-    envList: []
-    #   - name: someenv
-    #    value: somevalue
-    # -- Set codeserver command line arguments.
-    # Consider setting --user-data-dir to a persistent location to preserve code-server setting changes
-    args:
-      - --auth
-      - none
+    # -- Enable running a code-server container in the pod
+    container:
+      enabled: true
+      probes:
+        liveness:
+          enabled: true
+          port: 12321
+          path: "/"
+        readiness:
+          enabled: true
+          port: 12321
+          path: "/"
+        startup:
+          enabled: true
+          port: 12321
+          path: "/"
+      imageSelector: "codeserverImage"
+      resources:
+        excludeExtra: true
+      securityContext:
+        runAsUser: 0
+        runAsGroup: 0
+        runAsNonRoot: false
+        readOnlyRootFilesystem: false
+      args:
+        - "--port"
+        - "12321"
+        - "/"
+        - --auth
+        - none
       # - --user-data-dir
       # - "/config/.vscode"
-    # -- Select a container to add the addon to
-    targetSelector:
-    # -- Specify the working dir that will be opened when code-server starts
-    # If not given, the app will default to the mountpah of the first specified volumeMount
-    workingDir: "/"
+      # -- Select a workload to add the addon to
+      targetSelector:
+        - "main"
 
     service:
       # -- Enable a service for the code-server add-on.
@@ -912,6 +1011,7 @@ addons:
           primary: true
           protocol: http
           port: 12321
+          targetPort: 12321
 
     ingress:
       # -- Enable an ingress for the code-server add-on.
@@ -930,9 +1030,33 @@ addons:
   netshoot:
     # -- Enable running a netshoot container in the pod
     enabled: false
+    container:
+      enabled: true
+      command:
+        - /bin/sh
+        - -c
+        - sleep infinity
+      probes:
+        liveness:
+          enabled: false
+        readiness:
+          enabled: false
+        startup:
+          enabled: false
+      imageSelector: "netshootImage"
+      resources:
+        excludeExtra: true
+      securityContext:
+        runAsUser: 0
+        runAsGroup: 0
+        runAsNonRoot: false
+        readOnlyRootFilesystem: false
+        capabilities:
+          add:
+            - NET_ADMIN
+            - NET_RAW
 
-    # -- Set any environment variables for netshoot here
-    env: {}
+dependencies:
 
 ##########################################################################
 # This section contains some pre-config for frequently used dependencies #
@@ -982,6 +1106,9 @@ cnpg:
 
       # set to true on single-node clusters to allow PVCs to be kept on instance restart
       singleNode: false
+
+      ## set to configure the skipEmptyWalArchiveCheck annotation
+      # skipEmptyWalArchiveCheck: true
       # # -- storage size for the data pvc's
       # # Follows the same spec as .Values.Persistence type=PVC
       # storage:

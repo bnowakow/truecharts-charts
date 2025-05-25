@@ -1,6 +1,6 @@
 image:
   repository: docker.io/octoprint/octoprint
-  tag: 1.10.2@sha256:dcc74b1a6074972ba2fce80e1abc80e98e2603adcab771918d89abaed2e4c277
+  tag: 1.11.1@sha256:39fc1137ba91e4b2840a702490e27ae0c912604857bd182d629281e27964bab4
   pullPolicy: IfNotPresent
 service:
   main:
@@ -14,9 +14,7 @@ persistence:
     mountPath: "/octoprint"
   varrun:
     enabled: true
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     runAsNonRoot: false

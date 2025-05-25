@@ -1,7 +1,7 @@
 image:
   repository: docker.io/jenkins/jenkins
   pullPolicy: IfNotPresent
-  tag: 2.483-jdk17@sha256:f588af9083480d5d45428bc36a66e4276dc7aed3aeebaf20811436bbf68f1e44
+  tag: 2.510-jdk17@sha256:a062e9f43815d3577d80db075b0c57f1861a7112833c0a6ec11c22cee071733c
 security:
   container:
     runAsGroup: 1000
@@ -49,6 +49,3 @@ persistence:
   data:
     enabled: true
     mountPath: /var/jenkins_home
-portal:
-  open:
-    enabled: true

@@ -1,7 +1,7 @@
 image:
   repository: docker.io/beromir/servas
   pullPolicy: IfNotPresent
-  tag: 0.3.0@sha256:845818f746c360ea71fcefbe3761be927480ecbcc0848e9d1530a71b2e60f494
+  tag: 0.5.1@sha256:d69687f44c6c8c6cc5d584dad1233363b8a3b7481d9632fa69220c5837d31b15
 securityContext:
   container:
     runAsNonRoot: false
@@ -60,6 +60,3 @@ mariadb:
   includeCommon: true
   mariadbUsername: servas
   mariadbDatabase: servas
-portal:
-  open:
-    enabled: true

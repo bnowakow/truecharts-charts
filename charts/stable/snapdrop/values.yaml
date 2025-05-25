@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/linuxserver/snapdrop
-  tag: latest@sha256:1c5ba60e357dea352287f9768355fc23bd957e7e5cca8676266b3acf52a2e959
+  repository: lscr.io/linuxserver/snapdrop
+  tag: latest@sha256:9197bed844bf29da1c763dd2588a958a9369069b14056b366ce4fb7efc6b4356
   pullPolicy: IfNotPresent
 service:
   main:
@@ -12,9 +12,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/config"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

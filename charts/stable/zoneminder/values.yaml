@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/dlandon/zoneminder.unraid
-  tag: latest@sha256:79c3c54cedc4ec4c3e7b19736469fd7205dd29c8080642e24decff6e8c95c938
+  tag: latest@sha256:6af419fffea71909d44c1e0cdebadfcd9eb60d5333821ddf9fe60b894ccd9d29
 persistence:
   varrun:
     enabled: false
@@ -11,9 +11,7 @@ persistence:
   datapath:
     enabled: true
     mountPath: /var/cache/zoneminder
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

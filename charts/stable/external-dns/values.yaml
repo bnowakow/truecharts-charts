@@ -1,7 +1,7 @@
 image:
   repository: registry.k8s.io/external-dns/external-dns
   pullPolicy: IfNotPresent
-  tag: v0.15.0@sha256:338dd8c526e1337a12db0c8ee81a59ce5815ea51b73756affcd1e5dca530105c
+  tag: v0.17.0@sha256:85eba2727b410c8f8093d641a4b1a29671878db94d525a70a4108d10ba8eef5f
 externaldns:
   logLevel: "info"
   logFormat: "text"
@@ -17,6 +17,7 @@ externaldns:
   policy: ""
   piholeServer: ""
   piholePassword: ""
+  piholeAPIVersion: ""
   triggerLoopOnEvent: "false"
   txtOwnerId: ""
   txtPrefix: ""
@@ -138,6 +139,3 @@ serviceAccount:
     primary: true
 podOptions:
   automountServiceAccountToken: true
-portal:
-  open:
-    enabled: false

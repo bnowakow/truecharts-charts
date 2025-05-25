@@ -1,14 +1,12 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/dlandon/z80pack
-  tag: latest@sha256:206d1cbc7d98882dae2c9af38743e408c8f9ea2b4f9a91f72f98464c640b8de5
+  tag: latest@sha256:0275cc5672a660fa2c583430fcf7581156559738bae1513b5e792f170fef8992
 persistence:
   config:
     enabled: true
     mountPath: /config
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -1,6 +1,6 @@
 image:
   repository: docker.io/josh5/steam-headless
-  tag: latest@sha256:3bf3a07d98daa8c28fd469198e6e5338381ac00192461ed9528dcdaf4b04e606
+  tag: latest@sha256:1c028fa228d258243441e41b2e0fe6fa6dc58669d77393442ec3cf0ea2bbdd30
   pullPolicy: IfNotPresent
 
 securityContext:
@@ -55,7 +55,3 @@ persistence:
   flatpak:
     enabled: true
     mountPath: /var/lib/flatpak
-
-portal:
-  open:
-    enabled: true

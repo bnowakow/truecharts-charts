@@ -1,7 +1,7 @@
 image:
   repository: docker.io/shlinkio/shlink-web-client
   pullPolicy: IfNotPresent
-  tag: 4.2.2@sha256:4b59f76630ed551d07913b32b2d13a66200f35d1746ce901fcfb1902bd8a2bca
+  tag: 4.4.0@sha256:99988516ee0caf2059a485edaacab9759db0a3140c5a5c2634e0a97ac4d194bf
 service:
   main:
     ports:
@@ -9,9 +9,7 @@ service:
         targetPort: 8080
         port: 10154
         protocol: http
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

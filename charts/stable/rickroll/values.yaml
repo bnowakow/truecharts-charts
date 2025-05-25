@@ -1,7 +1,7 @@
 image:
   repository: docker.io/modem7/docker-rickroll
   pullPolicy: IfNotPresent
-  tag: latest@sha256:e615791e7c171befae47bcc8c515d180d9fc73a397edf6c229a5ef538d9b55a4
+  tag: latest@sha256:16de005b6fa371227b27fde008a350e668fdaa32af49c8a992e74355692da9f6
 securityContext:
   container:
     runAsNonRoot: false
@@ -32,6 +32,3 @@ workload:
             HEIGHT: "100vh"
             WIDTH: "100%"
             HEADLINE: ""
-portal:
-  open:
-    enabled: true

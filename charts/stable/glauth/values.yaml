@@ -1,14 +1,12 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/glauth/glauth
-  tag: latest@sha256:fc0d6107d420fc1fad3bbc16902ccc1562efd3afec2b6852271c8c323e631a10
+  tag: latest@sha256:a4d973c17ff44b2dbe3eb61a8f597fe4a936bde08885f5207f4b4cf6b0506459
 persistence:
   config:
     enabled: true
     mountPath: /app/config
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

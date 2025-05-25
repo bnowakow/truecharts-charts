@@ -1,6 +1,6 @@
 image:
-  repository: docker.io/minio/minio
-  tag: RELEASE.2024-10-13T13-34-11Z@sha256:9535594ad4122b7a78c6632788a989b96d9199b483d3bd71a5ceae73a922cdfa
+  repository: quay.io/minio/minio
+  tag: RELEASE.2025-04-22T22-12-26Z@sha256:a1ea29fa28355559ef137d71fc570e508a214ec84ff8083e39bc5428980b015e
   pullPolicy: IfNotPresent
 service:
   main:
@@ -24,9 +24,7 @@ persistence:
   config:
     enabled: true
     mountPath: "/data"
-portal:
-  open:
-    enabled: true
+
 securityContext:
   container:
     readOnlyRootFilesystem: false

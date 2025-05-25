@@ -9,6 +9,7 @@ securityContext:
     runAsGroup: 0
     readOnlyRootFilesystem: false
     runAsNonRoot: false
+    privileged: true
     capabilities:
       add:
         - NET_ADMIN
@@ -55,6 +56,3 @@ persistence:
   config:
     enabled: true
     mountPath: "/etc/wireguard"
-portal:
-  open:
-    enabled: true

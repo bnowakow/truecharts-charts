@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/mintplex-labs/anything-llm
   pullPolicy: IfNotPresent
-  tag: latest@sha256:e93c2890f6ad447b6be945607077f3b4b96ca9992256b69c7d193be2ea7af248
+  tag: latest@sha256:eb342573a47dfffa61806db49293d3c0abccc73f7fddfa18c3ef9c847f62ed52
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -150,7 +150,3 @@ persistence:
   outputs:
     enabled: true
     mountPath: "/app/collector/outputs"
-
-portal:
-  open:
-    enabled: true

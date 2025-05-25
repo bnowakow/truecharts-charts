@@ -1,12 +1,10 @@
 image:
-  repository: docker.io/emberstack/kubernetes-reflector
+  repository: ghcr.io/emberstack/kubernetes-reflector
   pullPolicy: IfNotPresent
-  tag: build-7.1.217@sha256:982b8fc714349abe480a6864f3c3fce8e8801fd5068fac6add5b22ed32efc033
+  tag: 9.1.7@sha256:495bc4df6dc951aa99c38b511ee795c6797631cbcc7ef27c1b5fb6bc5cc79e88
 operator:
   register: true
-portal:
-  open:
-    enabled: false
+
 rbac:
   main:
     enabled: true
@@ -55,16 +53,16 @@ workload:
           probes:
             liveness:
               type: http
-              path: /healthz
-              port: 25080
+              path: /health/ready
+              port: 8080
             readiness:
               type: http
-              path: /healthz
-              port: 25080
+              path: /health/ready
+              port: 8080
             startup:
               type: http
-              path: /healthz
-              port: 25080
+              path: /health/ready
+              port: 8080
 service:
   main:
     enabled: false

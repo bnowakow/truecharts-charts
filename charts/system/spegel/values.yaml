@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/spegel-org/spegel
   pullPolicy: IfNotPresent
-  tag: v0.0.27
+  tag: v0.2.0
 
 securityContext:
   container:
@@ -21,6 +21,8 @@ service:
         nodePort: 30021
   router:
     enabled: true
+    clusterIP: None
+    publishNotReadyAddresses: true
     ports:
       router:
         enabled: true
@@ -68,7 +70,7 @@ configmap:
     labels:
       grafana_dashboard: "1"
     data:
-      traefik.json: >-
+      spegel.json: >-
         {{ .Files.Get "dashboard.json" | indent 8 }}
 
 podOptions:
@@ -91,10 +93,6 @@ metrics:
     endpoints:
       - port: metrics
     targetSelector: metrics
-
-portal:
-  open:
-    enabled: false
 
 persistence:
   containerd-sock:
@@ -126,7 +124,7 @@ spegel:
   # -- Registries for which mirror configuration will be created.
   ## NOTE: If using Talos, Talos does NOT fall-back to the main url for talos containers
   ## Include main url in mirror list in that case!
-  registries:
+  mirroredRegistries:
     - https://cgr.dev
     - https://docker.io
     - https://ghcr.io
@@ -139,7 +137,7 @@ spegel:
     - https://tccr.io
     - https://factory.talos.dev
   # -- Additional target mirror registries other than Spegel.
-  additionalMirrorRegistries: []
+  additionalMirrorTargets: []
   # -- Max ammount of mirrors to attempt.
   mirrorResolveRetries: 3
   # -- Max duration spent finding a mirror.
@@ -154,25 +152,13 @@ spegel:
   containerdContentPath: "/var/lib/containerd/io.containerd.content.v1.content"
   # -- If true Spegel will add mirror configuration to the node.
   containerdMirrorAdd: true
-  # -- Path to Kubeconfig credentials, should only be set if Spegel is run in an environment without RBAC.
-  kubeconfigPath: ""
   # -- When true Spegel will resolve tags to digests.
   resolveTags: true
   # -- When true latest tags will be resolved to digests.
   resolveLatestTag: true
   # -- When true existing mirror configuration will be appended to instead of replaced.
-  appendMirrors: true
+  prependExisting: true
 
-# -- Whether Role Based Access Control objects like roles and rolebindings should be created
-rbac:
-  main:
-    enabled: true
-    primary: true
-    clusterWide: true
-    rules:
-      - apiGroups: ["coordination.k8s.io"]
-        resources: ["leases"]
-        verbs: ["get", "list", "watch", "create", "update"]
 # -- The service account the pods will use to interact with the Kubernetes API
 serviceAccount:
   main:

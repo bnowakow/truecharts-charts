@@ -1,15 +1,18 @@
 annotations:
+  artifacthub.io/links: |-
+    - name: support
+    url: https://discord.com/invite/tVsPTHWTtr
   max_scale_version: 24.04.1
   min_scale_version: 24.04.0
   truecharts.org/category: networking
-  truecharts.org/max_helm_version: "3.15"
-  truecharts.org/min_helm_version: "3.11"
+  truecharts.org/max_helm_version: "3.17"
+  truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2024.07.0
+appVersion: 2025.04.0
 dependencies:
   - name: common
-    version: 25.1.5
+    version: 25.4.10
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
@@ -28,10 +31,11 @@ maintainers:
     url: https://truecharts.org
 name: pihole
 sources:
+  - https://ghcr.io/pi-hole/pihole
   - https://github.com/pi-hole
   - https://github.com/pi-hole/docker-pi-hole
   - https://github.com/truecharts/charts/tree/master/charts/stable/pihole
-  - https://hub.docker.com/r/pihole/pihole
   - https://pi-hole.net/
 type: application
-version: 18.4.1
+version: 19.2.0
+

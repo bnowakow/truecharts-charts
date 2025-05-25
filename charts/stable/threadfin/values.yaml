@@ -1,0 +1,17 @@
+image:
+  repository: fyb3roptik/threadfin
+  tag: 1.2.32@sha256:11e02ff07d7a874133d9c79200d7c6f2ae44d98e2e8736a6f63056387a651b86
+  pullPolicy: IfNotPresent
+service:
+  main:
+    ports:
+      main:
+        port: 34400
+persistence:
+  config:
+    enabled: true
+    mountPath: "/home/threadfin/conf"
+  temp:
+    enabled: true
+    mountPath: "/tmp/threadfin"
+    type: emptyDir

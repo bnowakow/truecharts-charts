@@ -72,7 +72,11 @@ func HelmPull(repo string, name string, version string, dest string, silent bool
     client.Settings = settings
     client.RepoURL = repo
     client.Version = version
-    client.DestDir = filepath.Join(helper.HelmCache, dest)
+    if dest != "" {
+        client.DestDir = dest
+    } else {
+        client.DestDir = helper.HelmCache
+    }
 
     // Create cache directory
     if err := os.MkdirAll(client.DestDir, os.ModePerm); err != nil {
@@ -239,9 +243,23 @@ func HelmInstall(repoURL string, chartName string, releaseName string, namespace
     }
 
     // Install the chart with merged values
+    log.Debug().Msg("Installing chart...")
     release, err := client.Run(chart, vals)
     if err != nil {
-        return fmt.Errorf("failed to install chart: %w", err)
+        log.Debug().Msg("Chart install returned an error")
+        if strings.Contains(err.Error(), "timed out") {
+            // Wait for 15 seconds and try again
+            log.Warn().Msg("Chart install recieved a timeout, retrying in 15 seconds...")
+            time.Sleep(15 * time.Second)
+            release, err = client.Run(chart, vals)
+            if err != nil && strings.Contains(err.Error(), "timed out") {
+                return fmt.Errorf("failed to install chart after retry, with another timeout: %w", err)
+            } else if err != nil {
+                return fmt.Errorf("failed to install chart after retry: %w", err)
+            }
+        } else {
+            return fmt.Errorf("failed to install chart: %w", err)
+        }
     }
 
     if wait {

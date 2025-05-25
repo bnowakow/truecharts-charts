@@ -1,7 +1,7 @@
 image:
-  repository: docker.io/bitnami/mongodb
+  repository: public.ecr.aws/bitnami/mongodb
   pullPolicy: IfNotPresent
-  tag: 8.0.3@sha256:5b1b1409240696cf687f894c553f1ff6b98d4508f23e76aafc7e3d05871cb114
+  tag: 8.0.9@sha256:4bc954f1c00cb729b15bd7f8721e7dbbc0937736c89f40d76e019aac68dfd6d4
 
 includeCommon: true
 workload:
@@ -93,6 +93,3 @@ secret:
     data:
       mongodb-password: '{{ ( .Values.password | default "empty" ) }}'
       mongodb-root-password: '{{ ( .Values.rootPassword | default "empty" ) }}'
-portal:
-  open:
-    enabled: false

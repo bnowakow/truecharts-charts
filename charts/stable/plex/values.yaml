@@ -1,7 +1,7 @@
 image:
-  repository: ghcr.io/onedr0p/plex
+  repository: ghcr.io/home-operations/plex
   pullPolicy: IfNotPresent
-  tag: 1.41.1.9057-af5eaea7a@sha256:5926b77196bb7c9f75b52f431d0483abea0fef1f576b7201592b385449201456
+  tag: 1.41.7.9799@sha256:0c31ee1ebee0b63ead2de2accc6c52b1e65e9322b39118715eeac8b2f2bb786f
 service:
   main:
     ports:
@@ -47,6 +47,10 @@ workload:
             # User Defined
             ALLOWED_NETWORKS: "172.16.0.0/12,10.0.0.0/8,192.168.0.0/16"
             PLEX_CLAIM: ""
-portal:
-  open:
-    enabled: true
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8000Mi
+  requests:
+    cpu: 500m
+    memory: 1000Mi
