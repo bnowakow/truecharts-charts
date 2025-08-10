@@ -1,7 +1,7 @@
 image:
   repository: docker.io/linuxserver/transmission
   pullPolicy: IfNotPresent
-  tag: 4.0.6@sha256:58b30db5213fa33bda70640642d5c19b2d7d45f53d7ad178e02f570c88409f48
+  tag: 4.0.6@sha256:276f443d0c0f1d45ac3277ef56ff9b4d2b60a7a56059ec4dcf897f60692f6045
 service:
   main:
     ports:

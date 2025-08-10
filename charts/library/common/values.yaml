@@ -143,6 +143,7 @@ podOptions:
   # If this key exists, takes precedence over the automated calculation
   # hostUsers: false
   shareProcessNamespace: false
+  affinity: {}
   dnsPolicy: ClusterFirst
   dnsConfig:
     options:
@@ -153,6 +154,7 @@ podOptions:
     kubernetes.io/arch: "amd64"
   # -- Used to enforce a good spread for Deployments and StatefulSets by default
   defaultSpread: true
+  defaultAffinity: true
   topologySpreadConstraints: []
   tolerations: []
   schedulerName: ""
@@ -204,14 +206,51 @@ vpa:
     #   updateMode: auto
     resourcePolicy:
       containerPolicies:
-      - containerName: '*'
-        minAllowed:
-          cpu: 50m
-          memory: 50Mi
-        maxAllowed:
-          cpu: 8000m
-          memory: 20Gi
-        controlledResources: ["cpu", "memory"]
+        - containerName: "*"
+          minAllowed:
+            cpu: 50m
+            memory: 50Mi
+          maxAllowed:
+            cpu: 8000m
+            memory: 20Gi
+          controlledResources: ["cpu", "memory"]
+
+# -- Horizontal pod autoscaler
+hpa:
+  main:
+    enabled: false
+    targetSelector: []
+    # minReplicas: 1
+    # maxReplicas: 3
+
+    # metrics:                 # Optional, list of metric specs
+    #   - type: Resource       # Can be Resource, Pods, Object, External, or ContainerResource
+    #     resource:
+    #       name: cpu
+    #       target:
+    #         type: Utilization        # Or Value / AverageValue
+    #         averageUtilization: 50
+
+    #   - type: Resource
+    #     resource:
+    #       name: memory
+    #       target:
+    #         type: AverageValue
+    #         averageValue: 500Mi
+
+    # behavior:                # Optional: controls scaling behavior
+    #   scaleUp:
+    #     stabilizationWindowSeconds: 0
+    #     policies:
+    #       - type: Percent
+    #         value: 100
+    #         periodSeconds: 15
+    #   scaleDown:
+    #     stabilizationWindowSeconds: 300
+    #     policies:
+    #       - type: Pods
+    #         value: 4
+    #         periodSeconds: 60
 
 # -- (docs/service/README.md)
 service:
@@ -507,27 +546,27 @@ notes:
 
 gluetunImage:
   repository: tccr.io/tccr/gluetun
-  tag: v3.40.0@sha256:f5d434869d03fe3c91f832915ecabf7cb65c330732c5ba39ac03feb5e917f552
+  tag: v3.40.0@sha256:a8189e29155e0f8142be1500ae068a92b189b1b25abbba036321e74d6389bf2b
   pullPolicy: IfNotPresent
 
 netshootImage:
   repository: tccr.io/tccr/netshoot
-  tag: v0.13.0@sha256:d1e6942d828ce14180e5de6136caa9ba2d89fcd25bfe3d3aaf9851ec73366879
+  tag: v0.14.0@sha256:28ede4317d22391e7d89a15eb78dc2afc3587ece02c76c983dde7239a0e43679
   pullPolicy: IfNotPresent
 
 tailscaleImage:
   repository: tccr.io/tccr/tailscale
-  tag: v1.82.5@sha256:1c2e055452e42e31662ebf48644ef63f5689ba5a132b1889f2f9567525e01599
+  tag: v1.86.2@sha256:7694928c789a246fe2fb58e10dd604f66b18b4ef961409095b689f7762523ed1
   pullPolicy: IfNotPresent
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.100.2@sha256:11fd44a70f9ef44604af58fe485db1f8c01c54e4e4ef7352678d09b55abd95e8
+  tag: v4.102.2@sha256:5d625c1226eef4f666d848b1c28f8d514c572841ef728b7186e45da1144316ef
   pullPolicy: IfNotPresent
 
 alpineImage:
   repository: tccr.io/tccr/alpine
-  tag: v3.21.3
+  tag: v3.22.1
   pullPolicy: IfNotPresent
 
 scratchImage:
@@ -537,37 +576,37 @@ scratchImage:
 
 kubectlImage:
   repository: tccr.io/tccr/kubectl
-  tag: latest@sha256:945f44d44720e6ca42969817c903e8643c6e34b9dafd90b338710dd104530588
+  tag: latest@sha256:b16dca4e8ec1c9128a8b7712ebd3713f69d3dd24d622799a482e7ce3929a702b
   pullPolicy: IfNotPresent
 
 wgetImage:
   repository: tccr.io/tccr/wget
-  tag: v1.0.0@sha256:2c26ff54ed4bed9e4f1a97132119ba22f75710655d08c400bcef15dc08f9e0d1
+  tag: v1.0.0@sha256:961566b0149f766abfaa82326aad9c3089e3311eca5d4910ff2d4faf70ddbb10
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: docker.io/mikefarah/yq
-  tag: 4.45.4@sha256:7cf28e5d67782f4b274a93a7bc54a840b553447a0807efd843d069f46bff718c
+  tag: 4.47.1@sha256:b9285dd3b0bea3c34d0c54415dd48d767dabd9644d489bd6e253660847b58419
 
 postgresClientImage:
   repository: tccr.io/tccr/db-wait-postgres
-  tag: v1.1.0@sha256:e6a9566733a37899db799f38df79c1ebd28ed0062073ba5f43e7065a7725841a
+  tag: v1.1.0@sha256:182687540102534aeb28fce4d124274e81a849a43556214977c378ae2a580b35
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: tccr.io/tccr/db-wait-mariadb
-  tag: v1.1.0@sha256:513e3d11ea19317f2d6b146329eaa05f76e24322734d81effb98a5fccea6ed0c
+  tag: v1.1.0@sha256:bd60b6087bacaf5e697243f764065ea5d04da1af703b2009be3752c1aede6d32
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: tccr.io/tccr/db-wait-redis
-  tag: v1.1.0@sha256:819717e8ef3aab4093ec8818e094a41e581d8dc7e237230a8be2254c1686df5b
+  tag: v1.1.0@sha256:14c792c5d2faf5b5c7f8325e387700d70571bf930d321de81483aa704c198e40
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: tccr.io/tccr/db-wait-mongodb
-  tag: v1.2.0@sha256:9a69802b7c48b4d390247b15c9798730a741054175b3e6534bda7d177b2ed454
+  tag: v1.2.0@sha256:b6b12138b7908f76548fcc6c68e998831714a9eb53306623b8c520943887ffea
   pullPolicy: IfNotPresent
 
 postgres15Image:
@@ -889,12 +928,12 @@ addons:
             - NET_ADMIN
             - NET_RAW
             - MKNOD
-        env:
-          DOT: "off"
-          DNS_KEEP_NAMESERVER: "on"
-          FIREWALL: "off"
-          FIREWALL_OUTBOUND_SUBNETS: ""
-          FIREWALL_INPUT_PORTS: ""
+      env:
+        DOT: "off"
+        DNS_KEEP_NAMESERVER: "on"
+        FIREWALL: "off"
+        FIREWALL_OUTBOUND_SUBNETS: ""
+        FIREWALL_INPUT_PORTS: ""
 
   # -- Tailscale specific configuration
   # @default -- See below

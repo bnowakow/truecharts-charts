@@ -1,35 +1,35 @@
 image:
   repository: quay.io/jupyter/base-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:8c5b0fc6c756d6ff743d0fb0e94fe52cefb193c72da5b80716f291bf38a2e9c5
+  tag: 2025-08-04@sha256:811daea9eff77cf57835e40ceb55d31e4b35989b27f84e84ef8f28dff33219f5
 minimalImage:
   repository: quay.io/jupyter/minimal-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:ab67a3a5d1e6452ba977f91e6d1e04c2f75e0aa8c0e662e81851d675415dc597
+  tag: 2025-08-04@sha256:2f2e13feaf2da772af15125659916eaf6d518a16878d9861aa911f029100c184
 rImage:
   repository: quay.io/jupyter/r-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:42166ea444d998b09467672459e773a0c973ae1217a31f3c6e7930dabf10d9b3
+  tag: 2025-08-04@sha256:8d0676a06d3d728b2f7164fe51487373edf1a8e3f743113437dde6f2644d0be4
 scipyImage:
   repository: quay.io/jupyter/scipy-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:07ae7a3592db4349f2a300c0849a09ae102f46a154a07c540c724882b84c4212
+  tag: 2025-08-04@sha256:104390c7d0aa3988bab2ed2c38fcdd456427bbc67182a0d18bc045511d37c589
 tensorflowImage:
   repository: quay.io/jupyter/tensorflow-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:b34e5ebab37fe995ba188f92fdea8efbc3510d0df0b572b3195e703c4aeb0457
+  tag: 2025-08-04@sha256:5c1a2bcebc6d4ec642323cc615cffb37b6fca64944ed45d0c4175b914ecf2444
 datascienceImage:
   repository: quay.io/jupyter/datascience-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:774e62e3f67b6f2e73b051736d21e1872f44fbe96fed977c8f41055d7fd8896e
+  tag: 2025-08-04@sha256:e862beda57a1133da9f0fb445d017a4bccd7944621127b507973a6a47ac3b739
 pysparkImage:
   repository: quay.io/jupyter/pyspark-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:8e1ed9e24c4995c3846d43a4cffa74f83b09c792b7347b0c74f493100093f4f0
+  tag: 2025-08-04@sha256:98e40de2295cd315ffebd42b3f02fd77ef18996e98e6dc035d26f4a3464f8abb
 allsparkImage:
   repository: quay.io/jupyter/all-spark-notebook
   pullPolicy: IfNotPresent
-  tag: 2025-05-19@sha256:cb8d402f4b0210628ebec2505d2d487fa0122514132ef9bba72b05745e92da07
+  tag: 2025-08-04@sha256:c360f75bbd75033eea3155f8f08e30d74f3074d200ae28308d1461a62662194c
 jupyter:
   jupyter_cmd: lab
   restartable: true

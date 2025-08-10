@@ -9,24 +9,24 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 3.9.0
+appVersion: 4.0.0
 dependencies:
   - name: common
-    version: 25.4.10
+    version: 28.15.1
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 15.9.0
+    version: 16.2.3
     repository: oci://tccr.io/truecharts
     condition: mariadb.enabled
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 16.0.3
+    version: 17.3.0
     repository: oci://tccr.io/truecharts
     condition: redis.enabled
     alias: ""
@@ -50,5 +50,5 @@ sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/romm
   - https://github.com/zurdi15/romm
 type: application
-version: 11.0.3
+version: 13.3.0
 

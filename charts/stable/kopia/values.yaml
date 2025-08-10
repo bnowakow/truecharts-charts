@@ -1,6 +1,6 @@
 image:
   repository: docker.io/kopia/kopia
-  tag: 0.19.0@sha256:615b786bdb46d5a9301338983e8077e5be0f1c643b7a3188c8732989104accf4
+  tag: 20250808.0.232735@sha256:9f8688784efbe6c3faa0edd60366000f73680373a3262daa11e2440a2f84201a
   pullPolicy: IfNotPresent
 
 service:

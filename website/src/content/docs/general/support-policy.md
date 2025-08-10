@@ -14,6 +14,11 @@ TrueCharts is a comprehensive project that focuses on providing opinionated Helm
 
 We also offer free support via a support-ticketing system on Discord, according to the policy laid out in this document.
 
+## System Requirements
+
+Make sure your system fullfills atleast the [Minimum System Specifications
+](/general/systemrequirements) to be alligable for ticket support.
+
 ## Support Rules
 
 - If its covered by support as outlined below make a ticket in [⁠🎫・support](https://discord.com/channels/830763548678291466/936275413179723826).
@@ -89,6 +94,7 @@ For all issues not covered by support you can make a thread in an appropriate [D
 | --------------- | -------- | ---------------------- | ------------------------- | --------------------- | ----- |
 | 3.13 and prior  | `master` | ❌                     | ❌                        | ❌                    |       |
 | 3.14 - 3.17     | `master` | ✅                     | ✅                        | ✅                    |       |
+| 3.18.0           | `master` | ❌                     | ❌                        | ❌                    | Bug indentifed on 3.18.0, we cannot support this version. https://github.com/helm/helm/pull/30902 |
 
 ## Supported Kubernetes Versions
 
@@ -96,7 +102,7 @@ For all issues not covered by support you can make a thread in an appropriate [D
 | --------------- | -------- | ---------------------- | ------------------------- | --------------------- | ----- |
 | 1.23 and prior  | `master` | ❌                     | ❌                        | ❌                    |       |
 | 1.24 - 1.32     | `master` | ✅                     | ✅                        | ✅                    |       |
-| 1.33.0               | `master` | ✅                     | ❌                        | ✅                    |       |
+| 1.33.0          | `master` | ✅                     | ✅                        | ✅                    | Known issue with error "failed to set MOUNT_ATTR_IDMAP". Can be corrected by setting hostUsers to True. https://truecharts.org/common/podoptions/#hostusers |
 
 :::caution[China]
 

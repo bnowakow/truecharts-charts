@@ -1,6 +1,6 @@
 image:
   repository: docker.io/adguard/adguardhome
-  tag: v0.107.61@sha256:a2085b04bbfc4759e68fa1d13d4e1558aede67c783c55820e036a95a36dd3ebf
+  tag: v0.107.64@sha256:23243d0004d9398cf9c83bdfce3dd92005df72aef010f537e7325a021f31a6f5
   pullPolicy: IfNotPresent
 securityContext:
   container:

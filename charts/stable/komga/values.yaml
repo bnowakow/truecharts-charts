@@ -1,6 +1,6 @@
 image:
   repository: docker.io/gotson/komga
-  tag: 1.21.3@sha256:72dc9f81a0a528752e953028a7d3ca6a83f8eabe2a617e3c7e53cfa594c84256
+  tag: 1.23.1@sha256:f91b6d5bf34aa36be33eb603117faafa723625fc1649dc992d140caeb56cf11a
   pullPolicy: IfNotPresent
 workload:
   main:

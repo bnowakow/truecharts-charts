@@ -1,27 +1,27 @@
 image:
   repository: tccr.io/tccr/nextcloud-fpm
   pullPolicy: IfNotPresent
-  tag: v31.0.5@sha256:bd06908f4a46a49d5baf054aeaed0a6cfa04f588e13dc7787f6c090d0fceefe7
+  tag: v31.0.7@sha256:2bcf414091f0a167d1357f2301c2d1efdcbf70c5aff4578a4b98f70035c5a01b
 nginxImage:
   repository: docker.io/nginxinc/nginx-unprivileged
   pullPolicy: IfNotPresent
-  tag: 1.28.0@sha256:b9ec99876f483ac7dddddba0f0272cd64f44865480001d421482d00a74d4c9a2
+  tag: 1.29.0@sha256:502f1c37b8f59632f42cc615a5bb4709bb8e1cbc0e728118496361dfbc4302af
 imaginaryImage:
   repository: tccr.io/tccr/nextcloud-imaginary
   pullPolicy: IfNotPresent
-  tag: v20230401@sha256:4083014d9fe27cfada3c1bd95e1d114594798a2a585fece86b7f0870e372fa09
+  tag: v20230401@sha256:5391f9f3488fbc7afd3102cf7f1f6d93224191f81356bc763b5f677b54bfa354
 hpbImage:
   repository: tccr.io/tccr/nextcloud-push-notify
   pullPolicy: IfNotPresent
-  tag: v0.7.0@sha256:122dd2745ee7eed9d06500de378744388e4c223da1b51347171cb5093edeaed4
+  tag: v0.7.0@sha256:1f21bdc741760e21b9f993c58524d889fca8a76610d5118d40028b187a134ed6
 clamavImage:
   repository: docker.io/clamav/clamav
   pullPolicy: IfNotPresent
-  tag: 1.4.2@sha256:854283b899897458ed200214b0926c1659af9f726bf8d57d528c80badd21e845
+  tag: 1.4.3@sha256:eeef3abc9720c350d552f650ca2f1c3a987ebd8a531019aea1effc6f38d68861
 collaboraImage:
   repository: docker.io/collabora/code
   pullPolicy: IfNotPresent
-  tag: 25.04.2.1.1@sha256:770bad44fe7cb50401f9bfa86bd8ee581b9e345fdcff5a075ee9a3454e47c70f
+  tag: 25.04.4.2.1@sha256:05df5e537bf7a72f31c6acb72a37dcf74c77893af5a285c0746c1cc590165fb7
 
 nextcloud:
   # Initial Credentials
@@ -529,14 +529,13 @@ cnpg:
     database: nextcloud
 redis:
   enabled: true
-  includeCommon: true
   username: default
 
 ingressMiddlewares:
   traefik:
     nextcloud-redirect:
       enabled: false
-      type: redirectRegex
+      type: redirect-regex
       data:
         regex: "https://(.*)/.well-known/(card|cal)dav"
         replacement: "https://${1}/remote.php/dav/"

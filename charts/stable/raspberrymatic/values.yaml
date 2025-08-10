@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/jens-maus/raspberrymatic
-  tag: latest@sha256:4bdd1987f35eb4af323ebe82599b5a1394ee116c9ad544749a4ed4665c915dcf
+  tag: latest@sha256:af641e5dc8484905552df08e2a0f39a69b48c551080aca8082b8459fe84c5545
 persistence:
   config:
     enabled: true

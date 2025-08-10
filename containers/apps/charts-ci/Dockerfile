@@ -1,6 +1,6 @@
 # Define Chart Releaser
 # hadolint ignore=DL3007
-FROM ghcr.io/actions/actions-runner:2.324.0@sha256:e03b4550955d539604233352ba27cd095a880b906400bb9283f1ee4b061e21bb
+FROM ghcr.io/actions/actions-runner:2.327.1@sha256:551dc313e6b6ef1ca7b9594d8090a7a6cc7aeb663f1079ba2fec07e9158f3259
 
 SHELL ["/bin/bash", "-c"]
 
@@ -43,7 +43,7 @@ RUN \
         curl \
         gcc \
         git \
-    gnupg \
+        gnupg \
         gzip \
         jo \
         jq \
@@ -53,6 +53,7 @@ RUN \
         unzip \
         wget \
         zip \
+        webp \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a directory for the tools
@@ -190,7 +191,7 @@ RUN \
 
 # Install golang
 
-COPY --from=golang:1.24.3@sha256:86b4cff66e04d41821a17cea30c1031ed53e2635e2be99ae0b4a7d69336b5063 /usr/local/go/ /usr/local/go/
+COPY --from=golang:1.24.6@sha256:2c89c41fb9efc3807029b59af69645867cfe978d2b877d475be0d72f6c6ce6f6 /usr/local/go/ /usr/local/go/
 
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH

@@ -1,9 +1,8 @@
 image:
   repository: public.ecr.aws/bitnami/redis
   pullPolicy: IfNotPresent
-  tag: 8.0.1@sha256:b3269d7b0cc4f8ad58efd020caa220bd22bf4b9cb074334155ef25bfea0bb129
+  tag: 8.2.0@sha256:3dbc69f1f80708bc184d5765292b633712b325d2374dc3573894941afc4132f0
 
-includeCommon: true
 workload:
   main:
     replicas: 1

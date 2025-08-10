@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/pmmp/pocketmine-mp
   pullPolicy: IfNotPresent
-  tag: 5.28.2@sha256:42bf3bc780f4dae835f12c9f74f4f382dc4500a838fd8151aaec50c0d2921cb1
+  tag: 5.32.0@sha256:c114abe5e87292669e7b9de3b14ab20c31270e1a13ec4cdddf20447d2132646f
 
 securityContext:
   container:

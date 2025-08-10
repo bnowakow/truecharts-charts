@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/home-operations/prowlarr
-  tag: 1.36.2.5059@sha256:8b998084a1696afb0bdc2e4c2a9750ac4e0f26528fc3db6fa77d7339811f305f
+  tag: 2.0.2.5116@sha256:30062fde00bf3901770d02e4e255b3fa1afa320ae2ff5359473ff7599be7ebc8
   pullPolicy: IfNotPresent
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr

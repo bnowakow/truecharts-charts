@@ -1,7 +1,7 @@
 image:
   repository: docker.io/homeassistant/home-assistant
   pullPolicy: IfNotPresent
-  tag: 2025.5.2@sha256:aa0d85544d00f135e6db6ab81f3ba3775e02715526fb524f0c8c67eaba31002b
+  tag: 2025.8.0@sha256:35c4134b1d0d83cb91bfe2da29fd4ca2c009e58993a345ef0922e61317c0c6ca
 service:
   main:
     ports:
@@ -143,5 +143,5 @@ securityContext:
     runAsGroup: 0
     capabilities:
       add:
-        - CAP_NET_RAW
-        - CAP_NET_BIND_SERVICE
+        - NET_RAW
+        - NET_BIND_SERVICE

@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/songkong/songkong
-  tag: latest@sha256:7bba36c0598a53d07a935836a383a7cb051ffd3ed83ce007bbd7e07948ca82c7
+  tag: latest@sha256:5495e94aa0bd97e3921d8578c3e1800604ed7bddd919572e75b68b1520a27c39
 persistence:
   music:
     enabled: true

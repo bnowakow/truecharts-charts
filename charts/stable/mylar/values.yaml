@@ -1,6 +1,6 @@
 image:
   repository: lscr.io/linuxserver/mylar3
-  tag: version-v0.8.2@sha256:6688b2beb3a48999bb7b6f63391a62d1e2620b2ddca9c6a371c18c42f826d51a
+  tag: version-v0.8.2@sha256:11ac00badc74bcfdc0ead591ccc56c328d668406417123567d67cc8819b23994
   pullPolicy: IfNotPresent
 service:
   main:

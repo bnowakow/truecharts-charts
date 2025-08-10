@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/splunk/splunk
-  tag: 9.4.2@sha256:4f798b8dfa75512c5b69b4f162c686e7b194e980559dd40fed78aadc417381be
+  tag: 10.0.0@sha256:10da23a5c78397b38328ed863ca2826390c329c517f9aff7a4978f30e5208e78
 securityContext:
   container:
     runAsNonRoot: false

@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/actualbudget/actual
   pullPolicy: IfNotPresent
-  tag: 25.5.0@sha256:3b486fbc0db02839917f65ed277aa509980f710b6e96dde966f5219983978179
+  tag: 25.8.0@sha256:3d7fb08d3b405426e8625013a5ed95f5015e6c04d0f044e2e3fe7d7b7a41951b
 securityContext:
   container:
     readOnlyRootFilesystem: false

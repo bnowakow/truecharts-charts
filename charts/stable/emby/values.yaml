@@ -1,14 +1,11 @@
 image:
   repository: ghcr.io/elfhosted/emby
   pullPolicy: IfNotPresent
-  tag: 4.9.0.60@sha256:2085b3d53bd930ba07badf5913d9933e411db097ff2de238fe5075fc03b0c07c
+  tag: 4.9.1.17@sha256:4f906f36bb574d6c2901febea87f3e1b85ff510488ef8f4923d68bc1436d89b5
 broadcastProxyImage:
   repository: docker.io/alpine/socat
   pullPolicy: IfNotPresent
-  tag: 1.8.0.3@sha256:f8ac2c1d22c11754203e158a48783de8e62b9581de601b76b8641631a5acf9d2
-securityContext:
-  container:
-    readOnlyRootFilesystem: false
+  tag: 1.8.0.3@sha256:d0a8fec165cc62f02f76983c8e46ef50cf362a3e6f962d375c7358006b48081a
 service:
   main:
     ports:
@@ -87,6 +84,11 @@ workload:
                 - cat
                 - /tmp/healthy
 # -- enable Emby autodiscovery on LAN
+securityContext:
+  container:
+    readOnlyRootFilesystem: false
+    runAsGroup: 0
+    runAsUser: 0
 autodiscovery:
   enabled: false
 persistence:

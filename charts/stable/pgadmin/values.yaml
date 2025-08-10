@@ -1,7 +1,7 @@
 image:
   repository: docker.io/dpage/pgadmin4
   pullPolicy: IfNotPresent
-  tag: 9.3@sha256:bd71932cb1ef94719e783f0eed42c227bc67877a7c7e076c7092738711e5f4d4
+  tag: 9.6@sha256:2c7d73e13bd6c30b1d53e4c25d0d6d81adbd0799c4f4d6a09efc5d68fca5d16d
 service:
   main:
     ports:

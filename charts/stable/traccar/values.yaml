@@ -1,6 +1,6 @@
 image:
   repository: docker.io/traccar/traccar
-  tag: 6.6@sha256:dc73ac1ac1388f97e3259dbbea3bd09d90dccd2df391466ef51826ac591a33f9
+  tag: 6.8@sha256:ac912d17ef55c88c5e5f0e844d10a7d1ecd70fc83a90dc3a7bc43b620ce7356f
   pullPolicy: IfNotPresent
 service:
   main:

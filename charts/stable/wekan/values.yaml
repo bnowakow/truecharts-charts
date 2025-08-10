@@ -1,6 +1,6 @@
 image:
   repository: docker.io/wekanteam/wekan
-  tag: v7.90@sha256:38a718e9811cfb42a1776c15804449c143f3828eb5e63bb795fe545c0b8cef43
+  tag: v7.93@sha256:cb1faa673143695127b1c4d9c02175a9386189858d0c63784848f0eaecfbfcb9
   pullPolicy: IfNotPresent
 service:
   main:
@@ -10,7 +10,6 @@ service:
         targetPort: 8080
 mongodb:
   enabled: true
-  includeCommon: true
   mongodbUsername: wekan
   mongodbDatabase: wekan
 persistence:
