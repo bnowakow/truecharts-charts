@@ -41,7 +41,8 @@ for dir in \
         charts/stable/scrypted \
         charts/stable/recyclarr \
         charts/system/kubeapps \
-	charts/stable/readarr \
+	    charts/stable/readarr \
+        charts/stable/calibre \
 	; do
     echo $dir
     app_common_dir=$dir/charts
