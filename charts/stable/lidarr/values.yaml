@@ -1,11 +1,11 @@
 image:
-  repository: ghcr.io/elfhosted/lidarr
+  repository: ghcr.io/home-operations/lidarr
   pullPolicy: IfNotPresent
-  tag: 2.12.4.4658@sha256:94a52c7ef1f7c15936167f75a8d5e259d677e3f94bcbafdb5f03313e6573c184
+  tag: 2.13.2@sha256:af72fba52ef9e438a8c010f77a43bb3910da7c31cbf30d90cbcf0b351a82d4d6
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr
   pullPolicy: IfNotPresent
-  tag: v2.2.0@sha256:320b0ea7399f4b9af4741dcdddd7d40c05c36b0359679305d8a54df4e97065df
+  tag: v2.3.0@sha256:af535d94061cf97a52e1661945ffba78c03f9443eae7c0da1a80a5a4be56b520
 securityContext:
   container:
     readOnlyRootFilesystem: false
