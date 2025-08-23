@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/gethomepage/homepage
-  tag: v1.4.5@sha256:9cdc0cb35224fdfcbdc1d37440b42f05bd803d475a7211fed13bd69a65e4a1d4
+  tag: v1.4.6@sha256:a1a578fdcfc72754985c3b3b26e4f398a6a782e354d10cf2b156ecbf06d252e9
   pullPolicy: IfNotPresent
 
 workload:
@@ -204,14 +204,19 @@ configmap:
   config:
     enabled: true
     data:
+      # https://gethomepage.dev/configs/custom-css-js/
       custom.js: ""
       custom.css: ""
       kubernetes.yaml: |
+        ---
+        # For configuration options and examples, please see:
+        # https://gethomepage.dev/configs/kubernetes/
+
         mode: cluster
       settings.yaml: |
         ---
         # For configuration options and examples, please see:
-        # https://gethomepage.dev/latest/configs/settings
+        # https://gethomepage.dev/configs/
 
         providers:
           openweathermap: openweathermapapikey
@@ -219,7 +224,7 @@ configmap:
       widgets.yaml: |
         ---
         # For configuration options and examples, please see:
-        # https://gethomepage.dev/latest/configs/widgets
+        # https://gethomepage.dev/widgets/
 
         - resources:
             cpu: true
@@ -233,7 +238,7 @@ configmap:
       services.yaml: |
         ---
         # For configuration options and examples, please see:
-        # https://gethomepage.dev/latest/configs/services
+        # https://gethomepage.dev/configs/services/
 
         - Arr:
             - My First Service:
@@ -252,7 +257,7 @@ configmap:
       bookmarks.yaml: |
         ---
         # For configuration options and examples, please see:
-        # https://gethomepage.dev/latest/configs/bookmarks
+        # https://gethomepage.dev/configs/bookmarks/
 
         - Developer:
             - Github:
