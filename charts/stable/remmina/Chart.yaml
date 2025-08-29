@@ -13,7 +13,7 @@ appVersion: 1.4.35
 dependencies:
   - name: common
     version: 28.16.2
-    repository: oci://tccr.io/truecharts
+    repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
@@ -39,5 +39,5 @@ sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/remmina
   - https://remmina.org/
 type: application
-version: 13.3.4
+version: 13.3.5
 
