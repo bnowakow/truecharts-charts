@@ -556,12 +556,12 @@ netshootImage:
 
 tailscaleImage:
   repository: oci.trueforge.org/tccr/tailscale
-  tag: v1.86.2@sha256:7694928c789a246fe2fb58e10dd604f66b18b4ef961409095b689f7762523ed1
+  tag: v1.86.5@sha256:e57ede47a3217211d234228f3f971298569013497054076276aa5a1beef207c0
   pullPolicy: IfNotPresent
 
 codeserverImage:
   repository: oci.trueforge.org/tccr/code-server
-  tag: v4.103.1@sha256:b754400a938e74eaaf07fa6fb9b64a24a4e6c5d88c94f914748b202f1fb57ce6
+  tag: v4.103.2@sha256:3b619e2ecd2764f206f477abfde98a406b710782ae8d7ae709a7e319305a7d48
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -581,7 +581,7 @@ kubectlImage:
 
 wgetImage:
   repository: oci.trueforge.org/tccr/wget
-  tag: v1.0.0@sha256:961566b0149f766abfaa82326aad9c3089e3311eca5d4910ff2d4faf70ddbb10
+  tag: v1.0.0@sha256:4cfc0cb48cc8303cbd914f6bc54016b89c4d549c196370e2b0b41cdf38744603
   pullPolicy: IfNotPresent
 
 yqImage:
@@ -591,17 +591,17 @@ yqImage:
 
 postgresClientImage:
   repository: oci.trueforge.org/tccr/db-wait-postgres
-  tag: v1.1.0@sha256:182687540102534aeb28fce4d124274e81a849a43556214977c378ae2a580b35
+  tag: v1.1.0@sha256:67ff700c4e746c5a1205b4629d4f0910a21f44d1e993941fb69c750e651c0b39
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: oci.trueforge.org/tccr/db-wait-mariadb
-  tag: v1.1.0@sha256:bd60b6087bacaf5e697243f764065ea5d04da1af703b2009be3752c1aede6d32
+  tag: v1.1.0@sha256:8614f77d546e1f03c5104cf75387eb04efa7cb1ea4557a2d51112f35c69c0905
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: oci.trueforge.org/tccr/db-wait-redis
-  tag: v1.1.0@sha256:14c792c5d2faf5b5c7f8325e387700d70571bf930d321de81483aa704c198e40
+  tag: v1.1.0@sha256:ddebe75743f37c431507c51832b5961cc63aa1de61af4f5c75b7554239c8b732
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
