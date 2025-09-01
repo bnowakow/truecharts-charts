@@ -15,9 +15,11 @@ redis:
   required: true
   connectionAttempts: 10
   connectionCooldown: 3s
+
 prometheus:
   enable: true
   path: /metrics
+
 queryLog:
   # optional one of: postgresql, csv, csv-client. If empty, log to console
   type: {{ .Values.queryLog.type }}
@@ -33,17 +35,17 @@ queryLog:
   # optional: Max attempts to create specific query log writer
   creationAttempts: {{ .Values.queryLog.creationAttempts | default 3 }}
   # optional: Time between the creation attempts
-  creationCooldown: {{ .Values.queryLog.creationAttempts | default "2s" }}
+  creationCooldown: {{ .Values.queryLog.creationCooldown | default "2s" }}
 
-upstream:
-  default:
-{{- .Values.defaultUpstreams | toYaml | nindent 8 }}
+upstreams:
+  groups:
+    default:
+{{- .Values.defaultUpstreams | toYaml | nindent 10 }}
 {{- range $id, $value := .Values.upstreams }}
-  {{ $value.name }}:
-{{- $value.dnsservers | toYaml | nindent 8 }}
+    {{ $value.name }}:
+{{- $value.dnsservers | toYaml | nindent 10 }}
 {{- end }}
-
-upstreamTimeout: {{ .Values.upstreamTimeout | default "1s" }}
+  timeout: {{ .Values.upstreamTimeout | default "1s" }}
 
 ports:
   {{- if .Values.service.dns.enabled }}
@@ -62,7 +64,6 @@ ports:
 {{- if .Values.certFile }}
 certFile: {{ .Values.certFile }}
 {{- end }}
-
 {{- if .Values.keyFile }}
 keyFile: {{ .Values.keyFile }}
 {{- end }}
@@ -71,16 +72,15 @@ log:
   {{- if .Values.logLevel }}
   level: {{ .Values.logLevel }}
   {{- end }}
+  {{- if .Values.logFormat }}
+  format: {{ .Values.logFormat }}
+  {{- end }}
   {{- if .Values.logTimestamp }}
   timestamp: {{ .Values.logTimestamp }}
   {{- end }}
   {{- if .Values.logPrivacy }}
   privacy: {{ .Values.logPrivacy }}
   {{- end }}
-
-{{- if .Values.dohUserAgent }}
-dohUserAgent: {{ .Values.dohUserAgent }}
-{{- end }}
 
 {{- if .Values.minTlsServeVersion }}
 minTlsServeVersion: {{ .Values.minTlsServeVersion }}
@@ -130,11 +130,11 @@ filtering:
 
 {{- if or .Values.customDNS.filterUnmappedTypes .Values.customDNS.customTTL .Values.customDNS.rewrite .Values.customDNS.mapping }}
 customDNS:
-{{- if .Values.customDNS.upstream }}
-  upstream: {{ .Values.customDNS.upstream }}
-{{- end }}
 {{- if .Values.customDNS.customTTL }}
   customTTL: {{ .Values.customDNS.customTTL }}
+{{- end }}
+{{- if .Values.customDNS.filterUnmappedTypes }}
+  filterUnmappedTypes: {{ .Values.customDNS.filterUnmappedTypes }}
 {{- end }}
 {{- if .Values.customDNS.rewrite }}
   rewrite:
@@ -142,7 +142,6 @@ customDNS:
     {{ $value.in }}: {{ $value.out }}
 {{- end }}
 {{- end }}
-
 {{- if .Values.customDNS.mapping }}
   mapping:
 {{- range $id, $value := .Values.customDNS.mapping }}
@@ -175,13 +174,15 @@ clientLookup:
 
 {{- if or .Values.conditional.rewrite .Values.conditional.mapping ( and .Values.k8sgateway.enabled .Values.k8sgateway.domains ) }}
 conditional:
+{{- if .Values.conditional.fallbackUpstream }}
+  fallbackUpstream: {{ .Values.conditional.fallbackUpstream }}
+{{- end }}
 {{- if .Values.conditional.rewrite }}
   rewrite:
 {{- range $id, $value := .Values.conditional.rewrite }}
     {{ $value.in }}: {{ $value.out }}
 {{- end }}
 {{- end }}
-
 {{- if or .Values.conditional.mapping ( and .Values.k8sgateway.enabled .Values.k8sgateway.domains ) }}
   mapping:
 {{- if and .Values.k8sgateway.enabled .Values.k8sgateway.domains }}
@@ -198,14 +199,20 @@ conditional:
 blocking:
   blockType: {{ .Values.blocking.blockType }}
   blockTTL: {{ .Values.blocking.blockTTL }}
-  refreshPeriod: {{ .Values.blocking.refreshPeriod }}
-  downloadTimeout: {{ .Values.blocking.downloadTimeout }}
-  downloadAttempts: {{ .Values.blocking.downloadAttempts }}
-  downloadCooldown: {{ .Values.blocking.downloadCooldown }}
-  startStrategy: {{ .Values.blocking.startStrategy }}
-  processingConcurrency: {{ .Values.blocking.processingConcurrency }}
+  loading:
+    refreshPeriod: {{ .Values.blocking.refreshPeriod }}
+    downloads:
+      timeout: {{ .Values.blocking.downloadTimeout }}
+      writeTimeout: {{ .Values.blocking.writeTimeout }}
+      readTimeout: {{ .Values.blocking.readTimeout }}
+      readHeaderTimeout: {{ .Values.blocking.readHeaderTimeout }}
+      attempts: {{ .Values.blocking.downloadAttempts }}
+      cooldown: {{ .Values.blocking.downloadCooldown }}
+    concurrency: {{ .Values.blocking.processingConcurrency }}
+    strategy: {{ .Values.blocking.startStrategy }}
+    maxErrorsPerSource: {{ .Values.blocking.maxErrorsPerSource }}
 
-  whiteLists:
+  allowlists:
     default:
       - https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt
       - https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
@@ -215,8 +222,7 @@ blocking:
 {{- $value.lists | toYaml | nindent 10 }}
 {{- end }}
 
-
-  blackLists:
+  denylists:
     default:
       - https://big.oisd.nl/domainswild
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts

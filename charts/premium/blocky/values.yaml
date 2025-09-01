@@ -89,17 +89,25 @@ service:
         port: 5353
         protocol: udp
         targetPort: 5353
-## TODO Add support for SCALE certificates and certificates secrets here
+
+# -- Path to cert and key file for SSL encryption. If not set, self-signed certificate will be generated
 certFile: ""
 keyFile: ""
+
+# -- logging configuration
+# Log level (one from trace, debug, info, warn, error)
 logLevel: info
+# Log format (text or json)
 logFormat: text
+# log timestamps (true or false)
 logTimestamp: true
+# Obfuscate log output (replace all alphanumeric characters with *) for user sensitive data like request domains or responses to increase privacy. (true or false)
 logPrivacy: false
-dohUserAgent: ""
+
+# -- Mininal TLS version that the DoH and DoT server will use
 minTlsServeVersion: 1.2
+
 # -- set the default DNS upstream servers
-# Primarily designed for inclusion in the TrueNAS SCALE GUI
 defaultUpstreams:
   # Cloudflare
   - 1.1.1.1
@@ -116,15 +124,19 @@ defaultUpstreams:
   # ComodoSecure DNS
   - 8.26.56.26
   - 8.20.247.20
+
 # -- set additional upstreams
-# Primarily designed for inclusion in the TrueNAS SCALE GUI
 upstreams:
 #  - name: group2
 #    dnsservers:
 #      - 1.1.1.1
 
+# -- optional: timeout to query the upstream resolver. Default: 1s
+upstreamTimeout: 1s
+
 # -- set bootstrap dns (not needed)
 # Ensures bootstrap encryption and ensure it doesn't use k8s dns
+# When using an upstream specified by IP, and not by hostname, you can write only the upstream and skip ips.
 bootstrapDns:
   # -- Upstream
   upstream: ""
@@ -139,6 +151,7 @@ additionalBootstrapDns: []
 filtering:
   # -- Ensures filtering by query type
   queryTypes: []
+
 # -- Set manual custom DNS resolution
 customDNS:
   customTTL: 1h
@@ -149,6 +162,7 @@ customDNS:
   mapping: []
   # - domain: something.com
   #   dnsserver: 192.168.178.1
+
 # -- Setup client-name lookup
 clientLookup:
   # -- upstream used for client-name lookup
@@ -157,27 +171,29 @@ clientLookup:
   clients:
   # - domain: laptop
   #   ips: []
-# -- Setup caching
+
+# -- Configuration for caching of DNS responsesg
 caching:
   minTime: 15m
-  maxTime: 0
+  maxTime: 0m
   maxItemsCount: 0
   prefetching: true
   prefetchExpires: 12h
   prefetchThreshold: 5
   prefetchMaxItemsCount: 0
   cacheTimeNegative: 30m
+
 # -- set conditional settings
-# Primarily designed for inclusion in the TrueNAS SCALE GUI
 conditional:
+  fallbackUpstream: false
   rewrite: []
   # - in: something.com
   #   out: somethingelse.com
   mapping: []
   # - domain: something.com
   #   dnsserver: 192.168.178.1
+
 # -- set blocking settings using Lists
-# Primarily designed for inclusion in the TrueNAS SCALE GUI
 blocking:
   # -- Sets the blocktype
   blockType: nxDomain
@@ -187,14 +203,23 @@ blocking:
   refreshPeriod: 4h
   # -- Sets the block download timeout
   downloadTimeout: 60s
+  # -- timeout for list write to disk (each url)
+  writeTimeout: 60s
+  # -- timeout for reading the download (each url).
+  readTimeout: 60s
+  # -- timeout for reading request headers for the download (each url)
+  readHeaderTimeout: 60s
   # -- Sets the block download attempt count
   downloadAttempts: 3
   # -- Sets the block download cooldown
   downloadCooldown: 5s
-  # -- Set the start strategy (blocking | failOnError | fast)
-  startStrategy: fast
   # -- Sets how many list-groups can be processed at the same time
   processingConcurrency: 8
+  # -- Set the start strategy (blocking | failOnError | fast)
+  startStrategy: fast
+  # -- Number of errors allowed in a list before it is considered invalid
+  maxErrorsPerSource: 5
+
   # --  Add blocky whitelists
   # `default` name is reservered for TrueCharts included default whitelist
   # example shows the structure, though name should be changed when used
@@ -229,9 +254,23 @@ blocking:
 # Allows for using the hosts configured in kubernetes and such
 hostsFile:
   enabled: false
-  filePath: /etc/hosts
-  hostsTTL: 60m
-  refreshPeriod: 30m
+  sources:
+    - /etc/hosts
+    - https://example.com/hosts
+    - |
+      # inline hosts
+      127.0.0.1 example.com
+  hostsTTL: 1h
+  filterLoopback: falsr
+  loading:
+    refreshPeriod: 4h
+    downloads:
+      timeout: 5s
+      attempts: 3
+      cooldown: 500ms
+    concurrency: 4
+    strategy: blocking
+    maxErrorsPerSource: 5
 
 podOptions:
   automountServiceAccountToken: true
@@ -241,6 +280,7 @@ serviceAccount:
     # -- Specifies whether a service account should be created
     enabled: true
     primary: true
+
 # -- Create a ClusterRole and ClusterRoleBinding
 # @default -- See below
 rbac:
@@ -267,6 +307,7 @@ rbac:
         verbs:
           - list
           - watch
+
 k8sgateway:
   enabled: true
   # -- TTL for non-apex responses (in seconds)
@@ -287,7 +328,6 @@ k8sgateway:
   #   dnsChallenge:
   #     enabled: false
   #     domain: dns01.clouddns.com
-
   forward:
     enabled: false
     primary: tls://1.1.1.1
