@@ -1,11 +1,11 @@
 package cmd
 
 import (
-    "strings"
+	"strings"
 
-    "github.com/spf13/cobra"
-    "github.com/truecharts/public/clustertool/pkg/initfiles"
-    "github.com/truecharts/public/clustertool/pkg/sops"
+	"github.com/spf13/cobra"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/initfiles"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/sops"
 )
 
 var initLongHelp = strings.TrimSpace(`
@@ -18,18 +18,18 @@ When done, please run clustertool genconfig to generate all configurations based
 `)
 
 var initFiles = &cobra.Command{
-    Use:     "init",
-    Short:   "generate Basic ClusterTool file-and-folder structure in current folder",
-    Long:    initLongHelp,
-    Example: "clustertool init",
-    Run: func(cmd *cobra.Command, args []string) {
+	Use:     "init",
+	Short:   "generate Basic ClusterTool file-and-folder structure in current folder",
+	Long:    initLongHelp,
+	Example: "clustertool init",
+	Run: func(cmd *cobra.Command, args []string) {
 
-        sops.DecryptFiles()
+		sops.DecryptFiles()
 
-        initfiles.InitFiles()
-    },
+		initfiles.InitFiles()
+	},
 }
 
 func init() {
-    RootCmd.AddCommand(initFiles)
+	RootCmd.AddCommand(initFiles)
 }

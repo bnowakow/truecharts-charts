@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: stable
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,7 +34,8 @@ name: nextpvr
 sources:
   - https://github.com/sub3/NextPVR/wiki/Install-Docker
   - https://github.com/truecharts/charts/tree/master/charts/stable/nextpvr
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nextpvr
   - https://hub.docker.com/r/nextpvr/nextpvr_amd64
 type: application
-version: 12.3.4
+version: 12.4.1
 

@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 0.34.14
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,6 +36,7 @@ sources:
   - https://ghcr.io/taxel/plextraktsync
   - https://github.com/Taxel/PlexTraktSync
   - https://github.com/truecharts/charts/tree/master/charts/stable/plextraktsync
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/plextraktsync
 type: application
-version: 11.3.6
+version: 11.4.1
 

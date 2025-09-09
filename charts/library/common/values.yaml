@@ -123,11 +123,11 @@ securityContext:
 # Can be overruled per container
 resources:
   limits:
-    cpu: 1000m
-    memory: 1500Mi
+    cpu: 1500m
+    memory: 2400Mi
   requests:
-    cpu: 100m
-    memory: 250Mi
+    cpu: 75m
+    memory: 200Mi
 
 containerOptions:
   NVIDIA_CAPS:
@@ -587,7 +587,7 @@ wgetImage:
 yqImage:
   pullPolicy: IfNotPresent
   repository: docker.io/mikefarah/yq
-  tag: 4.47.1@sha256:b9285dd3b0bea3c34d0c54415dd48d767dabd9644d489bd6e253660847b58419
+  tag: 4.47.2@sha256:76def1f56f456ecc1c3173ea275218ee17139bc2018c5a07887b15afd88ec03e
 
 postgresClientImage:
   repository: oci.trueforge.org/tccr/db-wait-postgres

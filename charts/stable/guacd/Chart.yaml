@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 1.6.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,7 +35,8 @@ name: guacd
 sources:
   - https://github.com/apache/guacamole-server
   - https://github.com/truecharts/charts/tree/master/charts/stable/guacd
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/guacd
   - https://hub.docker.com/r/guacamole/guacd
 type: application
-version: 12.3.4
+version: 12.4.1
 

@@ -3,7 +3,7 @@ title: Changelog
 pagefind: false
 ---
 
-## [vaultwarden-16.0.55](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.55) (2022-11-08)
+## [vaultwarden-16.0.55](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.55) (2022-11-08)
 
 ### Chore
 
@@ -13,23 +13,11 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update helm general non-major ([#4349](https://github.com/trueforge-org/truecharts/issues/4349))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [vaultwarden-16.0.54](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [vaultwarden-16.0.54](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
+## [vaultwarden-16.0.54](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
 
 ### Chore
 
@@ -37,126 +25,138 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [vaultwarden-16.0.54](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
+## [vaultwarden-16.0.54](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [vaultwarden-16.0.53](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.53) (2022-11-07)
+## [vaultwarden-16.0.54](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.54) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [vaultwarden-16.0.53](https://github.com/truecharts/charts/compare/vaultwarden-16.0.52...vaultwarden-16.0.53) (2022-11-06)
-
-### Chore
-
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [vaultwarden-16.0.52](https://github.com/truecharts/charts/compare/vaultwarden-16.0.51...vaultwarden-16.0.52) (2022-11-06)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4317](https://github.com/truecharts/charts/issues/4317))
-
-## [vaultwarden-16.0.51](https://github.com/truecharts/charts/compare/vaultwarden-16.0.50...vaultwarden-16.0.51) (2022-11-05)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4308](https://github.com/truecharts/charts/issues/4308))
-
-## [vaultwarden-16.0.50](https://github.com/truecharts/charts/compare/vaultwarden-16.0.49...vaultwarden-16.0.50) (2022-11-02)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4261](https://github.com/truecharts/charts/issues/4261))
-
-## [vaultwarden-16.0.49](https://github.com/truecharts/charts/compare/vaultwarden-16.0.48...vaultwarden-16.0.49) (2022-10-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major
-
-## [vaultwarden-16.0.48](https://github.com/truecharts/charts/compare/vaultwarden-16.0.47...vaultwarden-16.0.48) (2022-10-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4182](https://github.com/truecharts/charts/issues/4182))
-
-## [vaultwarden-16.0.47](https://github.com/truecharts/charts/compare/vaultwarden-16.0.46...vaultwarden-16.0.47) (2022-10-19)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4122](https://github.com/truecharts/charts/issues/4122))
-
-## [vaultwarden-16.0.46](https://github.com/truecharts/charts/compare/vaultwarden-16.0.45...vaultwarden-16.0.46) (2022-10-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4108](https://github.com/truecharts/charts/issues/4108))
-
-## [vaultwarden-16.0.45](https://github.com/truecharts/charts/compare/vaultwarden-16.0.44...vaultwarden-16.0.45) (2022-10-12)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4071](https://github.com/truecharts/charts/issues/4071))
-
-## [vaultwarden-16.0.44](https://github.com/truecharts/charts/compare/vaultwarden-16.0.43...vaultwarden-16.0.44) (2022-10-07)
+## [vaultwarden-16.0.53](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.53) (2022-11-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [vaultwarden-16.0.44](https://github.com/truecharts/charts/compare/vaultwarden-16.0.43...vaultwarden-16.0.44) (2022-10-07)
+## [vaultwarden-16.0.53](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.52...vaultwarden-16.0.53) (2022-11-06)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
+
+## [vaultwarden-16.0.52](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.51...vaultwarden-16.0.52) (2022-11-06)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4317](https://github.com/trueforge-org/truecharts/issues/4317))
+
+## [vaultwarden-16.0.51](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.50...vaultwarden-16.0.51) (2022-11-05)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4308](https://github.com/trueforge-org/truecharts/issues/4308))
+
+## [vaultwarden-16.0.50](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.49...vaultwarden-16.0.50) (2022-11-02)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4261](https://github.com/trueforge-org/truecharts/issues/4261))
+
+## [vaultwarden-16.0.49](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.48...vaultwarden-16.0.49) (2022-10-25)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [vaultwarden-16.0.43](https://github.com/truecharts/charts/compare/vaultwarden-16.0.42...vaultwarden-16.0.43) (2022-10-05)
+## [vaultwarden-16.0.48](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.47...vaultwarden-16.0.48) (2022-10-25)
 
 ### Chore
 
-- split addons in smaller templates ([#3979](https://github.com/truecharts/charts/issues/3979))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4182](https://github.com/trueforge-org/truecharts/issues/4182))
+
+## [vaultwarden-16.0.47](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.46...vaultwarden-16.0.47) (2022-10-19)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4122](https://github.com/trueforge-org/truecharts/issues/4122))
+
+## [vaultwarden-16.0.46](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.45...vaultwarden-16.0.46) (2022-10-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4108](https://github.com/trueforge-org/truecharts/issues/4108))
+
+## [vaultwarden-16.0.45](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.44...vaultwarden-16.0.45) (2022-10-12)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4071](https://github.com/trueforge-org/truecharts/issues/4071))
+
+## [vaultwarden-16.0.44](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.43...vaultwarden-16.0.44) (2022-10-07)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [vaultwarden-16.0.41](https://github.com/truecharts/charts/compare/vaultwarden-16.0.40...vaultwarden-16.0.41) (2022-09-27)
+## [vaultwarden-16.0.44](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.43...vaultwarden-16.0.44) (2022-10-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3918](https://github.com/truecharts/charts/issues/3918))
+- update helm general non-major
 
-## [vaultwarden-16.0.40](https://github.com/truecharts/charts/compare/vaultwarden-17.0.0...vaultwarden-16.0.40) (2022-09-25)
+## [vaultwarden-16.0.43](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.42...vaultwarden-16.0.43) (2022-10-05)
 
 ### Chore
 
-- update helm general non-major ([#3898](https://github.com/truecharts/charts/issues/3898))
+- split addons in smaller templates ([#3979](https://github.com/trueforge-org/truecharts/issues/3979))
+- update helm general non-major
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-22)
+## [vaultwarden-16.0.41](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.40...vaultwarden-16.0.41) (2022-09-27)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3918](https://github.com/trueforge-org/truecharts/issues/3918))
+
+## [vaultwarden-16.0.40](https://github.com/trueforge-org/truecharts/compare/vaultwarden-17.0.0...vaultwarden-16.0.40) (2022-09-25)
+
+### Chore
+
+- update helm general non-major ([#3898](https://github.com/trueforge-org/truecharts/issues/3898))
+
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-22)
 
 ### Chore
 
@@ -174,10 +174,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-21)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-21)
 
 ### Chore
 
@@ -194,10 +194,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-21)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-21)
 
 ### Chore
 
@@ -213,10 +213,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-20)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-20)
 
 ### Chore
 
@@ -231,10 +231,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-20)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-20)
 
 ### Chore
 
@@ -248,10 +248,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
 
 ### Chore
 
@@ -264,10 +264,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
 
 ### Chore
 
@@ -279,10 +279,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-19)
 
 ### Chore
 
@@ -293,10 +293,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-17)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-17)
 
 ### Chore
 
@@ -306,55 +306,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-18)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-15)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [vaultwarden-16.0.39](https://github.com/truecharts/charts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-15)
-
-### Chore
-
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [vaultwarden-16.0.38](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.38) (2022-09-13)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-18)
 
 ### Chore
 
@@ -362,12 +317,44 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3756](https://github.com/truecharts/charts/issues/3756))
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-12)
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-15)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [vaultwarden-16.0.39](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.38...vaultwarden-16.0.39) (2022-09-15)
+
+### Chore
+
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [vaultwarden-16.0.38](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.38) (2022-09-13)
 
 ### Chore
 
@@ -376,9 +363,11 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3756](https://github.com/trueforge-org/truecharts/issues/3756))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-12)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-12)
 
 ### Chore
 
@@ -386,94 +375,105 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-12)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.37](https://github.com/truecharts/charts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
-
-### Chore
-
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-
-## [vaultwarden-16.0.36](https://github.com/truecharts/charts/compare/vaultwarden-16.0.34...vaultwarden-16.0.36) (2022-08-30)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3639](https://github.com/truecharts/charts/issues/3639))
-- update helm chart common to v10.5.5 ([#3626](https://github.com/truecharts/charts/issues/3626))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.35](https://github.com/truecharts/charts/compare/vaultwarden-16.0.34...vaultwarden-16.0.35) (2022-08-30)
-
-### Chore
-
-- update helm chart common to v10.5.5 ([#3626](https://github.com/truecharts/charts/issues/3626))
-
-## [vaultwarden-16.0.34](https://github.com/truecharts/charts/compare/vaultwarden-16.0.32...vaultwarden-16.0.34) (2022-08-29)
+## [vaultwarden-16.0.37](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.36...vaultwarden-16.0.37) (2022-09-11)
 
 ### Chore
 
-- update helm general non-major ([#3621](https://github.com/truecharts/charts/issues/3621))
-- update helm general non-major ([#3619](https://github.com/truecharts/charts/issues/3619))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
 
-## [vaultwarden-16.0.32](https://github.com/truecharts/charts/compare/vaultwarden-16.0.31...vaultwarden-16.0.32) (2022-08-23)
-
-### Chore
-
-- update helm general non-major helm releases ([#3545](https://github.com/truecharts/charts/issues/3545))
-
-## [vaultwarden-16.0.31](https://github.com/truecharts/charts/compare/vaultwarden-16.0.30...vaultwarden-16.0.31) (2022-08-17)
+## [vaultwarden-16.0.36](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.34...vaultwarden-16.0.36) (2022-08-30)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3484](https://github.com/truecharts/charts/issues/3484))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3639](https://github.com/trueforge-org/truecharts/issues/3639))
+- update helm chart common to v10.5.5 ([#3626](https://github.com/trueforge-org/truecharts/issues/3626))
 
-## [vaultwarden-16.0.30](https://github.com/truecharts/charts/compare/vaultwarden-16.0.29...vaultwarden-16.0.30) (2022-08-12)
+## [vaultwarden-16.0.35](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.34...vaultwarden-16.0.35) (2022-08-30)
+
+### Chore
+
+- update helm chart common to v10.5.5 ([#3626](https://github.com/trueforge-org/truecharts/issues/3626))
+
+## [vaultwarden-16.0.34](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.32...vaultwarden-16.0.34) (2022-08-29)
+
+### Chore
+
+- update helm general non-major ([#3621](https://github.com/trueforge-org/truecharts/issues/3621))
+- update helm general non-major ([#3619](https://github.com/trueforge-org/truecharts/issues/3619))
+
+## [vaultwarden-16.0.32](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.31...vaultwarden-16.0.32) (2022-08-23)
+
+### Chore
+
+- update helm general non-major helm releases ([#3545](https://github.com/trueforge-org/truecharts/issues/3545))
+
+## [vaultwarden-16.0.31](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.30...vaultwarden-16.0.31) (2022-08-17)
+
+### Chore
+
+- update helm general non-major helm releases ([#3484](https://github.com/trueforge-org/truecharts/issues/3484))
+
+## [vaultwarden-16.0.30](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.29...vaultwarden-16.0.30) (2022-08-12)
 
 ### Chore
 
 - add documentation checkbox/section to all SCALE Apps
-- update helm general non-major helm releases ([#3456](https://github.com/truecharts/charts/issues/3456))
+- update helm general non-major helm releases ([#3456](https://github.com/trueforge-org/truecharts/issues/3456))
 
 ### Fix
 
-- move extraArgs from .Values.controller to .Values ([#3447](https://github.com/truecharts/charts/issues/3447))
+- move extraArgs from .Values.controller to .Values ([#3447](https://github.com/trueforge-org/truecharts/issues/3447))
 
-## [vaultwarden-16.0.29](https://github.com/truecharts/charts/compare/vaultwarden-16.0.28...vaultwarden-16.0.29) (2022-08-09)
-
-### Chore
-
-- update helm general non-major helm releases to v10.4.9 ([#3413](https://github.com/truecharts/charts/issues/3413))
-
-## [vaultwarden-16.0.28](https://github.com/truecharts/charts/compare/vaultwarden-16.0.27...vaultwarden-16.0.28) (2022-08-08)
+## [vaultwarden-16.0.29](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.28...vaultwarden-16.0.29) (2022-08-09)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3376](https://github.com/truecharts/charts/issues/3376))
-- replace questions parts with templates ([#3402](https://github.com/truecharts/charts/issues/3402))
+- update helm general non-major helm releases to v10.4.9 ([#3413](https://github.com/trueforge-org/truecharts/issues/3413))
+
+## [vaultwarden-16.0.28](https://github.com/trueforge-org/truecharts/compare/vaultwarden-16.0.27...vaultwarden-16.0.28) (2022-08-08)
+
+### Chore
+
+- update helm general non-major helm releases ([#3376](https://github.com/trueforge-org/truecharts/issues/3376))
+- replace questions parts with templates ([#3402](https://github.com/trueforge-org/truecharts/issues/3402))
 
 ## [vaultwarden-16.0.27](https://github.com/truecharts/apps/compare/vaultwarden-16.0.26...vaultwarden-16.0.27) (2022-07-28)
 

@@ -31,8 +31,9 @@ sources:
   - https://ghcr.io/tensorchord/cloudnative-pgvecto.rs
   - https://ghcr.io/traefik/whoami
   - https://github.com/truecharts/charts/tree/master/charts/library/common
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/library/common
   - https://hub.docker.com/_/
   - https://hub.docker.com/r/mikefarah/yq
 type: library
-version: 28.16.6
+version: 28.17.1
 

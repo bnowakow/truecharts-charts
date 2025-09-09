@@ -10,7 +10,7 @@ apiVersion: v2
 appVersion: 2.0.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -30,6 +30,7 @@ maintainers:
 name: renovate
 sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/renovate
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/renovate
 type: application
-version: 2.3.4
+version: 2.4.1
 

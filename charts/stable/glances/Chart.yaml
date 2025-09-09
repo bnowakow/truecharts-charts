@@ -10,7 +10,7 @@ apiVersion: v2
 appVersion: 4.3.0.8
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -32,7 +32,8 @@ name: glances
 sources:
   - https://github.com/nicolargo/glances
   - https://github.com/truecharts/charts/tree/master/charts/stable/glances
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/glances
   - https://hub.docker.com/r/nicolargo/glances
 type: application
-version: 2.3.4
+version: 2.4.1
 

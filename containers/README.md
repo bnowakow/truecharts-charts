@@ -21,7 +21,7 @@ We host our own mirror for a multitude of reasons, which includes:
 - Allowing multi-registry failover
 
 ### Adding New Containers
-Before a chart can be added to the [truecharts/charts](https://github.com/truecharts/charts) repository, you first need to add a container here to the mirror. If you need help with this process please see the **#development** channel in the [TrueCharts Discord Server](https://discord.gg/tVsPTHWTtr).
+Before a chart can be added to the [truecharts/charts](https://github.com/trueforge-org/truecharts) repository, you first need to add a container here to the mirror. If you need help with this process please see the **#development** channel in the [TrueCharts Discord Server](https://discord.gg/tVsPTHWTtr).
 
 #### Step 1: Create a Dockerfile
 Copy the contents below and substitute the upstream application owner's name with `<Upstream Owner Name>`, `<Upstream App Name>` with the application name, and `<Upstream Tag>` with the upstream tag's name. Also get the digest value of the app and substitute that in for `<Upstream Digest>`.
@@ -45,4 +45,4 @@ LABEL org.opencontainers.image.documentation="https://truecharts.org/docs/charts
 Based on the upstream platform, create a file with that value. Typically the value is `linux/amd64`.
 
 ### Step 3: Submit a Pull Request
-Once all these steps are completed and you verified that they are correct, please submit a pull request to this repository! When finished, you can create your chart in the [truecharts/charts](https://github.com/truecharts/charts) repository.
+Once all these steps are completed and you verified that they are correct, please submit a pull request to this repository! When finished, you can create your chart in the [truecharts/charts](https://github.com/trueforge-org/truecharts) repository.

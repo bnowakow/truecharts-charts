@@ -12,13 +12,13 @@ apiVersion: v2
 appVersion: 9.9.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.16.6
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
-deprecated: false
+deprecated: true
 description: Apache Solr
 home: https://truecharts.org/charts/stable/solr
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/solr.webp
@@ -37,5 +37,4 @@ sources:
   - https://github.com/apache/solr
   - https://github.com/truecharts/charts/tree/master/charts/stable/solr
 type: application
-version: 13.4.4
-
+version: 13.4.6

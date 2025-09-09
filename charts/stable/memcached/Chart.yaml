@@ -9,10 +9,10 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 1.6.39
+appVersion: latest
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -33,9 +33,9 @@ maintainers:
     url: https://truecharts.org
 name: memcached
 sources:
-  - https://gallery.ecr.aws/bitnami/memcached
   - https://github.com/bitnami/bitnami-docker-memcached
   - https://github.com/truecharts/charts/tree/master/charts/stable/memcached
+  - https://hub.docker.com/r/bitnamisecure/memcached
 type: application
-version: 16.3.4
+version: 16.5.1
 

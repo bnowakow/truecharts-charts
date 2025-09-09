@@ -1,10 +1,10 @@
 package cmd
 
 import (
-    "strings"
+	"strings"
 
-    "github.com/spf13/cobra"
-    "github.com/truecharts/public/clustertool/pkg/gencmd"
+	"github.com/spf13/cobra"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/gencmd"
 )
 
 var genConfigLongHelp = strings.TrimSpace(`
@@ -17,16 +17,16 @@ It also ensures the same configmap is always added by updating the patches.
 `)
 
 var genConfig = &cobra.Command{
-    Use:     "genconfig",
-    Short:   "generate Configuration files",
-    Long:    genConfigLongHelp,
-    Example: "clustertool genconfig",
-    Run: func(cmd *cobra.Command, args []string) {
+	Use:     "genconfig",
+	Short:   "generate Configuration files",
+	Long:    genConfigLongHelp,
+	Example: "clustertool genconfig",
+	Run: func(cmd *cobra.Command, args []string) {
 
-        gencmd.GenConfig(args)
-    },
+		gencmd.GenConfig(args)
+	},
 }
 
 func init() {
-    RootCmd.AddCommand(genConfig)
+	RootCmd.AddCommand(genConfig)
 }

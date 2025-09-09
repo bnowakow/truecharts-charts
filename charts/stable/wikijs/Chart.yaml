@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 2.5.308
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,7 +35,8 @@ sources:
   - https://docs.requarks.io/install/docker
   - https://github.com/Requarks/wiki
   - https://github.com/truecharts/charts/tree/master/charts/stable/wikijs
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/wikijs
   - https://hub.docker.com/r/requarks/wiki
 type: application
-version: 18.3.4
+version: 18.4.1
 

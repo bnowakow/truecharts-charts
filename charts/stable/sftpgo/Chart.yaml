@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 2.6.6
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,6 +35,7 @@ sources:
   - https://ghcr.io/drakkan/sftpgo
   - https://github.com/drakkan/sftpgo
   - https://github.com/truecharts/charts/tree/master/charts/stable/sftpgo
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/sftpgo
 type: application
-version: 9.3.4
+version: 9.4.1
 

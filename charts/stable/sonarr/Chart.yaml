@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 4.0.15.2940
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -37,6 +37,7 @@ sources:
   - https://ghcr.io/onedr0p/exportarr
   - https://github.com/Sonarr/Sonarr
   - https://github.com/truecharts/charts/tree/master/charts/stable/sonarr
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/sonarr
 type: application
-version: 24.4.4
+version: 24.5.1
 

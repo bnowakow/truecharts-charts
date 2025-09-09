@@ -3,7 +3,7 @@ title: Changelog
 pagefind: false
 ---
 
-## [nextcloud-17.0.0](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-17.0.0) (2022-11-10)
+## [nextcloud-17.0.0](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-17.0.0) (2022-11-10)
 
 ### Chore
 
@@ -16,16 +16,16 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Major Change to GUI
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update docker general non-major ([#4355](https://github.com/truecharts/charts/issues/4355))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4349](https://github.com/trueforge/truecharts/issues/4349))
+- update docker general non-major ([#4355](https://github.com/trueforge/truecharts/issues/4355))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
 ### Fix
 
 - change container config label
 
-## [nextcloud-16.0.6](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.6) (2022-11-09)
+## [nextcloud-16.0.6](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.6) (2022-11-09)
 
 ### Chore
 
@@ -36,26 +36,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4355](https://github.com/truecharts/charts/issues/4355))
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update docker general non-major ([#4355](https://github.com/trueforge/truecharts/issues/4355))
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4349](https://github.com/trueforge/truecharts/issues/4349))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-16.0.5](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.5) (2022-11-08)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [nextcloud-16.0.4](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
+## [nextcloud-16.0.5](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.5) (2022-11-08)
 
 ### Chore
 
@@ -64,10 +50,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4349](https://github.com/trueforge/truecharts/issues/4349))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-16.0.4](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
+## [nextcloud-16.0.4](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
 
 ### Chore
 
@@ -75,244 +63,256 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-16.0.4](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
+## [nextcloud-16.0.4](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-16.0.3](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.3) (2022-11-07)
+## [nextcloud-16.0.4](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.4) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [nextcloud-16.0.3](https://github.com/truecharts/charts/compare/nextcloud-16.0.2...nextcloud-16.0.3) (2022-11-06)
-
-### Chore
-
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update helm general non-major ([#4342](https://github.com/trueforge/truecharts/issues/4342))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-16.0.2](https://github.com/truecharts/charts/compare/nextcloud-16.0.1...nextcloud-16.0.2) (2022-11-06)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4317](https://github.com/truecharts/charts/issues/4317))
-
-## [nextcloud-16.0.1](https://github.com/truecharts/charts/compare/nextcloud-15.3.37...nextcloud-16.0.1) (2022-11-05)
+## [nextcloud-16.0.3](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.3) (2022-11-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4308](https://github.com/truecharts/charts/issues/4308))
-- update container image oci.trueforge.org/truecharts/nextcloud-fpm to v25.0.1 ([#4142](https://github.com/truecharts/charts/issues/4142))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-15.3.37](https://github.com/truecharts/charts/compare/nextcloud-15.3.36...nextcloud-15.3.37) (2022-11-02)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4261](https://github.com/truecharts/charts/issues/4261))
-
-## [nextcloud-15.3.36](https://github.com/truecharts/charts/compare/nextcloud-15.3.35...nextcloud-15.3.36) (2022-11-01)
+## [nextcloud-16.0.3](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.2...nextcloud-16.0.3) (2022-11-06)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4260](https://github.com/truecharts/charts/issues/4260))
+- update helm general non-major ([#4329](https://github.com/trueforge/truecharts/issues/4329))
 
-## [nextcloud-15.3.35](https://github.com/truecharts/charts/compare/nextcloud-15.3.34...nextcloud-15.3.35) (2022-10-25)
+## [nextcloud-16.0.2](https://github.com/trueforge/truecharts/compare/nextcloud-16.0.1...nextcloud-16.0.2) (2022-11-06)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4317](https://github.com/trueforge/truecharts/issues/4317))
+
+## [nextcloud-16.0.1](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.37...nextcloud-16.0.1) (2022-11-05)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4308](https://github.com/trueforge/truecharts/issues/4308))
+- update container image oci.trueforge.org/truecharts/nextcloud-fpm to v25.0.1 ([#4142](https://github.com/trueforge/truecharts/issues/4142))
+
+## [nextcloud-15.3.37](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.36...nextcloud-15.3.37) (2022-11-02)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4261](https://github.com/trueforge/truecharts/issues/4261))
+
+## [nextcloud-15.3.36](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.35...nextcloud-15.3.36) (2022-11-01)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4260](https://github.com/trueforge/truecharts/issues/4260))
+
+## [nextcloud-15.3.35](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.34...nextcloud-15.3.35) (2022-10-25)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [nextcloud-15.3.34](https://github.com/truecharts/charts/compare/nextcloud-15.3.33...nextcloud-15.3.34) (2022-10-25)
+## [nextcloud-15.3.34](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.33...nextcloud-15.3.34) (2022-10-25)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4182](https://github.com/truecharts/charts/issues/4182))
+- update helm general non-major ([#4182](https://github.com/trueforge/truecharts/issues/4182))
 
-## [nextcloud-15.3.33](https://github.com/truecharts/charts/compare/nextcloud-15.3.32...nextcloud-15.3.33) (2022-10-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4181](https://github.com/truecharts/charts/issues/4181))
-
-## [prometheus-4.0.110](https://github.com/truecharts/charts/compare/uptimerobot-prometheus-4.0.40...prometheus-4.0.110) (2022-10-21)
+## [nextcloud-15.3.33](https://github.com/trueforge/truecharts/compare/nextcloud-15.3.32...nextcloud-15.3.33) (2022-10-25)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4139](https://github.com/truecharts/charts/issues/4139))
+- update docker general non-major ([#4181](https://github.com/trueforge/truecharts/issues/4181))
 
-## [prometheus-4.0.109](https://github.com/truecharts/charts/compare/prometheus-4.0.108...prometheus-4.0.109) (2022-10-19)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4122](https://github.com/truecharts/charts/issues/4122))
-- update docker general non-major ([#4128](https://github.com/truecharts/charts/issues/4128))
-
-## [prometheus-4.0.108](https://github.com/truecharts/charts/compare/prometheus-4.0.107...prometheus-4.0.108) (2022-10-18)
+## [prometheus-4.0.110](https://github.com/trueforge/truecharts/compare/uptimerobot-prometheus-4.0.40...prometheus-4.0.110) (2022-10-21)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4120](https://github.com/truecharts/charts/issues/4120))
+- update docker general non-major ([#4139](https://github.com/trueforge/truecharts/issues/4139))
 
-## [prometheus-4.0.107](https://github.com/truecharts/charts/compare/prometheus-4.0.106...prometheus-4.0.107) (2022-10-17)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4119](https://github.com/truecharts/charts/issues/4119))
-
-## [prometheus-4.0.106](https://github.com/truecharts/charts/compare/prometheus-4.0.105...prometheus-4.0.106) (2022-10-16)
+## [prometheus-4.0.109](https://github.com/trueforge/truecharts/compare/prometheus-4.0.108...prometheus-4.0.109) (2022-10-19)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4108](https://github.com/truecharts/charts/issues/4108))
+- update helm general non-major ([#4122](https://github.com/trueforge/truecharts/issues/4122))
+- update docker general non-major ([#4128](https://github.com/trueforge/truecharts/issues/4128))
 
-## [prometheus-4.0.105](https://github.com/truecharts/charts/compare/prometheus-4.0.104...prometheus-4.0.105) (2022-10-14)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4084](https://github.com/truecharts/charts/issues/4084))
-
-## [prometheus-4.0.104](https://github.com/truecharts/charts/compare/prometheus-4.0.103...prometheus-4.0.104) (2022-10-12)
+## [prometheus-4.0.108](https://github.com/trueforge/truecharts/compare/prometheus-4.0.107...prometheus-4.0.108) (2022-10-18)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4071](https://github.com/truecharts/charts/issues/4071))
+- update docker general non-major ([#4120](https://github.com/trueforge/truecharts/issues/4120))
 
-## [prometheus-4.0.103](https://github.com/truecharts/charts/compare/prometheus-4.0.102...prometheus-4.0.103) (2022-10-11)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4070](https://github.com/truecharts/charts/issues/4070))
-
-## [prometheus-4.0.102](https://github.com/truecharts/charts/compare/prometheus-4.0.101...prometheus-4.0.102) (2022-10-10)
+## [prometheus-4.0.107](https://github.com/trueforge/truecharts/compare/prometheus-4.0.106...prometheus-4.0.107) (2022-10-17)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4049](https://github.com/truecharts/charts/issues/4049))
+- update docker general non-major ([#4119](https://github.com/trueforge/truecharts/issues/4119))
+
+## [prometheus-4.0.106](https://github.com/trueforge/truecharts/compare/prometheus-4.0.105...prometheus-4.0.106) (2022-10-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4108](https://github.com/trueforge/truecharts/issues/4108))
+
+## [prometheus-4.0.105](https://github.com/trueforge/truecharts/compare/prometheus-4.0.104...prometheus-4.0.105) (2022-10-14)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4084](https://github.com/trueforge/truecharts/issues/4084))
+
+## [prometheus-4.0.104](https://github.com/trueforge/truecharts/compare/prometheus-4.0.103...prometheus-4.0.104) (2022-10-12)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4071](https://github.com/trueforge/truecharts/issues/4071))
+
+## [prometheus-4.0.103](https://github.com/trueforge/truecharts/compare/prometheus-4.0.102...prometheus-4.0.103) (2022-10-11)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4070](https://github.com/trueforge/truecharts/issues/4070))
+
+## [prometheus-4.0.102](https://github.com/trueforge/truecharts/compare/prometheus-4.0.101...prometheus-4.0.102) (2022-10-10)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4049](https://github.com/trueforge/truecharts/issues/4049))
 - update docker general non-major
 
-## [prometheus-4.0.101](https://github.com/truecharts/charts/compare/prometheus-4.0.99...prometheus-4.0.101) (2022-10-08)
+## [prometheus-4.0.101](https://github.com/trueforge/truecharts/compare/prometheus-4.0.99...prometheus-4.0.101) (2022-10-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4030](https://github.com/truecharts/charts/issues/4030))
+- update docker general non-major ([#4030](https://github.com/trueforge/truecharts/issues/4030))
 - update helm general non-major
 
-## [prometheus-4.0.100](https://github.com/truecharts/charts/compare/prometheus-4.0.99...prometheus-4.0.100) (2022-10-07)
+## [prometheus-4.0.100](https://github.com/trueforge/truecharts/compare/prometheus-4.0.99...prometheus-4.0.100) (2022-10-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [prometheus-4.0.99](https://github.com/truecharts/charts/compare/prometheus-4.0.98...prometheus-4.0.99) (2022-10-07)
+## [prometheus-4.0.99](https://github.com/trueforge/truecharts/compare/prometheus-4.0.98...prometheus-4.0.99) (2022-10-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update docker general non-major
 
-## [prometheus-4.0.98](https://github.com/truecharts/charts/compare/prometheus-4.0.97...prometheus-4.0.98) (2022-10-05)
+## [prometheus-4.0.98](https://github.com/trueforge/truecharts/compare/prometheus-4.0.97...prometheus-4.0.98) (2022-10-05)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [prometheus-4.0.97](https://github.com/truecharts/charts/compare/prometheus-4.0.96...prometheus-4.0.97) (2022-10-05)
+## [prometheus-4.0.97](https://github.com/trueforge/truecharts/compare/prometheus-4.0.96...prometheus-4.0.97) (2022-10-05)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4010](https://github.com/truecharts/charts/issues/4010))
+- update docker general non-major ([#4010](https://github.com/trueforge/truecharts/issues/4010))
 
-## [prometheus-4.0.96](https://github.com/truecharts/charts/compare/prometheus-4.0.95...prometheus-4.0.96) (2022-10-04)
+## [prometheus-4.0.96](https://github.com/trueforge/truecharts/compare/prometheus-4.0.95...prometheus-4.0.96) (2022-10-04)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4001](https://github.com/truecharts/charts/issues/4001))
+- update docker general non-major ([#4001](https://github.com/trueforge/truecharts/issues/4001))
 - update docker general non-major
 
-## [prometheus-4.0.95](https://github.com/truecharts/charts/compare/prometheus-4.0.94...prometheus-4.0.95) (2022-10-01)
+## [prometheus-4.0.95](https://github.com/trueforge/truecharts/compare/prometheus-4.0.94...prometheus-4.0.95) (2022-10-01)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3975](https://github.com/truecharts/charts/issues/3975))
+- update docker general non-major ([#3975](https://github.com/trueforge/truecharts/issues/3975))
 
-## [prometheus-4.0.94](https://github.com/truecharts/charts/compare/prometheus-4.0.93...prometheus-4.0.94) (2022-09-30)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3965](https://github.com/truecharts/charts/issues/3965))
-
-## [prometheus-4.0.93](https://github.com/truecharts/charts/compare/prometheus-4.0.92...prometheus-4.0.93) (2022-09-28)
-
-### Chore
-
-- update docker general non-major ([#3938](https://github.com/truecharts/charts/issues/3938))
-
-## [prometheus-4.0.91](https://github.com/truecharts/charts/compare/prometheus-4.0.90...prometheus-4.0.91) (2022-09-27)
+## [prometheus-4.0.94](https://github.com/trueforge/truecharts/compare/prometheus-4.0.93...prometheus-4.0.94) (2022-09-30)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3918](https://github.com/truecharts/charts/issues/3918))
+- update docker general non-major ([#3965](https://github.com/trueforge/truecharts/issues/3965))
 
-## [prometheus-4.0.90](https://github.com/truecharts/charts/compare/prometheus-4.0.89...prometheus-4.0.90) (2022-09-25)
+## [prometheus-4.0.93](https://github.com/trueforge/truecharts/compare/prometheus-4.0.92...prometheus-4.0.93) (2022-09-28)
+
+### Chore
+
+- update docker general non-major ([#3938](https://github.com/trueforge/truecharts/issues/3938))
+
+## [prometheus-4.0.91](https://github.com/trueforge/truecharts/compare/prometheus-4.0.90...prometheus-4.0.91) (2022-09-27)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3898](https://github.com/truecharts/charts/issues/3898))
+- update helm general non-major ([#3918](https://github.com/trueforge/truecharts/issues/3918))
 
-## [prometheus-4.0.89](https://github.com/truecharts/charts/compare/prometheus-4.0.88...prometheus-4.0.89) (2022-09-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3881](https://github.com/truecharts/charts/issues/3881))
-
-## [prometheus-4.0.88](https://github.com/truecharts/charts/compare/prometheus-4.0.87...prometheus-4.0.88) (2022-09-24)
+## [prometheus-4.0.90](https://github.com/trueforge/truecharts/compare/prometheus-4.0.89...prometheus-4.0.90) (2022-09-25)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3860](https://github.com/truecharts/charts/issues/3860))
+- update helm general non-major ([#3898](https://github.com/trueforge/truecharts/issues/3898))
 
-## [prometheus-4.0.87](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.87) (2022-09-22)
+## [prometheus-4.0.89](https://github.com/trueforge/truecharts/compare/prometheus-4.0.88...prometheus-4.0.89) (2022-09-25)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3881](https://github.com/trueforge/truecharts/issues/3881))
+
+## [prometheus-4.0.88](https://github.com/trueforge/truecharts/compare/prometheus-4.0.87...prometheus-4.0.88) (2022-09-24)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3860](https://github.com/trueforge/truecharts/issues/3860))
+
+## [prometheus-4.0.87](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.87) (2022-09-22)
 
 ### Chore
 
@@ -330,14 +330,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3827](https://github.com/truecharts/charts/issues/3827))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3818](https://github.com/trueforge/truecharts/issues/3818))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update docker general non-major ([#3827](https://github.com/trueforge/truecharts/issues/3827))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.87](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.87) (2022-09-21)
+## [prometheus-4.0.87](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.87) (2022-09-21)
 
 ### Chore
 
@@ -354,14 +354,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- update docker general non-major ([#3827](https://github.com/truecharts/charts/issues/3827))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- update docker general non-major ([#3827](https://github.com/trueforge/truecharts/issues/3827))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge/truecharts/issues/3818))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.86](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-21)
+## [prometheus-4.0.86](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-21)
 
 ### Chore
 
@@ -377,13 +377,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge/truecharts/issues/3818))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.86](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-20)
+## [prometheus-4.0.86](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-20)
 
 ### Chore
 
@@ -398,13 +398,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge/truecharts/issues/3818))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.86](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-20)
+## [prometheus-4.0.86](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.86) (2022-09-20)
 
 ### Chore
 
@@ -418,13 +418,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3818](https://github.com/trueforge/truecharts/issues/3818))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.85](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
+## [prometheus-4.0.85](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
 
 ### Chore
 
@@ -437,12 +437,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.85](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
+## [prometheus-4.0.85](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
 
 ### Chore
 
@@ -454,12 +454,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.85](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
+## [prometheus-4.0.85](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.85) (2022-09-19)
 
 ### Chore
 
@@ -470,12 +470,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/truecharts/charts/issues/3797))
+- update docker general non-major ([#3790](https://github.com/trueforge/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+- Expose prometheus configuration options in Scale GUI ([#3797](https://github.com/trueforge/truecharts/issues/3797))
 
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-17)
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-17)
 
 ### Chore
 
@@ -485,66 +485,10 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
 
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-18)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-15)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-
-## [prometheus-4.0.84](https://github.com/truecharts/charts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-15)
-
-### Chore
-
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-
-## [prometheus-4.0.83](https://github.com/truecharts/charts/compare/prometheus-4.0.82...prometheus-4.0.83) (2022-09-15)
-
-### Chore
-
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [prometheus-4.0.82](https://github.com/truecharts/charts/compare/prometheus-4.0.81...prometheus-4.0.82) (2022-09-13)
-
-### Chore
-
-- update docker general non-major ([#3755](https://github.com/truecharts/charts/issues/3755))
-
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-12)
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-18)
 
 ### Chore
 
@@ -552,10 +496,55 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
 
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-12)
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-15)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+
+## [prometheus-4.0.84](https://github.com/trueforge/truecharts/compare/prometheus-4.0.83...prometheus-4.0.84) (2022-09-15)
+
+### Chore
+
+- update helm general non-major ([#3767](https://github.com/trueforge/truecharts/issues/3767))
+
+## [prometheus-4.0.83](https://github.com/trueforge/truecharts/compare/prometheus-4.0.82...prometheus-4.0.83) (2022-09-15)
+
+### Chore
+
+- split serviceSelector ([#3751](https://github.com/trueforge/truecharts/issues/3751))
+
+## [prometheus-4.0.82](https://github.com/trueforge/truecharts/compare/prometheus-4.0.81...prometheus-4.0.82) (2022-09-13)
+
+### Chore
+
+- update docker general non-major ([#3755](https://github.com/trueforge/truecharts/issues/3755))
+
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-12)
 
 ### Chore
 
@@ -563,203 +552,214 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
 
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-12)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
 
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
 
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
 
-## [prometheus-4.0.81](https://github.com/truecharts/charts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
-
-### Chore
-
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-
-## [prometheus-4.0.80](https://github.com/truecharts/charts/compare/prometheus-4.0.79...prometheus-4.0.80) (2022-09-10)
-
-### Chore
-
-- update docker general non-major ([#3727](https://github.com/truecharts/charts/issues/3727))
-
-## [prometheus-4.0.79](https://github.com/truecharts/charts/compare/prometheus-4.0.78...prometheus-4.0.79) (2022-09-07)
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3710](https://github.com/truecharts/charts/issues/3710))
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
 
-## [prometheus-4.0.79](https://github.com/truecharts/charts/compare/prometheus-4.0.78...prometheus-4.0.79) (2022-09-06)
-
-### Chore
-
-- update docker general non-major ([#3710](https://github.com/truecharts/charts/issues/3710))
-
-## [prometheus-4.0.78](https://github.com/truecharts/charts/compare/prometheus-4.0.77...prometheus-4.0.78) (2022-09-05)
+## [prometheus-4.0.81](https://github.com/trueforge/truecharts/compare/prometheus-4.0.80...prometheus-4.0.81) (2022-09-11)
 
 ### Chore
 
-- update docker general non-major ([#3700](https://github.com/truecharts/charts/issues/3700))
+- update helm general non-major ([#3711](https://github.com/trueforge/truecharts/issues/3711))
+
+## [prometheus-4.0.80](https://github.com/trueforge/truecharts/compare/prometheus-4.0.79...prometheus-4.0.80) (2022-09-10)
+
+### Chore
+
+- update docker general non-major ([#3727](https://github.com/trueforge/truecharts/issues/3727))
+
+## [prometheus-4.0.79](https://github.com/trueforge/truecharts/compare/prometheus-4.0.78...prometheus-4.0.79) (2022-09-07)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3710](https://github.com/trueforge/truecharts/issues/3710))
+
+## [prometheus-4.0.79](https://github.com/trueforge/truecharts/compare/prometheus-4.0.78...prometheus-4.0.79) (2022-09-06)
+
+### Chore
+
+- update docker general non-major ([#3710](https://github.com/trueforge/truecharts/issues/3710))
+
+## [prometheus-4.0.78](https://github.com/trueforge/truecharts/compare/prometheus-4.0.77...prometheus-4.0.78) (2022-09-05)
+
+### Chore
+
+- update docker general non-major ([#3700](https://github.com/trueforge/truecharts/issues/3700))
 
 ### Fix
 
-- fix serviceaccount creation on few apps ([#3665](https://github.com/truecharts/charts/issues/3665))
+- fix serviceaccount creation on few apps ([#3665](https://github.com/trueforge/truecharts/issues/3665))
 
-## [prometheus-4.0.77](https://github.com/truecharts/charts/compare/prometheus-4.0.76...prometheus-4.0.77) (2022-09-03)
-
-### Chore
-
-- update docker general non-major ([#3668](https://github.com/truecharts/charts/issues/3668))
-
-## [prometheus-4.0.76](https://github.com/truecharts/charts/compare/prometheus-4.0.75...prometheus-4.0.76) (2022-09-02)
+## [prometheus-4.0.77](https://github.com/trueforge/truecharts/compare/prometheus-4.0.76...prometheus-4.0.77) (2022-09-03)
 
 ### Chore
 
-- update docker general non-major ([#3660](https://github.com/truecharts/charts/issues/3660))
+- update docker general non-major ([#3668](https://github.com/trueforge/truecharts/issues/3668))
 
-## [prometheus-4.0.75](https://github.com/truecharts/charts/compare/prometheus-4.0.74...prometheus-4.0.75) (2022-08-31)
+## [prometheus-4.0.76](https://github.com/trueforge/truecharts/compare/prometheus-4.0.75...prometheus-4.0.76) (2022-09-02)
 
 ### Chore
 
-- update docker general non-major ([#3640](https://github.com/truecharts/charts/issues/3640))
+- update docker general non-major ([#3660](https://github.com/trueforge/truecharts/issues/3660))
 
-## [prometheus-4.0.74](https://github.com/truecharts/charts/compare/prometheus-4.0.72...prometheus-4.0.74) (2022-08-30)
+## [prometheus-4.0.75](https://github.com/trueforge/truecharts/compare/prometheus-4.0.74...prometheus-4.0.75) (2022-08-31)
+
+### Chore
+
+- update docker general non-major ([#3640](https://github.com/trueforge/truecharts/issues/3640))
+
+## [prometheus-4.0.74](https://github.com/trueforge/truecharts/compare/prometheus-4.0.72...prometheus-4.0.74) (2022-08-30)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3639](https://github.com/truecharts/charts/issues/3639))
-- update helm chart common to v10.5.5 ([#3626](https://github.com/truecharts/charts/issues/3626))
+- update helm general non-major ([#3639](https://github.com/trueforge/truecharts/issues/3639))
+- update helm chart common to v10.5.5 ([#3626](https://github.com/trueforge/truecharts/issues/3626))
 
-## [prometheus-4.0.73](https://github.com/truecharts/charts/compare/prometheus-4.0.72...prometheus-4.0.73) (2022-08-30)
-
-### Chore
-
-- update helm chart common to v10.5.5 ([#3626](https://github.com/truecharts/charts/issues/3626))
-
-## [prometheus-4.0.72](https://github.com/truecharts/charts/compare/prometheus-4.0.71...prometheus-4.0.72) (2022-08-30)
+## [prometheus-4.0.73](https://github.com/trueforge/truecharts/compare/prometheus-4.0.72...prometheus-4.0.73) (2022-08-30)
 
 ### Chore
 
-- update docker general non-major ([#3623](https://github.com/truecharts/charts/issues/3623))
+- update helm chart common to v10.5.5 ([#3626](https://github.com/trueforge/truecharts/issues/3626))
 
-## [prometheus-4.0.71](https://github.com/truecharts/charts/compare/prometheus-4.0.69...prometheus-4.0.71) (2022-08-29)
-
-### Chore
-
-- update docker general non-major ([#3620](https://github.com/truecharts/charts/issues/3620))
-- update helm general non-major ([#3619](https://github.com/truecharts/charts/issues/3619))
-
-## [prometheus-4.0.69](https://github.com/truecharts/charts/compare/prometheus-4.0.68...prometheus-4.0.69) (2022-08-26)
+## [prometheus-4.0.72](https://github.com/trueforge/truecharts/compare/prometheus-4.0.71...prometheus-4.0.72) (2022-08-30)
 
 ### Chore
 
-- update docker general non-major ([#3573](https://github.com/truecharts/charts/issues/3573))
+- update docker general non-major ([#3623](https://github.com/trueforge/truecharts/issues/3623))
 
-## [prometheus-4.0.68](https://github.com/truecharts/charts/compare/prometheus-4.0.67...prometheus-4.0.68) (2022-08-25)
-
-### Chore
-
-- update docker general non-major ([#3561](https://github.com/truecharts/charts/issues/3561))
-
-## [prometheus-4.0.67](https://github.com/truecharts/charts/compare/uptimerobot-prometheus-4.0.29...prometheus-4.0.67) (2022-08-24)
+## [prometheus-4.0.71](https://github.com/trueforge/truecharts/compare/prometheus-4.0.69...prometheus-4.0.71) (2022-08-29)
 
 ### Chore
 
-- update docker general non-major ([#3552](https://github.com/truecharts/charts/issues/3552))
+- update docker general non-major ([#3620](https://github.com/trueforge/truecharts/issues/3620))
+- update helm general non-major ([#3619](https://github.com/trueforge/truecharts/issues/3619))
 
-## [prometheus-4.0.66](https://github.com/truecharts/charts/compare/prometheus-4.0.65...prometheus-4.0.66) (2022-08-23)
-
-### Chore
-
-- update helm general non-major helm releases ([#3545](https://github.com/truecharts/charts/issues/3545))
-
-## [prometheus-4.0.65](https://github.com/truecharts/charts/compare/prometheus-4.0.64...prometheus-4.0.65) (2022-08-22)
+## [prometheus-4.0.69](https://github.com/trueforge/truecharts/compare/prometheus-4.0.68...prometheus-4.0.69) (2022-08-26)
 
 ### Chore
 
-- update docker general non-major ([#3530](https://github.com/truecharts/charts/issues/3530))
+- update docker general non-major ([#3573](https://github.com/trueforge/truecharts/issues/3573))
 
-## [prometheus-4.0.64](https://github.com/truecharts/charts/compare/prometheus-4.0.63...prometheus-4.0.64) (2022-08-20)
-
-### Chore
-
-- update docker general non-major docker tags ([#3518](https://github.com/truecharts/charts/issues/3518))
-
-## [prometheus-4.0.63](https://github.com/truecharts/charts/compare/prometheus-4.0.62...prometheus-4.0.63) (2022-08-19)
+## [prometheus-4.0.68](https://github.com/trueforge/truecharts/compare/prometheus-4.0.67...prometheus-4.0.68) (2022-08-25)
 
 ### Chore
 
-- update docker general non-major docker tags ([#3512](https://github.com/truecharts/charts/issues/3512))
+- update docker general non-major ([#3561](https://github.com/trueforge/truecharts/issues/3561))
 
-## [prometheus-4.0.62](https://github.com/truecharts/charts/compare/prometheus-4.0.61...prometheus-4.0.62) (2022-08-18)
-
-### Chore
-
-- update docker general non-major ([#3503](https://github.com/truecharts/charts/issues/3503))
-
-## [prometheus-4.0.61](https://github.com/truecharts/charts/compare/prometheus-4.0.60...prometheus-4.0.61) (2022-08-17)
+## [prometheus-4.0.67](https://github.com/trueforge/truecharts/compare/uptimerobot-prometheus-4.0.29...prometheus-4.0.67) (2022-08-24)
 
 ### Chore
 
-- update docker general non-major ([#3478](https://github.com/truecharts/charts/issues/3478))
+- update docker general non-major ([#3552](https://github.com/trueforge/truecharts/issues/3552))
 
-## [prometheus-4.0.60](https://github.com/truecharts/charts/compare/prometheus-4.0.59...prometheus-4.0.60) (2022-08-12)
-
-### Chore
-
-- update helm general non-major helm releases ([#3456](https://github.com/truecharts/charts/issues/3456))
-
-## [prometheus-4.0.59](https://github.com/truecharts/charts/compare/prometheus-4.0.58...prometheus-4.0.59) (2022-08-12)
+## [prometheus-4.0.66](https://github.com/trueforge/truecharts/compare/prometheus-4.0.65...prometheus-4.0.66) (2022-08-23)
 
 ### Chore
 
-- update docker general non-major ([#3453](https://github.com/truecharts/charts/issues/3453))
+- update helm general non-major helm releases ([#3545](https://github.com/trueforge/truecharts/issues/3545))
 
-## [prometheus-4.0.58](https://github.com/truecharts/charts/compare/prometheus-4.0.57...prometheus-4.0.58) (2022-08-10)
-
-### Chore
-
-- update docker general non-major ([#3421](https://github.com/truecharts/charts/issues/3421))
-
-## [prometheus-4.0.57](https://github.com/truecharts/charts/compare/prometheus-4.0.56...prometheus-4.0.57) (2022-08-09)
+## [prometheus-4.0.65](https://github.com/trueforge/truecharts/compare/prometheus-4.0.64...prometheus-4.0.65) (2022-08-22)
 
 ### Chore
 
-- update helm general non-major helm releases to v10.4.9 ([#3413](https://github.com/truecharts/charts/issues/3413))
+- update docker general non-major ([#3530](https://github.com/trueforge/truecharts/issues/3530))
 
-## [prometheus-4.0.56](https://github.com/truecharts/charts/compare/prometheus-4.0.55...prometheus-4.0.56) (2022-08-09)
-
-### Chore
-
-- update docker general non-major ([#3377](https://github.com/truecharts/charts/issues/3377))
-
-## [prometheus-4.0.55](https://github.com/truecharts/charts/compare/prometheus-4.0.53...prometheus-4.0.55) (2022-08-08)
+## [prometheus-4.0.64](https://github.com/trueforge/truecharts/compare/prometheus-4.0.63...prometheus-4.0.64) (2022-08-20)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3376](https://github.com/truecharts/charts/issues/3376))
-- update docker general non-major ([#3356](https://github.com/truecharts/charts/issues/3356))
-- replace questions parts with templates ([#3402](https://github.com/truecharts/charts/issues/3402))
+- update docker general non-major docker tags ([#3518](https://github.com/trueforge/truecharts/issues/3518))
+
+## [prometheus-4.0.63](https://github.com/trueforge/truecharts/compare/prometheus-4.0.62...prometheus-4.0.63) (2022-08-19)
+
+### Chore
+
+- update docker general non-major docker tags ([#3512](https://github.com/trueforge/truecharts/issues/3512))
+
+## [prometheus-4.0.62](https://github.com/trueforge/truecharts/compare/prometheus-4.0.61...prometheus-4.0.62) (2022-08-18)
+
+### Chore
+
+- update docker general non-major ([#3503](https://github.com/trueforge/truecharts/issues/3503))
+
+## [prometheus-4.0.61](https://github.com/trueforge/truecharts/compare/prometheus-4.0.60...prometheus-4.0.61) (2022-08-17)
+
+### Chore
+
+- update docker general non-major ([#3478](https://github.com/trueforge/truecharts/issues/3478))
+
+## [prometheus-4.0.60](https://github.com/trueforge/truecharts/compare/prometheus-4.0.59...prometheus-4.0.60) (2022-08-12)
+
+### Chore
+
+- update helm general non-major helm releases ([#3456](https://github.com/trueforge/truecharts/issues/3456))
+
+## [prometheus-4.0.59](https://github.com/trueforge/truecharts/compare/prometheus-4.0.58...prometheus-4.0.59) (2022-08-12)
+
+### Chore
+
+- update docker general non-major ([#3453](https://github.com/trueforge/truecharts/issues/3453))
+
+## [prometheus-4.0.58](https://github.com/trueforge/truecharts/compare/prometheus-4.0.57...prometheus-4.0.58) (2022-08-10)
+
+### Chore
+
+- update docker general non-major ([#3421](https://github.com/trueforge/truecharts/issues/3421))
+
+## [prometheus-4.0.57](https://github.com/trueforge/truecharts/compare/prometheus-4.0.56...prometheus-4.0.57) (2022-08-09)
+
+### Chore
+
+- update helm general non-major helm releases to v10.4.9 ([#3413](https://github.com/trueforge/truecharts/issues/3413))
+
+## [prometheus-4.0.56](https://github.com/trueforge/truecharts/compare/prometheus-4.0.55...prometheus-4.0.56) (2022-08-09)
+
+### Chore
+
+- update docker general non-major ([#3377](https://github.com/trueforge/truecharts/issues/3377))
+
+## [prometheus-4.0.55](https://github.com/trueforge/truecharts/compare/prometheus-4.0.53...prometheus-4.0.55) (2022-08-08)
+
+### Chore
+
+- update helm general non-major helm releases ([#3376](https://github.com/trueforge/truecharts/issues/3376))
+- update docker general non-major ([#3356](https://github.com/trueforge/truecharts/issues/3356))
+- replace questions parts with templates ([#3402](https://github.com/trueforge/truecharts/issues/3402))
 
 ## [prometheus-4.0.53](https://github.com/truecharts/apps/compare/prometheus-4.0.52...prometheus-4.0.53) (2022-07-30)
 

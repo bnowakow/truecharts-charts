@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 1.5.4
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,7 +36,8 @@ sources:
   - https://github.com/joachimbaten/spotweb-docker
   - https://github.com/spotweb/spotweb
   - https://github.com/truecharts/charts/tree/master/charts/stable/spotweb
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/spotweb
   - https://hub.docker.com/r/jbaten/spotweb
 type: application
-version: 15.3.4
+version: 15.4.1
 

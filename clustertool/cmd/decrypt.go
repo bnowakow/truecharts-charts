@@ -1,11 +1,11 @@
 package cmd
 
 import (
-    "strings"
+	"strings"
 
-    "github.com/rs/zerolog/log"
-    "github.com/spf13/cobra"
-    "github.com/truecharts/public/clustertool/pkg/sops"
+	"github.com/rs/zerolog/log"
+	"github.com/spf13/cobra"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/sops"
 )
 
 var decryptLongHelp = strings.TrimSpace(`
@@ -15,17 +15,17 @@ If so, they are decrypted using your "age.agekey" file as specified in ".sops.ya
 `)
 
 var decrypt = &cobra.Command{
-    Use:     "decrypt",
-    Short:   "Decrypt all high-risk data using sops",
-    Example: "clustertool decrypt",
-    Long:    decryptLongHelp,
-    Run: func(cmd *cobra.Command, args []string) {
-        if err := sops.DecryptFiles(); err != nil {
-            log.Info().Msgf("Error decrypting files: %v\n", err)
-        }
-    },
+	Use:     "decrypt",
+	Short:   "Decrypt all high-risk data using sops",
+	Example: "clustertool decrypt",
+	Long:    decryptLongHelp,
+	Run: func(cmd *cobra.Command, args []string) {
+		if err := sops.DecryptFiles(); err != nil {
+			log.Info().Msgf("Error decrypting files: %v\n", err)
+		}
+	},
 }
 
 func init() {
-    RootCmd.AddCommand(decrypt)
+	RootCmd.AddCommand(decrypt)
 }

@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 0.3.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -33,6 +33,7 @@ name: spegel
 sources:
   - https://ghcr.io/spegel-org/spegel
   - https://github.com/truecharts/charts/tree/master/charts/system/spegel
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/system/spegel
 type: application
-version: 4.3.4
+version: 4.4.1
 

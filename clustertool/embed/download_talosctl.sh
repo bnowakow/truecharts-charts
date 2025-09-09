@@ -43,6 +43,7 @@ for combo in "${combinations[@]}"; do
     target_dir="./clustertool/embed/${os}_${arch}"
 
     # Create target directory if it doesn't exist
+    mkdir -p "./clustertool/embed/windows_arm64"
     mkdir -p "${target_dir}"
 
     # Download the file

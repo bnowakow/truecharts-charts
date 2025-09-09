@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: latest
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,7 +35,8 @@ name: plex-utills
 sources:
   - https://github.com/jkirkcaldy/plex-utills
   - https://github.com/truecharts/charts/tree/master/charts/stable/plex-utills
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/plex-utills
   - https://hub.docker.com/r/jkirkcaldy/plex-utills
 type: application
-version: 11.3.4
+version: 11.4.1
 

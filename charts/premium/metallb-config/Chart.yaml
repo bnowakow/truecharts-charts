@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: latest
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,8 +34,9 @@ name: metallb-config
 sources:
   - https://github.com/metallb/metallb
   - https://github.com/truecharts/charts/tree/master/charts/premium/metallb-config
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/premium/metallb-config
   - https://hub.docker.com/_/hello-world
   - https://metallb.io
 type: application
-version: 9.3.4
+version: 9.4.1
 

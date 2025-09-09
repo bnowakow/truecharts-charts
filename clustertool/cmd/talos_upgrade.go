@@ -1,15 +1,15 @@
 package cmd
 
 import (
-    "strings"
+	"strings"
 
-    "github.com/rs/zerolog/log"
-    "github.com/spf13/cobra"
-    "github.com/truecharts/public/clustertool/pkg/gencmd"
-    "github.com/truecharts/public/clustertool/pkg/helper"
-    "github.com/truecharts/public/clustertool/pkg/initfiles"
-    "github.com/truecharts/public/clustertool/pkg/sops"
-    "github.com/truecharts/public/clustertool/pkg/talassist"
+	"github.com/rs/zerolog/log"
+	"github.com/spf13/cobra"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/gencmd"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/helper"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/initfiles"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/sops"
+	"github.com/trueforge-org/truecharts/clustertool/pkg/talassist"
 )
 
 var upgradeLongHelp = strings.TrimSpace(`
@@ -21,46 +21,46 @@ On top of this, after upgrading Talos on all nodes, it also executes kubernetes-
 `)
 
 var upgrade = &cobra.Command{
-    Use:     "upgrade",
-    Short:   "Upgrade Talos Nodes and Kubernetes",
-    Example: "clustertool talos upgrade <NodeIP>",
-    Long:    upgradeLongHelp,
-    Run: func(cmd *cobra.Command, args []string) {
-        var extraArgs []string
-        node := ""
+	Use:     "upgrade",
+	Short:   "Upgrade Talos Nodes and Kubernetes",
+	Example: "clustertool talos upgrade <NodeIP>",
+	Long:    upgradeLongHelp,
+	Run: func(cmd *cobra.Command, args []string) {
+		var extraArgs []string
+		node := ""
 
-        if len(args) > 1 {
-            extraArgs = args[1:]
-        }
-        if len(args) >= 1 {
-            node = args[0]
-            if args[0] == "all" {
-                node = ""
-            }
-        }
+		if len(args) > 1 {
+			extraArgs = args[1:]
+		}
+		if len(args) >= 1 {
+			node = args[0]
+			if args[0] == "all" {
+				node = ""
+			}
+		}
 
-        if err := sops.DecryptFiles(); err != nil {
-            log.Info().Msgf("Error decrypting files: %v\n", err)
-        }
-        initfiles.LoadTalEnv(false)
-        talassist.LoadTalConfig()
+		if err := sops.DecryptFiles(); err != nil {
+			log.Info().Msgf("Error decrypting files: %v\n", err)
+		}
+		initfiles.LoadTalEnv(false)
+		talassist.LoadTalConfig()
 
-        log.Info().Msg("Running Cluster Upgrade")
+		log.Info().Msg("Running Cluster Upgrade")
 
-        taloscmds := gencmd.GenUpgrade(node, extraArgs)
-        gencmd.ExecCmds(taloscmds, true)
+		taloscmds := gencmd.GenUpgrade(node, extraArgs)
+		gencmd.ExecCmds(taloscmds, true)
 
-        log.Info().Msg("Running Kubernetes Upgrade")
-        kubeUpgradeCmd := gencmd.GenKubeUpgrade(helper.TalEnv["VIP_IP"])
-        gencmd.ExecCmd(kubeUpgradeCmd)
+		log.Info().Msg("Running Kubernetes Upgrade")
+		kubeUpgradeCmd := gencmd.GenKubeUpgrade(helper.TalEnv["VIP_IP"])
+		gencmd.ExecCmd(kubeUpgradeCmd)
 
-        log.Info().Msg("(re)Loading KubeConfig)")
-        kubeconfigcmds := gencmd.GenPlain("health", helper.TalEnv["VIP_IP"], []string{"-f"})
-        gencmd.ExecCmd(kubeconfigcmds[0])
+		log.Info().Msg("(re)Loading KubeConfig)")
+		kubeconfigcmds := gencmd.GenPlain("health", helper.TalEnv["VIP_IP"], []string{"-f"})
+		gencmd.ExecCmd(kubeconfigcmds[0])
 
-    },
+	},
 }
 
 func init() {
-    talosCmd.AddCommand(upgrade)
+	talosCmd.AddCommand(upgrade)
 }

@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 4.3.1
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,6 +36,7 @@ sources:
   - https://ghcr.io/tasmoadmin/tasmoadmin
   - https://github.com/TasmoAdmin/TasmoAdmin
   - https://github.com/truecharts/charts/tree/master/charts/stable/tasmoadmin
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/tasmoadmin
 type: application
-version: 11.3.4
+version: 11.4.1
 

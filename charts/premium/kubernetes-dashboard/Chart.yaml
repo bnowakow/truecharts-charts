@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: latest
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -41,11 +41,12 @@ name: kubernetes-dashboard
 sources:
   - https://github.com/kubernetes-dashboard/kubernetes-dashboard
   - https://github.com/truecharts/charts/tree/master/charts/premium/kubernetes-dashboard
+  - https://github.com/trueforge/truecharts/tree/master/charts/premium/kubernetes-dashboard
   - https://hub.docker.com/r/kubernetesui/dashboard-api
   - https://hub.docker.com/r/kubernetesui/dashboard-auth
   - https://hub.docker.com/r/kubernetesui/dashboard-metrics-scraper
   - https://hub.docker.com/r/kubernetesui/dashboard-web
   - https://kubernetes-dashboard.universe.tf
 type: application
-version: 2.3.4
+version: 2.4.1
 

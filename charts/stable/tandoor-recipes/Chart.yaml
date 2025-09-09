@@ -9,10 +9,10 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2.1.0
+appVersion: 2.1.2
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,8 +34,9 @@ maintainers:
 name: tandoor-recipes
 sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/tandoor-recipes
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/tandoor-recipes
   - https://github.com/vabene1111/recipes
   - https://hub.docker.com/r/vabene1111/recipes
 type: application
-version: 20.2.0
+version: 20.3.2
 

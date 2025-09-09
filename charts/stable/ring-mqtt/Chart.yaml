@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 5.8.1
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,8 +34,9 @@ maintainers:
 name: ring-mqtt
 sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/ring-mqtt
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/ring-mqtt
   - https://github.com/tsightler/ring-mqtt
   - https://hub.docker.com/r/tsightler/ring-mqtt
 type: application
-version: 11.3.4
+version: 11.4.1
 

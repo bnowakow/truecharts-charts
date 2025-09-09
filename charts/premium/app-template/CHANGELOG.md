@@ -3,7 +3,7 @@ title: Changelog
 pagefind: false
 ---
 
-## [custom-app-6.0.0](https://github.com/truecharts/charts/compare/custom-app-5.1.100...custom-app-6.0.0) (2022-11-10)
+## [custom-app-6.0.0](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.100...custom-app-6.0.0) (2022-11-10)
 
 ### Chore
 
@@ -13,7 +13,7 @@ pagefind: false
 
 - change container config label
 
-## [custom-app-5.1.100](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.100) (2022-11-10)
+## [custom-app-5.1.100](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.100) (2022-11-10)
 
 ### Chore
 
@@ -25,31 +25,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update docker general non-major ([#4355](https://github.com/truecharts/charts/issues/4355))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-- update docker general non-major ([#4366](https://github.com/truecharts/charts/issues/4366))
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4349](https://github.com/trueforge-org/truecharts/issues/4349))
+- update docker general non-major ([#4355](https://github.com/trueforge-org/truecharts/issues/4355))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
+- update docker general non-major ([#4366](https://github.com/trueforge-org/truecharts/issues/4366))
 
-## [custom-app-5.1.99](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.99) (2022-11-09)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4355](https://github.com/truecharts/charts/issues/4355))
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [custom-app-5.1.98](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.98) (2022-11-08)
+## [custom-app-5.1.99](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.99) (2022-11-09)
 
 ### Chore
 
@@ -59,12 +42,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4349](https://github.com/truecharts/charts/issues/4349))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4355](https://github.com/trueforge-org/truecharts/issues/4355))
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4349](https://github.com/trueforge-org/truecharts/issues/4349))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.97](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
+## [custom-app-5.1.98](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.98) (2022-11-08)
 
 ### Chore
 
@@ -73,11 +58,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4349](https://github.com/trueforge-org/truecharts/issues/4349))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.97](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
+## [custom-app-5.1.97](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
 
 ### Chore
 
@@ -85,181 +72,194 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.97](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
+## [custom-app-5.1.97](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4342](https://github.com/truecharts/charts/issues/4342))
-- update docker general non-major ([#4343](https://github.com/truecharts/charts/issues/4343))
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.96](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.96) (2022-11-07)
+## [custom-app-5.1.97](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.97) (2022-11-08)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
-
-## [custom-app-5.1.96](https://github.com/truecharts/charts/compare/custom-app-5.1.95...custom-app-5.1.96) (2022-11-06)
-
-### Chore
-
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4329](https://github.com/truecharts/charts/issues/4329))
+- update helm general non-major ([#4342](https://github.com/trueforge-org/truecharts/issues/4342))
+- update docker general non-major ([#4343](https://github.com/trueforge-org/truecharts/issues/4343))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.95](https://github.com/truecharts/charts/compare/custom-app-5.1.94...custom-app-5.1.95) (2022-11-06)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4317](https://github.com/truecharts/charts/issues/4317))
-
-## [custom-app-5.1.94](https://github.com/truecharts/charts/compare/custom-app-5.1.93...custom-app-5.1.94) (2022-11-05)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4308](https://github.com/truecharts/charts/issues/4308))
-
-## [custom-app-5.1.93](https://github.com/truecharts/charts/compare/custom-app-5.1.92...custom-app-5.1.93) (2022-11-05)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4301](https://github.com/truecharts/charts/issues/4301))
-
-## [custom-app-5.1.92](https://github.com/truecharts/charts/compare/custom-app-5.1.91...custom-app-5.1.92) (2022-11-03)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4286](https://github.com/truecharts/charts/issues/4286))
-
-## [custom-app-5.1.91](https://github.com/truecharts/charts/compare/custom-app-5.1.90...custom-app-5.1.91) (2022-11-02)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4261](https://github.com/truecharts/charts/issues/4261))
-- update docker general non-major ([#4280](https://github.com/truecharts/charts/issues/4280))
-
-## [custom-app-5.1.90](https://github.com/truecharts/charts/compare/custom-app-5.1.89...custom-app-5.1.90) (2022-11-01)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4260](https://github.com/truecharts/charts/issues/4260))
-
-## [custom-app-5.1.89](https://github.com/truecharts/charts/compare/custom-app-5.1.88...custom-app-5.1.89) (2022-10-30)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4238](https://github.com/truecharts/charts/issues/4238))
-
-## [custom-app-5.1.88](https://github.com/truecharts/charts/compare/custom-app-5.1.87...custom-app-5.1.88) (2022-10-28)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4218](https://github.com/truecharts/charts/issues/4218))
-
-## [custom-app-5.1.87](https://github.com/truecharts/charts/compare/custom-app-5.1.86...custom-app-5.1.87) (2022-10-27)
+## [custom-app-5.1.96](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.96) (2022-11-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4201](https://github.com/truecharts/charts/issues/4201))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.87](https://github.com/truecharts/charts/compare/custom-app-5.1.86...custom-app-5.1.87) (2022-10-27)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4201](https://github.com/truecharts/charts/issues/4201))
-
-## [custom-app-5.1.86](https://github.com/truecharts/charts/compare/custom-app-5.1.85...custom-app-5.1.86) (2022-10-25)
+## [custom-app-5.1.96](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.95...custom-app-5.1.96) (2022-11-06)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4182](https://github.com/truecharts/charts/issues/4182))
+- update helm general non-major ([#4329](https://github.com/trueforge-org/truecharts/issues/4329))
 
-## [custom-app-5.1.85](https://github.com/truecharts/charts/compare/custom-app-5.1.84...custom-app-5.1.85) (2022-10-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4181](https://github.com/truecharts/charts/issues/4181))
-
-## [custom-app-5.1.84](https://github.com/truecharts/charts/compare/custom-app-5.1.83...custom-app-5.1.84) (2022-10-24)
+## [custom-app-5.1.95](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.94...custom-app-5.1.95) (2022-11-06)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4171](https://github.com/truecharts/charts/issues/4171))
+- update helm general non-major ([#4317](https://github.com/trueforge-org/truecharts/issues/4317))
 
-## [custom-app-5.1.83](https://github.com/truecharts/charts/compare/custom-app-5.1.82...custom-app-5.1.83) (2022-10-22)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4155](https://github.com/truecharts/charts/issues/4155))
-
-## [custom-app-5.1.82](https://github.com/truecharts/charts/compare/custom-app-5.1.81...custom-app-5.1.82) (2022-10-21)
+## [custom-app-5.1.94](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.93...custom-app-5.1.94) (2022-11-05)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4139](https://github.com/truecharts/charts/issues/4139))
+- update helm general non-major ([#4308](https://github.com/trueforge-org/truecharts/issues/4308))
 
-## [custom-app-5.1.81](https://github.com/truecharts/charts/compare/custom-app-5.1.80...custom-app-5.1.81) (2022-10-19)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#4122](https://github.com/truecharts/charts/issues/4122))
-- update docker general non-major ([#4128](https://github.com/truecharts/charts/issues/4128))
-
-## [custom-app-5.1.80](https://github.com/truecharts/charts/compare/custom-app-5.1.79...custom-app-5.1.80) (2022-10-17)
+## [custom-app-5.1.93](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.92...custom-app-5.1.93) (2022-11-05)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4119](https://github.com/truecharts/charts/issues/4119))
+- update docker general non-major ([#4301](https://github.com/trueforge-org/truecharts/issues/4301))
 
-## [custom-app-5.1.79](https://github.com/truecharts/charts/compare/custom-app-5.1.78...custom-app-5.1.79) (2022-10-14)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#4084](https://github.com/truecharts/charts/issues/4084))
-
-## [custom-app-5.1.78](https://github.com/truecharts/charts/compare/custom-app-5.1.77...custom-app-5.1.78) (2022-10-12)
+## [custom-app-5.1.92](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.91...custom-app-5.1.92) (2022-11-03)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#4071](https://github.com/truecharts/charts/issues/4071))
+- update docker general non-major ([#4286](https://github.com/trueforge-org/truecharts/issues/4286))
 
-## [custom-app-5.1.77](https://github.com/truecharts/charts/compare/custom-app-5.1.76...custom-app-5.1.77) (2022-10-11)
+## [custom-app-5.1.91](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.90...custom-app-5.1.91) (2022-11-02)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#4070](https://github.com/truecharts/charts/issues/4070))
+- update helm general non-major ([#4261](https://github.com/trueforge-org/truecharts/issues/4261))
+- update docker general non-major ([#4280](https://github.com/trueforge-org/truecharts/issues/4280))
+
+## [custom-app-5.1.90](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.89...custom-app-5.1.90) (2022-11-01)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4260](https://github.com/trueforge-org/truecharts/issues/4260))
+
+## [custom-app-5.1.89](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.88...custom-app-5.1.89) (2022-10-30)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4238](https://github.com/trueforge-org/truecharts/issues/4238))
+
+## [custom-app-5.1.88](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.87...custom-app-5.1.88) (2022-10-28)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4218](https://github.com/trueforge-org/truecharts/issues/4218))
+
+## [custom-app-5.1.87](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.86...custom-app-5.1.87) (2022-10-27)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4201](https://github.com/trueforge-org/truecharts/issues/4201))
+
+## [custom-app-5.1.87](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.86...custom-app-5.1.87) (2022-10-27)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4201](https://github.com/trueforge-org/truecharts/issues/4201))
+
+## [custom-app-5.1.86](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.85...custom-app-5.1.86) (2022-10-25)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4182](https://github.com/trueforge-org/truecharts/issues/4182))
+
+## [custom-app-5.1.85](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.84...custom-app-5.1.85) (2022-10-25)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4181](https://github.com/trueforge-org/truecharts/issues/4181))
+
+## [custom-app-5.1.84](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.83...custom-app-5.1.84) (2022-10-24)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4171](https://github.com/trueforge-org/truecharts/issues/4171))
+
+## [custom-app-5.1.83](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.82...custom-app-5.1.83) (2022-10-22)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4155](https://github.com/trueforge-org/truecharts/issues/4155))
+
+## [custom-app-5.1.82](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.81...custom-app-5.1.82) (2022-10-21)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4139](https://github.com/trueforge-org/truecharts/issues/4139))
+
+## [custom-app-5.1.81](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.80...custom-app-5.1.81) (2022-10-19)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4122](https://github.com/trueforge-org/truecharts/issues/4122))
+- update docker general non-major ([#4128](https://github.com/trueforge-org/truecharts/issues/4128))
+
+## [custom-app-5.1.80](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.79...custom-app-5.1.80) (2022-10-17)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4119](https://github.com/trueforge-org/truecharts/issues/4119))
+
+## [custom-app-5.1.79](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.78...custom-app-5.1.79) (2022-10-14)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4084](https://github.com/trueforge-org/truecharts/issues/4084))
+
+## [custom-app-5.1.78](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.77...custom-app-5.1.78) (2022-10-12)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#4071](https://github.com/trueforge-org/truecharts/issues/4071))
+
+## [custom-app-5.1.77](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.76...custom-app-5.1.77) (2022-10-11)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#4070](https://github.com/trueforge-org/truecharts/issues/4070))
 - update docker general non-major
 
-## [custom-app-5.1.76](https://github.com/truecharts/charts/compare/custom-app-5.1.75...custom-app-5.1.76) (2022-10-07)
+## [custom-app-5.1.76](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.75...custom-app-5.1.76) (2022-10-07)
 
 ### Chore
 
@@ -267,93 +267,93 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [custom-app-5.1.76](https://github.com/truecharts/charts/compare/custom-app-5.1.75...custom-app-5.1.76) (2022-10-07)
+## [custom-app-5.1.76](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.75...custom-app-5.1.76) (2022-10-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [custom-app-5.1.75](https://github.com/truecharts/charts/compare/custom-app-5.1.74...custom-app-5.1.75) (2022-10-07)
+## [custom-app-5.1.75](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.74...custom-app-5.1.75) (2022-10-07)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update docker general non-major
 
-## [custom-app-5.1.74](https://github.com/truecharts/charts/compare/custom-app-5.1.73...custom-app-5.1.74) (2022-10-05)
+## [custom-app-5.1.74](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.73...custom-app-5.1.74) (2022-10-05)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - update helm general non-major
 
-## [custom-app-5.1.73](https://github.com/truecharts/charts/compare/custom-app-5.1.72...custom-app-5.1.73) (2022-10-04)
+## [custom-app-5.1.73](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.72...custom-app-5.1.73) (2022-10-04)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- split addons in smaller templates ([#3979](https://github.com/truecharts/charts/issues/3979))
-- update docker general non-major ([#4001](https://github.com/truecharts/charts/issues/4001))
+- split addons in smaller templates ([#3979](https://github.com/trueforge-org/truecharts/issues/3979))
+- update docker general non-major ([#4001](https://github.com/trueforge-org/truecharts/issues/4001))
 - update docker general non-major
 
-## [custom-app-5.1.72](https://github.com/truecharts/charts/compare/custom-app-5.1.71...custom-app-5.1.72) (2022-10-01)
+## [custom-app-5.1.72](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.71...custom-app-5.1.72) (2022-10-01)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3975](https://github.com/truecharts/charts/issues/3975))
+- update docker general non-major ([#3975](https://github.com/trueforge-org/truecharts/issues/3975))
 
-## [custom-app-5.1.71](https://github.com/truecharts/charts/compare/custom-app-5.1.70...custom-app-5.1.71) (2022-09-30)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3965](https://github.com/truecharts/charts/issues/3965))
-
-## [custom-app-5.1.70](https://github.com/truecharts/charts/compare/custom-app-5.1.69...custom-app-5.1.70) (2022-09-28)
+## [custom-app-5.1.71](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.70...custom-app-5.1.71) (2022-09-30)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3938](https://github.com/truecharts/charts/issues/3938))
+- update docker general non-major ([#3965](https://github.com/trueforge-org/truecharts/issues/3965))
 
-## [custom-app-5.1.69](https://github.com/truecharts/charts/compare/custom-app-5.1.68...custom-app-5.1.69) (2022-09-27)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3918](https://github.com/truecharts/charts/issues/3918))
-
-## [custom-app-5.1.68](https://github.com/truecharts/charts/compare/custom-app-5.1.67...custom-app-5.1.68) (2022-09-26)
+## [custom-app-5.1.70](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.69...custom-app-5.1.70) (2022-09-28)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3906](https://github.com/truecharts/charts/issues/3906))
+- update docker general non-major ([#3938](https://github.com/trueforge-org/truecharts/issues/3938))
 
-## [custom-app-5.1.67](https://github.com/truecharts/charts/compare/custom-app-5.1.66...custom-app-5.1.67) (2022-09-25)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update helm general non-major ([#3898](https://github.com/truecharts/charts/issues/3898))
-
-## [custom-app-5.1.66](https://github.com/truecharts/charts/compare/custom-app-5.1.65...custom-app-5.1.66) (2022-09-25)
+## [custom-app-5.1.69](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.68...custom-app-5.1.69) (2022-09-27)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3881](https://github.com/truecharts/charts/issues/3881))
+- update helm general non-major ([#3918](https://github.com/trueforge-org/truecharts/issues/3918))
 
-## [custom-app-5.1.65](https://github.com/truecharts/charts/compare/custom-app-5.1.64...custom-app-5.1.65) (2022-09-23)
+## [custom-app-5.1.68](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.67...custom-app-5.1.68) (2022-09-26)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3850](https://github.com/truecharts/charts/issues/3850))
+- update docker general non-major ([#3906](https://github.com/trueforge-org/truecharts/issues/3906))
 
-## [custom-app-5.1.64](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.64) (2022-09-22)
+## [custom-app-5.1.67](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.66...custom-app-5.1.67) (2022-09-25)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3898](https://github.com/trueforge-org/truecharts/issues/3898))
+
+## [custom-app-5.1.66](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.65...custom-app-5.1.66) (2022-09-25)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3881](https://github.com/trueforge-org/truecharts/issues/3881))
+
+## [custom-app-5.1.65](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.64...custom-app-5.1.65) (2022-09-23)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3850](https://github.com/trueforge-org/truecharts/issues/3850))
+
+## [custom-app-5.1.64](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.64) (2022-09-22)
 
 ### Chore
 
@@ -371,14 +371,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3839](https://github.com/truecharts/charts/issues/3839))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3818](https://github.com/trueforge-org/truecharts/issues/3818))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3839](https://github.com/trueforge-org/truecharts/issues/3839))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.64](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.64) (2022-09-22)
+## [custom-app-5.1.64](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.64) (2022-09-22)
 
 ### Chore
 
@@ -395,14 +395,14 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3839](https://github.com/truecharts/charts/issues/3839))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3839](https://github.com/trueforge-org/truecharts/issues/3839))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge-org/truecharts/issues/3818))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.63](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-21)
+## [custom-app-5.1.63](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-21)
 
 ### Chore
 
@@ -418,13 +418,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge-org/truecharts/issues/3818))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.63](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-20)
+## [custom-app-5.1.63](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-20)
 
 ### Chore
 
@@ -439,13 +439,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3818](https://github.com/trueforge-org/truecharts/issues/3818))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.63](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-20)
+## [custom-app-5.1.63](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.63) (2022-09-20)
 
 ### Chore
 
@@ -459,13 +459,13 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3818](https://github.com/truecharts/charts/issues/3818))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3818](https://github.com/trueforge-org/truecharts/issues/3818))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.62](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
+## [custom-app-5.1.62](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
 
 ### Chore
 
@@ -478,12 +478,12 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.62](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
+## [custom-app-5.1.62](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
 
 ### Chore
 
@@ -495,97 +495,28 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.62](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- refactor Services SCALE GUI
-- update docker general non-major ([#3790](https://github.com/truecharts/charts/issues/3790))
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-17)
+## [custom-app-5.1.62](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.62) (2022-09-19)
 
 ### Chore
 
+- Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - refactor Services SCALE GUI
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
+- update docker general non-major ([#3790](https://github.com/trueforge-org/truecharts/issues/3790))
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-18)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-16)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-15)
-
-### Chore
-
-- Auto-update chart README [skip ci]
-- update docker general non-major ([#3772](https://github.com/truecharts/charts/issues/3772))
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.61](https://github.com/truecharts/charts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-15)
-
-### Chore
-
-- update helm general non-major ([#3767](https://github.com/truecharts/charts/issues/3767))
-- split serviceSelector ([#3751](https://github.com/truecharts/charts/issues/3751))
-
-## [custom-app-5.1.60](https://github.com/truecharts/charts/compare/custom-app-5.1.59...custom-app-5.1.60) (2022-09-13)
-
-### Chore
-
-- update docker general non-major ([#3755](https://github.com/truecharts/charts/issues/3755))
-
-## [custom-app-5.1.59](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-17)
 
 ### Chore
 
@@ -594,11 +525,67 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3743](https://github.com/truecharts/charts/issues/3743))
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
+- refactor Services SCALE GUI
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
 
-## [custom-app-5.1.59](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-18)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-16)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-15)
+
+### Chore
+
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3772](https://github.com/trueforge-org/truecharts/issues/3772))
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [custom-app-5.1.61](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.60...custom-app-5.1.61) (2022-09-15)
+
+### Chore
+
+- update helm general non-major ([#3767](https://github.com/trueforge-org/truecharts/issues/3767))
+- split serviceSelector ([#3751](https://github.com/trueforge-org/truecharts/issues/3751))
+
+## [custom-app-5.1.60](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.59...custom-app-5.1.60) (2022-09-13)
+
+### Chore
+
+- update docker general non-major ([#3755](https://github.com/trueforge-org/truecharts/issues/3755))
+
+## [custom-app-5.1.59](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
 
 ### Chore
 
@@ -606,223 +593,236 @@ pagefind: false
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3743](https://github.com/truecharts/charts/issues/3743))
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3743](https://github.com/trueforge-org/truecharts/issues/3743))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.59](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
+## [custom-app-5.1.59](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3743](https://github.com/truecharts/charts/issues/3743))
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3743](https://github.com/trueforge-org/truecharts/issues/3743))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.58](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
+## [custom-app-5.1.59](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.59) (2022-09-12)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3743](https://github.com/trueforge-org/truecharts/issues/3743))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.58](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
+## [custom-app-5.1.58](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
+- Auto-update chart README [skip ci]
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.58](https://github.com/truecharts/charts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
-
-### Chore
-
-- update helm general non-major ([#3711](https://github.com/truecharts/charts/issues/3711))
-- update docker general non-major ([#3736](https://github.com/truecharts/charts/issues/3736))
-
-## [custom-app-5.1.57](https://github.com/truecharts/charts/compare/custom-app-5.1.56...custom-app-5.1.57) (2022-09-10)
-
-### Chore
-
-- update docker general non-major ([#3727](https://github.com/truecharts/charts/issues/3727))
-
-## [custom-app-5.1.56](https://github.com/truecharts/charts/compare/custom-app-5.1.55...custom-app-5.1.56) (2022-09-07)
+## [custom-app-5.1.58](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
 
 ### Chore
 
 - Auto-update chart README [skip ci]
-- update docker general non-major ([#3710](https://github.com/truecharts/charts/issues/3710))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.56](https://github.com/truecharts/charts/compare/custom-app-5.1.55...custom-app-5.1.56) (2022-09-06)
-
-### Chore
-
-- update docker general non-major ([#3710](https://github.com/truecharts/charts/issues/3710))
-
-## [custom-app-5.1.55](https://github.com/truecharts/charts/compare/custom-app-5.1.54...custom-app-5.1.55) (2022-09-05)
+## [custom-app-5.1.58](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.57...custom-app-5.1.58) (2022-09-11)
 
 ### Chore
 
-- update docker general non-major ([#3700](https://github.com/truecharts/charts/issues/3700))
+- update helm general non-major ([#3711](https://github.com/trueforge-org/truecharts/issues/3711))
+- update docker general non-major ([#3736](https://github.com/trueforge-org/truecharts/issues/3736))
 
-## [custom-app-5.1.54](https://github.com/truecharts/charts/compare/custom-app-5.1.53...custom-app-5.1.54) (2022-09-04)
-
-### Chore
-
-- update docker general non-major ([#3681](https://github.com/truecharts/charts/issues/3681))
-
-## [custom-app-5.1.53](https://github.com/truecharts/charts/compare/custom-app-5.1.52...custom-app-5.1.53) (2022-09-02)
+## [custom-app-5.1.57](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.56...custom-app-5.1.57) (2022-09-10)
 
 ### Chore
 
-- update docker general non-major ([#3660](https://github.com/truecharts/charts/issues/3660))
+- update docker general non-major ([#3727](https://github.com/trueforge-org/truecharts/issues/3727))
 
-## [custom-app-5.1.52](https://github.com/truecharts/charts/compare/custom-app-5.1.51...custom-app-5.1.52) (2022-08-31)
-
-### Chore
-
-- update docker general non-major ([#3640](https://github.com/truecharts/charts/issues/3640))
-
-## [custom-app-5.1.51](https://github.com/truecharts/charts/compare/custom-app-5.1.50...custom-app-5.1.51) (2022-08-30)
+## [custom-app-5.1.56](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.55...custom-app-5.1.56) (2022-09-07)
 
 ### Chore
 
-- update helm general non-major ([#3639](https://github.com/truecharts/charts/issues/3639))
+- Auto-update chart README [skip ci]
+- update docker general non-major ([#3710](https://github.com/trueforge-org/truecharts/issues/3710))
 
-## [custom-app-5.1.50](https://github.com/truecharts/charts/compare/custom-app-5.1.49...custom-app-5.1.50) (2022-08-30)
-
-### Chore
-
-- update helm chart common to v10.5.5 ([#3626](https://github.com/truecharts/charts/issues/3626))
-
-## [custom-app-5.1.49](https://github.com/truecharts/charts/compare/custom-app-5.1.48...custom-app-5.1.49) (2022-08-29)
+## [custom-app-5.1.56](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.55...custom-app-5.1.56) (2022-09-06)
 
 ### Chore
 
-- update helm general non-major ([#3619](https://github.com/truecharts/charts/issues/3619))
+- update docker general non-major ([#3710](https://github.com/trueforge-org/truecharts/issues/3710))
 
-## [custom-app-5.1.48](https://github.com/truecharts/charts/compare/custom-app-5.1.47...custom-app-5.1.48) (2022-08-29)
-
-### Chore
-
-- update docker general non-major ([#3606](https://github.com/truecharts/charts/issues/3606))
-
-## [custom-app-5.1.47](https://github.com/truecharts/charts/compare/custom-app-5.1.46...custom-app-5.1.47) (2022-08-28)
+## [custom-app-5.1.55](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.54...custom-app-5.1.55) (2022-09-05)
 
 ### Chore
 
-- update docker general non-major ([#3600](https://github.com/truecharts/charts/issues/3600))
+- update docker general non-major ([#3700](https://github.com/trueforge-org/truecharts/issues/3700))
 
-## [custom-app-5.1.46](https://github.com/truecharts/charts/compare/custom-app-5.1.45...custom-app-5.1.46) (2022-08-27)
-
-### Chore
-
-- update docker general non-major ([#3587](https://github.com/truecharts/charts/issues/3587))
-
-## [custom-app-5.1.45](https://github.com/truecharts/charts/compare/custom-app-5.1.44...custom-app-5.1.45) (2022-08-25)
+## [custom-app-5.1.54](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.53...custom-app-5.1.54) (2022-09-04)
 
 ### Chore
 
-- update docker general non-major ([#3561](https://github.com/truecharts/charts/issues/3561))
+- update docker general non-major ([#3681](https://github.com/trueforge-org/truecharts/issues/3681))
 
-## [custom-app-5.1.44](https://github.com/truecharts/charts/compare/custom-app-5.1.43...custom-app-5.1.44) (2022-08-24)
-
-### Chore
-
-- update docker general non-major ([#3552](https://github.com/truecharts/charts/issues/3552))
-
-## [custom-app-5.1.43](https://github.com/truecharts/charts/compare/custom-app-5.1.42...custom-app-5.1.43) (2022-08-23)
+## [custom-app-5.1.53](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.52...custom-app-5.1.53) (2022-09-02)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3545](https://github.com/truecharts/charts/issues/3545))
+- update docker general non-major ([#3660](https://github.com/trueforge-org/truecharts/issues/3660))
 
-## [custom-app-5.1.42](https://github.com/truecharts/charts/compare/custom-app-5.1.41...custom-app-5.1.42) (2022-08-23)
-
-### Chore
-
-- update docker general non-major docker tags ([#3544](https://github.com/truecharts/charts/issues/3544))
-
-## [custom-app-5.1.41](https://github.com/truecharts/charts/compare/custom-app-5.1.40...custom-app-5.1.41) (2022-08-22)
+## [custom-app-5.1.52](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.51...custom-app-5.1.52) (2022-08-31)
 
 ### Chore
 
-- update docker general non-major ([#3530](https://github.com/truecharts/charts/issues/3530))
+- update docker general non-major ([#3640](https://github.com/trueforge-org/truecharts/issues/3640))
 
-## [custom-app-5.1.40](https://github.com/truecharts/charts/compare/custom-app-5.1.39...custom-app-5.1.40) (2022-08-21)
-
-### Chore
-
-- update docker general non-major docker tags ([#3523](https://github.com/truecharts/charts/issues/3523))
-
-## [custom-app-5.1.39](https://github.com/truecharts/charts/compare/custom-app-5.1.38...custom-app-5.1.39) (2022-08-20)
+## [custom-app-5.1.51](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.50...custom-app-5.1.51) (2022-08-30)
 
 ### Chore
 
-- update docker general non-major docker tags ([#3518](https://github.com/truecharts/charts/issues/3518))
+- update helm general non-major ([#3639](https://github.com/trueforge-org/truecharts/issues/3639))
 
-## [custom-app-5.1.38](https://github.com/truecharts/charts/compare/custom-app-5.1.37...custom-app-5.1.38) (2022-08-19)
-
-### Chore
-
-- update docker general non-major docker tags ([#3512](https://github.com/truecharts/charts/issues/3512))
-
-## [custom-app-5.1.37](https://github.com/truecharts/charts/compare/custom-app-5.1.36...custom-app-5.1.37) (2022-08-18)
+## [custom-app-5.1.50](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.49...custom-app-5.1.50) (2022-08-30)
 
 ### Chore
 
-- update docker general non-major ([#3503](https://github.com/truecharts/charts/issues/3503))
+- update helm chart common to v10.5.5 ([#3626](https://github.com/trueforge-org/truecharts/issues/3626))
 
-## [custom-app-5.1.36](https://github.com/truecharts/charts/compare/custom-app-5.1.35...custom-app-5.1.36) (2022-08-17)
-
-### Chore
-
-- update docker general non-major ([#3478](https://github.com/truecharts/charts/issues/3478))
-
-## [custom-app-5.1.35](https://github.com/truecharts/charts/compare/custom-app-5.1.34...custom-app-5.1.35) (2022-08-14)
+## [custom-app-5.1.49](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.48...custom-app-5.1.49) (2022-08-29)
 
 ### Chore
 
-- update docker general non-major docker tags ([#3465](https://github.com/truecharts/charts/issues/3465))
+- update helm general non-major ([#3619](https://github.com/trueforge-org/truecharts/issues/3619))
 
-## [custom-app-5.1.34](https://github.com/truecharts/charts/compare/custom-app-5.1.33...custom-app-5.1.34) (2022-08-12)
+## [custom-app-5.1.48](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.47...custom-app-5.1.48) (2022-08-29)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3456](https://github.com/truecharts/charts/issues/3456))
+- update docker general non-major ([#3606](https://github.com/trueforge-org/truecharts/issues/3606))
 
-## [custom-app-5.1.33](https://github.com/truecharts/charts/compare/custom-app-5.1.32...custom-app-5.1.33) (2022-08-12)
+## [custom-app-5.1.47](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.46...custom-app-5.1.47) (2022-08-28)
+
+### Chore
+
+- update docker general non-major ([#3600](https://github.com/trueforge-org/truecharts/issues/3600))
+
+## [custom-app-5.1.46](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.45...custom-app-5.1.46) (2022-08-27)
+
+### Chore
+
+- update docker general non-major ([#3587](https://github.com/trueforge-org/truecharts/issues/3587))
+
+## [custom-app-5.1.45](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.44...custom-app-5.1.45) (2022-08-25)
+
+### Chore
+
+- update docker general non-major ([#3561](https://github.com/trueforge-org/truecharts/issues/3561))
+
+## [custom-app-5.1.44](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.43...custom-app-5.1.44) (2022-08-24)
+
+### Chore
+
+- update docker general non-major ([#3552](https://github.com/trueforge-org/truecharts/issues/3552))
+
+## [custom-app-5.1.43](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.42...custom-app-5.1.43) (2022-08-23)
+
+### Chore
+
+- update helm general non-major helm releases ([#3545](https://github.com/trueforge-org/truecharts/issues/3545))
+
+## [custom-app-5.1.42](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.41...custom-app-5.1.42) (2022-08-23)
+
+### Chore
+
+- update docker general non-major docker tags ([#3544](https://github.com/trueforge-org/truecharts/issues/3544))
+
+## [custom-app-5.1.41](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.40...custom-app-5.1.41) (2022-08-22)
+
+### Chore
+
+- update docker general non-major ([#3530](https://github.com/trueforge-org/truecharts/issues/3530))
+
+## [custom-app-5.1.40](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.39...custom-app-5.1.40) (2022-08-21)
+
+### Chore
+
+- update docker general non-major docker tags ([#3523](https://github.com/trueforge-org/truecharts/issues/3523))
+
+## [custom-app-5.1.39](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.38...custom-app-5.1.39) (2022-08-20)
+
+### Chore
+
+- update docker general non-major docker tags ([#3518](https://github.com/trueforge-org/truecharts/issues/3518))
+
+## [custom-app-5.1.38](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.37...custom-app-5.1.38) (2022-08-19)
+
+### Chore
+
+- update docker general non-major docker tags ([#3512](https://github.com/trueforge-org/truecharts/issues/3512))
+
+## [custom-app-5.1.37](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.36...custom-app-5.1.37) (2022-08-18)
+
+### Chore
+
+- update docker general non-major ([#3503](https://github.com/trueforge-org/truecharts/issues/3503))
+
+## [custom-app-5.1.36](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.35...custom-app-5.1.36) (2022-08-17)
+
+### Chore
+
+- update docker general non-major ([#3478](https://github.com/trueforge-org/truecharts/issues/3478))
+
+## [custom-app-5.1.35](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.34...custom-app-5.1.35) (2022-08-14)
+
+### Chore
+
+- update docker general non-major docker tags ([#3465](https://github.com/trueforge-org/truecharts/issues/3465))
+
+## [custom-app-5.1.34](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.33...custom-app-5.1.34) (2022-08-12)
+
+### Chore
+
+- update helm general non-major helm releases ([#3456](https://github.com/trueforge-org/truecharts/issues/3456))
+
+## [custom-app-5.1.33](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.32...custom-app-5.1.33) (2022-08-12)
 
 ### Chore
 
 - add documentation checkbox/section to all SCALE Apps
-- update docker general non-major ([#3453](https://github.com/truecharts/charts/issues/3453))
+- update docker general non-major ([#3453](https://github.com/trueforge-org/truecharts/issues/3453))
 
-## [custom-app-5.1.32](https://github.com/truecharts/charts/compare/custom-app-5.1.31...custom-app-5.1.32) (2022-08-12)
+## [custom-app-5.1.32](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.31...custom-app-5.1.32) (2022-08-12)
 
 ### Fix
 
-- Move command from .Values.controller.command to .Values.command ([#3446](https://github.com/truecharts/charts/issues/3446))
-- move extraArgs from .Values.controller to .Values ([#3447](https://github.com/truecharts/charts/issues/3447))
+- Move command from .Values.controller.command to .Values.command ([#3446](https://github.com/trueforge-org/truecharts/issues/3446))
+- move extraArgs from .Values.controller to .Values ([#3447](https://github.com/trueforge-org/truecharts/issues/3447))
 
-## [custom-app-5.1.31](https://github.com/truecharts/charts/compare/custom-app-5.1.30...custom-app-5.1.31) (2022-08-09)
-
-### Chore
-
-- update docker general non-major ([#3377](https://github.com/truecharts/charts/issues/3377))
-
-## [custom-app-5.1.30](https://github.com/truecharts/charts/compare/custom-app-5.1.28...custom-app-5.1.30) (2022-08-08)
+## [custom-app-5.1.31](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.30...custom-app-5.1.31) (2022-08-09)
 
 ### Chore
 
-- update helm general non-major helm releases ([#3376](https://github.com/truecharts/charts/issues/3376))
-- update docker general non-major ([#3356](https://github.com/truecharts/charts/issues/3356))
-- replace questions parts with templates ([#3402](https://github.com/truecharts/charts/issues/3402))
+- update docker general non-major ([#3377](https://github.com/trueforge-org/truecharts/issues/3377))
+
+## [custom-app-5.1.30](https://github.com/trueforge-org/truecharts/compare/custom-app-5.1.28...custom-app-5.1.30) (2022-08-08)
+
+### Chore
+
+- update helm general non-major helm releases ([#3376](https://github.com/trueforge-org/truecharts/issues/3376))
+- update docker general non-major ([#3356](https://github.com/trueforge-org/truecharts/issues/3356))
+- replace questions parts with templates ([#3402](https://github.com/trueforge-org/truecharts/issues/3402))
 
 ## [custom-app-5.1.28](https://github.com/truecharts/apps/compare/custom-app-5.1.27...custom-app-5.1.28) (2022-07-29)
 

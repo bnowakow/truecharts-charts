@@ -9,10 +9,10 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2.13.3
+appVersion: 2.14.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,7 +36,8 @@ sources:
   - https://airdcpp-web.github.io/
   - https://github.com/airdcpp-web/airdcpp-webclient
   - https://github.com/truecharts/charts/tree/master/charts/stable/airdcpp-webclient
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/airdcpp-webclient
   - https://hub.docker.com/r/gangefors/airdcpp-webclient
 type: application
-version: 13.3.5
+version: 13.5.1
 

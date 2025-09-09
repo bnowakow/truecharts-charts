@@ -13,7 +13,7 @@ apiVersion: v2
 appVersion: 8.3.0
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -42,6 +42,7 @@ sources:
   - https://github.com/snapshot-controller/snapshot-controller
   - https://github.com/snapshot-controller/snapshot-controller-helm-chart
   - https://github.com/truecharts/charts/tree/master/charts/system/snapshot-controller
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/system/snapshot-controller
 type: application
-version: 4.3.4
+version: 4.4.1
 

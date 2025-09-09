@@ -12,7 +12,7 @@ apiVersion: v2
 appVersion: 1.0.3
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,7 +34,8 @@ name: bender
 sources:
   - https://github.com/jez500/bender
   - https://github.com/truecharts/charts/tree/master/charts/stable/bender
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/bender
   - https://hub.docker.com/r/jez500/bender
 type: application
-version: 8.3.4
+version: 8.4.1
 

@@ -1,5 +1,5 @@
 # hadolint ignore=DL3007
-FROM docker.io/renovate/renovate:41.97.7-full@sha256:8bae2c57e35a52b97442d160276dfbce8100c03ede01d99346671c6a67678956
+FROM docker.io/renovate/renovate:41.98.4-full@sha256:09f31f915ae2c5f86b0892ef01c8cc66a852b92eb6b219d138eaed78daba5bb0
 
 ARG VERSION
 ARG CONTAINER_NAME
@@ -7,7 +7,7 @@ ARG CONTAINER_VER
 ARG TEST
 
 # Download and set up the clustertool binary
-RUN curl -L "https://github.com/truecharts/public/releases/download/v${VERSION}/clustertool_${VERSION}_linux_amd64.tar.gz" -o /tmp/clustertool.tar.gz \
+RUN curl -L "https://github.com/trueforge-org/truecharts/releases/download/v${VERSION}/clustertool_${VERSION}_linux_amd64.tar.gz" -o /tmp/clustertool.tar.gz \
     && tar -xzvf /tmp/clustertool.tar.gz -C /usr/local/bin \
     && chmod +x /usr/local/bin/clustertool \
     && rm /tmp/clustertool.tar.gz

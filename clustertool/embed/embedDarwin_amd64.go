@@ -1,11 +1,11 @@
-//go:build freebsd && amd64
-// +build freebsd,amd64
+//go:build darwin && amd64
+// +build darwin,amd64
 
 package embed
 
 import (
-    "embed"
+	"embed"
 )
 
-//go:embed freebsd_amd64
+//go:embed darwin_amd64
 var StaticFiles embed.FS
