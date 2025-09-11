@@ -7,9 +7,9 @@ annotations:
   truecharts.org/category: media
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/min_helm_version: "3.14"
-  truecharts.org/train: stable
+  truecharts.org/train: incubator
 apiVersion: v2
-appVersion: 0.122.1
+appVersion: 1.2.2
 dependencies:
   - name: common
     version: 28.17.1
@@ -18,29 +18,22 @@ dependencies:
     alias: ""
     tags: []
     import-values: []
-  - name: redis
-    version: 17.6.2
-    repository: oci://oci.trueforge.org/truecharts
-    condition: redis.enabled
-    alias: ""
-    tags: []
-    import-values: []
 deprecated: false
-description: A Digital Asset Manager (DAM), specifically designed for 3D print files.
-home: https://truecharts.org/charts/stable/manyfold
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/manyfold.webp
+description: Home and Collection manager for Plex.
+home: https://truecharts.org/charts/incubator/agregarr
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/agregarr.webp
 keywords:
-  - manyfold
-  - media
+  - agregarr
 kubeVersion: '>=1.24.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: manyfold
+name: agregarr
 sources:
-  - https://ghcr.io/manyfold3d/manyfold
-  - https://github.com/truecharts/charts/tree/master/charts/stable/manyfold
+  - https://ghcr.io/agregarr/agregarr
+  - https://github.com/agregarr/agregarr
+  - https://github.com/truecharts/charts/tree/master/charts/incubator/agregarr
 type: application
-version: 4.14.3
+version: 0.0.1
 
