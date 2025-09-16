@@ -58,11 +58,11 @@ workload:
                 fieldPath: status.hostIP
           probes:
             liveness:
-              path: /healthz
+              path: /livez
             readiness:
-              path: /healthz
+              path: /readyz
             startup:
-              path: /healthz
+              path: /readyz
 
 configmap:
   dashboard:
