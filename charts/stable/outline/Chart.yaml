@@ -9,17 +9,17 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.87.3
+appVersion: 0.87.4
 dependencies:
   - name: common
-    version: 28.17.1
+    version: 28.20.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.6.2
+    version: 17.8.0
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -43,5 +43,5 @@ sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/outline
   - https://hub.docker.com/r/outlinewiki/outline
 type: application
-version: 16.11.3
+version: 16.15.0
 

@@ -9,17 +9,17 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: premium
 apiVersion: v2
-appVersion: 31.0.8
+appVersion: 31.0.9
 dependencies:
   - name: common
-    version: 28.17.1
+    version: 28.20.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.6.2
+    version: 17.8.0
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -50,5 +50,5 @@ sources:
   - https://hub.docker.com/r/collabora/code
   - https://hub.docker.com/r/nginxinc/nginx-unprivileged
 type: application
-version: 37.1.7
+version: 37.5.0
 

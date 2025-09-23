@@ -9,17 +9,17 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 7.94.0
+appVersion: 7.95.0
 dependencies:
   - name: common
-    version: 28.17.1
+    version: 28.20.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mongodb
-    version: 16.5.2
+    version: 16.7.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mongodb.enabled
     alias: ""
@@ -44,5 +44,5 @@ sources:
   - https://hub.docker.com/r/wekanteam/wekan
   - https://wekan.github.io/
 type: application
-version: 17.10.3
+version: 17.15.0
 

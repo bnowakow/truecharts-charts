@@ -12,14 +12,14 @@ apiVersion: v2
 appVersion: 9.0.4
 dependencies:
   - name: common
-    version: 28.17.1
+    version: 28.20.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.6.2
+    version: 17.8.0
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -44,5 +44,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/onlyoffice-document-server
   - https://hub.docker.com/r/onlyoffice/documentserver
 type: application
-version: 22.9.3
+version: 22.13.0
 
