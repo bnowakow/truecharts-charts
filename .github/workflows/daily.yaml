@@ -14,7 +14,8 @@ concurrency:
 
 jobs:
   generate-readme:
-    runs-on: actions-runners
+    runs-on:
+      group: default
     name: "Generate readme files"
     steps:
       - name: Checkout
