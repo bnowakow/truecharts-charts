@@ -10,7 +10,7 @@ title: TrueCharts
 
 ---
 
-TrueCharts is a catalog of highly optimised Helm Charts. Made for the community, By the community!
+TrueCharts is a catalog of highly optimised Helm Charts. Made for the community, by the community!
 
 All our charts are supposed to work together and be easy to setup using any helm-compatible deployment tool, above all, give the average user more than enough options to tune things to their liking.
 
