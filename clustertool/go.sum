@@ -150,8 +150,6 @@ github.com/brianvoe/gofakeit/v7 v7.3.0 h1:TWStf7/lLpAjKw+bqwzeORo9jvrxToWEwp9b1J
 github.com/brianvoe/gofakeit/v7 v7.3.0/go.mod h1:QXuPeBw164PJCzCUZVmgpgHJ3Llj49jSLVkKPMtxtxA=
 github.com/bshuster-repo/logrus-logstash-hook v1.0.0 h1:e+C0SB5R1pu//O4MQ3f9cFuPGoOVeF2fE4Og9otCc70=
 github.com/bshuster-repo/logrus-logstash-hook v1.0.0/go.mod h1:zsTqEiSzDgAa/8GZR7E1qaXrhYNDKBYy5/dWPTIflbk=
-github.com/budimanjojo/talhelper/v3 v3.0.36 h1:o38RdUI2ZQLkZN3O1sg/gsijsluxIa9DLL2ngraBWUA=
-github.com/budimanjojo/talhelper/v3 v3.0.36/go.mod h1:OM4BjPsWJGD69LZNuyTb1bpGdphWStB1YP0JrDpCGHc=
 github.com/budimanjojo/talhelper/v3 v3.0.37 h1:bktRCiQPKr2xIlsfbYOp24OvQwp8rWSBk2zdBDpVovA=
 github.com/budimanjojo/talhelper/v3 v3.0.37/go.mod h1:SK9WQvDjR8P2Qxfb2He8p/I81xc71XWpw11krEeptvo=
 github.com/buger/jsonparser v1.1.1 h1:2PnMjfWD7wBILjqQbt530v576A/cAbQvEW9gGIpYMUs=
