@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Commento++ is a free, open source, fast & lightweight comments box that you can embed in your static website instead of Disqus.
-home: https://truecharts.org/charts/stable/commento-plusplus
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/commento-plusplus.webp
+home: https://trueforge.org/truecharts/stable/commento-plusplus
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/commento-plusplus.webp
 keywords:
   - commento
 kubeVersion: '>=1.24.0-0'

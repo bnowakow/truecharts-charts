@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A lightweight portal to view & manage your HTPC apps without having to run anything more than a PHP enabled webserver
-home: https://truecharts.org/charts/stable/muximux
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/muximux.webp
+home: https://trueforge.org/truecharts/stable/muximux
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/muximux.webp
 keywords:
   - muximux
   - htpc

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: BOINC is a platform for high-throughput computing on a large scale (thousands or millions of computers).
-home: https://truecharts.org/charts/stable/boinc
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/boinc.webp
+home: https://trueforge.org/truecharts/stable/boinc
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/boinc.webp
 keywords:
   - boinc
 kubeVersion: '>=1.24.0-0'

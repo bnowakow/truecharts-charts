@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: RSS feed for Chart Hub images.
-home: https://truecharts.org/charts/stable/docker-hub-rss
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/docker-hub-rss.webp
+home: https://trueforge.org/truecharts/stable/docker-hub-rss
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/docker-hub-rss.webp
 keywords:
   - docker-hub-rss
   - Cloud

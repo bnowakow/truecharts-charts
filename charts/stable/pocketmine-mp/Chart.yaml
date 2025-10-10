@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A server software for Minecraft Bedrock Edition in PHP.
-home: https://truecharts.org/charts/stable/pocketmine-mp
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pocketmine-mp.webp
+home: https://trueforge.org/truecharts/stable/pocketmine-mp
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pocketmine-mp.webp
 keywords:
   - pocketmine-mp
   - minecraft

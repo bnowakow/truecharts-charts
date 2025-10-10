@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: YaCy decentralized search engine (https://yacy.net)
-home: https://truecharts.org/charts/stable/yacy
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/yacy.webp
+home: https://trueforge.org/truecharts/stable/yacy
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/yacy.webp
 keywords:
   - yacy
   - Tools-Utilities

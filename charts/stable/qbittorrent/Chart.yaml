@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: qBittorrent is a cross-platform free and open-source BitTorrent client
-home: https://truecharts.org/charts/stable/qbittorrent
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/qbittorrent.webp
+home: https://trueforge.org/truecharts/stable/qbittorrent
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/qbittorrent.webp
 keywords:
   - qbittorrent
   - torrrent

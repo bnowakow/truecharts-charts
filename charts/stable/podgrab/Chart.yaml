@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A self-hosted podcast manager to download episodes as soon as they become live.
-home: https://truecharts.org/charts/stable/podgrab
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/podgrab.webp
+home: https://trueforge.org/truecharts/stable/podgrab
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/podgrab.webp
 keywords:
   - podgrab
 kubeVersion: '>=1.24.0-0'

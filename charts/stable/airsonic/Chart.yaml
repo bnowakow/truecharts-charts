@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Airsonic is a Free and Open Source community driven media server
-home: https://truecharts.org/charts/stable/airsonic
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/airsonic.webp
+home: https://trueforge.org/truecharts/stable/airsonic
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/airsonic.webp
 keywords:
   - airsonic
 kubeVersion: '>=1.24.0-0'

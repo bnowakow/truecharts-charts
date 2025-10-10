@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Papermerge is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents.
-home: https://truecharts.org/charts/stable/papermerge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/papermerge.webp
+home: https://trueforge.org/truecharts/stable/papermerge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/papermerge.webp
 keywords:
   - papermerge
 kubeVersion: '>=1.24.0-0'

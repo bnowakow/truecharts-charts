@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: very sync is an easy-to-use multi-platform file synchronization software
-home: https://truecharts.org/charts/stable/verysync
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/verysync.webp
+home: https://trueforge.org/truecharts/stable/verysync
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/verysync.webp
 keywords:
   - verysync
   - sync

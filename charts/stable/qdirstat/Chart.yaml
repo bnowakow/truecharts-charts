@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: QDirStat is a graphical application to show where your disk space has gone and to help you to clean it up.
-home: https://truecharts.org/charts/stable/qdirstat
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/qdirstat.webp
+home: https://trueforge.org/truecharts/stable/qdirstat
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/qdirstat.webp
 keywords:
   - stats
   - qdirstat

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Deluge App for TrueNAS SCALE
-home: https://truecharts.org/charts/stable/deluge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/deluge.webp
+home: https://trueforge.org/truecharts/stable/deluge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/deluge.webp
 keywords:
   - transmission
   - torrent

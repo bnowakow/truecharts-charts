@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: All your audiobooks in one place
-home: https://truecharts.org/charts/stable/openaudible
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/openaudible.webp
+home: https://trueforge.org/truecharts/stable/openaudible
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/openaudible.webp
 keywords:
   - audible
 kubeVersion: '>=1.24.0-0'

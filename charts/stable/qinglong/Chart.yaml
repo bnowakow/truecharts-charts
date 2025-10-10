@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A timed task management panel that supports typescript, javaScript, python3, and shell
-home: https://truecharts.org/charts/stable/qinglong
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/qinglong.webp
+home: https://trueforge.org/truecharts/stable/qinglong
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/qinglong.webp
 keywords:
   - qinglong
   - task

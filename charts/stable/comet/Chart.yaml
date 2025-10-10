@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: comet self-hosted
-home: https://truecharts.org/charts/stable/comet
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/comet.webp
+home: https://trueforge.org/truecharts/stable/comet
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/comet.webp
 keywords:
   - comet
 kubeVersion: '>=1.24.0-0'

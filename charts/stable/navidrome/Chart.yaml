@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Navidrome is an open source web-based music collection server and streamer
-home: https://truecharts.org/charts/stable/navidrome
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/navidrome.webp
+home: https://trueforge.org/truecharts/stable/navidrome
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/navidrome.webp
 keywords:
   - navidrome
   - music

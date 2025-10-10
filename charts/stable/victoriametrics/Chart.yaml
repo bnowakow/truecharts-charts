@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Fast, cost-effective monitoring solution and time series database
-home: https://truecharts.org/charts/stable/victoriametrics
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/victoriametrics.webp
+home: https://trueforge.org/truecharts/stable/victoriametrics
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/victoriametrics.webp
 keywords:
   - victoriametrics
   - database

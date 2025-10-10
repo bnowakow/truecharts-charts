@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Mealie is a self hosted recipe manager and meal planner with a RestAPI backend
-home: https://truecharts.org/charts/stable/mealie
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mealie.webp
+home: https://trueforge.org/truecharts/stable/mealie
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mealie.webp
 keywords:
   - grocy
 kubeVersion: '>=1.24.0-0'

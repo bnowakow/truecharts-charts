@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: renovate self-hosted
-home: https://truecharts.org/charts/stable/renovate
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/renovate.webp
+home: https://trueforge.org/truecharts/stable/renovate
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/renovate.webp
 keywords:
   - renovate
 kubeVersion: '>=1.24.0-0'

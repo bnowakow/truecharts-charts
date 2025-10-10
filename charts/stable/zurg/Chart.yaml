@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: zurg Self-Hosted
-home: https://truecharts.org/charts/stable/zurg
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/zurg.webp
+home: https://trueforge.org/truecharts/stable/zurg
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/zurg.webp
 keywords:
   - zurg
 kubeVersion: '>=1.24.0-0'

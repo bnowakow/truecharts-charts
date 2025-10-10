@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: WeKan - Open Source kanban
-home: https://truecharts.org/charts/stable/wekan
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/wekan.webp
+home: https://trueforge.org/truecharts/stable/wekan
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/wekan.webp
 keywords:
   - wekan
   - kanban

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Quassel-core is a modern, cross-platform, distributed IRC client.
-home: https://truecharts.org/charts/stable/quassel-core
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/quassel-core.webp
+home: https://trueforge.org/truecharts/stable/quassel-core
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/quassel-core.webp
 keywords:
   - quassel-core
 kubeVersion: '>=1.24.0-0'

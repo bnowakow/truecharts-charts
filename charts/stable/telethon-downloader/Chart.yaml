@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is a simple Chart that downloads files sent to a telegram bot up to 2000mb using the Telethon library.
-home: https://truecharts.org/charts/stable/telethon-downloader
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/telethon-downloader.webp
+home: https://trueforge.org/truecharts/stable/telethon-downloader
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/telethon-downloader.webp
 keywords:
   - telethon-downloader
   - Downloaders

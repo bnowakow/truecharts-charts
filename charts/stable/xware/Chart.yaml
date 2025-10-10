@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is a Chart of Thunder downloader.
-home: https://truecharts.org/charts/stable/xware
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/xware.webp
+home: https://trueforge.org/truecharts/stable/xware
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/xware.webp
 keywords:
   - xware
   - Downloaders

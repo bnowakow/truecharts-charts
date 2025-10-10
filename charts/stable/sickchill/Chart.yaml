@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An Automatic Video Library Manager for TV Shows
-home: https://truecharts.org/charts/stable/sickchill
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/sickchill.webp
+home: https://trueforge.org/truecharts/stable/sickchill
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/sickchill.webp
 keywords:
   - sickchill
   - video

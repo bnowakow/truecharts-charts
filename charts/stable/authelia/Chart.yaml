@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Authelia is a Single Sign-On Multi-Factor portal for web apps
-home: https://truecharts.org/charts/stable/authelia
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/authelia.webp
+home: https://trueforge.org/truecharts/stable/authelia
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/authelia.webp
 keywords:
   - authelia
   - authentication

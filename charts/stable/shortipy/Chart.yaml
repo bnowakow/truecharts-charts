@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: URL Shortener in python based on flask
-home: https://truecharts.org/charts/stable/shortipy
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/shortipy.webp
+home: https://trueforge.org/truecharts/stable/shortipy
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/shortipy.webp
 keywords:
   - shortipy
   - Tools-Utilities

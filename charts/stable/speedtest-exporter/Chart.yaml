@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Speedtest Exporter made in python using the official speedtest bin
-home: https://truecharts.org/charts/stable/speedtest-exporter
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/speedtest-exporter.webp
+home: https://trueforge.org/truecharts/stable/speedtest-exporter
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/speedtest-exporter.webp
 keywords:
   - speedtest-exporter
   - speedtest

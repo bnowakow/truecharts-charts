@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A SMTP service for relaying emails.
-home: https://truecharts.org/charts/stable/smtp-relay
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/smtp-relay.webp
+home: https://trueforge.org/truecharts/stable/smtp-relay
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/smtp-relay.webp
 keywords:
   - smtp-relay
   - smtp

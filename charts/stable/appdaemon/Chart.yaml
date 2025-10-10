@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: AppDaemon is a loosely coupled, multi-threaded, sandboxed python execution environment for writing automation apps.
-home: https://truecharts.org/charts/stable/appdaemon
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/appdaemon.webp
+home: https://trueforge.org/truecharts/stable/appdaemon
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/appdaemon.webp
 keywords:
   - appdaemon
   - home-automation

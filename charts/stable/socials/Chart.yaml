@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Socials is a single-page website that stores all your social media and personal websites to share. It is similar to tappy.tech, sociallinks.co, and linktr.ee, but open-source and built using Typescript, Sass, Express.js and EJS. Self-hosting or publishing as a static website or Chart is recommended!
-home: https://truecharts.org/charts/stable/socials
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/socials.webp
+home: https://trueforge.org/truecharts/stable/socials
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/socials.webp
 keywords:
   - socials
   - Other

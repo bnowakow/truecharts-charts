@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A highly customizable homepage
-home: https://truecharts.org/charts/stable/homepage
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/homepage.webp
+home: https://trueforge.org/truecharts/stable/homepage
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/homepage.webp
 keywords:
   - homepage
 kubeVersion: '>=1.24.0-0'

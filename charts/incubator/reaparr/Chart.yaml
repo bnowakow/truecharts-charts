@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Plex downloader that brings content from any server to yours!
-home: https://truecharts.org/charts/incubator/reaparr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/reaparr.webp
+home: https://trueforge.org/truecharts/incubator/reaparr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/reaparr.webp
 keywords:
   - reaparr
   - Backup

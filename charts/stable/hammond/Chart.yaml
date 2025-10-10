@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A self-hosted vehicle expense tracking system with support for multiple users.
-home: https://truecharts.org/charts/stable/hammond
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/hammond.webp
+home: https://trueforge.org/truecharts/stable/hammond
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/hammond.webp
 keywords:
   - hammond
 kubeVersion: '>=1.24.0-0'

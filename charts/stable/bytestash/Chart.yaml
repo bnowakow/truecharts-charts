@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: ByteStash is a self-hosted web application designed to store, organise, and manage your code snippets efficiently. With support for creating, editing, and filtering snippets, ByteStash helps you keep track of your code in one secure place.
-home: https://truecharts.org/charts/stable/bytestash
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/bytestash.webp
+home: https://trueforge.org/truecharts/stable/bytestash
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/bytestash.webp
 keywords:
   - bytestash
   - Productivity

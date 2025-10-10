@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Semaphore is a modern, open source alternative to Ansible Tower. It is a self-hosted web-based solution that allows you to create and manage Ansible projects, playbooks, and roles, while also providing a web interface for running and monitoring Ansible tasks.
-home: https://truecharts.org/charts/stable/semaphore
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/semaphore.webp
+home: https://trueforge.org/truecharts/stable/semaphore
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/semaphore.webp
 keywords:
   - ansible
   - semaphore

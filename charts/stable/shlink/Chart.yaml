@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A PHP-based self-hosted URL shortener that can be used to serve shortened URLs under your own custom domain.
-home: https://truecharts.org/charts/stable/shlink
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/shlink.webp
+home: https://trueforge.org/truecharts/stable/shlink
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/shlink.webp
 keywords:
   - url
   - shortener

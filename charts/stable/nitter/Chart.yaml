@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A free and open source alternative Twitter front-end focused on privacy and performance.
-home: https://truecharts.org/charts/stable/nitter
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nitter.webp
+home: https://trueforge.org/truecharts/stable/nitter
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nitter.webp
 keywords:
   - nitter
   - libre

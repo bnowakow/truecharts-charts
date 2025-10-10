@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A simple, self-hosted, easy-to-use platform for organising and storing information.
-home: https://truecharts.org/charts/stable/bookstack
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/bookstack.webp
+home: https://trueforge.org/truecharts/stable/bookstack
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/bookstack.webp
 keywords:
   - bookstack
   - book

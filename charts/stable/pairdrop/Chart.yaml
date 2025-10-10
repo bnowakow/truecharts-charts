@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Local file sharing in your web browser.
-home: https://truecharts.org/charts/stable/pairdrop
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pairdrop.webp
+home: https://trueforge.org/truecharts/stable/pairdrop
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pairdrop.webp
 keywords:
   - file-sharing
 kubeVersion: '>=1.24.0-0'

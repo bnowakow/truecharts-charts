@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Docker Open Broadcaster Software (obs).
-home: https://truecharts.org/charts/stable/obs-ndi
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/obs-ndi.webp
+home: https://trueforge.org/truecharts/stable/obs-ndi
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/obs-ndi.webp
 keywords:
   - obs-ndi
   - GameServers

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Useful tools for developer and people working in IT.
-home: https://truecharts.org/charts/stable/it-tools
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/it-tools.webp
+home: https://trueforge.org/truecharts/stable/it-tools
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/it-tools.webp
 keywords:
   - it-tools
 kubeVersion: '>=1.24.0-0'

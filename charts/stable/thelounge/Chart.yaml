@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: The Lounge, modern web IRC client designed for self-hosting
-home: https://truecharts.org/charts/stable/thelounge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/thelounge.webp
+home: https://trueforge.org/truecharts/stable/thelounge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/thelounge.webp
 keywords:
   - thelounge
   - IRC

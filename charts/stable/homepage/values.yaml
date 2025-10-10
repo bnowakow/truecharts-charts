@@ -277,7 +277,7 @@ configmap:
         - TrueCharts:
             - TrueCharts:
               - abbr: TC
-                icon: https://truecharts.org/svg/favicon.svg
+                icon: https://trueforge.org/svg/favicon.svg
                 href: https://truecharts.org
                 description: "TrueCharts Website"
             - Github:
@@ -293,7 +293,7 @@ configmap:
             - Discord:
               - abbr: DC
                 icon: https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://discord.com&size=32
-                href: https://truecharts.org/s/discord
+                href: https://trueforge.org/s/discord
                 description: "TrueCharts Discord"
 
 forceConfigFromValues: false

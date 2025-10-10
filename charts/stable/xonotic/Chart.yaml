@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This Chart will download and install the preferred version of Xonotic.
-home: https://truecharts.org/charts/stable/xonotic
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/xonotic.webp
+home: https://trueforge.org/truecharts/stable/xonotic
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/xonotic.webp
 keywords:
   - xonotic
   - GameServers

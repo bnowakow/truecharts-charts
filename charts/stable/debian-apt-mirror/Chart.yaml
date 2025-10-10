@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This Chart will run apt-mirror and Apache2. This allows you to create a local apt mirror for Debian packages.
-home: https://truecharts.org/charts/stable/debian-apt-mirror
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/debian-apt-mirror.webp
+home: https://trueforge.org/truecharts/stable/debian-apt-mirror
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/debian-apt-mirror.webp
 keywords:
   - debian-apt-mirror
   - Network-Other

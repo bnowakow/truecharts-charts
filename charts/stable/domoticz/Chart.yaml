@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Domoticz is a Home Automation System that lets you monitor and configure various devices like Lights, Switches and much more.
-home: https://truecharts.org/charts/stable/domoticz
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/domoticz.webp
+home: https://trueforge.org/truecharts/stable/domoticz
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/domoticz.webp
 keywords:
   - domoticz
 kubeVersion: '>=1.24.0-0'

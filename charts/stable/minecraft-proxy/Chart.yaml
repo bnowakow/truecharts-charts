@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: the front-end of a cluster of minecraft-java containers.
-home: https://truecharts.org/charts/stable/minecraft-proxy
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/minecraft-proxy.webp
+home: https://trueforge.org/truecharts/stable/minecraft-proxy
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/minecraft-proxy.webp
 keywords:
   - minecraft-proxy
   - minecraft-bungeecord

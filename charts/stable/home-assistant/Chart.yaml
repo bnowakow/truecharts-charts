@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Open source home automation that puts local control and privacy first.
-home: https://truecharts.org/charts/stable/home-assistant
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/home-assistant.webp
+home: https://trueforge.org/truecharts/stable/home-assistant
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/home-assistant.webp
 keywords:
   - home-assistant
   - home-automation

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A utility to help manage your library.
-home: https://truecharts.org/charts/stable/plex-utills
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/plex-utills.webp
+home: https://trueforge.org/truecharts/stable/plex-utills
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/plex-utills.webp
 keywords:
   - plex-utills
   - Tools-Utilities

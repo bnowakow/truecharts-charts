@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: MKVToolNix is a set of tools to create, alter and inspect Matroska files.
-home: https://truecharts.org/charts/stable/mkvtoolnix
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mkvtoolnix.webp
+home: https://trueforge.org/truecharts/stable/mkvtoolnix
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mkvtoolnix.webp
 keywords:
   - media
   - mkvtoolnix

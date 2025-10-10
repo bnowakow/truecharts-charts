@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Out of the box stateless VPN server docker image which starts in just a few seconds and doesn't require persistent storage.
-home: https://truecharts.org/charts/stable/dockovpn
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/dockovpn.webp
+home: https://trueforge.org/truecharts/stable/dockovpn
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/dockovpn.webp
 keywords:
   - vpn
   - openvpn

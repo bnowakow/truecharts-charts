@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Sonatype Nexus open source is a artifact repository manager
-home: https://truecharts.org/charts/stable/nexus-oss
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nexus-oss.webp
+home: https://trueforge.org/truecharts/stable/nexus-oss
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nexus-oss.webp
 keywords:
   - nexus-oss
   - productivity

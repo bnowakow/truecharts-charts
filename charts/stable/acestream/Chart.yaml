@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: IPTV service providing streaming, playlist, search engine and epg.
-home: https://truecharts.org/charts/stable/acestream
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/acestream.webp
+home: https://trueforge.org/truecharts/stable/acestream
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/acestream.webp
 keywords:
   - acestream
   - MediaServer-Video

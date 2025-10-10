@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This Chart will download and install Thunderbird in the preferred version and language.
-home: https://truecharts.org/charts/stable/thunderbird
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/thunderbird.webp
+home: https://trueforge.org/truecharts/stable/thunderbird
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/thunderbird.webp
 keywords:
   - thunderbird
   - mail

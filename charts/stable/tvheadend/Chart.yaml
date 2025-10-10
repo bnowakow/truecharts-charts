@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: TVheadend - a TV streaming server and digital video recorder
-home: https://truecharts.org/charts/stable/tvheadend
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tvheadend.webp
+home: https://trueforge.org/truecharts/stable/tvheadend
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tvheadend.webp
 keywords:
   - tvheadend
   - tv

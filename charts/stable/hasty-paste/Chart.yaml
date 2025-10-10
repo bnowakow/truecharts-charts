@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A fast and minimal paste bin, written in Python using Quart.
-home: https://truecharts.org/charts/stable/hasty-paste
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/hasty-paste.webp
+home: https://trueforge.org/truecharts/stable/hasty-paste
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/hasty-paste.webp
 keywords:
   - hasty-paste
   - Cloud

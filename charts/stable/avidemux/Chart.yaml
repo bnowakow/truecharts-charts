@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Avidemux is a free video editor designed for simple cutting, filtering and encoding tasks.
-home: https://truecharts.org/charts/stable/avidemux
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/avidemux.webp
+home: https://trueforge.org/truecharts/stable/avidemux
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/avidemux.webp
 keywords:
   - media
   - avidemux

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
-home: https://truecharts.org/charts/stable/headphones
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/headphones.webp
+home: https://trueforge.org/truecharts/stable/headphones
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/headphones.webp
 keywords:
   - headphones
   - music

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This Chart is a full Debian Bullseye Xfce4 Desktop environment with a noVNC webGUI and all the basic tools pre-installed.
-home: https://truecharts.org/charts/stable/debian-bullseye
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/debian-bullseye.webp
+home: https://trueforge.org/truecharts/stable/debian-bullseye
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/debian-bullseye.webp
 keywords:
   - debian-bullseye
   - Productivity

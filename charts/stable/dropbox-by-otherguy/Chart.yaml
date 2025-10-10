@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Dropbox client which syncs a local path with your cloud.
-home: https://truecharts.org/charts/stable/dropbox-by-otherguy
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/dropbox-by-otherguy.webp
+home: https://trueforge.org/truecharts/stable/dropbox-by-otherguy
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/dropbox-by-otherguy.webp
 keywords:
   - dropbox-by-otherguy
   - Cloud

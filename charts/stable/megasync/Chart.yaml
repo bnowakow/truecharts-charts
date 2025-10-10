@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: MEGAsync can synchronize all of your devices with your MEGA account.
-home: https://truecharts.org/charts/stable/megasync
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/megasync.webp
+home: https://trueforge.org/truecharts/stable/megasync
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/megasync.webp
 keywords:
   - megasync
   - Network-Other

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: the AI-native open-source embedding database.
-home: https://truecharts.org/charts/stable/chroma
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/chroma.webp
+home: https://trueforge.org/truecharts/stable/chroma
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/chroma.webp
 keywords:
   - chroma
   - embedding

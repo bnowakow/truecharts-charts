@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A chatbot that invites discord users to plex.
-home: https://truecharts.org/charts/stable/invitarr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/invitarr.webp
+home: https://trueforge.org/truecharts/stable/invitarr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/invitarr.webp
 keywords:
   - invitarr
   - home-automation

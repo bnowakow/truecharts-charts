@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An easy-to-use, multi-track audio editor and recorder
-home: https://truecharts.org/charts/stable/audacity
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/audacity.webp
+home: https://trueforge.org/truecharts/stable/audacity
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/audacity.webp
 keywords:
   - audacity
   - music

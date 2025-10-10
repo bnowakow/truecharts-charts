@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Glances is a monitoring software
-home: https://truecharts.org/charts/stable/glances
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/glances.webp
+home: https://trueforge.org/truecharts/stable/glances
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/glances.webp
 keywords:
   - metrics
   - glances

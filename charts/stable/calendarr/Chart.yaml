@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Fetches upcoming airings/releases for TV shows and movies from Sonarr and Radarr calendars and posts them to Discord on a schedule.
-home: https://truecharts.org/charts/stable/calendarr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/calendarr.webp
+home: https://trueforge.org/truecharts/stable/calendarr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/calendarr.webp
 keywords:
   - calendarr
   - calendars

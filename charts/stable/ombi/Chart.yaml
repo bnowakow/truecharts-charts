@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Want a Movie or TV Show on Plex or Emby? Use Ombi!
-home: https://truecharts.org/charts/stable/ombi
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ombi.webp
+home: https://trueforge.org/truecharts/stable/ombi
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ombi.webp
 keywords:
   - ombi
   - plex

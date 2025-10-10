@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: 'This simple Chart will update a namecheap dynamic dns domain. You must set an ''A + Dynamic DNS Record'' for the host and enable Dynamic DNS in the manage page for your domain. '
-home: https://truecharts.org/charts/stable/namecheap-ddns
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/namecheap-ddns.webp
+home: https://trueforge.org/truecharts/stable/namecheap-ddns
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/namecheap-ddns.webp
 keywords:
   - namecheap-ddns
   - Tools-Utilities

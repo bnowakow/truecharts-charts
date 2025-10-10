@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: IPFS is a global, versioned, peer-to-peer Interplanetary Filesystem.
-home: https://truecharts.org/charts/stable/ipfs
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ipfs.webp
+home: https://trueforge.org/truecharts/stable/ipfs
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ipfs.webp
 keywords:
   - ipfs
   - kubo

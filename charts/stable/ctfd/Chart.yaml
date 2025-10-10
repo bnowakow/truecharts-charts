@@ -36,8 +36,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: CTFd is a Capture The Flag framework focusing on ease of use and customizability.
-home: https://truecharts.org/charts/stable/ctfd
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ctfd.webp
+home: https://trueforge.org/truecharts/stable/ctfd
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ctfd.webp
 keywords:
   - ctfd
   - learning

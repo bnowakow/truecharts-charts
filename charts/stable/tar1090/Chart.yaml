@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Multi-arch tar1090 Chart for visualising ADSB data.
-home: https://truecharts.org/charts/stable/tar1090
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tar1090.webp
+home: https://trueforge.org/truecharts/stable/tar1090
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tar1090.webp
 keywords:
   - tar1090
   - Other

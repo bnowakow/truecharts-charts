@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Sourcegraph Chart.
-home: https://truecharts.org/charts/stable/sourcegraph
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/sourcegraph.webp
+home: https://trueforge.org/truecharts/stable/sourcegraph
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/sourcegraph.webp
 keywords:
   - sourcegraph
   - Backup

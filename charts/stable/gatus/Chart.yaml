@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Automated service health dashboard
-home: https://truecharts.org/charts/stable/gatus
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gatus.webp
+home: https://trueforge.org/truecharts/stable/gatus
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gatus.webp
 keywords:
   - gatus
 kubeVersion: '>=1.24.0-0'

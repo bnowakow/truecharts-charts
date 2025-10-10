@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: MKVCleaver is a tool for batch extraction of data from MKV files
-home: https://truecharts.org/charts/stable/mkvcleaver
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mkvcleaver.webp
+home: https://trueforge.org/truecharts/stable/mkvcleaver
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mkvcleaver.webp
 keywords:
   - media
   - mkvcleaver

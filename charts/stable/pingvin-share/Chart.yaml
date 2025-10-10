@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Pingvin Share is self-hosted file sharing platform and an alternative for WeTransfer.
-home: https://truecharts.org/charts/stable/pingvin-share
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pingvin-share.webp
+home: https://trueforge.org/truecharts/stable/pingvin-share
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pingvin-share.webp
 keywords:
   - file-sharting
 kubeVersion: '>=1.24.0-0'

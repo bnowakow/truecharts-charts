@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Play games with your friends right from the browser.
-home: https://truecharts.org/charts/stable/qwantify
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/qwantify.webp
+home: https://trueforge.org/truecharts/stable/qwantify
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/qwantify.webp
 keywords:
   - qwantify
   - games

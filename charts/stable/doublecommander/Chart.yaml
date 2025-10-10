@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A free cross platform open source file manager with two panels side by side.
-home: https://truecharts.org/charts/stable/doublecommander
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/doublecommander.webp
+home: https://trueforge.org/truecharts/stable/doublecommander
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/doublecommander.webp
 keywords:
   - doublecommander
   - file

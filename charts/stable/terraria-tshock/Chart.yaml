@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: SteamCMD Terraria and the TShock MOD.
-home: https://truecharts.org/charts/stable/terraria-tshock
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/terraria-tshock.webp
+home: https://trueforge.org/truecharts/stable/terraria-tshock
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/terraria-tshock.webp
 keywords:
   - terraria-tshock
   - GameServers

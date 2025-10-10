@@ -26,7 +26,7 @@ else
     done
 fi
 
-if [[ "$curr_chart" != "charts/system/prometheus-operator" ]]; then
+if [[ "$curr_chart" != "charts/stable/prometheus-operator" ]]; then
     echo "Installing prometheus-operator chart"
     helm install prometheus-operator oci://oci.trueforge.org/truecharts/prometheus-operator --namespace prometheus-operator --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -36,7 +36,7 @@ if [[ "$curr_chart" != "charts/system/prometheus-operator" ]]; then
     echo "Done installing prometheus-operator chart"
 fi
 
-if [[ "$curr_chart" == "charts/premium/traefik" ]]; then
+if [[ "$curr_chart" == "charts/stable/traefik" ]]; then
     helm install traefik oci://oci.trueforge.org/truecharts/traefik-crds --wait
     if [[ "$?" != "0" ]]; then
         echo "Failed to install traefik-crds chart"
@@ -44,7 +44,7 @@ if [[ "$curr_chart" == "charts/premium/traefik" ]]; then
     echo "Done installing traefik-crds chart"
 fi
 
-if [[ "$curr_chart" != "charts/premium/traefik" ]] && [[ $traefik_needed == "true" ]]; then
+if [[ "$curr_chart" != "charts/stable/traefik" ]] && [[ $traefik_needed == "true" ]]; then
     echo "Installing traefik chart"
     helm install traefik oci://oci.trueforge.org/truecharts/traefik --namespace traefik --create-namespace \
         --set service.tcp.ports.web.port=9080 --set service.tcp.ports.websecure.port=9443 --wait
@@ -55,7 +55,7 @@ if [[ "$curr_chart" != "charts/premium/traefik" ]] && [[ $traefik_needed == "tru
     echo "Done installing traefik chart"
 fi
 
-if [[ "$curr_chart" == "charts/premium/volsync" ]]; then
+if [[ "$curr_chart" == "charts/stable/volsync" ]]; then
     echo "Installing volumesnapshots chart"
     helm install volumesnapshots oci://oci.trueforge.org/truecharts/volumesnapshots --namespace volumesnapshots --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -65,7 +65,7 @@ if [[ "$curr_chart" == "charts/premium/volsync" ]]; then
     echo "Done installing volumesnapshots chart"
 fi
 
-if [[ "$curr_chart" == "charts/premium/metallb-config" ]]; then
+if [[ "$curr_chart" == "charts/stable/metallb-config" ]]; then
     echo "Installing metallb chart"
     helm install metallb oci://oci.trueforge.org/truecharts/metallb --namespace metallb --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -75,7 +75,7 @@ if [[ "$curr_chart" == "charts/premium/metallb-config" ]]; then
     echo "Done installing metallb chart"
 fi
 
-if [[ "$curr_chart" == "charts/premium/clusterissuer" ]]; then
+if [[ "$curr_chart" == "charts/stable/clusterissuer" ]]; then
     echo "Installing cert-manager chart"
     helm install cert-manager oci://oci.trueforge.org/truecharts/cert-manager --namespace cert-manager --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -95,7 +95,7 @@ if [[ "$cnpg_enabled" == "true" ]]; then
     echo "Done installing cloudnative-pg chart"
 fi
 
-if [[ "$curr_chart" == "charts/system/intel-device-plugins-operator" ]]; then
+if [[ "$curr_chart" == "charts/stable/intel-device-plugins-operator" ]]; then
     echo "Installing cert-manager chart"
     helm install cert-manager oci://oci.trueforge.org/truecharts/cert-manager --namespace cert-manager --create-namespace --wait
     if [[ "$?" != "0" ]]; then
@@ -105,7 +105,7 @@ if [[ "$curr_chart" == "charts/system/intel-device-plugins-operator" ]]; then
     echo "Done installing cert-manager chart"
 fi
 
-if [[ "$curr_chart" == "charts/premium/kubernetes-dashboard" ]]; then
+if [[ "$curr_chart" == "charts/stable/kubernetes-dashboard" ]]; then
     echo "Installing metrics-server chart"
     helm install metrics-server oci://oci.trueforge.org/truecharts/metrics-server --namespace metrics-server --create-namespace --wait
     if [[ "$?" != "0" ]]; then

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A simple, high-reliability, distributed software configuration management system
-home: https://truecharts.org/charts/stable/fossil
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fossil.webp
+home: https://trueforge.org/truecharts/stable/fossil
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fossil.webp
 keywords:
   - fossil
   - scm

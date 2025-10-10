@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Fabulinus is the server component of the TitanML Takeoff server.
-home: https://truecharts.org/charts/stable/fabulinus
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fabulinus.webp
+home: https://trueforge.org/truecharts/stable/fabulinus
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fabulinus.webp
 keywords:
   - fabulinus
   - machine-learning

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: IRC Highway eBook Downloads.
-home: https://truecharts.org/charts/stable/openbooks
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/openbooks.webp
+home: https://trueforge.org/truecharts/stable/openbooks
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/openbooks.webp
 keywords:
   - openbooks
   - media

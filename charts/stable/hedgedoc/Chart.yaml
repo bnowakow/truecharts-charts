@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: HedgeDoc lets you create real-time collaborative markdown notes.
-home: https://truecharts.org/charts/stable/hedgedoc
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/hedgedoc.webp
+home: https://trueforge.org/truecharts/stable/hedgedoc
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/hedgedoc.webp
 keywords:
   - hedgedoc
 kubeVersion: '>=1.24.0-0'

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: iSpy's Agent DVR, a standalone DVR service to manage IP cameras.
-home: https://truecharts.org/charts/stable/ispy-agent-dvr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ispy-agent-dvr.webp
+home: https://trueforge.org/truecharts/stable/ispy-agent-dvr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ispy-agent-dvr.webp
 keywords:
   - dvr
   - ispy

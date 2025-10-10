@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Chromium is a free and open-source software project developed by the Google-sponsored Chromium project.
-home: https://truecharts.org/charts/stable/chromium
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/chromium.webp
+home: https://trueforge.org/truecharts/stable/chromium
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/chromium.webp
 keywords:
   - chromium
   - Productivity

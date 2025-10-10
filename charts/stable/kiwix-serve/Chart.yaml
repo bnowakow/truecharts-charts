@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Kiwix enables you to have the whole Wikipedia at hand wherever you go!
-home: https://truecharts.org/charts/stable/kiwix-serve
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/kiwix-serve.webp
+home: https://trueforge.org/truecharts/stable/kiwix-serve
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/kiwix-serve.webp
 keywords:
   - kiwix-serve
   - Productivity

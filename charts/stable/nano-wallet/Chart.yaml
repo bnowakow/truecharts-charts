@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Nano-wallet is a digital payment protocol designed to be accessible and lightweight.
-home: https://truecharts.org/charts/stable/nano-wallet
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nano-wallet.webp
+home: https://trueforge.org/truecharts/stable/nano-wallet
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nano-wallet.webp
 keywords:
   - nano-wallet
 kubeVersion: '>=1.24.0-0'

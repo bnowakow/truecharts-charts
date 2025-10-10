@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: StackEdits Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files.
-home: https://truecharts.org/charts/stable/stackedit
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/stackedit.webp
+home: https://trueforge.org/truecharts/stable/stackedit
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/stackedit.webp
 keywords:
   - stackedit
   - Productivity

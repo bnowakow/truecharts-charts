@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is a Basic STUN & TURN server that was mainly created for Nextcloud Talk.
-home: https://truecharts.org/charts/stable/stun-turn-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/stun-turn-server.webp
+home: https://trueforge.org/truecharts/stable/stun-turn-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/stun-turn-server.webp
 keywords:
   - stun-turn-server
   - Network

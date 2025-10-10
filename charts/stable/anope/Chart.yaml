@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Anope is a set of IRC Services designed for flexibility and ease of use.
-home: https://truecharts.org/charts/stable/anope
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/anope.webp
+home: https://trueforge.org/truecharts/stable/anope
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/anope.webp
 keywords:
   - anope
   - Network-Other

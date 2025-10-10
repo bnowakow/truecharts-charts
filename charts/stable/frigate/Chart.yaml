@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: NVR With Realtime Object Detection for IP Cameras
-home: https://truecharts.org/charts/stable/frigate
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/frigate.webp
+home: https://trueforge.org/truecharts/stable/frigate
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/frigate.webp
 keywords:
   - encode
   - nvr

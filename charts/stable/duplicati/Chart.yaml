@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Store securely encrypted backups on cloud storage services!
-home: https://truecharts.org/charts/stable/duplicati
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/duplicati.webp
+home: https://trueforge.org/truecharts/stable/duplicati
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/duplicati.webp
 keywords:
   - duplicati
 kubeVersion: '>=1.24.0-0'

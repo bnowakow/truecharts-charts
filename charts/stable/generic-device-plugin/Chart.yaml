@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Device Plugin to expose tun-device on talos
-home: https://truecharts.org/charts/stable/generic-device-plugin
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/generic-device-plugin.webp
+home: https://trueforge.org/truecharts/stable/generic-device-plugin
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/generic-device-plugin.webp
 keywords:
   - jackett
   - torrent

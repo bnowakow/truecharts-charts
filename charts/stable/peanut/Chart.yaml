@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Tiny Dashboard for Network UPS Tools.
-home: https://truecharts.org/charts/stable/peanut
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/peanut.webp
+home: https://trueforge.org/truecharts/stable/peanut
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/peanut.webp
 keywords:
   - peanut
   - ups

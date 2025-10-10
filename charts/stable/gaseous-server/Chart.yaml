@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A game ROM manager using multiple sources to identify and provide metadata.
-home: https://truecharts.org/charts/stable/gaseous-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gaseous-server.webp
+home: https://trueforge.org/truecharts/stable/gaseous-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gaseous-server.webp
 keywords:
   - gaseous-server
   - rom-manager

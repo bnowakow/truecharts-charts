@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Simple web server to manage and run DOS based games on the browser.
-home: https://truecharts.org/charts/stable/wdosg
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/wdosg.webp
+home: https://trueforge.org/truecharts/stable/wdosg
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/wdosg.webp
 keywords:
   - wdosg
   - dos

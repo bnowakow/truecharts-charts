@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Configuration management tool for Radarr/Sonarr that automates importing and version control of custom formats and quality profiles.
-home: https://truecharts.org/charts/stable/profilarr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/profilarr.webp
+home: https://trueforge.org/truecharts/stable/profilarr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/profilarr.webp
 keywords:
   - profilarr
   - Tools-Utilities

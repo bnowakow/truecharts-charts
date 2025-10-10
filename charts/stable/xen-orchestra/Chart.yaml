@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Xen-Orchestra is a Web-UI for managing your existing XenServer infrastructure.
-home: https://truecharts.org/charts/stable/xen-orchestra
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/xen-orchestra.webp
+home: https://trueforge.org/truecharts/stable/xen-orchestra
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/xen-orchestra.webp
 keywords:
   - xen-orchestra
 kubeVersion: '>=1.24.0-0'

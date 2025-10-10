@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: No description provide.
-home: https://truecharts.org/charts/stable/notarius
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/notarius.webp
+home: https://trueforge.org/truecharts/stable/notarius
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/notarius.webp
 keywords:
   - notarius
   - Other

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Watches for .ts files made by Live TV recordings, convert them to a friendly format, extract .srt file, add chapters with comchap or remove them with comcut. Tested with Emby recordings.
-home: https://truecharts.org/charts/stable/post-recording
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/post-recording.webp
+home: https://trueforge.org/truecharts/stable/post-recording
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/post-recording.webp
 keywords:
   - post-recording
   - MediaApp-Video

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Baikal is a lightweight CalDAV+CardDAV server
-home: https://truecharts.org/charts/stable/baikal
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/baikal.webp
+home: https://trueforge.org/truecharts/stable/baikal
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/baikal.webp
 keywords:
   - baikal
 kubeVersion: '>=1.24.0-0'

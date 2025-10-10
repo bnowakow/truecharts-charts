@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Lightweight network IP scanner with web GUI
-home: https://truecharts.org/charts/stable/watchyourlan
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/watchyourlan.webp
+home: https://trueforge.org/truecharts/stable/watchyourlan
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/watchyourlan.webp
 keywords:
   - network
   - monitor

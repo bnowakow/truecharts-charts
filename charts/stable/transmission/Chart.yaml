@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: fast, easy, and free BitTorrent client.
-home: https://truecharts.org/charts/stable/transmission
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/transmission.webp
+home: https://trueforge.org/truecharts/stable/transmission
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/transmission.webp
 keywords:
   - transmission
   - torrent

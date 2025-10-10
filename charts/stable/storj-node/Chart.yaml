@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Storj is an S3-compatible platform and suite of decentralized applications that allows you to store data in a secure and decentralized manner
-home: https://truecharts.org/charts/stable/storj-node
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/storj-node.webp
+home: https://trueforge.org/truecharts/stable/storj-node
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/storj-node.webp
 keywords:
   - storj
   - storage

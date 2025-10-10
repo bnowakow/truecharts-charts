@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Magical shell history.
-home: https://truecharts.org/charts/stable/atuin
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/atuin.webp
+home: https://trueforge.org/truecharts/stable/atuin
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/atuin.webp
 keywords:
   - atuin
   - shell

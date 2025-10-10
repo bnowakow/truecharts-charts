@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is a Server based on Golang, which allows you to serve WebP images on the fly. It will convert jpg,jpeg,png files by default, this can be customized by editing the config.json.
-home: https://truecharts.org/charts/stable/webp-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/webp-server.webp
+home: https://trueforge.org/truecharts/stable/webp-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/webp-server.webp
 keywords:
   - webp-server
   - Cloud

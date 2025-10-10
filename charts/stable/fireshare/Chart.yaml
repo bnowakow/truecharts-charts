@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Share your game clips, videos, or other media via unique links.
-home: https://truecharts.org/charts/stable/fireshare
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fireshare.webp
+home: https://trueforge.org/truecharts/stable/fireshare
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fireshare.webp
 keywords:
   - fireshare
 kubeVersion: '>=1.24.0-0'

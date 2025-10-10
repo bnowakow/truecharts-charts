@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Synchronized video viewing with chat and other features. Lightweight modern implementation and very easy way to run locally.
-home: https://truecharts.org/charts/stable/synctube
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/synctube.webp
+home: https://trueforge.org/truecharts/stable/synctube
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/synctube.webp
 keywords:
   - synctube
   - Cloud

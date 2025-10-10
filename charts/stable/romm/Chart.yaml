@@ -36,8 +36,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: game library manager focused in retro gaming
-home: https://truecharts.org/charts/stable/romm
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/romm.webp
+home: https://trueforge.org/truecharts/stable/romm
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/romm.webp
 keywords:
   - romm
   - rom-manager

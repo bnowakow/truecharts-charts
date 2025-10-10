@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: TasmoCompiler is a simple web GUI which allows you to compile fantastic Tasmota firmware with your own settings
-home: https://truecharts.org/charts/stable/tasmocompiler
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tasmocompiler.webp
+home: https://trueforge.org/truecharts/stable/tasmocompiler
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tasmocompiler.webp
 keywords:
   - tasmocompiler
   - home-automation

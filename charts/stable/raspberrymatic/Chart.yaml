@@ -23,8 +23,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A free and non-commercial open-source operating system alternative for running a cloud-free smart-home IoT.
-home: https://truecharts.org/charts/stable/raspberrymatic
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/raspberrymatic.webp
+home: https://trueforge.org/truecharts/stable/raspberrymatic
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/raspberrymatic.webp
 keywords:
   - raspberrymatic
   - iot

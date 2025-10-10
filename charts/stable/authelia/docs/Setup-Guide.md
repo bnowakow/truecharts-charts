@@ -106,7 +106,7 @@ middlewares:
 
 ### Adding the forwardauth to your Apps
 
-The last step is adding the `forwardauth` along with the standard `ingress` settings for your app, for more info on setting ingress see the [ClusterIssuer Guide](/charts/premium/clusterissuer/how-to).
+The last step is adding the `forwardauth` along with the standard `ingress` settings for your app, for more info on setting ingress see the [ClusterIssuer Guide](/charts/stable/clusterissuer/how-to).
 
 - In this example we use the same name as above, or `auth`.
 

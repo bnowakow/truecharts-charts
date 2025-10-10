@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Official SongKong Chart repository, Identify your songs and add metadata and artwork automatically
-home: https://truecharts.org/charts/stable/songkong
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/songkong.webp
+home: https://trueforge.org/truecharts/stable/songkong
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/songkong.webp
 keywords:
   - songkong
   - MediaApp-Music

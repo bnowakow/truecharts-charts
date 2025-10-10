@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A self-hosted telegram JS/TS bot that dumps posts from RSS feeds to a telegram chat. This script was created because all the third party services were unreliable, slow.
-home: https://truecharts.org/charts/stable/rss-to-telegram
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/rss-to-telegram.webp
+home: https://trueforge.org/truecharts/stable/rss-to-telegram
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/rss-to-telegram.webp
 keywords:
   - rss-to-telegram
   - Network-Other

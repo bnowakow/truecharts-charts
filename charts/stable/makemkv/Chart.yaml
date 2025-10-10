@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
-home: https://truecharts.org/charts/stable/makemkv
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/makemkv.webp
+home: https://trueforge.org/truecharts/stable/makemkv
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/makemkv.webp
 keywords:
   - mkv
 kubeVersion: '>=1.24.0-0'

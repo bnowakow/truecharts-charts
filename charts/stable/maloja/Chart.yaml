@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Self-hosted music scrobble database to create personal listening statistics and charts as a substitute for Last.fm / Libre.fm / GNU FM.
-home: https://truecharts.org/charts/stable/maloja
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/maloja.webp
+home: https://trueforge.org/truecharts/stable/maloja
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/maloja.webp
 keywords:
   - maloja
   - MediaServer-Music

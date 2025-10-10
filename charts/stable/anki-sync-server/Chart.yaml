@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A cross-platform Anki sync server.
-home: https://truecharts.org/charts/stable/anki-sync-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/anki-sync-server.webp
+home: https://trueforge.org/truecharts/stable/anki-sync-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/anki-sync-server.webp
 keywords:
   - anki-sync-server
 kubeVersion: '>=1.24.0-0'

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A safe and private place for your life's work.
-home: https://truecharts.org/charts/stable/standardnotes-web
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/standardnotes-web.webp
+home: https://trueforge.org/truecharts/stable/standardnotes-web
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/standardnotes-web.webp
 keywords:
   - standardnotes-web
   - Productivity

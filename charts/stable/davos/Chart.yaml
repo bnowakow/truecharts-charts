@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An FTP automation tool that periodically scans given host locations for new files.
-home: https://truecharts.org/charts/stable/davos
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/davos.webp
+home: https://trueforge.org/truecharts/stable/davos
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/davos.webp
 keywords:
   - davos
   - ftp

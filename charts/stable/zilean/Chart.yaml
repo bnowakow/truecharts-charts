@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Zilean self-hosted
-home: https://truecharts.org/charts/stable/zilean
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/zilean.webp
+home: https://trueforge.org/truecharts/stable/zilean
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/zilean.webp
 keywords:
   - zilean
 kubeVersion: '>=1.24.0-0'

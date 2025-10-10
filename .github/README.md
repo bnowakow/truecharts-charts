@@ -4,7 +4,7 @@ title: TrueCharts
 
 **Community Helm Chart Catalog**
 
-[![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://truecharts.org/)
+[![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://trueforge.org/)
 [![Discord](https://img.shields.io/badge/discord-chat-7289DA.svg?maxAge=60&style=for-the-badge)](https://discord.gg/Js6xv9nGuU)
 [![GitHub last commit](https://img.shields.io/github/last-commit/truecharts/charts?color=brightgreen&logoColor=white&style=for-the-badge)](https://github.com/trueforge-org/truecharts/commits)
 
@@ -18,13 +18,13 @@ All our charts are supposed to work together and be easy to setup using any helm
 
 ## Getting started using TrueCharts
 
-[![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://truecharts.org/)
+[![docs](https://img.shields.io/badge/docs-rtfm-yellow?logo=gitbook&logoColor=white&style=for-the-badge)](https://trueforge.org/)
 
 ---
 
 ### Support
 
-Please check our [FAQ](https://truecharts.org/general/faq/), [manual](https://truecharts.org/general/) and [Issue tracker](https://github.com/trueforge-org/truecharts/issues) There is a significant chance your issue has been reported before!
+Please check our [FAQ](https://trueforge.org/general/faq/), [manual](https://trueforge.org/general/) and [Issue tracker](https://github.com/trueforge-org/truecharts/issues) There is a significant chance your issue has been reported before!
 
 Still something not working as expected? [Contact us!](https://discord.gg/tVsPTHWTtr) and we'll figure it out together!
 
@@ -274,7 +274,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/apps/dependabot"><img src="https://avatars.githubusercontent.com/in/29110?v=4?s=100" width="100px;" alt="dependabot[bot]"/><br /><sub><b>dependabot[bot]</b></sub></a><br /><a href="#tool-dependabot[bot]" title="Tools">🔧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://truecharts.org/"><img src="https://avatars.githubusercontent.com/u/80468013?v=4?s=100" width="100px;" alt="TrueCharts Bot"/><br /><sub><b>TrueCharts Bot</b></sub></a><br /><a href="#tool-truecharts-admin" title="Tools">🔧</a> <a href="#infra-truecharts-admin" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/trueforge-org/truecharts/commits?author=truecharts-admin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://trueforge.org/"><img src="https://avatars.githubusercontent.com/u/80468013?v=4?s=100" width="100px;" alt="TrueCharts Bot"/><br /><sub><b>TrueCharts Bot</b></sub></a><br /><a href="#tool-truecharts-admin" title="Tools">🔧</a> <a href="#infra-truecharts-admin" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/trueforge-org/truecharts/commits?author=truecharts-admin" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.mend.io/free-developer-tools/renovate/"><img src="https://avatars.githubusercontent.com/u/25180681?v=4?s=100" width="100px;" alt="Mend Renovate"/><br /><sub><b>Mend Renovate</b></sub></a><br /><a href="#tool-renovate-bot" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Simoneu01"><img src="https://avatars.githubusercontent.com/u/43807696?v=4?s=100" width="100px;" alt="Simone"/><br /><sub><b>Simone</b></sub></a><br /><a href="https://github.com/trueforge-org/truecharts/commits?author=Simoneu01" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://devklog.net/"><img src="https://avatars.githubusercontent.com/u/49554?v=4?s=100" width="100px;" alt="Jean-François Roy"/><br /><sub><b>Jean-François Roy</b></sub></a><br /><a href="https://github.com/trueforge-org/truecharts/commits?author=jfroy" title="Code">💻</a></td>

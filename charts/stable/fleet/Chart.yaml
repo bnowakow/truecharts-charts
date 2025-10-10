@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Fleet provides an online web interface which displays a set of maintained images from one or more owned repositories.
-home: https://truecharts.org/charts/stable/fleet
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fleet.webp
+home: https://trueforge.org/truecharts/stable/fleet
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fleet.webp
 keywords:
   - fleet
 kubeVersion: '>=1.24.0-0'

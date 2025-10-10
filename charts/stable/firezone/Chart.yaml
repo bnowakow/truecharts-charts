@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: WireGuard-based VPN server and egress firewall
-home: https://truecharts.org/charts/stable/firezone
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/firezone.webp
+home: https://trueforge.org/truecharts/stable/firezone
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/firezone.webp
 keywords:
   - firezone
   - wireguard

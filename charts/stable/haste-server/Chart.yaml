@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Simple text sharing
-home: https://truecharts.org/charts/stable/haste-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/haste-server.webp
+home: https://trueforge.org/truecharts/stable/haste-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/haste-server.webp
 keywords:
   - haste
   - hastebin

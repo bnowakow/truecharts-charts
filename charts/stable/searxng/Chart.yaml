@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Meta search engine which aggregates results from more than 70 search services.
-home: https://truecharts.org/charts/stable/searxng
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/searxng.webp
+home: https://trueforge.org/truecharts/stable/searxng
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/searxng.webp
 keywords:
   - searxng
   - Productivity

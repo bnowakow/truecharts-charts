@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: backup all your tasmota devices in one place.
-home: https://truecharts.org/charts/stable/tasmobackup
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tasmobackup.webp
+home: https://trueforge.org/truecharts/stable/tasmobackup
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tasmobackup.webp
 keywords:
   - tasmobackup
   - home-automation

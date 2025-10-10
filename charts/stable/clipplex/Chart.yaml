@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Clip your plex media to share.
-home: https://truecharts.org/charts/stable/clipplex
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/clipplex.webp
+home: https://trueforge.org/truecharts/stable/clipplex
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/clipplex.webp
 keywords:
   - clipplex
   - media

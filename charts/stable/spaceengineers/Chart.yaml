@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Space Engineers Dedicated Server.
-home: https://truecharts.org/charts/stable/spaceengineers
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/spaceengineers.webp
+home: https://trueforge.org/truecharts/stable/spaceengineers
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/spaceengineers.webp
 keywords:
   - spaceengineers
   - GameServers

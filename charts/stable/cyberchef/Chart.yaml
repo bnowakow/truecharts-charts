@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" operations within a web browser.
-home: https://truecharts.org/charts/stable/cyberchef
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cyberchef.webp
+home: https://trueforge.org/truecharts/stable/cyberchef
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cyberchef.webp
 keywords:
   - cyberchef
 kubeVersion: '>=1.24.0-0'

@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Open source decentralized social media platform that's free forever!
-home: https://truecharts.org/charts/stable/misskey
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/misskey.webp
+home: https://trueforge.org/truecharts/stable/misskey
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/misskey.webp
 keywords:
   - Misskey
   - Social

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Automate Cloudflare DNS records for those with a dynamic IP.
-home: https://truecharts.org/charts/stable/cloudflareddns
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cloudflareddns.webp
+home: https://trueforge.org/truecharts/stable/cloudflareddns
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cloudflareddns.webp
 keywords:
   - cloudflareddns
   - ddns

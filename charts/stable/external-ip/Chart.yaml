@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Gets external IP via DIG command ( OpenDNS , Cloudflare, google ) on a scheduled basis that can be customized. Also includes the ability to alert you via pushover if the IP changes.
-home: https://truecharts.org/charts/stable/external-ip
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/external-ip.webp
+home: https://trueforge.org/truecharts/stable/external-ip
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/external-ip.webp
 keywords:
   - external-ip
   - Network-Management

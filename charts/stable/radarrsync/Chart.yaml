@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: RadarrSync Syncs two Radarr servers through web API. This is a modified version designed to be run in a Chart Chart. This version supports only two servers.
-home: https://truecharts.org/charts/stable/radarrsync
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/radarrsync.webp
+home: https://trueforge.org/truecharts/stable/radarrsync
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/radarrsync.webp
 keywords:
   - radarrsync
   - Downloaders

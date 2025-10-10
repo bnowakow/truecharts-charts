@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Running Boinc? Get some Gridcoins from your Boinc work!
-home: https://truecharts.org/charts/stable/gridcoinwalletgui
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gridcoinwalletgui.webp
+home: https://trueforge.org/truecharts/stable/gridcoinwalletgui
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gridcoinwalletgui.webp
 keywords:
   - gridcoinwalletgui
   - Crypto

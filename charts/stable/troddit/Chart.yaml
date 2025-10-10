@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A web client for Reddit
-home: https://truecharts.org/charts/stable/troddit
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/troddit.webp
+home: https://trueforge.org/truecharts/stable/troddit
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/troddit.webp
 keywords:
   - troddit
   - Network-Web

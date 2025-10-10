@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Jellyseerr is a fork of Overseerr with support for Jellyfin and Emby. It can be used to manage requests for your media library.
-home: https://truecharts.org/charts/stable/jellyseerr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/jellyseerr.webp
+home: https://trueforge.org/truecharts/stable/jellyseerr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/jellyseerr.webp
 keywords:
   - jellyseerr
 kubeVersion: '>=1.24.0-0'

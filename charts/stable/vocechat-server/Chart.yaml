@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A superlight rust written social server.
-home: https://truecharts.org/charts/stable/vocechat-server
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/vocechat-server.webp
+home: https://trueforge.org/truecharts/stable/vocechat-server
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/vocechat-server.webp
 keywords:
   - vocechat-server
   - social

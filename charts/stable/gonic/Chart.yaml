@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Music streaming server / subsonic server API implementation
-home: https://truecharts.org/charts/stable/gonic
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gonic.webp
+home: https://trueforge.org/truecharts/stable/gonic
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gonic.webp
 keywords:
   - music
   - subsonic

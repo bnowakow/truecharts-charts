@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Valheim dedicated gameserver with automatic update and world backup support
-home: https://truecharts.org/charts/stable/valheim
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/valheim.webp
+home: https://trueforge.org/truecharts/stable/valheim
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/valheim.webp
 keywords:
   - valheim
 kubeVersion: '>=1.24.0-0'

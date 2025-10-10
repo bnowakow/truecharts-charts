@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Dynamic DNS for Amazon Route 53‎ on a time-based schedule
-home: https://truecharts.org/charts/stable/ddns-route53
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ddns-route53.webp
+home: https://trueforge.org/truecharts/stable/ddns-route53
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ddns-route53.webp
 keywords:
   - ddns-route53
   - Network-DNS

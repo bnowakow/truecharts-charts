@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Channels DVR Server
-home: https://truecharts.org/charts/stable/channels-dvr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/channels-dvr.webp
+home: https://trueforge.org/truecharts/stable/channels-dvr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/channels-dvr.webp
 keywords:
   - channels-dvr
 kubeVersion: '>=1.24.0-0'

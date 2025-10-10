@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: The modern download automation tool for torrents.
-home: https://truecharts.org/charts/stable/autobrr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/autobrr.webp
+home: https://trueforge.org/truecharts/stable/autobrr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/autobrr.webp
 keywords:
   - autobrr
   - torrent

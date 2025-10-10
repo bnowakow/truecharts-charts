@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Automatic Ripping Machine (ARM) Scripts.
-home: https://truecharts.org/charts/stable/automatic-ripping-machine
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/automatic-ripping-machine.webp
+home: https://trueforge.org/truecharts/stable/automatic-ripping-machine
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/automatic-ripping-machine.webp
 keywords:
   - automatic-ripping-machine
   - media

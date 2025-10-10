@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A lightweight NodeJS server that emulates the iOS HomeKit API
-home: https://truecharts.org/charts/stable/homebridge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/homebridge.webp
+home: https://trueforge.org/truecharts/stable/homebridge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/homebridge.webp
 keywords:
   - homebridge
   - homekit

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Very simple WebDAV server based on Apache. You need a WebDAV client to transfer files. It does not include a WebUI to upload files through your browser.
-home: https://truecharts.org/charts/stable/apache-webdav
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/apache-webdav.webp
+home: https://trueforge.org/truecharts/stable/apache-webdav
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/apache-webdav.webp
 keywords:
   - apache-webdav
   - Cloud

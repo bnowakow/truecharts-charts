@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Actual is a super fast privacy-focused app for managing your finances.
-home: https://truecharts.org/charts/stable/actualserver
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/actualserver.webp
+home: https://trueforge.org/truecharts/stable/actualserver
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/actualserver.webp
 keywords:
   - actualserver
   - finance

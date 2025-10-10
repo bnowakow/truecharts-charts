@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: M3U Proxy for Plex DVR and Emby Live TV.
-home: https://truecharts.org/charts/stable/xteve
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/xteve.webp
+home: https://trueforge.org/truecharts/stable/xteve
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/xteve.webp
 keywords:
   - xteve
   - iptv

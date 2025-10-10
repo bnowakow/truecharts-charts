@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Your favorite operating systems in one place!
-home: https://truecharts.org/charts/stable/netbootxyz
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/netbootxyz.webp
+home: https://trueforge.org/truecharts/stable/netbootxyz
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/netbootxyz.webp
 keywords:
   - netbootxyz
   - pxe

@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Self hosted GIT repositories
-home: https://truecharts.org/charts/stable/gitea
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gitea.webp
+home: https://trueforge.org/truecharts/stable/gitea
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gitea.webp
 keywords:
   - git
   - issue tracker

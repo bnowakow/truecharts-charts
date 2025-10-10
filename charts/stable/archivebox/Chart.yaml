@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: ArchiveBox is an open-source, self-hosted internet archiving solution.
-home: https://truecharts.org/charts/stable/archivebox
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/archivebox.webp
+home: https://trueforge.org/truecharts/stable/archivebox
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/archivebox.webp
 keywords:
   - archivebox
   - archiving

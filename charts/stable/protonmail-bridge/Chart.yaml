@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: ProtonMail IMAP/SMTP Bridge to work on the network.
-home: https://truecharts.org/charts/stable/protonmail-bridge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/protonmail-bridge.webp
+home: https://trueforge.org/truecharts/stable/protonmail-bridge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/protonmail-bridge.webp
 keywords:
   - protonmail
   - protonmail-bridge

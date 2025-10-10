@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: GoAccess for Nginx Proxy Manager Logs
-home: https://truecharts.org/charts/stable/goaccess-npm-logs
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/goaccess-npm-logs.webp
+home: https://trueforge.org/truecharts/stable/goaccess-npm-logs
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/goaccess-npm-logs.webp
 keywords:
   - goaccess-npm-logs
   - Tools-Utilities

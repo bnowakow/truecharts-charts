@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.
-home: https://truecharts.org/charts/stable/speedtest-tracker
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/speedtest-tracker.webp
+home: https://trueforge.org/truecharts/stable/speedtest-tracker
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/speedtest-tracker.webp
 keywords:
   - speedtest
   - speedtest-tracker

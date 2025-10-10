@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A headless install of kodi in a docker container.
-home: https://truecharts.org/charts/stable/kodi-headless
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/kodi-headless.webp
+home: https://trueforge.org/truecharts/stable/kodi-headless
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/kodi-headless.webp
 keywords:
   - kodi-headless
 kubeVersion: '>=1.24.0-0'

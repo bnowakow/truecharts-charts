@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Custom themes for your favorite apps!
-home: https://truecharts.org/charts/stable/theme-park
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/theme-park.webp
+home: https://trueforge.org/truecharts/stable/theme-park
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/theme-park.webp
 keywords:
   - theme-park
   - customization

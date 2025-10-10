@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Ghostfolio is a privacy-first, open source dashboard for your personal finances. Break down your asset allocation, know your net worth and make solid, data-driven investment decisions.
-home: https://truecharts.org/charts/stable/ghostfolio
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ghostfolio.webp
+home: https://trueforge.org/truecharts/stable/ghostfolio
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ghostfolio.webp
 keywords:
   - ghostfolio
   - finance

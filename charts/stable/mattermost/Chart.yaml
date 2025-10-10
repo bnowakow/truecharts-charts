@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.
-home: https://truecharts.org/charts/stable/mattermost
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mattermost.webp
+home: https://trueforge.org/truecharts/stable/mattermost
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mattermost.webp
 keywords:
   - team
   - mattermost

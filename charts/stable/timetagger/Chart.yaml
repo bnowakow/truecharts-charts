@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An open source time-tracker with an interactive user experience and powerful reporting.
-home: https://truecharts.org/charts/stable/timetagger
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/timetagger.webp
+home: https://trueforge.org/truecharts/stable/timetagger
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/timetagger.webp
 keywords:
   - time
   - timetagger

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Plex Media Server
-home: https://truecharts.org/charts/stable/plex
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/plex.webp
+home: https://trueforge.org/truecharts/stable/plex
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/plex.webp
 keywords:
   - plex
   - plex-media-server

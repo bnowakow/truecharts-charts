@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Guacd - Apache Guacamole is a clientless remote desktop gateway.
-home: https://truecharts.org/charts/stable/guacd
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/guacd.webp
+home: https://trueforge.org/truecharts/stable/guacd
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/guacd.webp
 keywords:
   - guacd
   - guacamole

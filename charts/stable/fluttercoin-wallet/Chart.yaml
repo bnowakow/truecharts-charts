@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: FlutterCoin may be a coin with the tried and true algorithm of scrypt, but it's definitely anything but ordinary.
-home: https://truecharts.org/charts/stable/fluttercoin-wallet
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fluttercoin-wallet.webp
+home: https://trueforge.org/truecharts/stable/fluttercoin-wallet
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fluttercoin-wallet.webp
 keywords:
   - fluttercoin-wallet
   - Network-Other

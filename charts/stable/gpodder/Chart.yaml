@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;#xD;
-home: https://truecharts.org/charts/stable/gpodder
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/gpodder.webp
+home: https://trueforge.org/truecharts/stable/gpodder
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/gpodder.webp
 keywords:
   - gpodder
   - Downloaders

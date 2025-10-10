@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An organizer for your porn, written in Go
-home: https://truecharts.org/charts/stable/stash
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/stash.webp
+home: https://trueforge.org/truecharts/stable/stash
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/stash.webp
 keywords:
   - porn
 kubeVersion: '>=1.24.0-0'

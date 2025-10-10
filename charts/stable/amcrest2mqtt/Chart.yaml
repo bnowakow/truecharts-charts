@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Expose all events from an Amcrest device to an MQTT broker
-home: https://truecharts.org/charts/stable/amcrest2mqtt
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/amcrest2mqtt.webp
+home: https://trueforge.org/truecharts/stable/amcrest2mqtt
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/amcrest2mqtt.webp
 keywords:
   - amcrest2mqtt
 kubeVersion: '>=1.24.0-0'

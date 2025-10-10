@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Minetest (server) is a near-infinite-world block sandbox game and a game engine.
-home: https://truecharts.org/charts/stable/minetest
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/minetest.webp
+home: https://trueforge.org/truecharts/stable/minetest
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/minetest.webp
 keywords:
   - minetest
 kubeVersion: '>=1.24.0-0'

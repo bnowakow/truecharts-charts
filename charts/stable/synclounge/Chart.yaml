@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Synclounge is a third party tool that allows you to watch Plex in sync with your friends/family, wherever you are.
-home: https://truecharts.org/charts/stable/synclounge
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/synclounge.webp
+home: https://trueforge.org/truecharts/stable/synclounge
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/synclounge.webp
 keywords:
   - synclounge
 kubeVersion: '>=1.24.0-0'

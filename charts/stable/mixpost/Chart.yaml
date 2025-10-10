@@ -34,8 +34,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Mixpost it's the coolest Self hosted social media management software.
-home: https://truecharts.org/charts/stable/mixpost
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mixpost.webp
+home: https://trueforge.org/truecharts/stable/mixpost
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mixpost.webp
 keywords:
   - mixpost
   - twitter

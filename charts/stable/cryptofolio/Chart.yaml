@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Track your cryptocurrency holdings/portfolio
-home: https://truecharts.org/charts/stable/cryptofolio
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cryptofolio.webp
+home: https://trueforge.org/truecharts/stable/cryptofolio
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cryptofolio.webp
 keywords:
   - cryptofolio
 kubeVersion: '>=1.24.0-0'

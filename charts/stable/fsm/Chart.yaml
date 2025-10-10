@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: No description provide.
-home: https://truecharts.org/charts/stable/fsm
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/fsm.webp
+home: https://trueforge.org/truecharts/stable/fsm
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/fsm.webp
 keywords:
   - fsm
   - Other

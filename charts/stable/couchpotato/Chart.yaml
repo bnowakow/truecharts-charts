@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Couchpotato is an automatic NZB and torrent downloader.
-home: https://truecharts.org/charts/stable/couchpotato
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/couchpotato.webp
+home: https://trueforge.org/truecharts/stable/couchpotato
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/couchpotato.webp
 keywords:
   - couchpotato
 kubeVersion: '>=1.24.0-0'

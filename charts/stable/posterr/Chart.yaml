@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Media display for Plex, Sonarr and Radarr.
-home: https://truecharts.org/charts/stable/posterr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/posterr.webp
+home: https://trueforge.org/truecharts/stable/posterr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/posterr.webp
 keywords:
   - posterr
   - MediaServer-Other

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A complete web based IDE with terminal access
-home: https://truecharts.org/charts/stable/cloud9
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cloud9.webp
+home: https://trueforge.org/truecharts/stable/cloud9
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cloud9.webp
 keywords:
   - cloud9
   - ide

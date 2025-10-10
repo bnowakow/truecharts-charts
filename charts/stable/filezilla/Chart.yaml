@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Helm chart for Kubernetes
-home: https://truecharts.org/charts/stable/filezilla
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/filezilla.webp
+home: https://trueforge.org/truecharts/stable/filezilla
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/filezilla.webp
 keywords:
   - filezilla
   - ftp

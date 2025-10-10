@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
-home: https://truecharts.org/charts/stable/external-dns
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/external-dns.webp
+home: https://trueforge.org/truecharts/stable/external-dns
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/external-dns.webp
 keywords:
   - external-dns
   - k8s

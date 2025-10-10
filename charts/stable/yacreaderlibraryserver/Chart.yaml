@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Headless version of the YACReaderLibraryServer.
-home: https://truecharts.org/charts/stable/yacreaderlibraryserver
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/yacreaderlibraryserver.webp
+home: https://trueforge.org/truecharts/stable/yacreaderlibraryserver
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/yacreaderlibraryserver.webp
 keywords:
   - yacreaderlibraryserver
   - MediaServer-Other

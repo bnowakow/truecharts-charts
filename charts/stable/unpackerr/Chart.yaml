@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This application runs as a daemon on your download host. It checks for completed downloads and extracts them so Radarr, Lidarr, Sonarr, and Readarr may import them
-home: https://truecharts.org/charts/stable/unpackerr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/unpackerr.webp
+home: https://trueforge.org/truecharts/stable/unpackerr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/unpackerr.webp
 keywords:
   - unpackerr
   - sonarr

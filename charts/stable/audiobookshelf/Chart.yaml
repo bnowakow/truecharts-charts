@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Audiobookshelf is a self-hosted audiobook server for managing and playing your audiobooks.
-home: https://truecharts.org/charts/stable/audiobookshelf
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/audiobookshelf.webp
+home: https://trueforge.org/truecharts/stable/audiobookshelf
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/audiobookshelf.webp
 keywords:
   - audiobookshelf
 kubeVersion: '>=1.24.0-0'

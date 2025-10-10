@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: The official Tachidesk Chart-Chart.
-home: https://truecharts.org/charts/stable/tachidesk-docker
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tachidesk-docker.webp
+home: https://trueforge.org/truecharts/stable/tachidesk-docker
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tachidesk-docker.webp
 keywords:
   - tachidesk-docker
   - MediaServer-Other

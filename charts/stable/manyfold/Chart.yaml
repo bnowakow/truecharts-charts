@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Digital Asset Manager (DAM), specifically designed for 3D print files.
-home: https://truecharts.org/charts/stable/manyfold
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/manyfold.webp
+home: https://trueforge.org/truecharts/stable/manyfold
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/manyfold.webp
 keywords:
   - manyfold
   - media

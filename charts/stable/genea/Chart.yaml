@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Genea allows visually building and editing a family tree online. It consumes and saves genealogy data in the GEDCOM format without any server side components.
-home: https://truecharts.org/charts/stable/genea
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/genea.webp
+home: https://trueforge.org/truecharts/stable/genea
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/genea.webp
 keywords:
   - genea
   - Other

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Filebrowser provides a file managing interface within a specified directory
-home: https://truecharts.org/charts/stable/filebrowser
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/filebrowser.webp
+home: https://trueforge.org/truecharts/stable/filebrowser
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/filebrowser.webp
 keywords:
   - filebrowser
 kubeVersion: '>=1.24.0-0'

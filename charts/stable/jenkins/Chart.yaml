@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: The gold standard in devops tools for running CI/CD pipelines.
-home: https://truecharts.org/charts/stable/jenkins
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/jenkins.webp
+home: https://trueforge.org/truecharts/stable/jenkins
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/jenkins.webp
 keywords:
   - jenkins
   - productivity

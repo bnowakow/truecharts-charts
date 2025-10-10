@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Self-hosted, community-driven, local OpenAI-compatible API.
-home: https://truecharts.org/charts/stable/local-ai
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/local-ai.webp
+home: https://trueforge.org/truecharts/stable/local-ai
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/local-ai.webp
 keywords:
   - local-ai
   - ai

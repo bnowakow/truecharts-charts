@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: cowyo is a self-contained wiki server that makes jotting notes easy and fast. The most important feature here is simplicity. Other features include versioning, page locking, self-destructing messages, encryption, and listifying.
-home: https://truecharts.org/charts/stable/cowyo
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cowyo.webp
+home: https://trueforge.org/truecharts/stable/cowyo
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cowyo.webp
 keywords:
   - cowyo
   - Cloud

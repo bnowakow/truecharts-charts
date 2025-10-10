@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Sync your Spotify and Deezer playlists to your Plex server.
-home: https://truecharts.org/charts/stable/plex-playlist-sync
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/plex-playlist-sync.webp
+home: https://trueforge.org/truecharts/stable/plex-playlist-sync
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/plex-playlist-sync.webp
 keywords:
   - plex-playlist-sync
   - Spotify

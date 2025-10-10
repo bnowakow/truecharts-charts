@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Photoview is a simple and user-friendly photo gallery.
-home: https://truecharts.org/charts/stable/photoview
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/photoview.webp
+home: https://trueforge.org/truecharts/stable/photoview
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/photoview.webp
 keywords:
   - photo
   - gallery

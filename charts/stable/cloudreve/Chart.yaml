@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Self-hosted file management and sharing system, supports multiple storage providers
-home: https://truecharts.org/charts/stable/cloudreve
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/cloudreve.webp
+home: https://trueforge.org/truecharts/stable/cloudreve
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/cloudreve.webp
 keywords:
   - cloudreve
   - Cloud

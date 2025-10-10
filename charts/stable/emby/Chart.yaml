@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Emby Server is a home media server
-home: https://truecharts.org/charts/stable/emby
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/emby.webp
+home: https://trueforge.org/truecharts/stable/emby
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/emby.webp
 keywords:
   - jellyfin
   - plex

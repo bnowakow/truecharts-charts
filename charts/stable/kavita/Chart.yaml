@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Kavita is a rocket fueled self-hosted digital library which supports a vast array of file formats
-home: https://truecharts.org/charts/stable/kavita
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/kavita.webp
+home: https://trueforge.org/truecharts/stable/kavita
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/kavita.webp
 keywords:
   - kavita
   - manga

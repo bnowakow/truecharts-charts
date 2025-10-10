@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A fast, collaborative, knowledge base for your team built using React and Node.js.
-home: https://truecharts.org/charts/stable/outline
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/outline.webp
+home: https://trueforge.org/truecharts/stable/outline
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/outline.webp
 keywords:
   - outline
   - knowledge

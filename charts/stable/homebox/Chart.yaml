@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Inventory and organization system built for the Home User.
-home: https://truecharts.org/charts/stable/homebox
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/homebox.webp
+home: https://trueforge.org/truecharts/stable/homebox
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/homebox.webp
 keywords:
   - homebox
   - inventory

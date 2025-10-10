@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A web-based dashboard application that gives you a neat and clean interface for logging your fuel fill-ups for all of your vehicles.
-home: https://truecharts.org/charts/stable/clarkson
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/clarkson.webp
+home: https://trueforge.org/truecharts/stable/clarkson
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/clarkson.webp
 keywords:
   - fuel
   - car

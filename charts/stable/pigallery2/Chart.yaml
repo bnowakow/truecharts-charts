@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: 'Homepage: http://bpatrik.github.io/pigallery2/'
-home: https://truecharts.org/charts/stable/pigallery2
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pigallery2.webp
+home: https://trueforge.org/truecharts/stable/pigallery2
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pigallery2.webp
 keywords:
   - pigallery2
   - Cloud

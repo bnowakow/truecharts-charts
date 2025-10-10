@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Audio/Video library transcoding automation
-home: https://truecharts.org/charts/stable/tdarr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tdarr.webp
+home: https://trueforge.org/truecharts/stable/tdarr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tdarr.webp
 keywords:
   - encode
   - media

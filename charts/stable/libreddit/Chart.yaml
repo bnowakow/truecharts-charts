@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: An alternative private front-end to Reddit
-home: https://truecharts.org/charts/stable/libreddit
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/libreddit.webp
+home: https://trueforge.org/truecharts/stable/libreddit
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/libreddit.webp
 keywords:
   - reddit
   - libreddit

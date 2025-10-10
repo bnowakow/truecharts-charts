@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A dead simple RSS Feed with Discord Webhooks
-home: https://truecharts.org/charts/stable/feedcord
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/feedcord.webp
+home: https://trueforge.org/truecharts/stable/feedcord
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/feedcord.webp
 keywords:
   - feedcord
   - discord

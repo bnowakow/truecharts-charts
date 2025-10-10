@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A dead simple URL shortener.
-home: https://truecharts.org/charts/stable/simply-shorten
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/simply-shorten.webp
+home: https://trueforge.org/truecharts/stable/simply-shorten
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/simply-shorten.webp
 keywords:
   - simply-shorten
   - Cloud

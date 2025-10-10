@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: aMule is an eMule-like client for the eDonkey and Kademlia networks.
-home: https://truecharts.org/charts/stable/amule
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/amule.webp
+home: https://trueforge.org/truecharts/stable/amule
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/amule.webp
 keywords:
   - amule
   - Downloaders

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: FlexGet is a multipurpose automation tool for all of your media
-home: https://truecharts.org/charts/stable/flexget
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/flexget.webp
+home: https://trueforge.org/truecharts/stable/flexget
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/flexget.webp
 keywords:
   - flexget
   - automation

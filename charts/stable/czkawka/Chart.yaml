@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Czkawka is a simple, fast and free app to remove unnecessary files from your computer.
-home: https://truecharts.org/charts/stable/czkawka
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/czkawka.webp
+home: https://trueforge.org/truecharts/stable/czkawka
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/czkawka.webp
 keywords:
   - duplicates
   - file management

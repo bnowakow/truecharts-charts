@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Usenet meta search
-home: https://truecharts.org/charts/stable/nzbhydra
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nzbhydra.webp
+home: https://trueforge.org/truecharts/stable/nzbhydra
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nzbhydra.webp
 keywords:
   - nzbhydra
   - usenet

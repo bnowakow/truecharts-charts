@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: The Wyoming integration of openWakeWord
-home: https://truecharts.org/charts/stable/wyoming-openwakeword
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/wyoming-openwakeword.webp
+home: https://trueforge.org/truecharts/stable/wyoming-openwakeword
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/wyoming-openwakeword.webp
 keywords:
   - wyoming-openwakeword
 kubeVersion: '>=1.24.0-0'

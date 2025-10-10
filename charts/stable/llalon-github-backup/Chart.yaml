@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Automatically backup github repositories on schedule. Allows for custom configuration.
-home: https://truecharts.org/charts/stable/llalon-github-backup
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/llalon-github-backup.webp
+home: https://trueforge.org/truecharts/stable/llalon-github-backup
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/llalon-github-backup.webp
 keywords:
   - llalon-github-backup
   - Backup

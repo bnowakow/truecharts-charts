@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Two-way-sync between trakt.tv and Plex Media Server.
-home: https://truecharts.org/charts/stable/plextraktsync
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/plextraktsync.webp
+home: https://trueforge.org/truecharts/stable/plextraktsync
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/plextraktsync.webp
 keywords:
   - plextraktsync
   - Tools-Utilities

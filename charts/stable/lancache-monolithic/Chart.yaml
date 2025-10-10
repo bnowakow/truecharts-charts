@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A monolithic lancache service capable of caching all CDNs in a single instance.
-home: https://truecharts.org/charts/stable/lancache-monolithic
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/lancache-monolithic.webp
+home: https://trueforge.org/truecharts/stable/lancache-monolithic
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/lancache-monolithic.webp
 keywords:
   - monolithic
   - lancache

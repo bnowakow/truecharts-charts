@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Kopia is a simple, cross-platform tool for managing encrypted backups in the cloud. It provides fast, incremental backups, secure, client-side end-to-end encryption, compression and data deduplication.
-home: https://truecharts.org/charts/stable/kopia
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/kopia.webp
+home: https://trueforge.org/truecharts/stable/kopia
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/kopia.webp
 keywords:
   - backup
 kubeVersion: '>=1.24.0-0'

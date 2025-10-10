@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more
-home: https://truecharts.org/charts/stable/sickgear
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/sickgear.webp
+home: https://trueforge.org/truecharts/stable/sickgear
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/sickgear.webp
 keywords:
   - sickgear
   - manager

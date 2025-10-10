@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Tailscale lets you connect your devices and users together in your own secure virtual private network
-home: https://truecharts.org/charts/stable/tailscale
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tailscale.webp
+home: https://trueforge.org/truecharts/stable/tailscale
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tailscale.webp
 keywords:
   - vpn
   - tailscale

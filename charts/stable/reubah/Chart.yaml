@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A web-based tool for processing images and converting documents with a simple interface.
-home: https://truecharts.org/charts/stable/reubah
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/reubah.webp
+home: https://trueforge.org/truecharts/stable/reubah
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/reubah.webp
 keywords:
   - reubah
   - image-processor

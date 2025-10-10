@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This webapp is a browser and desktop password manager compatible with KeePass databases. It doesn't require any server or additional resources. The app can run either in browser, or as a desktop app.
-home: https://truecharts.org/charts/stable/keeweb
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/keeweb.webp
+home: https://trueforge.org/truecharts/stable/keeweb
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/keeweb.webp
 keywords:
   - keeweb
   - Productivity

@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Open source, self-hostable watched list
-home: https://truecharts.org/charts/stable/watcharr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/watcharr.webp
+home: https://trueforge.org/truecharts/stable/watcharr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/watcharr.webp
 keywords:
   - watcharr
   - media

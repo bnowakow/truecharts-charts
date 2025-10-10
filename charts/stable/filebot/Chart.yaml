@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: FileBot is the ultimate tool for organizing and renaming your movies, tv shows or anime, and music well as downloading subtitles and artwork. It's smart and just works.
-home: https://truecharts.org/charts/stable/filebot
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/filebot.webp
+home: https://trueforge.org/truecharts/stable/filebot
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/filebot.webp
 keywords:
   - media
   - filebot

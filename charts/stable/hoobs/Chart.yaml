@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: 'HOOBS is a Homebridge stack with a interface that simplifies configuration and installing plugins. This adds a process wrapper for Homebridge.  '
-home: https://truecharts.org/charts/stable/hoobs
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/hoobs.webp
+home: https://trueforge.org/truecharts/stable/hoobs
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/hoobs.webp
 keywords:
   - hoobs
   - home-automation

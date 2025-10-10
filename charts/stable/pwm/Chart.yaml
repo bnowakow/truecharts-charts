@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: PWM is a free and opensource password self-service application enabling end-users to reset their enterprise password themselves.
-home: https://truecharts.org/charts/stable/pwm
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pwm.webp
+home: https://trueforge.org/truecharts/stable/pwm
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pwm.webp
 keywords:
   - pwm
   - Security

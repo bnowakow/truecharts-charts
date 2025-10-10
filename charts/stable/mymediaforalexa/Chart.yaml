@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is the multi-platform Docker image for My Media for Alexa - https://www.mymediaalexa.com .
-home: https://truecharts.org/charts/stable/mymediaforalexa
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mymediaforalexa.webp
+home: https://trueforge.org/truecharts/stable/mymediaforalexa
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mymediaforalexa.webp
 keywords:
   - media
   - alexa

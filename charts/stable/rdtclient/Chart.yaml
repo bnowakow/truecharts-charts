@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: This is a web interface to manage your torrents on Real-Debrid, AllDebrid or Premiumize.
-home: https://truecharts.org/charts/stable/rdtclient
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/rdtclient.webp
+home: https://trueforge.org/truecharts/stable/rdtclient
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/rdtclient.webp
 keywords:
   - rdtclient
   - torrent

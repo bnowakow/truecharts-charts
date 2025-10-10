@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Scrypted is a high performance home video integration and automation platform.
-home: https://truecharts.org/charts/stable/scrypted
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/scrypted.webp
+home: https://trueforge.org/truecharts/stable/scrypted
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/scrypted.webp
 keywords:
   - scrypted
   - automation

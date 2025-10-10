@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: DNS and Ad-filtering for your network
-home: https://truecharts.org/charts/stable/pihole
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/pihole.webp
+home: https://trueforge.org/truecharts/stable/pihole
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/pihole.webp
 keywords:
   - DNS
 kubeVersion: '>=1.24.0-0'

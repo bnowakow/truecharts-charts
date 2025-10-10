@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A modern web frontend making aria2 easier to use | Aria2 WebUI.
-home: https://truecharts.org/charts/stable/ariang
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ariang.webp
+home: https://trueforge.org/truecharts/stable/ariang
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ariang.webp
 keywords:
   - ariang
 kubeVersion: '>=1.24.0-0'

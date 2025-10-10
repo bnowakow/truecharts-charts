@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Apt-Cacher NG is a caching proxy, specialized for package files from Linux distributors, primarily for Debian (and Debian based) distributions but not limited to those.
-home: https://truecharts.org/charts/stable/apt-cacher-ng
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/apt-cacher-ng.webp
+home: https://trueforge.org/truecharts/stable/apt-cacher-ng
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/apt-cacher-ng.webp
 keywords:
   - apt-cacher-ng
   - Network-Proxy

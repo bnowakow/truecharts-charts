@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Turns any MySQL, PostgreSQL, SQL Server, SQLite & MariaDB into a smart-spreadsheet.
-home: https://truecharts.org/charts/stable/nocodb
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nocodb.webp
+home: https://trueforge.org/truecharts/stable/nocodb
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nocodb.webp
 keywords:
   - nocodb
 kubeVersion: '>=1.24.0-0'

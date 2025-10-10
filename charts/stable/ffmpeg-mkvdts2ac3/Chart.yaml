@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Chart Chart designed to watch a directory and encode media files.
-home: https://truecharts.org/charts/stable/ffmpeg-mkvdts2ac3
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ffmpeg-mkvdts2ac3.webp
+home: https://trueforge.org/truecharts/stable/ffmpeg-mkvdts2ac3
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ffmpeg-mkvdts2ac3.webp
 keywords:
   - ffmpeg-mkvdts2ac3
   - Productivity

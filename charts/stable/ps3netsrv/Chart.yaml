@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Allows Multiman or Webman to stream and play game backups over the network.
-home: https://truecharts.org/charts/stable/ps3netsrv
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ps3netsrv.webp
+home: https://trueforge.org/truecharts/stable/ps3netsrv
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ps3netsrv.webp
 keywords:
   - ps3netsrv
   - Game servers

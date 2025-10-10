@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks.
-home: https://truecharts.org/charts/stable/ubooquity
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ubooquity.webp
+home: https://trueforge.org/truecharts/stable/ubooquity
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ubooquity.webp
 keywords:
   - ubooquity
 kubeVersion: '>=1.24.0-0'

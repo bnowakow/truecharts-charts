@@ -20,8 +20,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Dockerized Signal Messenger REST API.
-home: https://truecharts.org/charts/stable/signal-cli-rest-api
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/signal-cli-rest-api.webp
+home: https://trueforge.org/truecharts/stable/signal-cli-rest-api
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/signal-cli-rest-api.webp
 keywords:
   - signal
   - signal-cli

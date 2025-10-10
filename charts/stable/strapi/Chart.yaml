@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Open-source headless CMS. JavaScript, fully customizable and developer-first.
-home: https://truecharts.org/charts/stable/strapi
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/strapi.webp
+home: https://trueforge.org/truecharts/stable/strapi
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/strapi.webp
 keywords:
   - strapi
   - cms
@@ -37,7 +37,7 @@ sources:
   - https://github.com/naskio/docker-strapi
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/strapi
   - https://hub.docker.com/r/vshadbolt/strapi
-  - https://truecharts.org/charts/stable/strapi
+  - https://trueforge.org/truecharts/stable/strapi
 type: application
 version: 17.13.0
 

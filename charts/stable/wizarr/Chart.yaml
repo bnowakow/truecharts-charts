@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A automatic user invitation system for Plex.
-home: https://truecharts.org/charts/stable/wizarr
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/wizarr.webp
+home: https://trueforge.org/truecharts/stable/wizarr
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/wizarr.webp
 keywords:
   - wizarr
   - home-automation

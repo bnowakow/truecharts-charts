@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: TS-N Ranksystem is a TeamSpeak 3 bot that allows you to assign ranks to users based on their activity on the server.
-home: https://truecharts.org/charts/stable/tsn-ranksystem
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tsn-ranksystem.webp
+home: https://trueforge.org/truecharts/stable/tsn-ranksystem
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tsn-ranksystem.webp
 keywords:
   - teamspeak
   - tsn-ranksystem

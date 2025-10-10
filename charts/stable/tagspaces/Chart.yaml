@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: TagSpaces is an offline, open source, document manager with tagging support.
-home: https://truecharts.org/charts/stable/tagspaces
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/tagspaces.webp
+home: https://trueforge.org/truecharts/stable/tagspaces
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/tagspaces.webp
 keywords:
   - tagspaces
   - documents

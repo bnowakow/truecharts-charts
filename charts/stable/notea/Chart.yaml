@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Self hosted note taking, alternative to Notions. Look at Github for config
-home: https://truecharts.org/charts/stable/notea
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/notea.webp
+home: https://trueforge.org/truecharts/stable/notea
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/notea.webp
 keywords:
   - notea
   - Productivity
