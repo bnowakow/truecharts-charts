@@ -220,6 +220,8 @@ jobs:
             ./.github/scripts/chart-docs.sh "${chart_parts[1]}/${chart_parts[2]}"
           done
 
+          mv ./website/src/content/docs/truecharts/charts/library/common ./website/src/content/docs/truecharts-common
+
       - name: Prefetch contributor icons
         shell: bash
         if: github.event_name == 'push'
