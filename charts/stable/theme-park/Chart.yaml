@@ -34,7 +34,6 @@ maintainers:
     url: https://truecharts.org
 name: theme-park
 sources:
-  - https://ghcr.io/home-operations/theme-park
   - https://github.com/gilbn/theme.park
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/theme-park
 type: application

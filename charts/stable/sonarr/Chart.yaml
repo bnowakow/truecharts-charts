@@ -11,7 +11,7 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 4.0.16.2943
+appVersion: 4.0.16.2942
 dependencies:
   - name: common
     version: 28.26.3
@@ -35,7 +35,6 @@ maintainers:
     url: https://truecharts.org
 name: sonarr
 sources:
-  - https://ghcr.io/home-operations/sonarr
   - https://ghcr.io/onedr0p/exportarr
   - https://github.com/Sonarr/Sonarr
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/sonarr

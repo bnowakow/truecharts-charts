@@ -11,7 +11,7 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 4.9.1.80
+appVersion: 4.9.2.6
 dependencies:
   - name: common
     version: 28.26.3
@@ -35,7 +35,6 @@ maintainers:
     url: https://truecharts.org
 name: emby
 sources:
-  - https://ghcr.io/home-operations/emby
   - https://github.com/linuxserver/docker-emby.git
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/emby
   - https://hub.docker.com/r/alpine/socat

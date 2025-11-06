@@ -34,7 +34,6 @@ maintainers:
     url: https://truecharts.org
 name: qbittorrent
 sources:
-  - https://ghcr.io/home-operations/qbittorrent
   - https://github.com/qbittorrent/qBittorrent
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/qbittorrent
   - https://hub.docker.com/r/mjmeli/qbittorrent-port-forward-gluetun-server
