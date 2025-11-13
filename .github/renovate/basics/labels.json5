@@ -14,11 +14,11 @@
       "labels": ["type/patch", "automerge"]
     },
     {
-      "matchUpdateTypes": ["digest", "pin"],
+      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
       "labels": ["type/digest", "automerge"]
     },
     {
-      "matchUpdateTypes": ["pin"],
+      "matchUpdateTypes": ["pin", "pinDigest"],
       "labels": ["type/pin", "automerge"]
     },
     {

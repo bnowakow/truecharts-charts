@@ -27,7 +27,7 @@
     },
     {
       "matchManagers": ["docker"],
-      "updateTypes": ["digest", "pin"],
+      "updateTypes": ["digest", "pin", "pinDigest"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
       "prefix": "chore(container)"
