@@ -592,6 +592,11 @@ alpineImage:
   tag: v3.22.1
   pullPolicy: IfNotPresent
 
+ubuntuImage:
+  repository: oci.trueforge.org/containerforge/ubuntu
+  tag: "24.04"
+  pullPolicy: IfNotPresent
+
 scratchImage:
   repository: oci.trueforge.org/tccr/scratch
   tag: latest@sha256:4aef9dbf99ea2a8857ed4ce9d9bf79d330b79044884c7374e392445d122ec746
