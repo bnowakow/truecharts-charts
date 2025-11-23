@@ -583,8 +583,8 @@ tailscaleImage:
   pullPolicy: IfNotPresent
 
 codeserverImage:
-  repository: oci.trueforge.org/tccr/code-server
-  tag: v4.104.2@sha256:82dfb0c655c7ea13280ac882ee544cdaed92875c7689e53e5271f6d03ea99ba0
+  repository: oci.trueforge.org/containerforge/code-server
+  tag: "4.105.1"
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -608,14 +608,14 @@ kubectlImage:
   pullPolicy: IfNotPresent
 
 wgetImage:
-  repository: oci.trueforge.org/tccr/wget
-  tag: v1.0.0@sha256:4cfc0cb48cc8303cbd914f6bc54016b89c4d549c196370e2b0b41cdf38744603
+  repository: oci.trueforge.org/containerforge/ubuntu
+  tag: "24.04"
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
-  repository: docker.io/mikefarah/yq
-  tag: 4.48.2@sha256:f7fe014cd27b255ee16416999a7cb7eb29dd30f6f61a331ee3e09febf80ee1de
+  repository: oci.trueforge.org/containerforge/go-yq
+  tag: "4.48.2"
 
 postgresClientImage:
   repository: oci.trueforge.org/tccr/db-wait-postgres
@@ -1044,6 +1044,8 @@ addons:
     # -- Enable running a code-server container in the pod
     container:
       enabled: true
+      env:
+        PORT: 12321
       probes:
         liveness:
           enabled: true
@@ -1065,12 +1067,6 @@ addons:
         runAsGroup: 0
         runAsNonRoot: false
         readOnlyRootFilesystem: false
-      args:
-        - "--port"
-        - "12321"
-        - "/"
-        - --auth
-        - none
       # - --user-data-dir
       # - "/config/.vscode"
       # -- Select a workload to add the addon to
