@@ -1,7 +1,7 @@
 image:
-  repository: ghcr.io/linuxserver/lazylibrarian
+  repository: oci.trueforge.org/containerforge/lazylibrarian
   pullPolicy: IfNotPresent
-  tag: latest@sha256:cba1890928b4aff85ef34d494aa09ab24034a7d0adf4efff6ed5c33acd632782
+  tag: 7.0.0@sha256:12034cd1f664bb62330a6ca3f4dbfd49cc959085ffe55515b5ee74d49a6e5b01
 service:
   main:
     ports:
