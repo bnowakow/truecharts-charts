@@ -38,5 +38,4 @@ sources:
   - https://hub.docker.com/r/kopia/kopia
   - https://kopia.io/docs/installation/#docker-images
 type: application
-version: 26.0.0
-
+version: 26.1.0
