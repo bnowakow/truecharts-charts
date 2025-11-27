@@ -34,7 +34,6 @@ maintainers:
     url: https://truecharts.org
 name: adguardhome-sync
 sources:
-  - https://ghcr.io/bakito/adguardhome-sync
   - https://github.com/bakito/adguardhome-sync/
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/adguardhome-sync
 type: application
