@@ -14,7 +14,7 @@ apiVersion: v2
 appVersion: craftopia
 dependencies:
   - name: common
-    version: 28.29.0
+    version: 28.29.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
