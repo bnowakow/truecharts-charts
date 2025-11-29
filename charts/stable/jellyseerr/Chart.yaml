@@ -33,7 +33,6 @@ maintainers:
     url: https://truecharts.org
 name: jellyseerr
 sources:
-  - https://ghcr.io/fallenbagel/jellyseerr
   - https://github.com/Fallenbagel/jellyseerr
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/jellyseerr
 type: application
