@@ -5,11 +5,11 @@ image:
 nginxImage:
   repository: oci.trueforge.org/containerforge/nginx
   pullPolicy: IfNotPresent
-  tag: "1.24.0@sha256:d965e4482c4cc6d20f0122a38da523da102a81d01a57d0d912c1fb03b31086e0"
+  tag: "1.24.0@sha256:dbc5ffba7c41845a29135d81d3d1063bada2f7a6938d7836a8cec88a0db925fc"
 imaginaryImage:
   repository: oci.trueforge.org/containerforge/nextcloud-imaginary
   pullPolicy: IfNotPresent
-  tag: "20230401@sha256:9b524888c7d3e9940b74de532ff0b439c0d6f2a91577086bd73c2662e1d55c56"
+  tag: "20230401@sha256:7e04617819e5ede9014b05a162ac1aa624fb70f0df9a0b0bceb6cca2c1a7e18e"
 hpbImage:
   repository: oci.trueforge.org/containerforge/nextcloud-notify-push
   pullPolicy: IfNotPresent
