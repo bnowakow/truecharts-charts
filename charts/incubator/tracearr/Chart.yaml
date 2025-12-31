@@ -41,9 +41,10 @@ maintainers:
     url: https://truecharts.org
 name: tracearr
 sources:
+  - https://ghcr.io/connorgallopo/tracearr
   - https://github.com/connorgallopo/Tracearr
   - https://github.com/connorgallopo/Tracearr/blob/main/docker/docker-compose.yml
-  - https://ghcr.io/connorgallopo/tracearr
   - https://github.com/trueforge-org/truecharts/tree/master/charts/incubator/tracearr
 type: application
 version: 0.1.1
+

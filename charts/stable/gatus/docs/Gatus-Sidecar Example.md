@@ -33,7 +33,7 @@ As you can read in the upstream [docs](https://github.com/home-operations/gatus-
           gatus.home-operations.com/endpoint: |
             group: external
             client:
-              dns-resolver: "tcp://1.1.1.1:53" 
+              dns-resolver: "tcp://1.1.1.1:53"
 ```
 
 ### IngressClass result
@@ -63,7 +63,7 @@ metadata:
     gatus.home-operations.com/endpoint: |
       group: external
       client:
-        dns-resolver: "tcp://1.1.1.1:53" 
+        dns-resolver: "tcp://1.1.1.1:53"
 spec:
   # ... IngressClass spec
 ```

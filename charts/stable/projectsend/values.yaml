@@ -13,7 +13,7 @@ service:
     ports:
       main:
         targetPort: 80
-        port: 10127       
+        port: 10127
 workload:
   main:
     podSpec:

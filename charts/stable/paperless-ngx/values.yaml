@@ -165,4 +165,3 @@ workload:
               type: http
               path: /
               port: "{{ .Values.service.tika.ports.tika.port }}"
-

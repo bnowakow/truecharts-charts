@@ -28,7 +28,7 @@ persistence:
 signing:
   enabled: true
   gpgHome: /data/git/.gnupg
-  
+
 admin:
   # existingSecret: gitea-admin-secret
   username: giteaadmin

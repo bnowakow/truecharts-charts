@@ -23,7 +23,7 @@ service:
 
 workload:
   main:
-    podSpec:   
+    podSpec:
       initContainers:
         init-config:
           enabled: true
