@@ -51,4 +51,4 @@ sources:
   - https://hub.docker.com/r/clamav/clamav
   - https://hub.docker.com/r/collabora/code
 type: application
-version: 40.4.16
+version: 40.4.17
