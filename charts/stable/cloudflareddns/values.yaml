@@ -1,7 +1,7 @@
 image:
   repository: oci.trueforge.org/containerforge/cloudflareddns
   pullPolicy: IfNotPresent
-  tag: "3.0.0.4856@sha256:3e860d2b3d4f01f9ec37ab5ff4aead6c783c4463d1a9658113b49b0761604c8a"
+  tag: 3.0.0@sha256:6b54d7dde3e10e4cb4aa946ba38b5c364ad3f443c86d5c091ed092bfcd6247bd
 cloudflareddns:
   user: your.cf.email@example.com
   api_token: ""
