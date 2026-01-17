@@ -2,14 +2,16 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/category: security
+  max_scale_version: 24.04.1
+  min_scale_version: 24.04.0
+  truecharts.org/category: observability
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 42.84.0
+appVersion: 2.6.1
 dependencies:
   - name: common
     version: 28.29.18
@@ -19,18 +21,22 @@ dependencies:
     tags: []
     import-values: []
 deprecated: false
-description: renovate self-hosted
-home: https://truecharts.org/charts/stable/renovate
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/renovate.webp
+description: AVM Exporter for Prometheus to monitor Fritz!Box devices
+home: https://truecharts.org/charts/stable/avm-exporter
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/avm-exporter.webp
 keywords:
-  - renovate
+  - avm-exporter
+  - grafana
+  - prometheus
 kubeVersion: '>=1.24.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: renovate
+name: avm-exporter
 sources:
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/renovate
+  - https://ghcr.io/onedr0p/exportarr
+  - https://github.com/pdreker/fritz_exporter
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/avm-exporter
 type: application
-version: 4.26.0
+version: 1.0.1
