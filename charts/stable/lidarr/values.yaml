@@ -1,7 +1,7 @@
 image:
   repository: oci.trueforge.org/containerforge/lidarr
   pullPolicy: IfNotPresent
-  tag: 3.1.1.4901@sha256:f737e129ad4912ca31bedeae0ee71a1bee71e526992d9743ec73d172538cc8f0
+  tag: 3.1.1.4901@sha256:13ac123fb68f4c51e121a49ee30e6313e673dca356ff9717eeda4967c684762a
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr
   pullPolicy: IfNotPresent
