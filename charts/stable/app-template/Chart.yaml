@@ -21,21 +21,21 @@ dependencies:
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.11.10
+    version: 17.11.11
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.15.12
+    version: 17.15.13
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
     tags: []
     import-values: []
   - name: mongodb
-    version: 16.14.12
+    version: 16.14.13
     repository: oci://oci.trueforge.org/truecharts
     condition: mongodb.enabled
     alias: ""
@@ -57,5 +57,5 @@ sources:
   - https://ghcr.io/miguelndecarvalho/speedtest-exporter
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/app-template
 type: application
-version: 15.29.64
+version: 15.29.65
 
