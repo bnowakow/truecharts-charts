@@ -1,7 +1,7 @@
 image:
   repository: oci.trueforge.org/containerforge/renovate
   pullPolicy: IfNotPresent
-  tag: 42.86.0@sha256:e8b383794bbac494982c36c550d7e3050e32120d17aecd8e0f9fdd4d5747df9f
+  tag: 42.87.0@sha256:c245f9fca8453816c2ec02be4c970d9c8e8b0d3ae71b094098055656a886b973
 
 workload:
   main:
