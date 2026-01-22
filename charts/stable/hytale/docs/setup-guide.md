@@ -36,13 +36,13 @@ Then attach interactively using -i -t:
 kubectl attach -n hytale <pod-name> -i -t
 ```
 
-Make sure that a console opens with 
+Make sure that a console opens with
 
 ```bash
-> 
+>
 ```
 
-and enter 
+and enter
 
 ```bash
 /auth login device
