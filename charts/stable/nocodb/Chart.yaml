@@ -14,14 +14,14 @@ apiVersion: v2
 appVersion: 0.301.2
 dependencies:
   - name: common
-    version: 28.29.30
+    version: 28.29.35
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.15.13
+    version: 17.15.14
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -44,5 +44,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nocodb
   - https://hub.docker.com/r/nocodb/nocodb
 type: application
-version: 17.30.11
+version: 17.30.12
 
