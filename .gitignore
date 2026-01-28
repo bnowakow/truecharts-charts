@@ -45,7 +45,7 @@ private_values.yaml
 temp/
 charts/library/common-test/charts/
 .cr-release-packages/
-charts/**/charts/*.tgz
+#charts/**/charts/*.tgz
 charts/**/render/*
 catalog/
 dh_catalog/
