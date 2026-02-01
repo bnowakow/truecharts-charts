@@ -2,12 +2,11 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/category: observability
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
-  truecharts.org/train: stable
+  trueforge.org/category: observability
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
 appVersion: 0.7.5
 dependencies:
@@ -20,19 +19,19 @@ dependencies:
     import-values: []
 deprecated: false
 description: A simple go project that allows you to expose prometheus metrics "safely" to a public source.
-home: https://truecharts.org/charts/stable/kromgo
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/kromgo.webp
+home: https://trueforge.org/truetech/truecharts/charts/stable/kromgo
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/kromgo.webp
 keywords:
   - kromgo
   - metrics
   - prometheus
   - grafana
   - shields.io
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.27.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@truecharts.org
-    url: https://truecharts.org
+    email: info@trueforge.org
+    url: https://trueforge.org
 name: kromgo
 sources:
   - https://ghcr.io/kashalls/kromgo

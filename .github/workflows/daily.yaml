@@ -35,12 +35,12 @@ jobs:
             **/go.mod
             **/go.sum
 
-      - name: Install ./clustertool
+      - name: Install ./forgetool
         shell: bash
         run: |
-          VERSION="2.0.6"
-          FILENAME="clustertool_${VERSION}_linux_amd64.tar.gz"
-          URL="https://github.com/trueforge-org/truecharts/releases/download/v${VERSION}/${FILENAME}"
+          VERSION="3.0.2"
+          FILENAME="forgetool_${VERSION}_linux_amd64.tar.gz"
+          URL="https://github.com/trueforge-org/forgetool/releases/download/v${VERSION}/${FILENAME}"
 
           mkdir -p temp
           cd temp
@@ -65,17 +65,19 @@ jobs:
               # Transcode to icon.webp
               if [[ "$EXT" != "webp" && ! -f "${DIR}/icon.webp" ]]; then
                   echo "converting file to icon.webp: $FILE"
-                  cwebp -resize 150 150  -m 6 -mt -q $QUALITY "$FILE" -o "${FILE/%.$EXT/.webp}" &>/dev/null || echo "transcode failed for icon.webp"
+                  cwebp -resize 150 150  -m 6 -mt -q $QUALITY "$FILE" -o "${DIR}/icon.webp" &>/dev/null || echo "transcode failed for icon.webp"
               fi
 
               # Transcode to icon-small.webp
-              if [[ "$EXT" != "webp" && ! -f "${DIR}/icon-small.webp" ]]; then
+              if [[ ! -f "${DIR}/icon-small.webp" ]]; then
                   echo "converting file to icon-small.webp: $FILE"
                   cwebp -resize 32 32 -m 6 -mt -q $QUALITY "$FILE" -o "${DIR}/icon-small.webp" &>/dev/null || echo "transcode failed for icon-small.webp"
               fi
 
-              # Remove the original file if it's not a .webp file after both transcodes
-              if [[ "$EXT" != "webp" ]]; then
+              # Only remove the original file if:
+              # 1. it's not already a webp
+              # 2. icon.webp exists in the same directory
+              if [[ "$EXT" != "webp" && -f "${DIR}/icon.webp" ]]; then
                   rm "$FILE"
               fi
           done
@@ -93,7 +95,7 @@ jobs:
       - name: Fix Chart.yaml
         shell: bash
         run: |
-           ./temp/clustertool charts genmeta
+           ./temp/forgetool charts genmeta
 
       - name: Cleanup
         run: |

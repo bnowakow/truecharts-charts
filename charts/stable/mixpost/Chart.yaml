@@ -2,12 +2,11 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/category: productivity
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
-  truecharts.org/train: stable
+  trueforge.org/category: productivity
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
 appVersion: 2.4.0
 dependencies:
@@ -34,18 +33,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: Mixpost it's the coolest Self hosted social media management software.
-home: https://truecharts.org/charts/stable/mixpost
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/mixpost.webp
+home: https://trueforge.org/truetech/truecharts/charts/stable/mixpost
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/mixpost.webp
 keywords:
   - mixpost
   - twitter
   - facebook
   - socialmedia
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.27.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@truecharts.org
-    url: https://truecharts.org
+    email: info@trueforge.org
+    url: https://trueforge.org
 name: mixpost
 sources:
   - https://github.com/inovector/mixpost

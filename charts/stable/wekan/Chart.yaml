@@ -2,16 +2,19 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: productivity
+  truecharts.org/category: unsorted
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: productivity
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 8.25.0
+appVersion: 8.27.0
 dependencies:
   - name: common
     version: 28.29.40
@@ -21,7 +24,7 @@ dependencies:
     tags: []
     import-values: []
   - name: mongodb
-    version: 16.14.19
+    version: 16.14.20
     repository: oci://oci.trueforge.org/truecharts
     condition: mongodb.enabled
     alias: ""
@@ -34,7 +37,7 @@ icon: https://truecharts.org/img/hotlink-ok/chart-icons/wekan.webp
 keywords:
   - wekan
   - kanban
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.27.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -46,5 +49,5 @@ sources:
   - https://hub.docker.com/r/wekanteam/wekan
   - https://wekan.github.io/
 type: application
-version: 18.19.1
+version: 18.21.1
 
