@@ -1,7 +1,7 @@
 image:
   repository: docker.io/lmscommunity/lyrionmusicserver
   pullPolicy: IfNotPresent
-  tag: 9.1.0@sha256:a6e25911b32bf769c5cabc57f5106ff8af7b2ea7afc87547ed6b8e397dc70cbc
+  tag: 9.1.0@sha256:fc6f696ab0c9836027a06574044e3ff9054e5c4ba7986ce0738b54dd6ccf02da
 service:
   main:
     ports:

@@ -1,7 +1,7 @@
 image:
   repository: docker.io/anirdev/slink
   pullPolicy: IfNotPresent
-  tag: v1.9.2@sha256:8c302fad6833d885166c5e5437432dacba5d685d13f2bdd182b3f90f36b137fc
+  tag: v1.9.4@sha256:5f029012760b08c39cc08d034d78a5eae3bd413374f9955dc63ab9082602c081
 securityContext:
   container:
     readOnlyRootFilesystem: false

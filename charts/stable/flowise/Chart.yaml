@@ -25,16 +25,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Drag & drop UI to build your customized LLM flow.
-home: https://truecharts.org/charts/stable/flowise
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/flowise.webp
+home: https://trueforge.org/truetech/truecharts/charts/stable/flowise
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/flowise.webp
 keywords:
   - flowise
   - ai
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.27.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@truecharts.org
-    url: https://truecharts.org
+    email: info@trueforge.org
+    url: https://trueforge.org
 name: flowise
 sources:
   - https://github.com/FlowiseAI/Flowise

@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/coderaiser/cloudcmd
-  tag: 19.3.1@sha256:d0b168744850e7c3d48bfdb154f90f4256b34bbb9ad568b6918b5f3fc8bf7cb7
+  tag: 19.3.3@sha256:d142b2b4ec18db0a66905443c00e2063aff41f4e2a0afbf111a8d068216c073f
 persistence:
   appdata:
     enabled: true

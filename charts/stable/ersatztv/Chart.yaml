@@ -25,16 +25,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: ErsatzTV configuring and streaming custom live channels using your media library.
-home: https://truecharts.org/charts/stable/ersatztv
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/ersatztv.webp
+home: https://trueforge.org/truetech/truecharts/charts/stable/ersatztv
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/ersatztv.webp
 keywords:
   - ersatztv
   - media
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.27.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@truecharts.org
-    url: https://truecharts.org
+    email: info@trueforge.org
+    url: https://trueforge.org
 name: ersatztv
 sources:
   - https://github.com/jasongdove/ErsatzTV
