@@ -14,7 +14,7 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 250707.0.0
+appVersion: 251130.0.0
 dependencies:
   - name: common
     version: 28.29.49
@@ -24,7 +24,7 @@ dependencies:
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.11.18
+    version: 17.11.19
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
@@ -50,5 +50,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/photoprism
   - https://hub.docker.com/r/photoprism/photoprism
 type: application
-version: 27.18.27
+version: 28.0.1
 

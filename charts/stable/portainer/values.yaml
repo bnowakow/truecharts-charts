@@ -1,10 +1,10 @@
 image:
   repository: docker.io/portainer/portainer-ce
-  tag: 2.38.0@sha256:e900ea5768993a53f174c7438653fdb42ee5d00a4321ecffa7653eb146f7ae99
+  tag: 2.38.1@sha256:f5e67fe8447aae9f0322ab278b97a3879a16007724f8b239174f2db31b0753e9
   pullPolicy: IfNotPresent
 beImage:
   repository: docker.io/portainer/portainer-ee
-  tag: 2.38.0@sha256:ed44fa11d80983247c4917c938d7cb97cd01a5cc2660ca7921388250ceb1c25e
+  tag: 2.38.1@sha256:76621a5b459bca192d49b47b2ef89a26630eda0c9c038d7dc4f553789ec91464
   pullPolicy: IfNotPresent
 portainer:
   # Logo URL
