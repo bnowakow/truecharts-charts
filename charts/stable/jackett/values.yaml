@@ -1,7 +1,7 @@
 image:
   repository: oci.trueforge.org/containerforge/jackett
   pullPolicy: IfNotPresent
-  tag: 0.24.1098@sha256:0541eaaccbf14f0d39744c7c8a826279f3f9a4f9f96483f349a989713085577e
+  tag: 0.24.1109@sha256:61338d051c73ae235cda99263fbc12326e3be209201ccc755a64fd506b6f6187
 service:
   main:
     ports:

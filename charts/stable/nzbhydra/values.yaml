@@ -1,7 +1,7 @@
 image:
   repository: oci.trueforge.org/containerforge/nzbhydra2
   pullPolicy: IfNotPresent
-  tag: 8.4.1@sha256:5dfede72fa0da3a8b5998f2c5de19334557ba1944ce1c95ff77babc7dc013244
+  tag: 8.5.0@sha256:672d857aed58af28d8cefee5cd721754276303699a61b0b55a65d7245b0ceb70
 service:
   main:
     ports:
