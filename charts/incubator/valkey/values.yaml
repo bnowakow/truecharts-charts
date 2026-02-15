@@ -14,7 +14,7 @@ workload:
         main:
           env:
             # DEVNOTE: Bitnami Valkey keeps VALKEY_* env variable names for compatibility.
-            VALKEY_REPLICATION_MODE: master
+            # VALKEY_REPLICATION_MODE: master
             ALLOW_EMPTY_PASSWORD: '{{ ternary "yes" "no" (empty .Values.password) }}'
             VALKEY_PORT: "{{ .Values.service.main.ports.main.targetPort }}"
             VALKEY_PASSWORD: "{{ .Values.password }}"
