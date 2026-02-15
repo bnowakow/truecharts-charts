@@ -43,7 +43,8 @@ for dir in \
         charts/system/kubeapps \
 	    charts/stable/readarr \
         charts/stable/calibre \
-	; do
+	    charts/stable/ddclient \
+        ; do
     echo $dir
     app_common_dir=$dir/charts
     #rm -rf $app_common_dir
