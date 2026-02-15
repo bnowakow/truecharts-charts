@@ -638,7 +638,7 @@ valkeyClientImage:
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "1.2.3@sha256:a4b1446eee67070629852f37c4f3ad289801e81a7c7da357fb1a90a3ea708add"
+  tag: "1.10.6@sha256:f2f1dd2cf5b404257a3735a290a3ec7e6d5d60275b6c6eb26a1965896a103465"
   pullPolicy: IfNotPresent
 
 postgres15Image:
