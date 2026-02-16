@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/code-server
   pullPolicy: IfNotPresent
-  tag: "4.105.1@sha256:1b8b46c4b2407b6e6d03b268809a878d5f25d744167d62eb9b5f33e0ab3d3a0a"
+  tag: "4.109.2@sha256:2130df58a17bbce469415e2e480a3642913d8485256bd417b4c8abc5b2374bef"
 securityContext:
   container:
     readOnlyRootFilesystem: false
