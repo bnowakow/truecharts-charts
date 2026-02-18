@@ -593,7 +593,7 @@ alpineImage:
 
 ubuntuImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:3b826c0233182d7c31a9323121178b98976765b9ee03f9a96200ab0c70e2e1e2"
+  tag: "24.04@sha256:5348eb7725294e8090c15b7b495e517f82f4b31497d3bb9de71bbe37476e7454"
   pullPolicy: IfNotPresent
 
 scratchImage:
@@ -608,13 +608,13 @@ kubectlImage:
 
 wgetImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:3b826c0233182d7c31a9323121178b98976765b9ee03f9a96200ab0c70e2e1e2"
+  tag: "24.04@sha256:5348eb7725294e8090c15b7b495e517f82f4b31497d3bb9de71bbe37476e7454"
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.48.2@sha256:c9ade91453091eab6088914a23919424f063ae7d25748eb1cfd44e9d3043dcb9"
+  tag: "4.52.4@sha256:ccc5bd32f5e9a268a72222b48ce5fd0d28a5b709ef7458fd19c6381cfcffff28"
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
@@ -623,22 +623,22 @@ postgresClientImage:
 
 mariadbClientImage:
   repository: oci.trueforge.org/containerforge/mariadb-client
-  tag: "1.1.0@sha256:72d7535493f2dc6c9ae5cf07743936627a42bb83be8f47830d9bc00898b2575b"
+  tag: "1.1.0@sha256:91e853f9a12d9ad6ae9c6e769236e76adb44dd4dbf983fcd718783a99ca84fd0"
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:abeafc330f6399db2a429cdb0c20ab8bfddc5a206249486a38fa6446c90f2147"
+  tag: "1.1.0@sha256:cc1e73e40baf8df34fcbdded2a0694d8e2ebded8471da84e83de23242e0ece26"
   pullPolicy: IfNotPresent
 
 valkeyClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:abeafc330f6399db2a429cdb0c20ab8bfddc5a206249486a38fa6446c90f2147"
+  tag: "1.1.0@sha256:cc1e73e40baf8df34fcbdded2a0694d8e2ebded8471da84e83de23242e0ece26"
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "1.10.6@sha256:1b58cab1bd9c48ae651c2769ccbe8161992acac1c47f47dd00b0d977b214b497"
+  tag: "1.10.6@sha256:ea790812a2553dca5aa095f6c2f66a8c4201dcd41a6a464c917adfdbc4b2cd33"
   pullPolicy: IfNotPresent
 
 postgres15Image:
