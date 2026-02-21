@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/esphome
   pullPolicy: IfNotPresent
-  tag: "2026.1.5@sha256:6b3bbc1ea5573437070663b0243b682c4c7e4718a749e4e0407445118a50adcd"
+  tag: "2026.2.1@sha256:b1fb774e645ba8e36e2a1671f0ad6ced846f180d2096c53067f9a5b585229c02"
 securityContext:
   container:
     runAsNonRoot: false
