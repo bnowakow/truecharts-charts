@@ -583,7 +583,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: oci.trueforge.org/containerforge/code-server
-  tag: "4.109.2@sha256:2130df58a17bbce469415e2e480a3642913d8485256bd417b4c8abc5b2374bef"
+  tag: "4.109.2@sha256:a6d8af0881a08d86b61029da2d586611baaae82d52abd37d0476f5d5e3f3e321"
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -638,7 +638,7 @@ valkeyClientImage:
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "1.10.6@sha256:ea790812a2553dca5aa095f6c2f66a8c4201dcd41a6a464c917adfdbc4b2cd33"
+  tag: "1.10.6@sha256:b6bb7bf80689133089ce896983c0bed24114d89637cc203cf9db23de2cc5ddff"
   pullPolicy: IfNotPresent
 
 postgres15Image:
