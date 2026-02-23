@@ -598,12 +598,12 @@ ubuntuImage:
 
 scratchImage:
   repository: oci.trueforge.org/containerforge/scratch
-  tag: "1.0.0@sha256:866910e7563a47742852ddd99cce9cbb6e0a399a072a8281111cda2e18a00511"
+  tag: "1.0.0@sha256:fcb59c5d301102db2f167dcb0fd7db22acf24a3d77c5acc7f464c563006fd638"
   pullPolicy: IfNotPresent
 
 kubectlImage:
   repository: oci.trueforge.org/containerforge/kubectl
-  tag: "1.31.1@sha256:e18e72dd85fbb6146642477ce4e1f004bb497bcefba48d415ebe463ed13146f0"
+  tag: "1.31.1@sha256:49b02f4dad562e2fb4031ebcd9d47d432ff760a96b66c4d35a10ad21451a22f2"
   pullPolicy: IfNotPresent
 
 wgetImage:
@@ -623,17 +623,17 @@ postgresClientImage:
 
 mariadbClientImage:
   repository: oci.trueforge.org/containerforge/mariadb-client
-  tag: "1.1.0@sha256:91e853f9a12d9ad6ae9c6e769236e76adb44dd4dbf983fcd718783a99ca84fd0"
+  tag: "1.1.0@sha256:fa063910d33f0196cdf3db7c4c375fa59e295feee33a1cc71ebf71f23eca5a16"
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:cc1e73e40baf8df34fcbdded2a0694d8e2ebded8471da84e83de23242e0ece26"
+  tag: "1.1.0@sha256:8bbd28e12efc6ee35fc1be5220ea9553739008fb2a4d292e88306150e7e52e79"
   pullPolicy: IfNotPresent
 
 valkeyClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:cc1e73e40baf8df34fcbdded2a0694d8e2ebded8471da84e83de23242e0ece26"
+  tag: "1.1.0@sha256:8bbd28e12efc6ee35fc1be5220ea9553739008fb2a4d292e88306150e7e52e79"
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
