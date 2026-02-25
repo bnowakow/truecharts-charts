@@ -49,3 +49,4 @@ sources:
   - https://hub.docker.com/r/onlyoffice/documentserver
 type: application
 version: 22.36.1
+
