@@ -2,11 +2,11 @@
 image:
   repository: docker.io/ollama/ollama
   pullPolicy: IfNotPresent
-  tag: 0.17.1@sha256:39af4e4d15aaf997ec5957a8a22e5002ee81b15f5b2d45a3bc0ff9b7934599a6
+  tag: 0.17.5@sha256:0c6d5239d3f0dd39e0ac2ab0eb3989ce8ee2a715e8ebfb21c9444a7bad2fa143
 rocmImage:
   repository: docker.io/ollama/ollama
   pullPolicy: IfNotPresent
-  tag: 0.17.1-rocm@sha256:96d8afb6316e0e582f1d918abe35ff79a066a8836349303d53a2cfc2c1e00dd9
+  tag: 0.17.5-rocm@sha256:deb76722955e13f641f931a037326fc5a8a8a72290f99090ed6cb580e5c56609
 uiImage:
   repository: ghcr.io/open-webui/open-webui
   pullPolicy: IfNotPresent
