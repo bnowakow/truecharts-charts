@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/grocy
-  tag: 4.5.0@sha256:aeb5cae9c69bf528f43c7917b5e69ec6ccc6b90a5261a335c9690a4b185e8940
+  tag: 4.6.0@sha256:72cadb310c024d20e2a88694eb00301af369fb3d2812cd798331708cd6a78505
   pullPolicy: IfNotPresent
 service:
   main:

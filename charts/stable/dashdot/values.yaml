@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/mauricenino/dashdot
-  tag: 6.3.2@sha256:3abbef1be01bf16bd9bb861ad86cd080d97d3c776591cce5e957d04b602ec8b3
+  tag: 6.3.4@sha256:434a54d2937411a06b09c50e55709cc7d3b092c0fe173a9e5c986f9b5a33c7c6
   pullPolicy: IfNotPresent
 securityContext:
   container:
