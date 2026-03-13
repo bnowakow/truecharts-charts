@@ -14,17 +14,17 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 1.25.4
+appVersion: 1.25.5
 dependencies:
   - name: common
-    version: 28.33.0
+    version: 28.33.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: memcached
-    version: 16.18.1
+    version: 16.18.3
     repository: oci://oci.trueforge.org/truecharts
     condition: memcached.enabled
     alias: ""
@@ -53,5 +53,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/gitea
   - https://hub.docker.com/r/gitea/gitea
 type: application
-version: 22.35.1
+version: 22.35.5
 
