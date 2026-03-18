@@ -2,19 +2,13 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/category: unsorted
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
-  truecharts.org/train: stable
   trueforge.org/category: media
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 1.4.22
+appVersion: 1.4.23
 dependencies:
   - name: common
     version: 28.33.4
@@ -49,5 +43,5 @@ sources:
   - https://github.com/connorgallopo/Tracearr/blob/main/docker/docker-compose.yml
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/tracearr
 type: application
-version: 1.8.7
+version: 1.8.8
 
