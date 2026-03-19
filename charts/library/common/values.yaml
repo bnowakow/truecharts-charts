@@ -618,12 +618,12 @@ yqImage:
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
-  tag: "1.1.0@sha256:4df4c77540485bbb4a681268b9a7b33b72a51cf9e6c4d4cd8f41db077afe4f8a"
+  tag: "9.6.24@sha256:5232c62344c6305326b2f082e3666b7a66158b84d873d380a2157d175913b3d8"
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: oci.trueforge.org/containerforge/mariadb-client
-  tag: "1.1.0@sha256:fa063910d33f0196cdf3db7c4c375fa59e295feee33a1cc71ebf71f23eca5a16"
+  tag: "12.2.2@sha256:87b97ae5301cbcd1ecf0678d930af38e0fc09706155c775d9d7cf3e27e535f2b"
   pullPolicy: IfNotPresent
 
 redisClientImage:
@@ -638,7 +638,7 @@ valkeyClientImage:
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "1.10.6@sha256:a51d3296f173394635c88ab483410f1d68b572e76554a02d256fbd39f43f8ba0"
+  tag: "2.8.1@sha256:0dde3b96e6f72d245cde518e25c9cf9b4a35b43027129ff522fb66c590fcdf9b"
   pullPolicy: IfNotPresent
 
 postgres15Image:
