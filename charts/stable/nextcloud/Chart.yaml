@@ -8,17 +8,17 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 32.0.6
+appVersion: 33.0.0
 dependencies:
   - name: common
-    version: 28.33.4
+    version: 29.0.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: valkey
-    version: 0.4.4
+    version: 1.0.0
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: redis
@@ -52,5 +52,5 @@ sources:
   - https://hub.docker.com/r/clamav/clamav
   - https://hub.docker.com/r/collabora/code
 type: application
-version: 40.14.11
+version: 43.0.1
 

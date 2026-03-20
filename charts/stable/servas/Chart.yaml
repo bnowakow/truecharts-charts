@@ -11,14 +11,14 @@ apiVersion: v2
 appVersion: 1.1.0
 dependencies:
   - name: common
-    version: 28.33.4
+    version: 29.0.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.15.3
+    version: 18.0.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
@@ -42,5 +42,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/servas
   - https://hub.docker.com/r/beromir/servas
 type: application
-version: 9.27.4
+version: 11.0.0
 
