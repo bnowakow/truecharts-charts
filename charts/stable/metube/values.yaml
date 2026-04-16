@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/alexta69/metube
-  tag: 2026.04.02@sha256:db96c7de57a2563d360a0167253181773f53fc3e667de402daf31c28d4b285a0
+  tag: 2026.04.13@sha256:8a363a67e998cf0c3acd120224b59ee2d529a9a5347438eb4e3a177ce143a5bd
   pullPolicy: IfNotPresent
 service:
   main:

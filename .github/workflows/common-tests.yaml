@@ -103,7 +103,7 @@ jobs:
           version: ${{ matrix.helm-version }}
 
       - name: Cache helm plugins
-        uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5
+        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
         with:
           path: |
             /home/runner/.local/share/helm/plugins/helm-unittest
@@ -144,9 +144,9 @@ jobs:
       matrix:
         # We test the latest k3s version and the lowest supported
         k3s-version:
-          - v1.28
+          - v1.33
+          - v1.34
           - v1.35
-          - latest
         # We test the latest helm version and the lowest supported
         helm-version:
           - v3.14.0
@@ -201,7 +201,7 @@ jobs:
       - name: Create k3d cluster - Attempt 1/3
         continue-on-error: true
         id: createc1
-        uses: nolar/setup-k3d-k3s@8bf8d22160e8b1d184dcb780e390d6952a7eec65 # v1.0.10
+        uses: nolar/setup-k3d-k3s@62c9d1bd2bc843275c85d2e7dcd696edc1160eee # v1.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ matrix.k3s-version }}
@@ -216,7 +216,7 @@ jobs:
         continue-on-error: true
         if: steps.createc1.outcome=='failure'
         id: createc2
-        uses: nolar/setup-k3d-k3s@8bf8d22160e8b1d184dcb780e390d6952a7eec65 # v1.0.10
+        uses: nolar/setup-k3d-k3s@62c9d1bd2bc843275c85d2e7dcd696edc1160eee # v1.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ matrix.k3s-version }}
@@ -230,7 +230,7 @@ jobs:
       - name: Create k3d cluster - Attempt 3/3
         id: createc3
         if: steps.createc2.outcome=='failure'
-        uses: nolar/setup-k3d-k3s@8bf8d22160e8b1d184dcb780e390d6952a7eec65 # v1.0.10
+        uses: nolar/setup-k3d-k3s@62c9d1bd2bc843275c85d2e7dcd696edc1160eee # v1.1.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ matrix.k3s-version }}

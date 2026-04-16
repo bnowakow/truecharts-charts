@@ -8,10 +8,10 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 0.2.4
+appVersion: 0.2.5
 dependencies:
   - name: common
-    version: 29.0.10
+    version: 29.0.15
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -38,5 +38,5 @@ sources:
   - https://hub.docker.com/r/gabekangas/owncast
   - https://owncast.online/
 type: application
-version: 17.0.1
+version: 17.0.3
 

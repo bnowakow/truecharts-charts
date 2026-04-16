@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/cloudflareddns
   pullPolicy: IfNotPresent
-  tag: 3.0.0@sha256:dbb90f4e6a2f294e1d71f2f1f870d36b84dc2537387090733f573b7bfa603bcc
+  tag: 3.0.0@sha256:0356824cf3b871ce7ea1a0334758a6f7a25805d684ee6dad861becb05c25959a
 service:
   main:
     enabled: false

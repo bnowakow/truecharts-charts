@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/n8n-io/n8n
-  tag: 2.15.0@sha256:5ff0ad333090d1901005cd764399b1be2c2a29b816704107f08c340d0d223043
+  tag: 2.17.1@sha256:775862da9e07bbbfb5ad087dbcf1c7d0d21e71a11f31621fe2fadd6371fe4ae3
   pullPolicy: IfNotPresent
 timezoneandlocale: {}
 # N8N_DEFAULT_LOCALE: "en"

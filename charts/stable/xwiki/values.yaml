@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: public.ecr.aws/docker/library/xwiki
-  tag: 18.2.0-postgres-tomcat@sha256:fa407715ce845fe3c00a451974869b637541b46cc81aeaffd377e80b5c6b05b1
+  tag: 18.2.1-postgres-tomcat@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
   pullPolicy: IfNotPresent
 service:
   main:

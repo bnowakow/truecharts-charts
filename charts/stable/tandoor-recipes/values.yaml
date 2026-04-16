@@ -2,7 +2,7 @@
 image:
   repository: ghcr.io/tandoorrecipes/recipes
   pullPolicy: IfNotPresent
-  tag: 2.6.3@sha256:3b1e66b7df6703d4bc8f56a9efe170a635d0724dc9dc676d7c80582a34f9abbe
+  tag: 2.6.7@sha256:506a92474be39e8fd3b896fcf25132ea11c28f885dfc7a8f0e9d9e5f88056434
 securityContext:
   container:
     readOnlyRootFilesystem: false

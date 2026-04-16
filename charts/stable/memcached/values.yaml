@@ -2,7 +2,7 @@
 image:
   repository: docker.io/bitnamisecure/memcached
   pullPolicy: IfNotPresent
-  tag: latest@sha256:0cb02ccaf599ac297f7c3f391245fda7d4e9ee3c92c58d42fd95b2457a23d76f
+  tag: latest@sha256:7626f34752f218b9fc875886e9316f3b17ec65814a1631ff7e413db61c94fbc6
 
 service:
   main:

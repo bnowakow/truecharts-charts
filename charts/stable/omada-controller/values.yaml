@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/mbentley/omada-controller
-  tag: 6.2@sha256:1efd5649198f763da5ce053e2ec08a59726759e78fd5f31dbdf69e9862809708
+  tag: 6.2@sha256:9846d4f8b3d3dfa0fad5c518f52ba41bbb8bbca8606f0204753da723125f5c3a
   pullPolicy: IfNotPresent
 service:
   main:
