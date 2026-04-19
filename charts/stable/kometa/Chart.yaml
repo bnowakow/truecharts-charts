@@ -35,5 +35,4 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/kometa
   - https://hub.docker.com/r/kometateam/kometa
 type: application
-version: 5.1.0
-
+version: 6.0.0
