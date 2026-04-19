@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/foldingathome
   pullPolicy: IfNotPresent
-  tag: "8.4.9@sha256:1d9d2300295db0111f4376f8ae07c3feabb71540ce4ae3376f90ce527ef3b602"
+  tag: "8.4.9@sha256:09eb79a2636c8d14f83e01941a657f5a9c977c5a6b760e18b8084c5340795a76"
 securityContext:
   container:
     runAsNonRoot: false

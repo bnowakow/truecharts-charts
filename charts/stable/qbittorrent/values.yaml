@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/qbittorrent
   pullPolicy: IfNotPresent
-  tag: 5.1.4@sha256:b9d7bdc0f388ce9d776858cf7a6d23ba80ee51157a170f72a22648d1e07939c1
+  tag: 5.1.4@sha256:c732d46e3d89b7fefe039916eb7059f06ee3c301ee583b1caafd26bd8bf93b89
 qbitportforwardImage:
   repository: docker.io/mjmeli/qbittorrent-port-forward-gluetun-server
   pullPolicy: IfNotPresent

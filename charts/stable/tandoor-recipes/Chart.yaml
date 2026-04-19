@@ -2,16 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
+  truecharts.org/train: stable
   trueforge.org/category: media
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 2.6.7
+appVersion: 2.6.9
 dependencies:
   - name: common
-    version: 29.0.15
+    version: 29.1.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -37,5 +38,5 @@ sources:
   - https://github.com/TandoorRecipes/recipes/pkgs/container/recipes
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/tandoor-recipes
 type: application
-version: 21.1.7
+version: 21.2.0
 

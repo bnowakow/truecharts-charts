@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/seerr
-  tag: "3.1.1@sha256:1ec29a8bdcabfefb6d1d599096791f6b508a46e88b103bbb1157d4c6608f2ff6"
+  tag: "3.2.0@sha256:ae808de4c0c5e46844f58716a2fb6e30ae3352614c7cf6aa0966aa0cfe3c2820"
   pullPolicy: IfNotPresent
 service:
   main:

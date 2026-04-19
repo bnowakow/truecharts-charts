@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/calibre-web
   pullPolicy: IfNotPresent
-  tag: "0.6.26@sha256:001285977b0cf1236abe943117de75dfe9f102fdd6cce5a6fa7b669a88de8ed3"
+  tag: "0.6.26@sha256:374160652405a20665f7976447c7e3e3381999dadec0f869f7d9dc12a99855b9"
 securityContext:
   container:
     readOnlyRootFilesystem: false

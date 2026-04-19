@@ -2,7 +2,7 @@
 image:
   repository: docker.io/bitnamisecure/wordpress
   pullPolicy: IfNotPresent
-  tag: latest@sha256:cba513e47733db78d46540575d60b32ae0ac19b0a9828144b1463997687978a6
+  tag: latest@sha256:27aeeefc033d57e889a2afd2c44b652b2c10df76ab0707e35e679b1b50325082
 securityContext:
   container:
     readOnlyRootFilesystem: false

@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/nzbget
   pullPolicy: IfNotPresent
-  tag: "26.1.0@sha256:b11ed6476e66bb5044dde92feddaef62d3905cfdccfcb290fe49b906f269c05b"
+  tag: "26.1.0@sha256:209261cef6713b093a91bc7e16826c1a301b51e0b164cbc6c00ecde497f3d08a"
 service:
   main:
     ports:

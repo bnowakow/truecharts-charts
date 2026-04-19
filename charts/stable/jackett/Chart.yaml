@@ -2,16 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
+  truecharts.org/train: stable
   trueforge.org/category: media
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 0.24.1167
+appVersion: 0.24.1622
 dependencies:
   - name: common
-    version: 29.0.15
+    version: 29.1.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -37,5 +38,5 @@ sources:
   - https://github.com/trueforge-org/containers/tree/main/apps/jackett
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/jackett
 type: application
-version: 27.0.4
+version: 27.1.0
 

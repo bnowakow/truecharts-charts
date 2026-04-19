@@ -2,6 +2,7 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
+  truecharts.org/train: stable
   trueforge.org/category: media
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
@@ -11,14 +12,14 @@ apiVersion: v2
 appVersion: 2024.10.01
 dependencies:
   - name: common
-    version: 29.0.15
+    version: 29.1.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mongodb
-    version: 17.0.6
+    version: 17.0.8
     repository: oci://oci.trueforge.org/truecharts
     condition: mongodb.enabled
     alias: ""
@@ -41,5 +42,5 @@ sources:
   - https://github.com/Tzahi12345/YoutubeDL-Material
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/youtubedl-material
 type: application
-version: 15.0.8
+version: 15.1.0
 

@@ -2,12 +2,12 @@
 image:
   repository: oci.trueforge.org/containerforge/home-assistant
   pullPolicy: IfNotPresent
-  tag: "2026.2.2@sha256:3b268de305412f12ac7e064db93ed2b63d34f0b3ed7ca66fb7c3d0c37001c6f6"
+  tag: "2026.4.3@sha256:dda5dab39434561be67c17b425eae94c3c4b3b3c7ae6ce43d4a5080ee27612b6"
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.52.5@sha256:5cd8870987fc1b64e90abd113cd0043bbc03afb60c1d9cf40ac570c32932d3a3"
+  tag: "4.53.2@sha256:c7c64a05ed8a0e3db13694d990e1dccba356a81929a7f1647d3cfd5a8586a1de"
 
 service:
   main:

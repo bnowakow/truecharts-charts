@@ -2,16 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
+  truecharts.org/train: stable
   trueforge.org/category: media
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 5.2.10
+appVersion: 5.2.11
 dependencies:
   - name: common
-    version: 29.0.15
+    version: 29.1.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,5 +37,5 @@ sources:
   - https://gitlab.com/tinyMediaManager/tinyMediaManager
   - https://hub.docker.com/r/tinymediamanager/tinymediamanager
 type: application
-version: 14.0.3
+version: 14.1.0
 
