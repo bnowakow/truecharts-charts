@@ -2,7 +2,7 @@
 image:
   repository: ghcr.io/linuxserver/ombi
   pullPolicy: IfNotPresent
-  tag: 4.53.4@sha256:b63cb88dfcadfd35866dcc316ed73c9ed52456302fcb2b3e9c13a923c5262ab0
+  tag: 4.53.5@sha256:32448b69ca4d3e124daf5ca1ac3b52aa9107082f00cee397da7b5218d9fc0a1c
 service:
   main:
     ports:
