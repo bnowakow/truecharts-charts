@@ -20,19 +20,19 @@ dependencies:
     import-values: []
 deprecated: false
 description: 'Alpine-based Chart for Hastebin, the node.js paste service  '
-home: https://trueforge.org/truetech/truecharts/charts/stable/hastebin
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/hastebin.webp
+home: https://truecharts.org/charts/stable/hastebin
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/hastebin.webp
 keywords:
   - hastebin
   - Cloud
   - Productivity
   - Tools-Utilities
   - Network-Other
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: hastebin
 sources:
   - https://github.com/nzzane/haste-server

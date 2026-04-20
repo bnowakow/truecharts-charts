@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Runs a python script at a crontab defined interval that downloads/imports ics files into a caldav server.
-home: https://trueforge.org/truetech/truecharts/charts/stable/import-ics
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/import-ics.webp
+home: https://truecharts.org/charts/stable/import-ics
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/import-ics.webp
 keywords:
   - import-ics
   - Productivity
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: import-ics
 sources:
   - https://github.com/Vilhjalmr26/import_ics

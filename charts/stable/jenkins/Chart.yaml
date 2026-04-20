@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: The gold standard in devops tools for running CI/CD pipelines.
-home: https://trueforge.org/truetech/truecharts/charts/stable/jenkins
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/jenkins.webp
+home: https://truecharts.org/charts/stable/jenkins
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/jenkins.webp
 keywords:
   - jenkins
   - productivity
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: jenkins
 sources:
   - https://github.com/jenkinsci/docker

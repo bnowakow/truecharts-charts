@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: "Valetudo-RE companion service for generating PNG maps.\r"
-home: https://trueforge.org/truetech/truecharts/charts/stable/valetudo-mapper
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/valetudo-mapper.webp
+home: https://truecharts.org/charts/stable/valetudo-mapper
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/valetudo-mapper.webp
 keywords:
   - valetudo-mapper
   - Tools-Utilities
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: valetudo-mapper
 sources:
   - https://github.com/rand256/valetudo-mapper

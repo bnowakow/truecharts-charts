@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: The virt-manager application is a desktop user interface for managing virtual machines through libvirt.
-home: https://trueforge.org/truetech/truecharts/charts/stable/virt-manager
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/virt-manager.webp
+home: https://truecharts.org/charts/stable/virt-manager
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/virt-manager.webp
 keywords:
   - virt-manager
   - Tools-Utilities
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: virt-manager
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/virt-manager

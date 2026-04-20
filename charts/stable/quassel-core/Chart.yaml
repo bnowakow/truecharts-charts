@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Quassel-core is a modern, cross-platform, distributed IRC client.
-home: https://trueforge.org/truetech/truecharts/charts/stable/quassel-core
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/quassel-core.webp
+home: https://truecharts.org/charts/stable/quassel-core
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/quassel-core.webp
 keywords:
   - quassel-core
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: quassel-core
 sources:
   - https://ghcr.io/linuxserver/quassel-core

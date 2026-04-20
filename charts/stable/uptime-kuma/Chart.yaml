@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: A fancy self-hosted monitoring tool
-home: https://trueforge.org/truetech/truecharts/charts/stable/uptime-kuma
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/uptime-kuma.webp
+home: https://truecharts.org/charts/stable/uptime-kuma
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/uptime-kuma.webp
 keywords:
   - monitoring
   - uptime
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: uptime-kuma
 sources:
   - https://github.com/louislam/uptime-kuma

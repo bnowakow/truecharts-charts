@@ -20,17 +20,17 @@ dependencies:
     import-values: []
 deprecated: false
 description: Open source, advanced key-value store.
-home: https://trueforge.org/truetech/truecharts/charts/stable/valkey
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/valkey.webp
+home: https://truecharts.org/charts/stable/valkey
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/valkey.webp
 keywords:
   - valkey
   - keyvalue
   - database
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: valkey
 sources:
   - https://github.com/bitnami/containers/tree/main/bitnami/valkey

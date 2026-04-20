@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: A Q&A platform software for teams at any scales.
-home: https://trueforge.org/truetech/truecharts/charts/stable/answer
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/answer.webp
+home: https://truecharts.org/charts/stable/answer
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/answer.webp
 keywords:
   - answer
   - forum
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: answer
 sources:
   - https://github.com/answerdev/answer

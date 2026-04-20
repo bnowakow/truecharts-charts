@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Your favorite operating systems in one place!
-home: https://trueforge.org/truetech/truecharts/charts/stable/netbootxyz
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/netbootxyz.webp
+home: https://truecharts.org/charts/stable/netbootxyz
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/netbootxyz.webp
 keywords:
   - netbootxyz
   - pxe
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: netbootxyz
 sources:
   - https://ghcr.io/netbootxyz/netbootxyz

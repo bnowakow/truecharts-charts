@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Channels DVR Server
-home: https://trueforge.org/truetech/truecharts/charts/stable/channels-dvr
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/channels-dvr.webp
+home: https://truecharts.org/charts/stable/channels-dvr
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/channels-dvr.webp
 keywords:
   - channels-dvr
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: channels-dvr
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/channels-dvr

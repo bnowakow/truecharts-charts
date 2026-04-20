@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Like to maintain your own data? Automatically backup your github account to your Unraid server on a schedule.
-home: https://trueforge.org/truetech/truecharts/charts/stable/github-backup
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/github-backup.webp
+home: https://truecharts.org/charts/stable/github-backup
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/github-backup.webp
 keywords:
   - github-backup
   - Backup
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: github-backup
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/github-backup

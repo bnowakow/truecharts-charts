@@ -20,17 +20,17 @@ dependencies:
     import-values: []
 deprecated: false
 description: A bookmarking and link shortening service that enables easy saving and sharing of links.
-home: https://trueforge.org/truetech/truecharts/charts/stable/slash
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/slash.webp
+home: https://truecharts.org/charts/stable/slash
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/slash.webp
 keywords:
   - slash
   - bookmarks
   - url-shortener
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: slash
 sources:
   - https://github.com/boojack/slash

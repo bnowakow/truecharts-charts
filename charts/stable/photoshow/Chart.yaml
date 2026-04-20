@@ -20,19 +20,19 @@ dependencies:
     import-values: []
 deprecated: false
 description: A gallery software at its easiest, it doesn't even require a database.
-home: https://trueforge.org/truetech/truecharts/charts/stable/photoshow
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/photoshow.webp
+home: https://truecharts.org/charts/stable/photoshow
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/photoshow.webp
 keywords:
   - photoshow
   - photo
   - show
   - gallary
   - image
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: photoshow
 sources:
   - https://ghcr.io/linuxserver/photoshow

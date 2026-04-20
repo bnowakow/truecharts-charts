@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: A simple bookmark manager built with Go.
-home: https://trueforge.org/truetech/truecharts/charts/stable/shiori
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/shiori.webp
+home: https://truecharts.org/charts/stable/shiori
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/shiori.webp
 keywords:
   - shiori
   - bookmark
   - bookmark-manager
   - web-interface
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: shiori
 sources:
   - https://ghcr.io/go-shiori/shiori

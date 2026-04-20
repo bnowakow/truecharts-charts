@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: A tasty, self-hostable Git server for the command line.
-home: https://trueforge.org/truetech/truecharts/charts/stable/soft-serve
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/soft-serve.webp
+home: https://truecharts.org/charts/stable/soft-serve
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/soft-serve.webp
 keywords:
   - soft-serve
   - git
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: soft-serve
 sources:
   - https://github.com/charmbracelet/soft-serve

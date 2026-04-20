@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: A complete web based IDE with terminal access
-home: https://trueforge.org/truetech/truecharts/charts/stable/cloud9
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/cloud9.webp
+home: https://truecharts.org/charts/stable/cloud9
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/cloud9.webp
 keywords:
   - cloud9
   - ide
   - terminal
   - web
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: cloud9
 sources:
   - https://aws.amazon.com/cloud9/

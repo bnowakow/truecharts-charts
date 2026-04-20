@@ -21,18 +21,18 @@ dependencies:
 deprecated: false
 description: |
   Support the Bitcoin network by hosting your own node! This template provides a full Bitcoin Core node, built in a verifiably trustless way.
-home: https://trueforge.org/truetech/truecharts/charts/stable/bitcoind
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/bitcoind.webp
+home: https://truecharts.org/charts/stable/bitcoind
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/bitcoind.webp
 keywords:
   - bitcoind
   - Tools-Utilities
   - Network-Other
   - Crypto
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: bitcoind
 sources:
   - https://bitcoin.org/

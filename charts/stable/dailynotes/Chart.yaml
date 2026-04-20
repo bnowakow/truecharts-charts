@@ -21,16 +21,16 @@ dependencies:
 deprecated: false
 description: |
   App for taking notes and tracking tasks on a daily basis.
-home: https://trueforge.org/truetech/truecharts/charts/stable/dailynotes
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/dailynotes.webp
+home: https://truecharts.org/charts/stable/dailynotes
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/dailynotes.webp
 keywords:
   - dailynotes
   - Other
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: dailynotes
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/dailynotes

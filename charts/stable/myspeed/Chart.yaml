@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Speedtest automation made simple.
-home: https://trueforge.org/truetech/truecharts/charts/stable/myspeed
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/myspeed.webp
+home: https://truecharts.org/charts/stable/myspeed
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/myspeed.webp
 keywords:
   - myspeed
   - speedtest
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: myspeed
 sources:
   - https://github.com/gnmyt/myspeed

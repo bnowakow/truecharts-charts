@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Snapdrop A local file sharing in your browser. Inspired by Apple's Airdrop.
-home: https://trueforge.org/truetech/truecharts/charts/stable/snapdrop
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/snapdrop.webp
+home: https://truecharts.org/charts/stable/snapdrop
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/snapdrop.webp
 keywords:
   - snapdrop
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: snapdrop
 sources:
   - https://fleet.linuxserver.io/image?name=linuxserver/snapdrop

@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Anime cataloging program designed to automate the cataloging of your collection.
-home: https://trueforge.org/truetech/truecharts/charts/stable/shoko-server
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/shoko-server.webp
+home: https://truecharts.org/charts/stable/shoko-server
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/shoko-server.webp
 keywords:
   - shoko-server
   - Tools-Utilities
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: shoko-server
 sources:
   - https://github.com/ShokoAnime/ShokoServer

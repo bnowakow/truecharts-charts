@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: An awesome, Online Office suite image suitable for home use.
-home: https://trueforge.org/truetech/truecharts/charts/stable/collabora
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/collabora.webp
+home: https://truecharts.org/charts/stable/collabora
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/collabora.webp
 keywords:
   - office
   - document
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: collabora
 sources:
   - https://github.com/CollaboraOnline/online

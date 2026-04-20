@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Mudislanders Template for mounting OpenRA's dedicated server by rmoriz [br][br]
-home: https://trueforge.org/truetech/truecharts/charts/stable/openra
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/openra.webp
+home: https://truecharts.org/charts/stable/openra
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/openra.webp
 keywords:
   - openra
   - Network-Other
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: openra
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/openra

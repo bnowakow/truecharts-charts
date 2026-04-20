@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Python script to update metadata and automatically build collections.
-home: https://trueforge.org/truetech/truecharts/charts/stable/plex-meta-manager
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/plex-meta-manager.webp
+home: https://truecharts.org/charts/stable/plex-meta-manager
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/plex-meta-manager.webp
 keywords:
   - plex-meta-manager
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: plex-meta-manager
 sources:
   - https://github.com/meisnate12/Plex-Meta-Manager

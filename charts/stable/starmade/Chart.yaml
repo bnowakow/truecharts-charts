@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: This Chart will download and install a StarMade Dedicated Server. It will also install a basic server.cfg at the first startup.
-home: https://trueforge.org/truetech/truecharts/charts/stable/starmade
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/starmade.webp
+home: https://truecharts.org/charts/stable/starmade
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/starmade.webp
 keywords:
   - starmade
   - GameServers
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: starmade
 sources:
   - https://ghcr.io/ich777/starmade-server

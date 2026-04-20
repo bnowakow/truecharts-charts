@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: A simple null file http and https server
-home: https://trueforge.org/truetech/truecharts/charts/stable/nullserv
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/nullserv.webp
+home: https://truecharts.org/charts/stable/nullserv
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/nullserv.webp
 keywords:
   - nullserv
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: nullserv
 sources:
   - https://ghcr.io/k8s-at-home/nullserv

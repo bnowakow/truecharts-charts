@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: The Intel GPU plugin facilitates offloading the processing of computation intensive workloads to GPU hardware.
-home: https://trueforge.org/truetech/truecharts/charts/stable/intel-gpu-plugin
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/intel-gpu-plugin.webp
+home: https://truecharts.org/charts/stable/intel-gpu-plugin
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/intel-gpu-plugin.webp
 keywords:
   - intel-gpu-plugin
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: intel-gpu-plugin
 sources:
   - https://github.com/intel

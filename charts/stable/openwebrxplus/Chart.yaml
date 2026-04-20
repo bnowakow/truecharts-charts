@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Improved version of the OpenWebRX online SDR
-home: https://trueforge.org/truetech/truecharts/charts/stable/openwebrxplus
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/openwebrxplus.webp
+home: https://truecharts.org/charts/stable/openwebrxplus
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/openwebrxplus.webp
 keywords:
   - radio
   - sdr
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: openwebrxplus
 sources:
   - https://github.com/luarvique/openwebrx

@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/radarr
   pullPolicy: IfNotPresent
-  tag: "6.1.2.10359@sha256:834273b16e2381c43b4c80d28d9eb217d20c5539be47039b0b52e10a26c25686"
+  tag: "6.2.0.10390@sha256:f5a33b31c041b517941a968e7247a2da839fa21cd57c46dc073eb187c0173b92"
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr
   pullPolicy: IfNotPresent

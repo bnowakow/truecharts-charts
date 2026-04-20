@@ -20,19 +20,19 @@ dependencies:
     import-values: []
 deprecated: false
 description: Nissan Leaf connected services to MQTT adapter
-home: https://trueforge.org/truetech/truecharts/charts/stable/leaf2mqtt
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/leaf2mqtt.webp
+home: https://truecharts.org/charts/stable/leaf2mqtt
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/leaf2mqtt.webp
 keywords:
   - leaf2mqtt
   - leaf
   - nissan
   - kamereon
   - carwings
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: leaf2mqtt
 sources:
   - https://ghcr.io/k8s-at-home/leaf2mqtt

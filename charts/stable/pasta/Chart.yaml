@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: PASTA - Audio and Subtitle Track Changer for Plex
-home: https://trueforge.org/truetech/truecharts/charts/stable/pasta
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/pasta.webp
+home: https://truecharts.org/charts/stable/pasta
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/pasta.webp
 keywords:
   - pasta
   - MediaApp-Other
   - Tools-Utilities
   - Other
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: pasta
 sources:
   - https://github.com/cglatot/pasta

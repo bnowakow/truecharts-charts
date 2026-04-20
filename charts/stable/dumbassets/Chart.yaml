@@ -20,17 +20,17 @@ dependencies:
     import-values: []
 deprecated: false
 description: A stupid simple asset tracker for keeping track of your physical assets, their components, and applicable warranties and routine maintenance.
-home: https://trueforge.org/truetech/truecharts/charts/stable/dumbassets
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/dumbassets.webp
+home: https://truecharts.org/charts/stable/dumbassets
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/dumbassets.webp
 keywords:
   - dumbassets
   - dumbwareio
   - asset-tracker
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: dumbassets
 sources:
   - https://github.com/DumbWareio/dumbassets

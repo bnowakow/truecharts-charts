@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: A safe and private place for your life's work.
-home: https://trueforge.org/truetech/truecharts/charts/stable/standardnotes-web
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/standardnotes-web.webp
+home: https://truecharts.org/charts/stable/standardnotes-web
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/standardnotes-web.webp
 keywords:
   - standardnotes-web
   - Productivity
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: standardnotes-web
 sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/standardnotes-web

@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: A high quality, visual, open source tool to create, design, and edit database files compatible with SQLite
-home: https://trueforge.org/truetech/truecharts/charts/stable/sqlitebrowser
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/sqlitebrowser.webp
+home: https://truecharts.org/charts/stable/sqlitebrowser
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/sqlitebrowser.webp
 keywords:
   - sqlite
   - browser
   - sqlitebrowser
   - database
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: sqlitebrowser
 sources:
   - https://ghcr.io/linuxserver/sqlitebrowser

@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: a xml grabber from schedule direct service
-home: https://trueforge.org/truetech/truecharts/charts/stable/guide2go
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/guide2go.webp
+home: https://truecharts.org/charts/stable/guide2go
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/guide2go.webp
 keywords:
   - guide2go
   - Downloaders
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: guide2go
 sources:
   - https://github.com/alturismo/guide2go

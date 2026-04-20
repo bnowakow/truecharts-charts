@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: An automatic twitch recorder.
-home: https://trueforge.org/truetech/truecharts/charts/stable/livestreamdvr
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/livestreamdvr.webp
+home: https://truecharts.org/charts/stable/livestreamdvr
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/livestreamdvr.webp
 keywords:
   - livestreamdvr
   - MediaApp-Video
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: livestreamdvr
 sources:
   - https://github.com/MrBrax/LiveStreamDVR

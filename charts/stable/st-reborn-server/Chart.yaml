@@ -20,16 +20,16 @@ dependencies:
     import-values: []
 deprecated: false
 description: Skyrim Together Reborn server files.
-home: https://trueforge.org/truetech/truecharts/charts/stable/st-reborn-server
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/st-reborn-server.webp
+home: https://truecharts.org/charts/stable/st-reborn-server
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/st-reborn-server.webp
 keywords:
   - st-reborn-server
   - gameserver
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: st-reborn-server
 sources:
   - https://github.com/tiltedphoques/TiltedEvolution

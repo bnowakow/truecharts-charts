@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: The open source VNC client
-home: https://trueforge.org/truetech/truecharts/charts/stable/novnc
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/novnc.webp
+home: https://truecharts.org/charts/stable/novnc
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/novnc.webp
 keywords:
   - novnc
   - vnc
   - remote
   - desktop
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: novnc
 sources:
   - https://ghcr.io/nicholaswilde/novnc

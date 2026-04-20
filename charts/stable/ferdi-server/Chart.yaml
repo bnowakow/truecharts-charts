@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Server for Ferdi that you can re-use to run your own
-home: https://trueforge.org/truetech/truecharts/charts/stable/ferdi-server
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/ferdi-server.webp
+home: https://truecharts.org/charts/stable/ferdi-server
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/ferdi-server.webp
 keywords:
   - ferdi
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: ferdi-server
 sources:
   - https://github.com/getferdi/server

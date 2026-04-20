@@ -20,15 +20,15 @@ dependencies:
     import-values: []
 deprecated: false
 description: Valheim dedicated gameserver with automatic update and world backup support
-home: https://trueforge.org/truetech/truecharts/charts/stable/valheim
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/valheim.webp
+home: https://truecharts.org/charts/stable/valheim
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/valheim.webp
 keywords:
   - valheim
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: valheim
 sources:
   - https://ghcr.io/lloesche/valheim-server

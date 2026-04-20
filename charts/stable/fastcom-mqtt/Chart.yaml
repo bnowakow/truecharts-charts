@@ -21,16 +21,16 @@ dependencies:
 deprecated: false
 description: |
   Chart Chart with Fast.com CLI sending data directly to MQTT Broker
-home: https://trueforge.org/truetech/truecharts/charts/stable/fastcom-mqtt
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/fastcom-mqtt.webp
+home: https://truecharts.org/charts/stable/fastcom-mqtt
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/fastcom-mqtt.webp
 keywords:
   - fastcom-mqtt
   - home-automation
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: fastcom-mqtt
 sources:
   - https://github.com/simonjenny/fastcom-mqtt

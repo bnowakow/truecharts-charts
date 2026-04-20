@@ -20,18 +20,18 @@ dependencies:
     import-values: []
 deprecated: false
 description: Prometheus Exporter for the official uptimerobot CLI
-home: https://trueforge.org/truetech/truecharts/charts/stable/uptimerobot-prometheus
-icon: https://trueforge.org/img/hotlink-ok/chart-icons/uptimerobot-prometheus.webp
+home: https://truecharts.org/charts/stable/uptimerobot-prometheus
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/uptimerobot-prometheus.webp
 keywords:
   - uptimerobot
   - prometheus
   - grafana
   - metrics
-kubeVersion: '>=1.27.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
-    email: info@trueforge.org
-    url: https://trueforge.org
+    email: info@truecharts.org
+    url: https://truecharts.org
 name: uptimerobot-prometheus
 sources:
   - https://github.com/k8s-at-home/charts/tree/master/charts/uptimerobot-prometheus
