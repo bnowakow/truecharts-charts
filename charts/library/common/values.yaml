@@ -583,7 +583,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: oci.trueforge.org/containerforge/code-server
-  tag: "4.116.0@sha256:39ec221007ccef99501eb8ebcd7977fdaf128e904888951d2d641843bc0654f3"
+  tag: "4.117.0@sha256:6ec7557924a184e68773ee642fba387d0b70c66209f7128ecf7e974870ba4d19"
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -593,28 +593,28 @@ alpineImage:
 
 ubuntuImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:c5a3b56e4d22600d2b618d602d487732516cc067cb21969798210c3b12304842"
+  tag: "24.04@sha256:bec52e97e32c21da9b7f6f425804460202895214a0d1c18c103aa120d497c9d2"
   pullPolicy: IfNotPresent
 
 scratchImage:
   repository: oci.trueforge.org/containerforge/scratch
-  tag: "1.0.0@sha256:fcb59c5d301102db2f167dcb0fd7db22acf24a3d77c5acc7f464c563006fd638"
+  tag: "1.0.0@sha256:9005cac2fdc79bfb8001e093a3267e4e203e63fba9ca02e3cea7c52e54e63e09"
   pullPolicy: IfNotPresent
 
 kubectlImage:
   repository: oci.trueforge.org/containerforge/kubectl
-  tag: "1.31.1@sha256:ff2f214eb2da68366b8c799926f08188714a458e947f0e8836bf98a883d47adb"
+  tag: "1.31.1@sha256:cc6ca4460dd3bd7c2d108f4c341f3f9184cb7f006888a564d5e37a209d9c5d98"
   pullPolicy: IfNotPresent
 
 wgetImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:c5a3b56e4d22600d2b618d602d487732516cc067cb21969798210c3b12304842"
+  tag: "24.04@sha256:bec52e97e32c21da9b7f6f425804460202895214a0d1c18c103aa120d497c9d2"
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.53.2@sha256:c7c64a05ed8a0e3db13694d990e1dccba356a81929a7f1647d3cfd5a8586a1de"
+  tag: "4.53.2@sha256:c6a9c1604f87ab860d9022b8882774597319641ac1f9d90dd6252281920026b9"
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
@@ -628,12 +628,12 @@ mariadbClientImage:
 
 redisClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:695711e1fdd5ed83abc3136d99df2bdac6f7cc211ff065a6e56285d4ee7ea722"
+  tag: "1.1.0@sha256:881ce759f527618b8fbfe66ac2db7e9085d0417cb411ec3f468af1f04e979c88"
   pullPolicy: IfNotPresent
 
 valkeyClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:695711e1fdd5ed83abc3136d99df2bdac6f7cc211ff065a6e56285d4ee7ea722"
+  tag: "1.1.0@sha256:881ce759f527618b8fbfe66ac2db7e9085d0417cb411ec3f468af1f04e979c88"
   pullPolicy: IfNotPresent
 
 mongodbClientImage:

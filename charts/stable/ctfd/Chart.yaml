@@ -12,14 +12,14 @@ apiVersion: v2
 appVersion: 3.8.4
 dependencies:
   - name: common
-    version: 29.1.0
+    version: 29.1.6
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: valkey
-    version: 2.1.0
+    version: 2.1.2
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: redis
@@ -43,5 +43,5 @@ sources:
   - https://github.com/CTFd/CTFd
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/ctfd
 type: application
-version: 13.2.1
+version: 13.2.4
 
