@@ -583,7 +583,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: oci.trueforge.org/containerforge/code-server
-  tag: "4.117.0@sha256:6ec7557924a184e68773ee642fba387d0b70c66209f7128ecf7e974870ba4d19"
+  tag: "4.117.0@sha256:16817e31db39a558915c5fcd79d393cc56db006b765024437625094b2c7aca29"
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -593,28 +593,28 @@ alpineImage:
 
 ubuntuImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:bec52e97e32c21da9b7f6f425804460202895214a0d1c18c103aa120d497c9d2"
+  tag: "24.04@sha256:5fa3c2cf644e1cf005b5ee0feac4b0d0041f65850fb1991bef3926c45a9a371c"
   pullPolicy: IfNotPresent
 
 scratchImage:
   repository: oci.trueforge.org/containerforge/scratch
-  tag: "1.0.0@sha256:9005cac2fdc79bfb8001e093a3267e4e203e63fba9ca02e3cea7c52e54e63e09"
+  tag: "1.0.0@sha256:84182a2371dd7584ad752326b7150b4e928c640b7f70a249a3994b40f1db11fd"
   pullPolicy: IfNotPresent
 
 kubectlImage:
   repository: oci.trueforge.org/containerforge/kubectl
-  tag: "1.31.1@sha256:cc6ca4460dd3bd7c2d108f4c341f3f9184cb7f006888a564d5e37a209d9c5d98"
+  tag: "1.31.1@sha256:f9c1edfa79a0cf0092ede16bf7258d43a8222c110b3a62cbc7423033ca9a3229"
   pullPolicy: IfNotPresent
 
 wgetImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:bec52e97e32c21da9b7f6f425804460202895214a0d1c18c103aa120d497c9d2"
+  tag: "24.04@sha256:5fa3c2cf644e1cf005b5ee0feac4b0d0041f65850fb1991bef3926c45a9a371c"
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.53.2@sha256:c6a9c1604f87ab860d9022b8882774597319641ac1f9d90dd6252281920026b9"
+  tag: "4.53.2@sha256:fc1055b2a95b4951c612ac775b7621e7e90f0baace6b48ddbcd0f95e74de3b8d"
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
@@ -623,22 +623,22 @@ postgresClientImage:
 
 mariadbClientImage:
   repository: oci.trueforge.org/containerforge/mariadb-client
-  tag: "12.2.2@sha256:20027bf04f595ce297a363ae8555e3fd33353c727a316c9325937f0e1492d45d"
+  tag: "12.2.2@sha256:04056fcf739ca13ef1d2e68de0f0c8afaf1d4047ebbadf87e147bfd0107f9dd2"
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:881ce759f527618b8fbfe66ac2db7e9085d0417cb411ec3f468af1f04e979c88"
+  tag: "1.1.0@sha256:098e1805a09380a72a066c9189321af7a58ae93873e4bee6952a8a0fbeb3b776"
   pullPolicy: IfNotPresent
 
 valkeyClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:881ce759f527618b8fbfe66ac2db7e9085d0417cb411ec3f468af1f04e979c88"
+  tag: "1.1.0@sha256:098e1805a09380a72a066c9189321af7a58ae93873e4bee6952a8a0fbeb3b776"
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "2.8.2@sha256:c9d352f0ed4ef81229b282ee5690dc1d725240a9da9d130b1e2ba3104166d2b0"
+  tag: "2.8.2@sha256:d2f46ca2c42c8f9c5bfe707a8f322a471c81bd3f18289a30184bb68239dcbf27"
   pullPolicy: IfNotPresent
 
 postgres15Image:
