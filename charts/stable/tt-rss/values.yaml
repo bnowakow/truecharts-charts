@@ -2,15 +2,15 @@
 image:
   repository: ghcr.io/tt-rss/tt-rss
   pullPolicy: IfNotPresent
-  tag: latest@sha256:800989bd1f0b55e856434f4b29cc898cd965afa51882c943571b20c4628854fe
+  tag: latest@sha256:e7473c2ebf1f57e7c48adb225baf45927c3db689da8972bb136e8622c68487ff
 nginxImage:
   repository: ghcr.io/tt-rss/tt-rss-web-nginx
   pullPolicy: IfNotPresent
-  tag: latest@sha256:e03fcdfa9a101ab5b83a794f20e9853c1ad4a5252c4ff3a2803f0f4c7ab6fd9e
+  tag: latest@sha256:91ea9b9e67ba2c04b6ef600a9824f6fccc3b9668f320a7b65016f44168877d6e
 updaterImage:
   repository: ghcr.io/tt-rss/tt-rss
   pullPolicy: IfNotPresent
-  tag: latest@sha256:800989bd1f0b55e856434f4b29cc898cd965afa51882c943571b20c4628854fe
+  tag: latest@sha256:e7473c2ebf1f57e7c48adb225baf45927c3db689da8972bb136e8622c68487ff
 
 securityContext:
   container:

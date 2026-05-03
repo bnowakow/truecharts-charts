@@ -618,7 +618,7 @@ yqImage:
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
-  tag: "9.6.24@sha256:03cce42e10ccc080183c2c9eaf833adef43c7fe7e5b60989eb4481b9bb3a4876"
+  tag: "9.6.24@sha256:c7ea20fbec42f93e8c45d05676673654dfba12665f63b9dc7020a00e01cff3cc"
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
@@ -638,17 +638,17 @@ valkeyClientImage:
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "2.8.2@sha256:eeb1cd4601f44759efc8fac27bad8167683ef34b19330fb9df4fbd2d6b15a3da"
+  tag: "2.8.3@sha256:1906c40fe49b5cdba4bd80998c40de01ca6a951dd1a994da4f788158a220dcc8"
   pullPolicy: IfNotPresent
 
 postgres15Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "15.17@sha256:bfed15dddfc3a61a7654b6748a5d8c09fec5d13c57e2350169068cb1676a666e"
+  tag: "15.17@sha256:23d56b4e6232954ba7ae9eda453a9630946f382325e3bb63af3c2c32fce9a119"
   pullPolicy: IfNotPresent
 
 postgres16Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "16.13@sha256:2bc26604d2f0650f9b98668a51a95679c02024860d512ace92e7fcf69da7d611"
+  tag: "16.13@sha256:da09a5927dd7af1572591df6c2c1a192d441054ff73e6df823402fcbf08c5ff0"
   pullPolicy: IfNotPresent
 
 postgresPostgis15Image:
