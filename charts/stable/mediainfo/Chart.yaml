@@ -9,10 +9,10 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 26.03.1
+appVersion: 26.05.1
 dependencies:
   - name: common
-    version: 29.2.8
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,5 +36,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/mediainfo
   - https://hub.docker.com/r/jlesage/mediainfo
 type: application
-version: 15.2.0
+version: 15.4.0
 

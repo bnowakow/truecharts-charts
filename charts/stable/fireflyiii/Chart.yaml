@@ -12,14 +12,14 @@ apiVersion: v2
 appVersion: 6.2.21
 dependencies:
   - name: common
-    version: 29.2.8
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: valkey
-    version: 2.2.1
+    version: 2.3.0
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: redis
@@ -43,5 +43,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/fireflyiii
   - https://hub.docker.com/r/fireflyiii/core
 type: application
-version: 33.4.1
+version: 33.6.0
 

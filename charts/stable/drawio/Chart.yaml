@@ -9,10 +9,10 @@ annotations:
   trueforge.org/min_helm_version: "3.14"
   trueforge.org/train: stable
 apiVersion: v2
-appVersion: 29.7.12
+appVersion: 30.0.1
 dependencies:
   - name: common
-    version: 29.2.8
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,5 +35,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/drawio
   - https://hub.docker.com/r/jgraph/drawio
 type: application
-version: 19.3.3
+version: 20.1.1
 
