@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/machines/filestash
-  tag: latest@sha256:6e8d841c437cd986af0d231379f694ebb3497c3cd6de15a664573333d8b1d31c
+  tag: latest@sha256:e03cd9a02116da15a3925fa013d6888866357dd1fb5469cbc234e9ceea738f5a
   pullPolicy: IfNotPresent
 
 securityContext:
