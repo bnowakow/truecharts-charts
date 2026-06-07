@@ -2,7 +2,7 @@
 image:
   repository: docker.io/bitnamisecure/valkey
   pullPolicy: IfNotPresent
-  tag: latest@sha256:a3c580c005e12c3e0f97a3d6d703ca2d361c917457a35b080880de18b0fcd8d3
+  tag: latest@sha256:5ce04fc20634fa151c6050a3aea9fdf30b709509a27af5af1a379b73d18ad58f
 
 workload:
   main:

@@ -2,7 +2,7 @@
 image:
   repository: docker.io/iyuucn/iyuuplus
   pullPolicy: IfNotPresent
-  tag: latest@sha256:4ef072891b73f0cd47d56be2b237b330949a7c5b650736f1a1407dcf72180fed
+  tag: latest@sha256:506e078757a3afa40a003c89ff9a97698fdbb45ff73eee8a05a94673087dc03a
 service:
   main:
     ports:

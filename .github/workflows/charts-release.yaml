@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
       - name: Filter paths
         id: filter
@@ -56,34 +56,29 @@ jobs:
     needs: check_changes
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           fetch-depth: 0
 
       - name: Setup Forgetool
         shell: bash
-        env:
-          GITHUB_TOKEN: ${{ inputs.token }}
         run: |-
-          TAG=""
-          if RELEASES_JSON="$(curl -fsSL \
-            https://api.github.com/repos/trueforge-org/forgetool/releases/latest)"; then
-            TAG="$(jq -r '.tag_name // empty' <<< "${RELEASES_JSON}")"
-          fi
-          [ -n "${TAG}" ] && [ "${TAG}" != "null" ] || { echo "Failed to determine latest forgetool release tag"; exit 1; }
+          TAG="$(curl -fsSL \
+            https://api.github.com/repos/trueforge-org/forgetool/releases/latest \
+            | jq -r '.tag_name')"
+          [ -n "${TAG}" ] && [ "${TAG}" != "null" ] || { echo "Failed to determine latest stable forgetool release tag"; exit 1; }
           VERSION="${TAG#v}"
           VERSION="${VERSION#forgetool-v}"
           case "$(uname -m)" in
             x86_64) ARCH="amd64" ;;
-            aarch64) ARCH="arm64" ;;
-            *) echo "Unsupported uname architecture: $(uname -m). Supported uname values: x86_64, aarch64." && exit 1 ;;
+            aarch64|arm64) ARCH="arm64" ;;
+            *) echo "Unsupported uname architecture: $(uname -m). Supported uname values: x86_64, aarch64, arm64." && exit 1 ;;
           esac
           curl -fsSL -o "${RUNNER_TEMP}/forgetool.tar.gz" "https://github.com/trueforge-org/forgetool/releases/download/${TAG}/forgetool_${VERSION}_linux_${ARCH}.tar.gz" || { echo "Failed to download forgetool release ${TAG} for linux_${ARCH}"; exit 1; }
           mkdir -p "${RUNNER_TEMP}/forgetool-bin"
           tar -xzf "${RUNNER_TEMP}/forgetool.tar.gz" -C "${RUNNER_TEMP}/forgetool-bin" forgetool || { echo "Failed to extract forgetool binary from archive"; exit 1; }
           chmod +x "${RUNNER_TEMP}/forgetool-bin/forgetool"
           echo "${RUNNER_TEMP}/forgetool-bin" >> "${GITHUB_PATH}"
-
 
       - name: Get Changelog Format Version
         shell: bash
@@ -184,7 +179,7 @@ jobs:
 
       - name: Checkout website repo
         if: github.event_name == 'push'
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
         with:
           repository: trueforge-org/websites
           path: website   # checkout into ./website

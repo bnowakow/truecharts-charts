@@ -2,14 +2,14 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/train: incubator
+  truecharts.org/train: stable
   trueforge.org/category: productivity
   trueforge.org/max_helm_version: "4.1"
   trueforge.org/max_kubernetes_version: 1.35.0
   trueforge.org/min_helm_version: "3.14"
-  trueforge.org/train: incubator
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 0.26.3
+appVersion: 0.26.7
 dependencies:
   - name: common
     version: 29.3.4
@@ -19,7 +19,7 @@ dependencies:
     tags: []
     import-values: []
   - name: valkey
-    version: 2.3.2
+    version: 2.3.3
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: redis
@@ -27,7 +27,7 @@ dependencies:
     import-values: []
 deprecated: false
 description: AFFiNE is an open-source, all-in-one workspace where docs, whiteboards and tasks converge.
-home: https://truecharts.org/charts/incubator/affine
+home: https://truecharts.org/charts/stable/affine
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/affine.webp
 keywords:
   - affine
@@ -41,8 +41,9 @@ maintainers:
     url: https://truecharts.org
 name: affine
 sources:
-  - https://github.com/toeverything/AFFiNE
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/incubator/affine
   - https://ghcr.io/toeverything/affine
+  - https://github.com/toeverything/AFFiNE
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/affine
 type: application
-version: 0.1.0
+version: 1.0.1
+
