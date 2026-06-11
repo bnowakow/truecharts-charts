@@ -62,11 +62,20 @@ jobs:
 
       - name: Setup Forgetool
         shell: bash
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |-
-          TAG="$(curl -fsSL \
-            https://api.github.com/repos/trueforge-org/forgetool/releases/latest \
-            | jq -r '.tag_name')"
-          [ -n "${TAG}" ] && [ "${TAG}" != "null" ] || { echo "Failed to determine latest stable forgetool release tag"; exit 1; }
+          TAG=""
+          if RELEASES_JSON="$(curl -fsSL \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/trueforge-org/forgetool/releases/latest)"; then
+            TAG="$(jq -r '.tag_name // empty' <<< "${RELEASES_JSON}")"
+          fi
+          [ -n "${TAG}" ] && [ "${TAG}" != "null" ] || {
+            echo "Failed to determine latest stable forgetool release tag, falling back to v4.1.1"
+            TAG="v4.1.1"
+          }
           VERSION="${TAG#v}"
           VERSION="${VERSION#forgetool-v}"
           case "$(uname -m)" in

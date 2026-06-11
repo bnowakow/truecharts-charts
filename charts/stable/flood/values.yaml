@@ -2,7 +2,7 @@
 image:
   repository: oci.trueforge.org/containerforge/flood
   pullPolicy: IfNotPresent
-  tag: "4.14.0@sha256:162a1eab034f14fff1ada3a3fb75ba33102192ad14d9ceedafbbc0b4cb7b5043"
+  tag: "4.14.2@sha256:2911c5100d45ba28330e892d8743af8c3603939176ac58e1efcb3bb6c1a91000"
 workload:
   main:
     podSpec:

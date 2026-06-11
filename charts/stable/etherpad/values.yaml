@@ -2,7 +2,7 @@
 image:
   repository: ghcr.io/ether/etherpad
   pullPolicy: IfNotPresent
-  tag: 3.2.0@sha256:ba06bc08f0ac918956b6347f722deaf8a5cf35881531edd6626fa7fa1930de14
+  tag: 3.3.1@sha256:c4bcd4b3365222b6a0e1d596dcebfddccd47bb2c80ebe4ab903d2393d8eeea9c
 securityContext:
   container:
     readOnlyRootFilesystem: false

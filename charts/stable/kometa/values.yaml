@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/kometa
-  tag: 2.3.1@sha256:ae2ca1ba8b27f80bcc3363e751233931b3c1bdd05ce034a05215aec351daf9e9
+  tag: 2.3.1@sha256:af64e9ed4c23dfea13c39cddac5a201d74f5eb780562cc25749539e2f45f2b31
   pullPolicy: IfNotPresent
 
 service:

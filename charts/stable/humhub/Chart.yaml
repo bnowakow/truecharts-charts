@@ -12,21 +12,21 @@ apiVersion: v2
 appVersion: 1.17.2
 dependencies:
   - name: common
-    version: 29.3.4
+    version: 29.5.3
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 18.3.1
+    version: 18.3.3
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
     tags: []
     import-values: []
   - name: valkey
-    version: 2.3.3
+    version: 2.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: redis
@@ -50,5 +50,5 @@ sources:
   - https://ghcr.io/mriedmann/humhub-phponly
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/humhub
 type: application
-version: 15.6.4
+version: 15.7.0
 

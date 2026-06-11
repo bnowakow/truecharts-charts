@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/prowlarr
-  tag: 2.3.7.5365@sha256:56615ef0b8839ae49da9e5ec138c2cfee5e40b7a060efcb99fc1cce8846ed1a2
+  tag: 2.4.0.5397@sha256:89c3054da5ee656c8e699280d49aea59e718d23cead66aec7b2ec6856db05dd1
   pullPolicy: IfNotPresent
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr
