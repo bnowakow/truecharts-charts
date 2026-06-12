@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/manyfold3d/manyfold
-  tag: 0.143.0@sha256:b52f2d052a1318dfca065929225afa368c4113c68aa8ae8d7ab03d38a5101285
+  tag: 0.143.2@sha256:587bfdda569184a3c87106c48b9ce6322f9a78e863663cac70bb38baeea61aae
   pullPolicy: IfNotPresent
 securityContext:
   container:
