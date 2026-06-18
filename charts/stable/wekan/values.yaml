@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/wekanteam/wekan
-  tag: v9.43@sha256:1cb700c84aec7fcdb5256a8ee88b49ae913f4dead19e1339a64990ac57dcbc40
+  tag: v9.54@sha256:0600ca37357c3a80d7dba272750ae69be2da588c4cd203ac063155a55b7c7c51
   pullPolicy: IfNotPresent
 service:
   main:
